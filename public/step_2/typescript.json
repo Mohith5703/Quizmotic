@@ -1,0 +1,195 @@
+[
+  {
+    "question": "Which are the different Data Types supported by Typescript?",
+    "options": [
+      "Boolean var bValue: boolean = false",
+      "Number var age: number = 16",
+      "String var name: string = \"jon\"",
+      "All of the above mentioned"
+    ],
+    "correct": "All of the above mentioned"
+  },
+  {
+    "question": "What are the variable scopes available in TypeScript?",
+    "options": [
+      "Global Scope",
+      "Class Scope",
+      "Local Scope",
+      "All of the above"
+    ],
+    "correct": "All of the above"
+  },
+  {
+    "question": "Which object oriented terms are supported by Typescript?",
+    "options": [
+      "Modules",
+      "Classes",
+      "Interfaces",
+      "All of these"
+    ],
+    "correct": "All of these"
+  },
+  {
+    "question": "In typescript, it calls an javascript internally and then performs validations",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": "True"
+  },
+  {
+    "question": "To change the datatype from one type to another, we require",
+    "options": [
+      "TypeOperator",
+      "TypeAssertion",
+      "InferredTyping"
+    ],
+    "correct": "TypeAssertion"
+  },
+  {
+    "question": "For a variable, Without Specifying any datatype is",
+    "options": [
+      "InferredTyping",
+      "TypeOperator",
+      "TypeAssertion"
+    ],
+    "correct": "InferredTyping"
+  },
+  {
+    "question": "Which of the following is valid command to compile typescript file?",
+    "options": [
+      "ts abc.ts",
+      "t abc.ts",
+      "tsc abc.ts",
+      "tst abc.ts"
+    ],
+    "correct": "tsc abc.ts"
+  },
+  {
+    "question": "What will be output of : var a:string=47; console.log(\"Value of a=\"+a);",
+    "options": [
+      "Value of a=47",
+      "Value of a=0",
+      "Value of a=",
+      "None of the above"
+    ],
+    "correct": "None of the above"
+  },
+  {
+    "question": "Internal Modules are known as namespaces in Typescript.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": "True"
+  },
+  {
+    "question": "Which of the following Arrowfunctions are true",
+    "options": [
+      "var reflect = value => value;",
+      "var sum = (num1, num2) => num1 + num2;",
+      "var getName = () => \"Nicholas\";",
+      "var sum = (num1, num2) => { return num1 + num2; };",
+      "All"
+    ],
+    "correct": "All"
+  },
+  {
+    "question": "function fun1(...params) { console.log(params.length); } fun1(); fun1(5); fun1(5, 6, 7); Which concept resemble the above program",
+    "options": [
+      "String Interpolation",
+      "Tagged Templates",
+      "Spread Operator/Rest Parameters",
+      "Object Destructuring"
+    ],
+    "correct": "Spread Operator/Rest Parameters"
+  },
+  {
+    "question": "Typescript is a",
+    "options": [
+      "Strongly typed",
+      "Object oriented",
+      "Compiled Language",
+      "All the above"
+    ],
+    "correct": "All the above"
+  },
+  {
+    "question": "Typescript is",
+    "options": [
+      "Language",
+      "set of tools",
+      "Both",
+      "None"
+    ],
+    "correct": "Both"
+  },
+  {
+    "question": "Select user defined datatypes in typescript",
+    "options": [
+      "arrays",
+      "String",
+      "Boolean",
+      "Void"
+    ],
+    "correct": "arrays"
+  },
+  {
+    "question": "Which of the following are true",
+    "options": [
+      "we can use printf in ts(typescript)",
+      "we can use console.log in ts(typescript)"
+    ],
+    "correct": "we can use console.log in ts(typescript)"
+  },
+  {
+    "question": "Which of the following are array methods",
+    "options": [
+      "Unshift()",
+      "Sort()",
+      "Pop()",
+      "All the above"
+    ],
+    "correct": "All the above"
+  },
+  {
+    "question": "Supertype of all datatypes in typescript",
+    "options": [
+      "number",
+      "Enum",
+      "Void",
+      "Any"
+    ],
+    "correct": "Any"
+  },
+  {
+    "question": "Which of the following are true",
+    "options": [
+      "var a=new String(hii)",
+      "var b=new array[1]",
+      "var a:String=hii;",
+      "All the above"
+    ],
+    "correct": "var b=new array[1]"
+  },
+  {
+    "question": "List some features of Typescript?",
+    "options": [
+      "Typescript can be compiled to all major versions of Javascript(ES3,ES5,ES6,ES7)",
+      "Typescript can be used for cross –browser development and is an open source project",
+      "Typescript is a superset of JavaScript that provides typed nature to your code",
+      "All of the above"
+    ],
+    "correct": "All of the above"
+  },
+  {
+    "question": "What are the components of TypeScript?",
+    "options": [
+      "TypeScript Language",
+      "TypeScript Compiler",
+      "TypeScript Language Service",
+      "All of these"
+    ],
+    "correct": "All of these"
+  }
+]

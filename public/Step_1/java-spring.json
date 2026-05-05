@@ -1,0 +1,1141 @@
+[
+    {
+        "question": "Does Spring provide programmatic transaction management? Select a unique answer.",
+        "options": [
+            "Yes using the @Transactional bean post processor",
+            "Yes with the TransactionTemplate class",
+            "Yes with the TransactionService class",
+            "Yes using the @Transactional bean post processor"
+        ],
+        "correct": "Yes with the TransactionTemplate class"
+    },
+    {
+        "question": "How could you externalize constants from a Spring configuration file or a Spring annotation into a .properties file? Select one or more",
+        "options": [
+            "By using the <context:property-placeholder /> tag",
+            "By using the <context:external-properties /> tag",
+            "By declaring the ConstantPlaceholderConfigurer bean post processor",
+            "By using the c: namespace"
+        ],
+        "correct": "By using the <context:property-placeholder /> tag"
+    },
+    {
+        "question": "To validate Java beans in a web application using annotations, which approach can be used?",
+        "options": [
+            "XML",
+            "Java Based",
+            "JAR-303 standard",
+            "All of the mentioned"
+        ],
+        "correct": "All of the mentioned"
+    },
+    {
+        "question": "Annotation used to indicate a field has to have a minimum of 2 characters.",
+        "options": [
+            "@NotNull",
+            "@Size",
+            "@MaxSize",
+            "@size"
+        ],
+        "correct": "@Size"
+    },
+    {
+        "question": "Spring MVC supports generating Excel files using which of the following libraries.",
+        "options": [
+            "Apache POI library",
+            "JExcelAPI library",
+            "All of the mentioned",
+            "None of the mentioned"
+        ],
+        "correct": "All of the mentioned"
+    },
+    {
+        "question": "Interface for Dispatcher Servlet to auto detect view resolver beans.",
+        "options": [
+            "localeResolver",
+            "tiles",
+            "ViewResolver",
+            "none of the mentioned."
+        ],
+        "correct": "ViewResolver"
+    },
+    {
+        "question": "By default, XmlViewResolver loads view beans from /WEB-INF/views.xml which is final.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": "False"
+    },
+    {
+        "question": "Which of the following views cannot be resolved by InternalResourceViewResolver?",
+        "options": [
+            "redirect",
+            "redirect:prefix",
+            "redirect:suffix",
+            "all of the mentioned"
+        ],
+        "correct": "redirect"
+    },
+    {
+        "question": "Annotation which allows a controller’s field to be assigned using Spring Expression Language(SpEL)",
+        "options": [
+            "@Value",
+            "@After",
+            "@Default",
+            "@None"
+        ],
+        "correct": "@Value"
+    },
+    {
+        "question": "SpEL statements are recognizable by using a notation in the form '#{ SpEL statement }'.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": "True"
+    },
+    {
+        "question": "To publish a REST service with Spring, you are usually:",
+        "options": [
+            "publishing an application’s data as a REST service",
+            "accessing data from third-party REST services",
+            "none of the mentioned",
+            "all of the mentioned"
+        ],
+        "correct": "publishing an application’s data as a REST service"
+    },
+    {
+        "question": "Publishing an application’s data as a REST service requires which of the following?",
+        "options": [
+            "@RequestMapping",
+            "@PathVariable",
+            "All of the mentioned",
+            "None of the mentioned"
+        ],
+        "correct": "All of the mentioned"
+    },
+    {
+        "question": "Which annotation is added as an input parameter to the handler method to extract values from the URI?",
+        "options": [
+            "@PathVariable",
+            "@Path",
+            "@PathLocale",
+            "None of the mentioned"
+        ],
+        "correct": "@PathVariable"
+    },
+    {
+        "question": "Which of the following statements is true regarding the @ResponseStatus annotation?",
+        "options": [
+            "@ResponseStatus is detected on nested exceptions",
+            "The ExceptionHandlerExceptionResolver uses the @ResponseStatus annotation to map exception to HTTP status code",
+            "A controller handler is annotated with the @ResponseStatus, the response status set by RedirectView takes precedence",
+            "The @ResponseStatus annotation can go on a @RequestMapping method or a @RestController class or a business exception class."
+        ],
+        "correct": "@ResponseStatus is detected on nested exceptions"
+    },
+    {
+        "question": "Default localeResolver used by Spring.",
+        "options": [
+            "AcceptHeaderLocale",
+            "AcceptHeader",
+            "AcceptHeaderLocaleResolver",
+            "AcceptLocaleResolver"
+        ],
+        "correct": "AcceptHeaderLocaleResolver"
+    },
+    {
+        "question": "Which of the following is an alternative way to resolve locales in Spring?",
+        "options": [
+            "AcceptHeaderLocale",
+            "AcceptHeader",
+            "AcceptHeaderLocaleResolver",
+            "SessionLocaleResolver"
+        ],
+        "correct": "SessionLocaleResolver"
+    },
+    {
+        "question": "Which general-purpose class allows a response to be rendered using a marshaller?",
+        "options": [
+            "MarshallingView",
+            "Marshaling",
+            "View",
+            "All of the mentioned"
+        ],
+        "correct": "MarshallingView"
+    },
+    {
+        "question": "Which annotation allows the Jaxb2Marshaller marshaller to detect a class’s (i.e., object’s) fields?",
+        "options": [
+            "@XmlRootElement",
+            "@XmlRoot",
+            "@NotNull",
+            "None of the mentioned"
+        ],
+        "correct": "@XmlRootElement"
+    },
+    {
+        "question": "How do you auto-inject into a field a Spring bean by its name? Select one or more answer choices.",
+        "options": [
+            "By using both the @Autowired and the @Qualifier Spring annotations",
+            "By using the @Autowired annotation and naming the field with the bean name",
+            "With the name attribute of the @Autowired annotation",
+            "By using the single @Qualifier annotation"
+        ],
+        "correct": "By using both the @Autowired and the @Qualifier Spring annotations"
+    },
+    {
+        "question": "Considering 2 classes AccountServiceImpl and ClientServiceImpl Any of these 2 classes inherits from each  other what is the result of the pointcut: execution(* *..AccountServiceImpl.update(..)) && execution(* *..ClientServiceImpl.update(..))?",
+        "options": [
+            "No joint point is defined",
+            "Matches public update methods of the 2 classes",
+            "Matches any update methods of the 2 classes",
+            "Matches any update methods with one or more arguments"
+        ],
+        "correct": "No joint point is defined"
+    },{
+        "question": "Select the right statement about referring a Spring configuration file inside the package com.example.myapp in the following example: ApplicationContext context = new ClassPathXmlApplicationContext(\"classpath:/com.example.myapp.config.xml\");",
+        "options": [
+            "all of the above",
+            "The classpath: prefix could be omitted",
+            "Package name using the dot character is not well formatted",
+            "The slash character preceding com.example could be omit"
+        ],
+        "correct": "all of the above"
+    },
+    {
+        "question": "Using the Spring AOP framework, what is the visibility of the method matched by the following join point?\n@Pointcut(\"execution(* *(..))\")\nprivate void anyOperation() {};",
+        "options": [
+            "Public methods",
+            "All methods, whereas their visibility",
+            "All methods, except private method",
+            "Protected and public methods"
+        ],
+        "correct": "Public methods"
+    },
+    {
+        "question": "What is the name of the bean defined in the following configuration class?\n@Configuration\npublic class ApplicationConfig {\n@Autowired \nprivate DataSource dataSource;\n@Bean\nClientRepository clientRepository() {\nClientRepository accountRepository = new JpaClientRepository();\naccountRepository.setDataSource(dataSource);\nreturn accountRepository;}\n}",
+        "options": [
+            "clientRepository",
+            "JpaClientRepository",
+            "jpaClientRepository",
+            "Two beans are defined: a data source and a repository"
+        ],
+        "correct": "clientRepository"
+    },
+    {
+        "question": "Which of the following is true regarding the provided Spring Controller\n@RestController\npublic class OwnerController {\n@RequestMapping(value = \"/owner/{ownerId}\", method = RequestMethod.POST)\n@ResponseBody\npublic Owner findOwner(@PathVariable(\"ownerId\") int ownerId) {\nreturn new Owner();\n}\n}",
+        "options": [
+            "RequestMethod.GET method is more accurate than POST",
+            "@ResponseBody could be removed (it is implicit in @RestController)",
+            "@PathVariable should be replaced with the @PathParam annotation",
+            "Returning the 201 HTTP status code is better"
+        ],
+        "correct": "RequestMethod.GET method is more accurate than POST"
+    },
+    {
+        "question": "What is advice in Spring AOP?",
+        "options": [
+            "An action taken by an aspect at a particular join point",
+            "A point during the execution of a program",
+            "An aspect and a pointcut",
+            "A predicate that matches join points"
+        ],
+        "correct": "An action taken by an aspect at a particular join point"
+    },
+    {
+        "question": "Which method signature is easiest to write a unit test for when handling web requests?",
+        "options": [
+            "@RequestMapping(\"/displayAccount\") String displayAccount(@RequestParam(\"accountId\") int id, Model model)",
+            "void displayAccount(HttpServletRequest req, HttpServletResponse resp)",
+            "void displayAccount(HttpServletRequest req, HttpSession Session)",
+            "@RequestMapping(\"/displayAccount\") String displayAccount(@PathVariable(\"accountId\") int id, Model model)"
+        ],
+        "correct": "@RequestMapping(\"/displayAccount\") String displayAccount(@RequestParam(\"accountId\") int id, Model model)"
+    },
+    {
+        "question": "Select the method signature that matches with the following pointcut: execution(* com.test.service..*.*(*))",
+        "options": [
+            "void com.test.service.MyServiceImpl#transfert(Money amount)",
+            "void com.test.service.account.MyServiceImpl#transfert(Money amount)",
+            "void com.test.service.MyServiceImpl#transfert(Account account, Money amount)",
+            "void com.test.service.account.MyServiceImpl#transfert(Account account, Money amount)"
+        ],
+        "correct": "void com.test.service.MyServiceImpl#transfert(Money amount)"
+    },
+    {
+        "question": "In a Spring XML configuration file , which of the following is correct?\n<bean class=\"com.spring.service.BankServiceImpl\"\np:bankName=\"NationalBank\">\n</bean>",
+        "options": [
+            "The p namespace has to be declared",
+            "NationalBank is a scalar value",
+            "Bean id is bankServiceImpl",
+            "The BankServiceImpl references a NationalBank bean"
+        ],
+        "correct": "The p namespace has to be declared"
+    },
+    {
+        "question": ". Given the following configuration class, what are the correct affirmations? Select one or more answers. \npublic class ApplicationConfig {\nprivate DataSource dataSource;\n@Autowired\npublic ApplicationConfig(DataSource dataSource) {\nthis.dataSource = dataSource;\n}\n@Bean(name=\"clientRepository\")\nClientRepository jpaClientRepository() {\nreturn new JpaClientRepository();\n}\n}",
+        "options": [
+            "Configuration annotation is missing",
+            "Default or no-arg constructor is missing",
+            "@Bean name is ambiguous",
+            "@Bean scope is prototype"
+        ],
+        "correct": "Configuration annotation is missing"
+    },
+    {
+        "question": "Using JdbcTemplate, what is the Spring provided class you will use for result set parsing and merging rows into a single object?",
+        "options": [
+            "ResultSetExtractor",
+            "RowMapper",
+            "RowCallbackHandler",
+            "ResultSetMapper"
+        ],
+        "correct": "RowMapper"
+    },{
+        "question": "Which of the following is correct about dependency injection?",
+        "options": [
+            "It helps in decoupling application objects from each other.",
+            "It helps in deciding the dependencies of objects.",
+            "It stores objects states in a database.",
+            "It stores object states in the file system."
+        ],
+        "correct": "It helps in decoupling application objects from each other."
+    },
+    {
+        "question": "Which are the correct implementation classes of ApplicationContext?",
+        "options": [
+            "FileSystemXmlApplicationContext, ClassPathXmlApplicationContext, WebXmlApplicationContext",
+            "FileSystemApplicationContext, ClassPathApplicationContext, WebApplicationContext",
+            "AdvancedApplicationContext, FileApplicationContext",
+            "FileSystemApplicationContext, ClassPathApplicationContext"
+        ],
+        "correct": "FileSystemXmlApplicationContext, ClassPathXmlApplicationContext, WebXmlApplicationContext"
+    },
+    {
+        "question": "What is true about <set> collection configuration elements?",
+        "options": [
+            "This helps in wiring a list of values, allowing duplicates.",
+            "This helps in wiring a list of values but without any duplicates.",
+            "This can be used to inject a collection of name-value pairs where name and value can be of any type.",
+            "This can be used to inject a collection of name-value pairs where the name and value are both Strings."
+        ],
+        "correct": "This helps in wiring a list of values but without any duplicates."
+    },
+    {
+        "question": "What is the constructor mode of autowiring?",
+        "options": [
+            "Autowiring by property name.",
+            "Spring first tries to wire using autowire by constructor, if it does not work, it tries byType.",
+            "Autowiring by property type.",
+            "Similar to byType, but type applies to constructor arguments; if no unique match exists, a fatal error is raised."
+        ],
+        "correct": "Similar to byType, but type applies to constructor arguments; if no unique match exists, a fatal error is raised."
+    },
+    {
+        "question": "What is true about @Autowired annotation?",
+        "options": [
+            "The @Autowired annotation can be used to autowire bean on the setter method.",
+            "This annotation provides more fine-grained control over where and how autowiring should be accomplished.",
+            "The @Autowired annotation can be used to autowire bean on methods with arbitrary names.",
+            "All of the above."
+        ],
+        "correct": "This annotation provides more fine-grained control over where and how autowiring should be accomplished."
+    },
+    {
+        "question": "What are the different points where weaving can be applied in AOP?",
+        "options": [
+            "Compile time, load time",
+            "Compile time, run time",
+            "Run time",
+            "Compile time, load time, and run time"
+        ],
+        "correct": "Compile time, load time, and run time"
+    },
+    {
+        "question": "What is Spring MVC framework?",
+        "options": [
+            "Spring MVC framework is Model-Value-Class architecture.",
+            "The Spring web MVC framework provides model-view-controller architecture and ready components for web applications.",
+            "Spring MVC framework is used for Transaction management for Web Applications.",
+            "Spring MVC framework is used for AOP for Web Applications."
+        ],
+        "correct": "The Spring web MVC framework provides model-view-controller architecture and ready components for web applications."
+    },
+    {
+        "question": "By default, a Spring bean is lazily loaded.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": "False"
+    },
+    {
+        "question": "What is the scope of a bean in a portlet context?",
+        "options": [
+            "session",
+            "global-session",
+            "prototype",
+            "request"
+        ],
+        "correct": "global-session"
+    },
+    {
+        "question": "Which of the following classes can be used to call Stored Procedures in Spring?",
+        "options": [
+            "SPHelper",
+            "JdbcTemplateCall",
+            "JdbcTemplate",
+            "SimpleJdbcCall"
+        ],
+        "correct": "SimpleJdbcCall"
+    },{
+        "question": "What is a ContextRefreshedEvent event?",
+        "options": [
+            "This event is published when the Servlet Context is either initialized or refreshed.",
+            "This event is published when the HTTP Request is received.",
+            "This event is published when the HTTP Response is returned.",
+            "This event is published when the ApplicationContext is either initialized or refreshed."
+        ],
+        "correct": "This event is published when the ApplicationContext is either initialized or refreshed."
+    },
+    {
+        "question": "What is a ContextStartedEvent event?",
+        "options": [
+            "This event is published when the Servlet Context is either initialized or refreshed.",
+            "This event is published when the HTTP Request is received.",
+            "This event is published when the ApplicationContext is started using the start() method.",
+            "This event is published when the HTTP Response is returned."
+        ],
+        "correct": "This event is published when the ApplicationContext is started using the start() method."
+    },
+    {
+        "question": "What is a ContextStoppedEvent event?",
+        "options": [
+            "This event is published when the Servlet Context is either initialized or refreshed.",
+            "This event is published when the ApplicationContext is stopped using the stop() method.",
+            "This event is published when the HTTP Request is received.",
+            "This event is published when the HTTP Response is returned."
+        ],
+        "correct": "This event is published when the ApplicationContext is stopped using the stop() method."
+    },
+    {
+        "question": "What is a ContextClosedEvent event?",
+        "options": [
+            "This event is published when the Servlet Context is either initialized or refreshed.",
+            "This event is published when the HTTP Request is received.",
+            "This event is published when the HTTP Response is returned.",
+            "This event is published when the ApplicationContext is closed using the close() method."
+        ],
+        "correct": "This event is published when the ApplicationContext is closed using the close() method."
+    },
+    {
+        "question": "What is RequestHandledEvent?",
+        "options": [
+            "This event is published when the Servlet Context is either initialized or refreshed.",
+            "This event is published when the HTTP Request is received.",
+            "This event is published when the HTTP session is initialized or refreshed.",
+            "This event is published when the HTTP Request is serviced."
+        ],
+        "correct": "This event is published when the HTTP Request is serviced."
+    },
+    {
+        "question": "In Spring AOP, what is an Introduction?",
+        "options": [
+            "A point in your application where you can plug-in the AOP aspect.",
+            "A method used to inject values in objects.",
+            "An element that is not invoked during program execution.",
+            "A feature that allows you to add new methods or attributes to existing classes."
+        ],
+        "correct": "A feature that allows you to add new methods or attributes to existing classes."
+    },
+    {
+        "question": "What is the primary role of the @Controller annotation?",
+        "options": [
+            "The @Controller annotation indicates that a particular class serves the role of a controller.",
+            "The @Controller annotation indicates how to control the transaction management.",
+            "The @Controller annotation indicates how to control the dependency injection.",
+            "The @Controller annotation indicates how to control the aspect programming."
+        ],
+        "correct": "The @Controller annotation indicates that a particular class serves the role of a controller."
+    },
+    {
+        "question": "What is the prototype scope in Spring?",
+        "options": [
+            "This scopes a single bean definition to have any number of object instances.",
+            "This scopes the bean definition to a single instance per HTTP Request.",
+            "This scopes the bean definition to a single instance per HTTP Session.",
+            "This scopes the bean definition to a single instance per Application session."
+        ],
+        "correct": "This scopes a single bean definition to have any number of object instances."
+    },
+    {
+        "question": "What is true about <props> collection configuration elements?",
+        "options": [
+            "This helps in wiring a list of values, allowing duplicates.",
+            "This helps in wiring a list of values but without any duplicates.",
+            "This can be used to inject a collection of name-value pairs where keys and values are any type.",
+            "This can be used to inject a collection of name-value pairs where both keys and values are Strings."
+        ],
+        "correct": "This can be used to inject a collection of name-value pairs where both keys and values are Strings."
+    },
+    {
+        "question": "How should one handle the graceful shutdown of Spring IoC containers in a non-web application?",
+        "options": [
+            "Using shutdownHook()",
+            "Using shutdownHandler()",
+            "Using registerHook()",
+            "Using registerShutdownHook()"
+        ],
+        "correct": "Using registerShutdownHook()"
+    },
+    {
+        "question": "By default, a Spring bean is eagerly loaded (True/False).",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": "True"
+    },
+    {
+        "question": "What is true about the BeanPostProcessor?",
+        "options": [
+            "It is a concrete class.",
+            "It is an interface.",
+            "It is an abstract class.",
+            "None of the above."
+        ],
+        "correct": "It is an interface."
+    },
+    {
+        "question": "Which set of tags is used to inject Java Collections in Spring XML configuration?",
+        "options": [
+            "list, set, map or props tag.",
+            "lit, set, map or collection tag.",
+            "list, set, props or collection tag.",
+            "list, collection, map or props tag."
+        ],
+        "correct": "list, set, map or props tag."
+    },
+    {
+        "question": "Which class is used to map a database row to a Java object in Spring?",
+        "options": [
+            "ResultSet",
+            "RowMapper",
+            "RowSetMapper",
+            "ResultSetMapper"
+        ],
+        "correct": "RowMapper"
+    },
+    {
+        "question": "How can the bean life cycle be controlled in Spring?",
+        "options": [
+            "Using init() and destroy() methods only",
+            "Using InitializingBean and DisposableBean interfaces only",
+            "Using @PostConstruct and @PreDestroy annotations only",
+            "Using All of the above (XML, Interfaces, and Annotations)"
+        ],
+        "correct": "Using All of the above (XML, Interfaces, and Annotations)"
+    },
+    {
+        "question": "What is the scope of a bean in a portlet context?",
+        "options": [
+            "session",
+            "global-session",
+            "prototype",
+            "request"
+        ],
+        "correct": "global-session"
+    },
+    {
+        "question": "What is a ContextStoppedEvent event?",
+        "options": [
+            "This event is published when the Servlet Context is either initialized or refreshed.",
+            "This event is published when the ApplicationContext is stopped using the stop() method.",
+            "This event is published when the HTTP Request is received.",
+            "This event is published when the HTTP Response is returned."
+        ],
+        "correct": "This event is published when the ApplicationContext is stopped using the stop() method."
+    },
+    {
+        "question": "Which ORM frameworks does Spring support?",
+        "options": [
+            "Hibernate",
+            "iBatis",
+            "JPA",
+            "All of the above"
+        ],
+        "correct": "All of the above"
+    },
+    {
+        "question": "What is true about <map> collection configuration elements?",
+        "options": [
+            "This helps in wiring a list of values, allowing duplicates.",
+            "This helps in wiring a list of values but without any duplicates.",
+            "This can be used to inject a collection of name-value pairs where name and value can be of any type.",
+            "This tag is not supported."
+        ],
+        "correct": "This can be used to inject a collection of name-value pairs where name and value can be of any type."
+    },
+    {
+        "question": "The Spring Core container has AOP as one of its internal modules (True/False).",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": "False"
+    },
+    {
+        "question": "Can you inject null and empty string values in Spring?",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "correct": "Yes"
+    },
+    {
+        "question": "Which of the following describes the Spring framework?",
+        "options": [
+            "Spring framework is a lightweight framework.",
+            "Spring framework is a heavy weight framework."
+        ],
+        "correct": "Spring framework is a lightweight framework."
+    },
+    {
+        "question": "Which class acts as the primary IoC Container in a Spring application?",
+        "options": [
+            "ServletContext",
+            "DispatcherServlet",
+            "ApplicationContext",
+            "None of the above"
+        ],
+        "correct": "ApplicationContext"
+    },
+    {
+        "question": "What is the scope for a stateless bean in Spring?",
+        "options": [
+            "global-session",
+            "singleton",
+            "prototype",
+            "request"
+        ],
+        "correct": "singleton"
+    },
+    {
+        "question": "Annotations work as metadata for classes, and Spring uses them as an alternative to XML for declarative configuration.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": "True"
+    },
+    {
+        "question": "In which architectural layer is the @Controller annotation typically used?",
+        "options": [
+            "Service layer",
+            "Presentation layer",
+            "Session layer",
+            "Business layer"
+        ],
+        "correct": "Presentation layer"
+    },
+    {
+        "question": "Which of the following statements regarding the Spring container interfaces is true?",
+        "options": [
+            "ApplicationContext extends BeanFactory.",
+            "None of these.",
+            "ApplicationContext implements BeanFactory.",
+            "BeanFactory extends ApplicationContext."
+        ],
+        "correct": "ApplicationContext extends BeanFactory."
+    },
+    {
+        "question": "What is singleton scope in Spring?",
+        "options": [
+            "This scopes the bean definition to a single instance per Spring IoC container.",
+            "This scopes the bean definition to a single instance per HTTP Request.",
+            "This scopes the bean definition to a single instance per HTTP Session.",
+            "This scopes the bean definition to a single instance per HTTP Application/ Global session."
+        ],
+        "correct": "This scopes the bean definition to a single instance per Spring IoC container."
+    },
+    {
+        "question": "What is the prototype scope in Spring?",
+        "options": [
+            "This scopes a single bean definition to have any number of object instances.",
+            "This scopes the bean definition to a single instance per HTTP Request.",
+            "This scopes the bean definition to a single instance per HTTP Session.",
+            "This scopes the bean definition to a single instance per Application session."
+        ],
+        "correct": "This scopes a single bean definition to have any number of object instances."
+    },
+    {
+        "question": "What is the request scope in Spring?",
+        "options": [
+            "This scopes a bean definition to an HTTP request.",
+            "This scopes the bean definition to Spring IoC container.",
+            "This scopes the bean definition to HTTP Session.",
+            "This scopes the bean definition HTTP Application/ Global session."
+        ],
+        "correct": "This scopes a bean definition to an HTTP request."
+    },
+    {
+        "question": "What is session scope in Spring?",
+        "options": [
+            "This scopes a bean definition to an HTTP session.",
+            "This scopes the bean definition to Spring IoC container.",
+            "This scopes the bean definition to HTTP request.",
+            "This scopes the bean definition to HTTP Application/ Global session."
+        ],
+        "correct": "This scopes a bean definition to an HTTP session."
+    },
+    {
+        "question": "What is global-session scope in Spring?",
+        "options": [
+            "This scopes a bean definition to an HTTP Application/ Global session.",
+            "This scopes the bean definition to Spring IoC container.",
+            "This scopes the bean definition to HTTP request.",
+            "This scopes the bean definition to HTTP Session."
+        ],
+        "correct": "This scopes a bean definition to an HTTP Application/ Global session."
+    },
+    {
+        "question": "What is true about the <map> collection configuration element?",
+        "options": [
+            "This helps in wiring a list of values, allowing duplicates.",
+            "This helps in wiring a list of values but without any duplicates.",
+            "This can be used to inject a collection of name-value pairs where name and value can be of any type.",
+            "This can be used to inject a collection of name-value pairs where the name and value are both Strings."
+        ],
+        "correct": "This can be used to inject a collection of name-value pairs where name and value can be of any type."
+    },
+    {
+        "question": "What is true about the <props> collection configuration element?",
+        "options": [
+            "This helps in wiring a list of values, allowing duplicates.",
+            "This helps in wiring a list of values but without any duplicates.",
+            "This can be used to inject a collection of name-value pairs where name and value can be of any type.",
+            "This can be used to inject a collection of name-value pairs where the name and value are both Strings."
+        ],
+        "correct": "This can be used to inject a collection of name-value pairs where the name and value are both Strings."
+    },
+    {
+        "question": "In Spring AOP, what is a Join point?",
+        "options": [
+            "This represents a point in your application which joins two objects.",
+            "This represents a point in your object where you join values.",
+            "This represents a point in your object where you join injected values.",
+            "This represents a point in your application where you can plug-in the AOP aspect."
+        ],
+        "correct": "This represents a point in your application where you can plug-in the AOP aspect."
+    },
+    {
+        "question": "In Spring AOP, what is Advice?",
+        "options": [
+            "This is the way to instruct an object to behave in a certain manner.",
+            "This is used to inject values in objects.",
+            "This is the actual action to be taken either before or after the method execution.",
+            "This is not invoked during program execution by Spring AOP framework."
+        ],
+        "correct": "This is the actual action to be taken either before or after the method execution."
+    },
+    {
+        "question": "In Spring AOP, what is a Pointcut?",
+        "options": [
+            "This represents a point in your application where you can plug-in the AOP aspect.",
+            "This is a set of one or more join points where an advice should be executed.",
+            "This is used to inject values in objects.",
+            "This is invoked during program execution by Spring AOP framework."
+        ],
+        "correct": "This is a set of one or more join points where an advice should be executed."
+    },
+    {
+        "question": "What is the Target object in AOP?",
+        "options": [
+            "A represents an object in your application where you can plug-in AOP aspect.",
+            "The object being advised by one or more aspects, which will always be a proxy object.",
+            "This is used to inject values in objects.",
+            "This is not invoked during program execution by Spring AOP framework."
+        ],
+        "correct": "The object being advised by one or more aspects, which will always be a proxy object."
+    },
+    {
+        "question": "What is Weaving in AOP?",
+        "options": [
+            "Weaving is the process of injecting values in objects to create an advised object.",
+            "Weaving is the process of linking aspects with other application types or objects to create an advised object.",
+            "This is used to inject values in objects.",
+            "Weaving is used to check object dependencies."
+        ],
+        "correct": "Weaving is the process of linking aspects with other application types or objects to create an advised object."
+    },
+    {
+        "question": "Which of the following aspects implementation does Spring support?",
+        "options": [
+            "XML Schema based aspect implementation",
+            "@AspectJ based aspect implementation",
+            "Both of the above.",
+            "None of the above."
+        ],
+        "correct": "Both of the above."
+    },
+    {
+        "question": "What are the types of transaction management that Spring supports?",
+        "options": [
+            "Programmatic transaction management",
+            "Declarative transaction management",
+            "Both of the above.",
+            "None of the above."
+        ],
+        "correct": "Both of the above."
+    },
+    {
+        "question": "What is the Spring MVC framework?",
+        "options": [
+            "A Model-Value-Class architecture used to bind model data with values.",
+            "A web framework providing model-view-controller architecture and components for flexible, loosely coupled web apps.",
+            "A framework used exclusively for transaction management in web applications.",
+            "A framework used exclusively for AOP in web applications."
+        ],
+        "correct": "A web framework providing model-view-controller architecture and components for flexible, loosely coupled web apps."
+    },
+    {
+        "question": "What is a DispatcherServlet in the context of Spring MVC?",
+        "options": [
+            "A servlet used for transaction management.",
+            "A servlet used for AOP.",
+            "A front controller that handles all HTTP requests and responses.",
+            "A servlet used for Dependency injection."
+        ],
+        "correct": "A front controller that handles all HTTP requests and responses."
+    },
+    {
+        "question": "What does ACID stand for in transactional management?",
+        "options": [
+            "Accurate, Controlled, Isolation, Durability",
+            "Atomicity, Consistency, Independent, Done",
+            "Atomicity, Consistency, Isolation, Durability",
+            "Accurate, Controlled, Independent, Done"
+        ],
+        "correct": "Atomicity, Consistency, Isolation, Durability"
+    },
+    {
+        "question": "Where is the DispatcherServlet traditionally defined in a Java web application?",
+        "options": [
+            "In the Beans configuration file.",
+            "In the web.xml file.",
+            "In Meta-inf/dispatcher.xml.",
+            "In Web-inf/dispatcher.xml."
+        ],
+        "correct": "In the web.xml file."
+    },
+    {
+        "question": "What is true about the BeanPostProcessor?",
+        "options": [
+            "It is a concrete class.",
+            "It is an interface.",
+            "It is an abstract class.",
+            "None of the above."
+        ],
+        "correct": "It is an interface."
+    },
+    {
+        "question": "What is the function of a BeanPostProcessor?",
+        "options": [
+            "It processes beans once a bean is initialized.",
+            "It defines callback methods for custom instantiation and dependency-resolution logic.",
+            "It processes beans once a bean is loaded.",
+            "It processes beans once a bean exits."
+        ],
+        "correct": "It defines callback methods for custom instantiation and dependency-resolution logic."
+    },
+    {
+        "question": "Can a Spring bean be configured to have an inner bean?",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": "True"
+    },
+    {
+        "question": "Can we inject 'value' and 'ref' together in a single bean definition?",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": "True"
+    },
+    {
+        "question": "Which class can be extended to create custom events in Spring?",
+        "options": [
+            "SpringEvent",
+            "Event",
+            "ApplicationEvent",
+            "None of the above"
+        ],
+        "correct": "ApplicationEvent"
+    },
+    {
+        "question": "Which of the following is a correct assertion about the Spring framework?",
+        "options": [
+            "Spring enables developers to develop enterprise-class applications using POJOs.",
+            "Spring is organized in a modular fashion.",
+            "Testing is simplified because environment-dependent code is moved into the framework.",
+            "All of the above."
+        ],
+        "correct": "All of the above."
+    },
+    {
+        "question": "What does AOP stand for?",
+        "options": [
+            "Aspect Oriented Programming",
+            "Any Object Programming",
+            "Asset Oriented Programming",
+            "Asset Oriented Protocol"
+        ],
+        "correct": "Aspect Oriented Programming"
+    },
+    {
+        "question": "What is true about cross-cutting concerns in AOP?",
+        "options": [
+            "They are functions that span multiple points of an application (e.g., logging).",
+            "They are conceptually separate from the application's business logic.",
+            "Logging is a classic example of a cross-cutting concern.",
+            "All of the above."
+        ],
+        "correct": "All of the above."
+    },
+    {
+        "question": "Which modules belong to the Spring Core Container?",
+        "options": [
+            "Beans, Core, Context, SpEL",
+            "Core, Context, ORM, Web",
+            "Core, Context, Aspects, Test",
+            "Bean, Core, Context, Test"
+        ],
+        "correct": "Beans, Core, Context, SpEL"
+    },
+    {
+        "question": "Which modules belong to the Data Access/Integration layer?",
+        "options": [
+            "JDBC, ORM, OXM, JMS, Transactions",
+            "JDBC, ORM, OXM, JMS",
+            "JDBC, ORM, Web, Beans",
+            "JDBC, ORM, OXM, JMS"
+        ],
+        "correct": "JDBC, ORM, OXM, JMS, Transactions"
+    },
+    {
+        "question": "Which modules belong to the Spring Web layer?",
+        "options": [
+            "WebSocket, Servlet, Web, Portlet",
+            "WebSocket, Servlet, Web-MVC, Web",
+            "HTML, JSP, WEB, Portlet",
+            "HTML, Servlet, WEB, Portlet"
+        ],
+        "correct": "WebSocket, Servlet, Web, Portlet"
+    },
+    {
+        "question": "Which of the following statements regarding Spring modules is correct?",
+        "options": [
+            "The JDBC module removes the need for tedious JDBC related coding.",
+            "The ORM module provides integration layers for APIs like JPA and Hibernate.",
+            "The JMS module contains features for producing and consuming messages.",
+            "All of the above."
+        ],
+        "correct": "All of the above."
+    },
+    {
+        "question": "Which types of Dependency Injection does Spring support?",
+        "options": [
+            "Constructor based, Setter based",
+            "Constructor based, Setter based, Getter Based",
+            "Setter based, Getter based, Properties based",
+            "Constructor based, Setter based, Properties based"
+        ],
+        "correct": "Constructor based, Setter based"
+    },
+    {
+        "question": "Which are the primary IoC containers in Spring?",
+        "options": [
+            "BeanFactory, ApplicationContext",
+            "BeanFactory, ApplicationContext, IocContextFactory",
+            "BeanFactory, BeanContext, IocContextFactory",
+            "BeanFactory, ApplicationContext, BeanContext"
+        ],
+        "correct": "BeanFactory, ApplicationContext"
+    },
+    {
+        "question": "Which of the following stands true for Spring beans?",
+        "options": [
+            "Spring beans are managed by the Spring IoC container.",
+            "Spring beans are instantiated, assembled, and otherwise managed by a Spring IoC container.",
+            "Spring beans are simple POJOs.",
+            "All of the above."
+        ],
+        "correct": "All of the above."
+    },
+    {
+        "question": "What are the ways to provide configuration metadata to Spring?",
+        "options": [
+            "XML Based configuration file.",
+            "Annotation based configuration.",
+            "Java based configuration.",
+            "All of the above."
+        ],
+        "correct": "All of the above."
+    },
+    {
+        "question": "What is bean scope in Spring?",
+        "options": [
+            "Bean scope forces Spring to produce a new bean instance as per the scope defined.",
+            "Bean scope defines the accessibility of bean in a java class.",
+            "Bean scope defines the accessibility of bean in a java package.",
+            "Bean scope defines the accessibility of bean in a web application."
+        ],
+        "correct": "Bean scope forces Spring to produce a new bean instance as per the scope defined."
+    },
+    {
+        "question": "What is 'no' mode of autowiring?",
+        "options": [
+            "Default setting which means no autowiring; explicit bean references must be used.",
+            "Autowiring by property name.",
+            "Spring first tries to wire by constructor, then byType.",
+            "Similar to byType, but applies to constructor arguments."
+        ],
+        "correct": "Default setting which means no autowiring; explicit bean references must be used."
+    },
+    {
+        "question": "What is 'byName' mode of autowiring?",
+        "options": [
+            "No autowiring; uses explicit bean reference.",
+            "Spring tries to match and wire properties with beans defined by the same names in the configuration file.",
+            "Spring first tries constructor autowiring, then byType.",
+            "Similar to byType, but applies to constructor arguments."
+        ],
+        "correct": "Spring tries to match and wire properties with beans defined by the same names in the configuration file."
+    },
+    {
+        "question": "What is 'byType' mode of autowiring?",
+        "options": [
+            "No autowiring; uses explicit bean reference.",
+            "Spring matches properties by name.",
+            "Spring first tries constructor autowiring, then byType.",
+            "Spring matches and wires a property if its type matches exactly one bean in the configuration file."
+        ],
+        "correct": "Spring matches and wires a property if its type matches exactly one bean in the configuration file."
+    },
+    {
+        "question": "What is the 'constructor' mode of autowiring?",
+        "options": [
+            "Wires properties with the same names.",
+            "First tries constructor, then byType.",
+            "Wires property if type matches exactly one bean name.",
+            "Similar to byType, but applies to constructor arguments. A fatal error is raised if no unique bean is found."
+        ],
+        "correct": "Similar to byType, but applies to constructor arguments. A fatal error is raised if no unique bean is found."
+    },
+    {
+        "question": "What is 'autodetect' mode of autowiring?",
+        "options": [
+            "Applies only to constructor arguments.",
+            "Wires properties with same names.",
+            "Spring first tries constructor autowiring; if it doesn't work, it tries autowiring byType.",
+            "Matches exactly one bean name in the configuration file."
+        ],
+        "correct": "Spring first tries constructor autowiring; if it doesn't work, it tries autowiring byType."
+    },
+    {
+        "question": "Which is the correct implementation class of BeanFactory?",
+        "options": [
+            "XmlBeanFactory",
+            "ClassPathBeanFactory",
+            "FileSystemBeanFactory",
+            "AdvancedBeanFactory"
+        ],
+        "correct": "XmlBeanFactory"
+    },
+    {
+        "question": "What does the @Required annotation mean?",
+        "options": [
+            "The property must be populated by the user.",
+            "The property is required while saving data to the database.",
+            "The affected bean property must be populated at configuration time through explicit values or autowiring.",
+            "The property is required while serializing the bean."
+        ],
+        "correct": "The affected bean property must be populated at configuration time through explicit values or autowiring."
+    },
+    {
+        "question": "What is true about the @Autowired annotation?",
+        "options": [
+            "It can be used to autowire a bean on the setter method.",
+            "It provides more fine-grained control over where and how autowiring should be accomplished.",
+            "It can be used on methods with arbitrary names and multiple arguments.",
+            "All of the above."
+        ],
+        "correct": "This annotation provides more fine-grained control over where and how autowiring should be accomplished."
+    },
+    {
+        "question": "In Spring AOP, what is an Aspect?",
+        "options": [
+            "A way to perform dependency injection.",
+            "A module which has a set of APIs providing cross-cutting requirements.",
+            "A specific tool used only for logging information.",
+            "A class that represents the properties of a Spring application."
+        ],
+        "correct": "A module which has a set of APIs providing cross-cutting requirements."
+    },
+    {
+        "question": "What is a Join point in Spring AOP?",
+        "options": [
+            "A point in your application which joins two objects.",
+            "A point in your object where you join values.",
+            "A point in your object where you join injected values.",
+            "A point in your application where you can plug-in an AOP aspect."
+        ],
+        "correct": "A point in your application where you can plug-in an AOP aspect."
+    },
+    {
+        "question": "What is a Pointcut in Spring AOP?",
+        "options": [
+            "A point in your application where you can plug-in an AOP aspect.",
+            "A set of one or more join points where an advice should be executed.",
+            "A method used to inject values in objects.",
+            "A specific command invoked during program execution by the framework."
+        ],
+        "correct": "A set of one or more join points where an advice should be executed."
+    },
+    {
+        "question": "Which of these operations instruct the IOC container to create a bean instance?",
+        "options": [
+            "The initialization method",
+            "The destruction method",
+            "The lazy-initialization mode",
+            "The auto-wiring mode",
+            "None of the above"
+        ],
+        "correct": "None of the above"
+    },
+    {
+        "question": "Which interface in Spring MVC ensures that the implementation is detected?",
+        "options": [
+            "WebApplicationInitializer",
+            "WebInitializer",
+            "XmlWebApplicationContext",
+            "AbstractAnnotationConfigDispatcherServletInitializer",
+            "None of the above"
+        ],
+        "correct": "AbstractAnnotationConfigDispatcherServletInitializer"
+    },
+    {
+        "question": "The getModelMap() method of ModelAndView returns an instance of which class?",
+        "options": [
+            "Empty",
+            "Http",
+            "ModelMap",
+            "Map"
+        ],
+        "correct": "ModelMap"
+    }
+]

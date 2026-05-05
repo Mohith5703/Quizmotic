@@ -1,0 +1,502 @@
+[
+    {
+        "question": "Which of the following correctly describes the structure of a document in MongoDB?",
+        "options": [
+            "Tabular format with rows and columns",
+            "JSON-like format with key-value pairs",
+            "XML format with nested tags",
+            "Key-value store with no schema"
+        ],
+        "correct": "JSON-like format with key-value pairs"
+    },
+    {
+        "question": "What is the default port on which MongoDB runs?",
+        "options": [
+            "27017",
+            "3306",
+            "5432",
+            "8080"
+        ],
+        "correct": "27017"
+    },
+    {
+        "question": "Which command is used to switch to a specific database in MongoDB shell?",
+        "options": [
+            "switch db_name",
+            "change db_name",
+            "use db_name",
+            "select db_name"
+        ],
+        "correct": "use db_name"
+    },
+    {
+        "question": "Given a collection 'users', write a query to find all documents where the 'age' field is greater than 25.",
+        "options": [
+            "db.users.find({ age: { $gt: 25 } })",
+            "db.users.find({ age > 25 })",
+            "db.users.find({ age: { >: 25 } })",
+            "db.users.find({ $gt: { age: 25 } })"
+        ],
+        "correct": "db.users.find({ age: { $gt: 25 } })"
+    },
+    {
+        "question": "Which operator is used to update a field by incrementing its value in MongoDB?",
+        "options": [
+            "$inc",
+            "$add",
+            "$increment",
+            "$sum"
+        ],
+        "correct": "$inc"
+    },
+    {
+        "question": "What does the '_id' field represent in a MongoDB document?",
+        "options": [
+            "An optional user-defined identifier",
+            "A unique primary key automatically generated if omitted",
+            "A foreign key reference to another collection",
+            "A timestamp of document creation"
+        ],
+        "correct": "A unique primary key automatically generated if omitted"
+    },
+    {
+        "question": "Write a MongoDB query to delete all documents from the 'orders' collection where the 'status' field equals 'cancelled'.",
+        "options": [
+            "db.orders.remove({ status: 'cancelled' })",
+            "db.orders.delete({ status: 'cancelled' })",
+            "db.orders.deleteMany({ status: 'cancelled' })",
+            "Both A and C are correct"
+        ],
+        "correct": "Both A and C are correct"
+    },
+    {
+        "question": "Which of the following is NOT a valid MongoDB data type?",
+        "options": [
+            "ObjectId",
+            "Date",
+            "Array",
+            "Tuple"
+        ],
+        "correct": "Tuple"
+    },
+    {
+        "question": "What is the purpose of indexing in MongoDB?",
+        "options": [
+            "To encrypt data for security",
+            "To improve query performance",
+            "To enforce data types",
+            "To automatically shard data"
+        ],
+        "correct": "To improve query performance"
+    },
+    {
+        "question": "Which aggregation stage is used to filter documents in an aggregation pipeline?",
+        "options": [
+            "$filter",
+            "$where",
+            "$match",
+            "$search"
+        ],
+        "correct": "$match"
+    },
+    {
+        "question": "Given a collection 'products', write a query to sort all documents by 'price' in descending order.",
+        "options": [
+            "db.products.sort({ price: -1 })",
+            "db.products.find().sort({ price: -1 })",
+            "db.products.find().orderBy({ price: 'desc' })",
+            "db.products.find().sort({ price: 'desc' })"
+        ],
+        "correct": "db.products.find().sort({ price: -1 })"
+    },
+    {
+        "question": "What does the $group aggregation stage do?",
+        "options": [
+            "Groups documents by a specified key and performs accumulations",
+            "Removes duplicate documents from the result set",
+            "Joins documents from multiple collections",
+            "Sorts documents within groups"
+        ],
+        "correct": "Groups documents by a specified key and performs accumulations"
+    },
+    {
+        "question": "Which of the following is true about MongoDB transactions?",
+        "options": [
+            "Transactions are only available in the Enterprise edition",
+            "Transactions support multi-document ACID compliance across replicasets",
+            "Transactions cannot span multiple operations",
+            "Transactions automatically shard data"
+        ],
+        "correct": "Transactions support multi-document ACID compliance across replicasets"
+    },
+    {
+        "question": "Write a query to create an ascending index on the 'email' field in the 'users' collection.",
+        "options": [
+            "db.users.createIndex({ email: 1 })",
+            "db.users.addIndex({ email: 'asc' })",
+            "db.users.index({ email: 1 })",
+            "db.users.createIndex({ email: 'ascending' })"
+        ],
+        "correct": "db.users.createIndex({ email: 1 })"
+    },
+    {
+        "question": "What is a covered query in MongoDB?",
+        "options": [
+            "A query that uses encryption",
+            "A query answered entirely from an index without examining documents",
+            "A query that returns all fields",
+            "A query that hides sensitive data"
+        ],
+        "correct": "A query answered entirely from an index without examining documents"
+    },
+    {
+        "question": "Which operator is used to perform a logical OR in MongoDB queries?",
+        "options": [
+            "$or",
+            "||",
+            "$logical_or",
+            "$any"
+        ],
+        "correct": "$or"
+    },
+    {
+        "question": "Given a collection 'employees', write an update query to set the 'salary' field to 50000 for all documents where 'department' is 'Engineering'.",
+        "options": [
+            "db.employees.updateMany({ department: 'Engineering' }, { $set: { salary: 50000 } })",
+            "db.employees.update({ department: 'Engineering' }, { salary: 50000 })",
+            "db.employees.setMany({ department: 'Engineering' }, { salary: 50000 })",
+            "db.employees.modify({ department: 'Engineering' }, { $set: { salary: 50000 } })"
+        ],
+        "correct": "db.employees.updateMany({ department: 'Engineering' }, { $set: { salary: 50000 } })"
+    },
+    {
+        "question": "What is the purpose of sharding in MongoDB?",
+        "options": [
+            "To replicate data across multiple servers for high availability",
+            "To horizontally partition data across multiple servers for scalability",
+            "To compress data for storage efficiency",
+            "To encrypt data at rest"
+        ],
+        "correct": "To horizontally partition data across multiple servers for scalability"
+    },
+    {
+        "question": "Which of the following correctly creates a capped collection named 'logs' with a maximum size of 1 megabyte?",
+        "options": [
+            "db.createCollection('logs', { capped: true, size: 1048576 })",
+            "db.createCappedCollection('logs', { size: 1MB })",
+            "db.logs.createCapped({ size: 1048576 })",
+            "db.create('logs', { capped: true, maxSize: 1048576 })"
+        ],
+        "correct": "db.createCollection('logs', { capped: true, size: 1048576 })"
+    },
+    {
+        "question": "What does the $lookup stage do in MongoDB aggregation?",
+        "options": [
+            "Performs a self-join on the same collection",
+            "Performs a left outer join with another collection",
+            "Looks up environmental variables",
+            "Caches query results for faster access"
+        ],
+        "correct": "Performs a left outer join with another collection"
+    },
+    {
+        "question": "Write a query to find all documents in 'products' where the 'tags' array contains the value 'electronics'.",
+        "options": [
+            "db.products.find({ tags: 'electronics' })",
+            "db.products.find({ tags: { $contains: 'electronics' } })",
+            "db.products.find({ tags: { $in: ['electronics'] } })",
+            "db.products.find({ $arrayContains: { tags: 'electronics' } })"
+        ],
+        "correct": "db.products.find({ tags: 'electronics' })"
+    },
+    {
+        "question": "What is the role of a primary node in a MongoDB replica set?",
+        "options": [
+            "It only serves read queries",
+            "It accepts all write operations and is the source for replication",
+            "It acts as a backup and never accepts writes",
+            "It distributes queries to secondary nodes"
+        ],
+        "correct": "It accepts all write operations and is the source for replication"
+    },
+    {
+        "question": "Which aggregation operator is used to concatenate strings?",
+        "options": [
+            "$concat",
+            "$merge",
+            "$join",
+            "$addStrings"
+        ],
+        "correct": "$concat"
+    },
+    {
+        "question": "Given a collection 'sales' with documents containing 'amount' and 'date' fields, write an aggregation pipeline to calculate the total sales amount per month.",
+        "options": [
+            "db.sales.aggregate([ { $group: { _id: { $month: '$date' }, total: { $sum: '$amount' } } } ])",
+            "db.sales.aggregate([ { $project: { month: $month('$date'), total: '$amount' } }, { $group: { _id: '$month', total: { $sum: '$total' } } } ])",
+            "db.sales.aggregate([ { $group: { _id: { month: { $month: '$date' } }, total: { $sum: '$amount' } } } ])",
+            "Both A and C are correct"
+        ],
+        "correct": "Both A and C are correct"
+    },
+    {
+        "question": "What does the 'explain()' method do in MongoDB?",
+        "options": [
+            "Provides execution statistics and query plan details",
+            "Exports data to a JSON file",
+            "Explains the schema of a collection",
+            "Lists all indexes on a collection"
+        ],
+        "correct": "Provides execution statistics and query plan details"
+    },
+    {
+        "question": "Which of the following is a valid way to perform a text search in MongoDB?",
+        "options": [
+            "db.articles.find({ $text: { $search: 'mongodb' } })",
+            "db.articles.find({ content: /mongodb/ })",
+            "Both A and B are valid",
+            "db.articles.textSearch('mongodb')"
+        ],
+        "correct": "Both A and B are valid"
+    },
+    {
+        "question": "Write a query to delete the 'users' collection completely from the current database.",
+        "options": [
+            "db.users.drop()",
+            "db.users.delete()",
+            "db.dropCollection('users')",
+            "db.users.remove({})"
+        ],
+        "correct": "db.users.drop()"
+    },
+    {
+        "question": "What is the purpose of the $unwind stage in aggregation?",
+        "options": [
+            "Deconstructs an array field into multiple documents",
+            "Removes null values from arrays",
+            "Sorts array elements in ascending order",
+            "Flattens nested objects"
+        ],
+        "correct": "Deconstructs an array field into multiple documents"
+    },
+    {
+        "question": "Which read concern level in MongoDB provides the highest consistency guarantee?",
+        "options": [
+            "local",
+            "available",
+            "majority",
+            "linearizable"
+        ],
+        "correct": "linearizable"
+    },
+    {
+        "question": "Given a collection 'students', write a query to find all documents where the 'scores' array has at least 5 elements.",
+        "options": [
+            "db.students.find({ $where: 'this.scores.length >= 5' })",
+            "db.students.find({ scores: { $size: { $gte: 5 } } })",
+            "db.students.find({ 'scores.5': { $exists: true } })",
+            "db.students.find({ scores: { $gte: 5 } })"
+        ],
+        "correct": "db.students.find({ $where: 'this.scores.length >= 5' })"
+    },
+    {
+        "question": "What is the difference between $push and $addToSet update operators?",
+        "options": [
+            "$push adds an item to an array; $addToSet adds an item only if not already present",
+            "$push adds to the beginning; $addToSet adds to the end",
+            "$push works on strings; $addToSet works on numbers",
+            "There is no difference; they are aliases"
+        ],
+        "correct": "$push adds an item to an array; $addToSet adds an item only if not already present"
+    },
+    {
+        "question": "Which command is used to check the status of a replica set?",
+        "options": [
+            "rs.status()",
+            "replica.status()",
+            "db.replicaSetStatus()",
+            "sh.status()"
+        ],
+        "correct": "rs.status()"
+    },
+    {
+        "question": "Write a query to find the second highest 'salary' from the 'employees' collection.",
+        "options": [
+            "db.employees.find().sort({ salary: -1 }).skip(1).limit(1)",
+            "db.employees.find({ salary: { $lt: db.employees.find().sort({ salary: -1 })[0].salary } }).sort({ salary: -1 }).limit(1)",
+            "Both A and B are correct approaches",
+            "db.employees.aggregate([ { $sort: { salary: -1 } }, { $skip: 1 }, { $limit: 1 } ])"
+        ],
+        "correct": "Both A and B are correct approaches"
+    },
+    {
+        "question": "What does the 'ttl' index do in MongoDB?",
+        "options": [
+            "Sets a time-to-live for documents, automatically deleting them after a specified duration",
+            "Limits the number of documents in a collection",
+            "Encrypts documents after a certain time",
+            "Caches documents temporarily"
+        ],
+        "correct": "Sets a time-to-live for documents, automatically deleting them after a specified duration"
+    },
+    {
+        "question": "Which of the following correctly performs a bulk write operation?",
+        "options": [
+            "db.collection.bulkWrite([ { insertOne: { document: { name: 'A' } } }, { updateOne: { filter: { name: 'B' }, update: { $set: { name: 'C' } } } } ])",
+            "db.collection.insertMany([{name:'A'},{name:'B'}])",
+            "db.collection.bulkInsert([{name:'A'},{name:'B'}])",
+            "Both A and B are bulk operations"
+        ],
+        "correct": "Both A and B are bulk operations"
+    },
+    {
+        "question": "What is the purpose of the 'mongod' process?",
+        "options": [
+            "The MongoDB shell client",
+            "The primary daemon process for MongoDB database",
+            "A backup utility for MongoDB",
+            "A monitoring tool for MongoDB performance"
+        ],
+        "correct": "The primary daemon process for MongoDB database"
+    },
+    {
+        "question": "Given a nested document structure { 'address': { 'city': 'New York', 'zip': 10001 } }, write a query to find all users living in New York.",
+        "options": [
+            "db.users.find({ 'address.city': 'New York' })",
+            "db.users.find({ address: { city: 'New York' } })",
+            "db.users.find({ address.city: { $eq: 'New York' } })",
+            "Both A and C are correct"
+        ],
+        "correct": "Both A and C are correct"
+    },
+    {
+        "question": "What does the $regex operator do?",
+        "options": [
+            "Performs regular expression pattern matching on string fields",
+            "Registers a new expression in the aggregation pipeline",
+            "Replaces text in a string",
+            "Validates email formats automatically"
+        ],
+        "correct": "Performs regular expression pattern matching on string fields"
+    },
+    {
+        "question": "Write an aggregation query to get the distinct values of the 'category' field from the 'products' collection.",
+        "options": [
+            "db.products.distinct('category')",
+            "db.products.aggregate([ { $group: { _id: '$category' } } ])",
+            "Both A and B are correct",
+            "db.products.find().distinct('category')"
+        ],
+        "correct": "Both A and B are correct"
+    },
+    {
+        "question": "What is the purpose of the 'writeConcern' in MongoDB?",
+        "options": [
+            "Specifies the level of acknowledgment requested for write operations",
+            "Encrypts write operations",
+            "Compresses data before writing",
+            "Validates schema before writing"
+        ],
+        "correct": "Specifies the level of acknowledgment requested for write operations"
+    },
+    {
+        "question": "Which of the following is true about ObjectId in MongoDB?",
+        "options": [
+            "It is a 12-byte identifier typically containing timestamp, machine ID, process ID, and counter",
+            "It is a string that must be manually generated",
+            "It can only be used for the _id field",
+            "It is encrypted by default"
+        ],
+        "correct": "It is a 12-byte identifier typically containing timestamp, machine ID, process ID, and counter"
+    },
+    {
+        "question": "Given a collection 'events' with a 'timestamp' field, write a query to find all events from the last 7 days.",
+        "options": [
+            "db.events.find({ timestamp: { $gte: new Date(new Date() - 7*24*60*60*1000) } })",
+            "db.events.find({ timestamp: { $gt: ISODate('2023-01-01') } })",
+            "db.events.find({ timestamp: { $lastDays: 7 } })",
+            "db.events.find({ $where: 'this.timestamp > new Date() - 7*24*60*60*1000' })"
+        ],
+        "correct": "db.events.find({ timestamp: { $gte: new Date(new Date() - 7*24*60*60*1000) } })"
+    },
+    {
+        "question": "What does the '$out' stage do in an aggregation pipeline?",
+        "options": [
+            "Outputs the results to a specified collection, overwriting if it exists",
+            "Sends output to a file system",
+            "Prints output to the console",
+            "Exports results to a different database"
+        ],
+        "correct": "Outputs the results to a specified collection, overwriting if it exists"
+    },
+    {
+        "question": "Which command creates a backup of a MongoDB database?",
+        "options": [
+            "mongodump",
+            "mongobackup",
+            "db.backup()",
+            "mongosave"
+        ],
+        "correct": "mongodump"
+    },
+    {
+        "question": "Write a query to add a new field 'bonus' with value 1000 to all documents in 'employees' where 'experience' > 5.",
+        "options": [
+            "db.employees.updateMany({ experience: { $gt: 5 } }, { $set: { bonus: 1000 } })",
+            "db.employees.update({ experience: { $gt: 5 } }, { $addField: { bonus: 1000 } })",
+            "db.employees.updateMany({ experience: { $gt: 5 } }, { $add: { bonus: 1000 } })",
+            "db.employees.addField({ experience: { $gt: 5 } }, { bonus: 1000 })"
+        ],
+        "correct": "db.employees.updateMany({ experience: { $gt: 5 } }, { $set: { bonus: 1000 } })"
+    },
+    {
+        "question": "What is a 'sparse index' in MongoDB?",
+        "options": [
+            "An index that only contains entries for documents that have the indexed field",
+            "An index that compresses data to save space",
+            "An index that is stored on a separate disk",
+            "An index that expires after a certain time"
+        ],
+        "correct": "An index that only contains entries for documents that have the indexed field"
+    },
+    {
+        "question": "Which of the following aggregation stages is used for reshaping documents by including/excluding fields?",
+        "options": [
+            "$project",
+            "$reshape",
+            "$select",
+            "$fields"
+        ],
+        "correct": "$project"
+    },
+    {
+        "question": "Given a collection 'logs' with field 'message', write a query to find documents where 'message' contains the word 'error' (case-insensitive).",
+        "options": [
+            "db.logs.find({ message: /error/i })",
+            "db.logs.find({ message: { $regex: 'error', $options: 'i' } })",
+            "db.logs.find({ $text: { $search: 'error' } })",
+            "Both A and B are correct"
+        ],
+        "correct": "Both A and B are correct"
+    },
+    {
+        "question": "What is the default behavior of MongoDB when a query returns more than 101 documents?",
+        "options": [
+            "It returns a cursor that can be iterated",
+            "It returns only the first 101 documents",
+            "It throws an error",
+            "It automatically paginates the results"
+        ],
+        "correct": "It returns a cursor that can be iterated"
+    },
+    {
+        "question": "Write a query to rename the field 'oldName' to 'newName' in all documents of the 'data' collection.",
+        "options": [
+            "db.data.updateMany({}, { $rename: { 'oldName': 'newName' } })",
+            "db.data.renameField({ oldName: 'newName' })",
+            "db.data.update({}, { $rename: { 'oldName': 'newName' } }, { multi: true })",
+            "Both A and C are correct"
+        ],
+        "correct": "Both A and C are correct"
+    }
+]

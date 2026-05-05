@@ -1,0 +1,1402 @@
+[
+    {
+        "question": "What is the correct HTML5 doctype declaration?",
+        "options": [
+            "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 5.0//EN\">",
+            "<!DOCTYPE html>",
+            "<!DOCTYPE HTML5>",
+            "<doctype html>"
+        ],
+        "correct": "<!DOCTYPE html>"
+    },
+    {
+        "question": "Which of the following correctly describes the difference between an HTML element and an HTML tag?",
+        "options": [
+            "They are identical terms and can be used interchangeably",
+            "A tag is just the opening marker; an element includes the opening tag, content, and closing tag",
+            "An element is only the text content inside the tags",
+            "A tag includes both the opening and closing markers; an element is only the opening marker"
+        ],
+        "correct": "A tag is just the opening marker; an element includes the opening tag, content, and closing tag"
+    },
+    {
+        "question": "What will be the rendered output of: <h1>Hello <span style='display:none'>World</span></h1>?",
+        "options": [
+            "Hello World",
+            "Hello",
+            "Hello  (with extra space)",
+            "An error is thrown"
+        ],
+        "correct": "Hello"
+    },
+    {
+        "question": "Which attribute is mandatory for an <img> element to be considered accessible?",
+        "options": [
+            "title",
+            "src",
+            "alt",
+            "aria-label"
+        ],
+        "correct": "alt"
+    },
+    {
+        "question": "In the HTML parent/child structure, which statement is correct about sibling elements?",
+        "options": [
+            "Siblings share the same parent element",
+            "Siblings are elements nested inside each other",
+            "A sibling is always the first child of its parent",
+            "Siblings must be the same HTML tag type"
+        ],
+        "correct": "Siblings share the same parent element"
+    },
+    {
+        "question": "What is the correct way to open a hyperlink in a new browser tab?",
+        "options": [
+            "<a href='url' window='new'>",
+            "<a href='url' target='_blank'>",
+            "<a href='url' open='tab'>",
+            "<a href='url' target='new-tab'>"
+        ],
+        "correct": "<a href='url' target='_blank'>"
+    },
+    {
+        "question": "Which HTML element should be used to represent a list where the order of items does NOT matter?",
+        "options": [
+            "<ol>",
+            "<dl>",
+            "<ul>",
+            "<list>"
+        ],
+        "correct": "<ul>"
+    },
+    {
+        "question": "Given this HTML: <ol start='5' reversed><li>Item</li><li>Item</li></ol>, what numbers will the list items display?",
+        "options": [
+            "5, 6",
+            "1, 2",
+            "5, 4",
+            "4, 5"
+        ],
+        "correct": "5, 4"
+    },
+    {
+        "question": "Which is the correct HTML to create a table cell that spans 2 columns and 2 rows?",
+        "options": [
+            "<td colspan='2' rowspan='2'>",
+            "<td colspread='2' rowspread='2'>",
+            "<td span-col='2' span-row='2'>",
+            "<td columns='2' rows='2'>"
+        ],
+        "correct": "<td colspan='2' rowspan='2'>"
+    },
+    {
+        "question": "What is the purpose of the <caption> element inside a <table>?",
+        "options": [
+            "It adds a tooltip to the table on hover",
+            "It provides a title or description for the table, aiding accessibility",
+            "It defines the table's column headers",
+            "It styles the table border"
+        ],
+        "correct": "It provides a title or description for the table, aiding accessibility"
+    },
+    {
+        "question": "Which form element attribute prevents a user from submitting a form if the field is empty, without using JavaScript?",
+        "options": [
+            "validate='true'",
+            "mandatory",
+            "required",
+            "notnull"
+        ],
+        "correct": "required"
+    },
+    {
+        "question": "What is the difference between <input type='submit'> and <button type='submit'>?",
+        "options": [
+            "They are functionally identical with no differences",
+            "<button> can contain HTML content (icons, bold text) while <input> only shows plain text",
+            "<input type='submit'> works without a form; <button> requires a form parent",
+            "<button> always uses GET method; <input type='submit'> uses POST"
+        ],
+        "correct": "<button> can contain HTML content (icons, bold text) while <input> only shows plain text"
+    },
+    {
+        "question": "In HTML, what is the correct use of the <fieldset> and <legend> elements?",
+        "options": [
+            "<fieldset> groups related form controls; <legend> provides a caption for the group",
+            "<fieldset> adds a border to inputs; <legend> labels individual inputs",
+            "<legend> groups form elements; <fieldset> labels the group",
+            "<fieldset> is used for layout; <legend> is its heading tag"
+        ],
+        "correct": "<fieldset> groups related form controls; <legend> provides a caption for the group"
+    },
+    {
+        "question": "What does the 'for' attribute in a <label> element do?",
+        "options": [
+            "It iterates over form inputs like a for loop",
+            "It applies a CSS class to the input it references",
+            "It programmatically associates the label with the input whose id matches the 'for' value",
+            "It sets the default value for the associated input"
+        ],
+        "correct": "It programmatically associates the label with the input whose id matches the 'for' value"
+    },
+    {
+        "question": "What is the semantic difference between <strong> and <b>?",
+        "options": [
+            "Both are identical; <b> is just an older version of <strong>",
+            "<strong> indicates strong importance; <b> is for stylistic bold with no implied importance",
+            "<b> indicates strong importance; <strong> is for stylistic bold",
+            "<strong> is block-level; <b> is inline"
+        ],
+        "correct": "<strong> indicates strong importance; <b> is for stylistic bold with no implied importance"
+    },
+    {
+        "question": "Which HTML element is used to define an abbreviation and provide its full expansion?",
+        "options": [
+            "<acronym>",
+            "<dfn>",
+            "<abbr>",
+            "<short>"
+        ],
+        "correct": "<abbr>"
+    },
+    {
+        "question": "What is the correct use of the HTML <address> element?",
+        "options": [
+            "It is used for any mailing address on the page",
+            "It provides contact information for its nearest <article> or <body> ancestor",
+            "It is only for email addresses",
+            "It creates a clickable address that opens Google Maps"
+        ],
+        "correct": "It provides contact information for its nearest <article> or <body> ancestor"
+    },
+    {
+        "question": "The HTML <time> element with the attribute datetime='2025-08-15' is best described as:",
+        "options": [
+            "Displaying a countdown timer on the page",
+            "Providing a machine-readable date to improve SEO and accessibility",
+            "Automatically formatting the visible date based on user's locale",
+            "Setting a deadline for form submission"
+        ],
+        "correct": "Providing a machine-readable date to improve SEO and accessibility"
+    },
+    {
+        "question": "What is the purpose of the <aside> element in HTML5?",
+        "options": [
+            "It must always appear in a sidebar column of a page layout",
+            "It represents content tangentially related to the content around it, like a sidebar or callout",
+            "It is a non-semantic container identical to <div>",
+            "It is used for hidden content not visible to the user"
+        ],
+        "correct": "It represents content tangentially related to the content around it, like a sidebar or callout"
+    },
+    {
+        "question": "Which heading level creates the largest text by default in HTML?",
+        "options": [
+            "<h6>",
+            "<h3>",
+            "<h1>",
+            "All headings are the same size by default"
+        ],
+        "correct": "<h1>"
+    },
+    {
+        "question": "In CSS, which statement correctly describes 'inheritance'?",
+        "options": [
+            "All CSS properties are automatically passed from parent to child elements",
+            "Only certain properties like font-size and color are inherited by child elements by default",
+            "Inherited styles always override directly applied styles",
+            "Only block-level elements can inherit styles"
+        ],
+        "correct": "Only certain properties like font-size and color are inherited by child elements by default"
+    },
+    {
+        "question": "What is the difference between inline styles, internal styles, and external stylesheets in terms of maintainability?",
+        "options": [
+            "Inline styles are the most maintainable because they are closest to the HTML",
+            "External stylesheets are most maintainable as styles are centralized and reusable across pages",
+            "Internal styles are most maintainable because they avoid extra HTTP requests",
+            "All three are equally maintainable"
+        ],
+        "correct": "External stylesheets are most maintainable as styles are centralized and reusable across pages"
+    },
+    {
+        "question": "Given this CSS: body { font-size: 16px; } p { font-size: 1.5em; } span { font-size: 1.5em; } — if a <span> is inside a <p>, what is the computed font size of the span?",
+        "options": [
+            "24px",
+            "36px",
+            "16px",
+            "32px"
+        ],
+        "correct": "36px"
+    },
+    {
+        "question": "What unit should you use if you want an element's font-size to always be relative to the root element's font-size?",
+        "options": [
+            "em",
+            "px",
+            "rem",
+            "%"
+        ],
+        "correct": "rem"
+    },
+    {
+        "question": "A CSS rule states: div { width: 50%; }. What is this 50% relative to?",
+        "options": [
+            "The viewport width",
+            "The div's own font-size",
+            "The width of the div's containing (parent) block",
+            "The width of the <body> element"
+        ],
+        "correct": "The width of the div's containing (parent) block"
+    },
+    {
+        "question": "Which CSS selector targets only <p> elements that are direct children of a <div>?",
+        "options": [
+            "div p",
+            "div + p",
+            "div > p",
+            "div ~ p"
+        ],
+        "correct": "div > p"
+    },
+    {
+        "question": "What does the CSS adjacent sibling combinator (+) do in the rule: h2 + p { color: red; }?",
+        "options": [
+            "Styles all <p> elements that come after any <h2>",
+            "Styles the first <p> element that immediately follows an <h2> at the same level",
+            "Styles all siblings of <h2> including <p>",
+            "Styles all <p> elements inside <h2>"
+        ],
+        "correct": "Styles the first <p> element that immediately follows an <h2> at the same level"
+    },
+    {
+        "question": "Which CSS rule correctly groups selectors to apply the same style to h1, h2, and h3?",
+        "options": [
+            "h1 h2 h3 { color: blue; }",
+            "h1 > h2 > h3 { color: blue; }",
+            "h1, h2, h3 { color: blue; }",
+            "h1 + h2 + h3 { color: blue; }"
+        ],
+        "correct": "h1, h2, h3 { color: blue; }"
+    },
+    {
+        "question": "What is the CSS specificity value (inline, IDs, classes, elements) for the selector: #header .nav > li:hover?",
+        "options": [
+            "(0, 1, 2, 1)",
+            "(0, 1, 1, 1)",
+            "(0, 0, 2, 1)",
+            "(0, 1, 0, 2)"
+        ],
+        "correct": "(0, 1, 2, 1)"
+    },
+    {
+        "question": "If two CSS rules have the same specificity, which one takes precedence?",
+        "options": [
+            "The first rule declared in the stylesheet",
+            "The rule defined in the external stylesheet",
+            "The last rule declared in the stylesheet",
+            "The rule with more properties"
+        ],
+        "correct": "The last rule declared in the stylesheet"
+    },
+    {
+        "question": "What does !important do in CSS, and why should its use be minimized?",
+        "options": [
+            "It increases the selector's specificity by one point; it is fine to use frequently",
+            "It overrides all other declarations regardless of specificity, making the cascade hard to manage and debug",
+            "It only applies to inherited properties and has no effect on directly set properties",
+            "It marks a property as required; the browser throws an error if the property is missing"
+        ],
+        "correct": "It overrides all other declarations regardless of specificity, making the cascade hard to manage and debug"
+    },
+    {
+        "question": "In the CSS box model, what does the 'padding' property affect?",
+        "options": [
+            "The space outside the border, between the element and its neighbors",
+            "The space between the content and the border of the element",
+            "The thickness of the border",
+            "The space between the element's text and the viewport edge"
+        ],
+        "correct": "The space between the content and the border of the element"
+    },
+    {
+        "question": "With box-sizing: border-box applied, if a div has width: 300px, padding: 20px, and border: 5px, what is the actual width of the content area?",
+        "options": [
+            "300px",
+            "250px",
+            "270px",
+            "350px"
+        ],
+        "correct": "250px"
+    },
+    {
+        "question": "What CSS border shorthand correctly sets a 2px solid red border?",
+        "options": [
+            "border: 2px, solid, red;",
+            "border: red 2px solid;",
+            "border: 2px solid red;",
+            "border-all: 2px solid red;"
+        ],
+        "correct": "border: 2px solid red;"
+    },
+    {
+        "question": "Which CSS property controls whether a background image repeats, and what value prevents repetition entirely?",
+        "options": [
+            "background-position: center;",
+            "background-repeat: no-repeat;",
+            "background-attachment: fixed;",
+            "background-size: cover;"
+        ],
+        "correct": "background-repeat: no-repeat;"
+    },
+    {
+        "question": "What is the difference between background-size: cover and background-size: contain?",
+        "options": [
+            "cover scales the image to fit entirely within the element; contain scales it to fill the element completely",
+            "cover scales the image to fill the element completely (may crop); contain scales it to fit entirely without cropping",
+            "They are identical in behavior",
+            "cover is for block elements; contain is for inline elements"
+        ],
+        "correct": "cover scales the image to fill the element completely (may crop); contain scales it to fit entirely without cropping"
+    },
+    {
+        "question": "What happens to an element when you apply float: left to it?",
+        "options": [
+            "It is removed from the normal document flow and positioned to the left, allowing text/elements to wrap around it",
+            "It is absolutely positioned at the left edge of the viewport",
+            "It becomes an inline element aligned to the left",
+            "It is fixed to the left side of the screen when scrolling"
+        ],
+        "correct": "It is removed from the normal document flow and positioned to the left, allowing text/elements to wrap around it"
+    },
+    {
+        "question": "What does the CSS clear: both property do when applied to an element?",
+        "options": [
+            "Removes all styles from the element",
+            "Prevents the element from being floated in any direction",
+            "Ensures the element drops below any preceding floated elements on both sides",
+            "Clears the element's padding and margin"
+        ],
+        "correct": "Ensures the element drops below any preceding floated elements on both sides"
+    },
+    {
+        "question": "What is a 'clearfix' hack and why is it used?",
+        "options": [
+            "A CSS reset that removes browser default styles",
+            "A technique to force a parent container to expand and contain its floated children",
+            "A method to prevent CSS transitions from running",
+            "A way to clear the browser cache with CSS"
+        ],
+        "correct": "A technique to force a parent container to expand and contain its floated children"
+    },
+    {
+        "question": "What is the default value of the CSS position property?",
+        "options": [
+            "relative",
+            "fixed",
+            "static",
+            "inherit"
+        ],
+        "correct": "static"
+    },
+    {
+        "question": "What is the key difference between position: absolute and position: fixed?",
+        "options": [
+            "absolute is positioned relative to its nearest positioned ancestor; fixed is positioned relative to the viewport and does not scroll",
+            "fixed is positioned relative to its parent; absolute is relative to the viewport",
+            "absolute elements are removed from flow; fixed elements are not",
+            "They behave identically in all cases"
+        ],
+        "correct": "absolute is positioned relative to its nearest positioned ancestor; fixed is positioned relative to the viewport and does not scroll"
+    },
+    {
+        "question": "An element has position: absolute. What happens if none of its ancestor elements have a position other than static?",
+        "options": [
+            "The browser throws a CSS error",
+            "The element is positioned relative to the <body> element",
+            "The element is positioned relative to the initial containing block (typically the viewport)",
+            "The element reverts to position: relative"
+        ],
+        "correct": "The element is positioned relative to the initial containing block (typically the viewport)"
+    },
+    {
+        "question": "What does the z-index property control, and what is required for it to take effect?",
+        "options": [
+            "It controls element zoom level and always applies to any element",
+            "It controls stacking order on the z-axis and requires the element to have a position value other than static",
+            "It controls opacity layering and requires display: block",
+            "It sets the rendering depth for 3D transforms and only works with perspective"
+        ],
+        "correct": "It controls stacking order on the z-axis and requires the element to have a position value other than static"
+    },
+    {
+        "question": "What is the CSS display difference between a <div> and a <span> by default?",
+        "options": [
+            "<div> is inline; <span> is block",
+            "<div> is block-level; <span> is inline",
+            "Both are block-level by default",
+            "Both are inline by default"
+        ],
+        "correct": "<div> is block-level; <span> is inline"
+    },
+    {
+        "question": "What does display: inline-block allow you to do that display: inline does not?",
+        "options": [
+            "Apply width, height, and vertical margin/padding to the element while keeping it in the text flow",
+            "Float the element to the left or right",
+            "Nest block elements inside it",
+            "Stack elements vertically"
+        ],
+        "correct": "Apply width, height, and vertical margin/padding to the element while keeping it in the text flow"
+    },
+    {
+        "question": "Which CSS property and value hides an element but still occupies its space in the layout?",
+        "options": [
+            "display: none",
+            "visibility: hidden",
+            "opacity: 0",
+            "Both B and C"
+        ],
+        "correct": "Both B and C"
+    },
+    {
+        "question": "What is the correct CSS to style an anchor link that has already been visited?",
+        "options": [
+            "a:active { color: purple; }",
+            "a:hover { color: purple; }",
+            "a:visited { color: purple; }",
+            "a:focus { color: purple; }"
+        ],
+        "correct": "a:visited { color: purple; }"
+    },
+    {
+        "question": "What is the correct order for link pseudo-classes to avoid specificity conflicts? (mnemonic: LoVe HAte or LoVe-Fear-Hate)",
+        "options": [
+            ":active, :visited, :hover, :link",
+            ":link, :hover, :visited, :active",
+            ":link, :visited, :hover, :active",
+            ":hover, :link, :visited, :active"
+        ],
+        "correct": ":link, :visited, :hover, :active"
+    },
+    {
+        "question": "How do you style a form input to change its border color to blue when it receives focus?",
+        "options": [
+            "input:active { border-color: blue; }",
+            "input:hover { border-color: blue; }",
+            "input:focus { border-color: blue; }",
+            "input:selected { border-color: blue; }"
+        ],
+        "correct": "input:focus { border-color: blue; }"
+    },
+    {
+        "question": "What does the CSS rule input[type='text'] { ... } demonstrate?",
+        "options": [
+            "A class selector",
+            "An attribute selector targeting inputs with a specific type value",
+            "A pseudo-class selector",
+            "An ID selector"
+        ],
+        "correct": "An attribute selector targeting inputs with a specific type value"
+    },
+    {
+        "question": "What is the CSS descendant selector, and how does it differ from a child selector?",
+        "options": [
+            "A descendant selector (space) matches any nested level; a child selector (>) matches only direct children",
+            "A descendant selector (>) matches only direct children; a child selector (space) matches any nested level",
+            "They are identical but use different syntax",
+            "A descendant selector only works on <div> elements"
+        ],
+        "correct": "A descendant selector (space) matches any nested level; a child selector (>) matches only direct children"
+    },
+    {
+        "question": "Which CSS pseudo-element adds content before an element without modifying the HTML?",
+        "options": [
+            ":before",
+            "::after",
+            "::before",
+            "Both ::before and :before (both syntaxes are valid)"
+        ],
+        "correct": "Both ::before and :before (both syntaxes are valid)"
+    },
+    {
+        "question": "Given: .box::after { content: ''; display: block; clear: both; } — what pattern does this represent?",
+        "options": [
+            "A CSS animation reset",
+            "A clearfix pattern using a pseudo-element to contain floats",
+            "A box-shadow replacement technique",
+            "A CSS tooltip implementation"
+        ],
+        "correct": "A clearfix pattern using a pseudo-element to contain floats"
+    },
+    {
+        "question": "What is the CSS :nth-child() pseudo-class? Which selector targets every even-numbered list item?",
+        "options": [
+            "li:even { }",
+            "li:nth-child(2) { }",
+            "li:nth-child(even) { }",
+            "li:every(2) { }"
+        ],
+        "correct": "li:nth-child(even) { }"
+    },
+    {
+        "question": "What is the difference between :nth-child(n) and :nth-of-type(n)?",
+        "options": [
+            "They are functionally identical",
+            ":nth-child(n) counts all sibling elements; :nth-of-type(n) counts only siblings of the same tag type",
+            ":nth-of-type(n) counts all siblings; :nth-child(n) counts only matching tag types",
+            ":nth-child(n) applies only to lists; :nth-of-type(n) applies to all elements"
+        ],
+        "correct": ":nth-child(n) counts all sibling elements; :nth-of-type(n) counts only siblings of the same tag type"
+    },
+    {
+        "question": "What value of the CSS font-weight property renders text as bold?",
+        "options": [
+            "font-weight: heavy;",
+            "font-weight: 600; (or higher, commonly 700)",
+            "font-weight: 400;",
+            "font-weight: strong;"
+        ],
+        "correct": "font-weight: 600; (or higher, commonly 700)"
+    },
+    {
+        "question": "What does the CSS shorthand font: italic bold 16px/1.5 'Arial', sans-serif declare?",
+        "options": [
+            "font-style, font-weight, font-size, letter-spacing, and font-family",
+            "font-style, font-weight, font-size, line-height, and font-family",
+            "font-style, font-weight, font-size, word-spacing, and font-family",
+            "Only font-size and font-family; other values are invalid in shorthand"
+        ],
+        "correct": "font-style, font-weight, font-size, line-height, and font-family"
+    },
+    {
+        "question": "What is the purpose of a CSS reset stylesheet (like Normalize.css)?",
+        "options": [
+            "It removes all default browser stylesheets and starts from zero styling",
+            "It normalizes browser inconsistencies in default styles while preserving useful defaults",
+            "It is the same as a CSS reset; Normalize.css and CSS reset are interchangeable",
+            "It automatically generates responsive breakpoints"
+        ],
+        "correct": "It normalizes browser inconsistencies in default styles while preserving useful defaults"
+    },
+    {
+        "question": "How do you correctly import an external CSS file within another CSS file?",
+        "options": [
+            "<link href='other.css'>",
+            "@import url('other.css');",
+            "include('other.css');",
+            "@require 'other.css';"
+        ],
+        "correct": "@import url('other.css');"
+    },
+    {
+        "question": "Which CSS property controls the space between lines of text within a paragraph?",
+        "options": [
+            "letter-spacing",
+            "word-spacing",
+            "line-height",
+            "text-spacing"
+        ],
+        "correct": "line-height"
+    },
+    {
+        "question": "What does the CSS property overflow: hidden do to an element?",
+        "options": [
+            "Makes the element transparent",
+            "Clips any content that extends beyond the element's bounds, hiding the overflow",
+            "Adds a scrollbar automatically when content overflows",
+            "Prevents child elements from being positioned outside the parent"
+        ],
+        "correct": "Clips any content that extends beyond the element's bounds, hiding the overflow"
+    },
+    {
+        "question": "What CSS technique would you use to vertically and horizontally center a div of unknown dimensions inside its parent?",
+        "options": [
+            "margin: auto; on the child",
+            "text-align: center; on the parent",
+            "display: flex; justify-content: center; align-items: center; on the parent",
+            "position: center; on the child"
+        ],
+        "correct": "display: flex; justify-content: center; align-items: center; on the parent"
+    },
+    {
+        "question": "What will this CSS code produce? div { width: 100px; margin: 0 auto; }",
+        "options": [
+            "The div will be pinned to the top of the page",
+            "The div will be horizontally centered within its block-level parent",
+            "The div will have zero margin on all sides",
+            "The div will be vertically centered within its parent"
+        ],
+        "correct": "The div will be horizontally centered within its block-level parent"
+    },
+    {
+        "question": "In CSS, what is 'specificity' and how is it calculated?",
+        "options": [
+            "Specificity is the order of rules; later rules win",
+            "Specificity is a weight system: inline styles > IDs > classes/attributes/pseudo-classes > elements/pseudo-elements",
+            "Specificity is determined by the file size of the stylesheet",
+            "Specificity applies only to inherited properties"
+        ],
+        "correct": "Specificity is a weight system: inline styles > IDs > classes/attributes/pseudo-classes > elements/pseudo-elements"
+    },
+    {
+        "question": "Consider: .nav li a { color: blue; } and #main a { color: red; }. Both apply to an <a> inside an <li> inside .nav and #main. Which color wins?",
+        "options": [
+            "blue, because .nav li a has more selectors",
+            "red, because the ID selector (#main) has higher specificity than a class selector",
+            "blue, because class selectors always beat ID selectors",
+            "The last declared rule wins regardless of specificity"
+        ],
+        "correct": "red, because the ID selector (#main) has higher specificity than a class selector"
+    },
+    {
+        "question": "What is the HTML <meta charset='UTF-8'> declaration used for?",
+        "options": [
+            "It sets the language of the document",
+            "It specifies the character encoding so the browser renders text correctly",
+            "It is required for SEO and search engine ranking",
+            "It links the HTML page to a CSS stylesheet"
+        ],
+        "correct": "It specifies the character encoding so the browser renders text correctly"
+    },
+    {
+        "question": "What is the role of the <meta name='viewport' content='width=device-width, initial-scale=1'> tag?",
+        "options": [
+            "It enables GPU-accelerated rendering on mobile",
+            "It tells the browser to match the page width to the device screen width at 1:1 scale, essential for responsive design",
+            "It sets the default zoom level for desktop browsers",
+            "It prevents users from zooming into the page"
+        ],
+        "correct": "It tells the browser to match the page width to the device screen width at 1:1 scale, essential for responsive design"
+    },
+    {
+        "question": "Which HTML element goes inside <head> and does NOT directly render visible content?",
+        "options": [
+            "<header>",
+            "<h1>",
+            "<meta>",
+            "<section>"
+        ],
+        "correct": "<meta>"
+    },
+    {
+        "question": "What is the correct way to add a comment in HTML?",
+        "options": [
+            "// This is a comment",
+            "/* This is a comment */",
+            "<!-- This is a comment -->",
+            "## This is a comment"
+        ],
+        "correct": "<!-- This is a comment -->"
+    },
+    {
+        "question": "What is the correct CSS comment syntax?",
+        "options": [
+            "// This is a comment",
+            "<!-- This is a comment -->",
+            "/* This is a comment */",
+            "# This is a comment"
+        ],
+        "correct": "/* This is a comment */"
+    },
+    {
+        "question": "Which HTML5 input type provides a date picker in most modern browsers?",
+        "options": [
+            "<input type='calendar'>",
+            "<input type='datepicker'>",
+            "<input type='date'>",
+            "<input type='datetime'>"
+        ],
+        "correct": "<input type='date'>"
+    },
+    {
+        "question": "What is the use of the <datalist> element in HTML5 forms?",
+        "options": [
+            "It creates a multi-select dropdown list",
+            "It provides a list of predefined options for autocomplete suggestions on an input",
+            "It replaces the <select> element with a searchable list",
+            "It is used to list data tables inside a form"
+        ],
+        "correct": "It provides a list of predefined options for autocomplete suggestions on an input"
+    },
+    {
+        "question": "What is the default behavior of the CSS margin property on block-level elements when set to margin: 0 auto?",
+        "options": [
+            "It removes all margins and applies 'auto' as a fallback",
+            "It centers the element horizontally by distributing available horizontal space equally on both sides",
+            "It centers the element both horizontally and vertically",
+            "It is invalid CSS and will be ignored by browsers"
+        ],
+        "correct": "It centers the element horizontally by distributing available horizontal space equally on both sides"
+    },
+    {
+        "question": "What is 'margin collapsing' in CSS?",
+        "options": [
+            "When margins from two adjacent block elements combine into a single margin equal to the larger of the two",
+            "When a margin is set to 0 and collapses to a negative value",
+            "When margins are removed from floated elements",
+            "When margin and padding conflict and the browser ignores the margin"
+        ],
+        "correct": "When margins from two adjacent block elements combine into a single margin equal to the larger of the two"
+    },
+    {
+        "question": "Which CSS rule makes the header sticky so it stays at the top of the viewport when the user scrolls?",
+        "options": [
+            "header { position: fixed; top: 0; }",
+            "header { position: sticky; top: 0; }",
+            "header { float: top; }",
+            "Both A and B achieve the same result"
+        ],
+        "correct": "header { position: sticky; top: 0; }"
+    },
+    {
+        "question": "Which CSS property controls the stacking context and visual layering of overlapping elements?",
+        "options": [
+            "layer-order",
+            "display-order",
+            "z-index",
+            "stack-level"
+        ],
+        "correct": "z-index"
+    },
+    {
+        "question": "How do you use CSS to apply styles exclusively when the viewport width is 768px or less?",
+        "options": [
+            "@screen (max-width: 768px) { }",
+            "@media screen and (max-width: 768px) { }",
+            "@viewport (768px) { }",
+            "@breakpoint max-768 { }"
+        ],
+        "correct": "@media screen and (max-width: 768px) { }"
+    },
+    {
+        "question": "What does the HTML attribute data-* allow developers to do?",
+        "options": [
+            "Store data in an external database linked to the HTML element",
+            "Embed custom private data attributes in HTML elements for use by scripts",
+            "Declare the data type of an input field",
+            "Link datasets to table elements"
+        ],
+        "correct": "Embed custom private data attributes in HTML elements for use by scripts"
+    },
+    {
+        "question": "What is the CSS :not() pseudo-class used for? Provide an example.",
+        "options": [
+            "It targets elements with a specific property: div:not(color) { }",
+            "It selects elements that do NOT match the specified selector: li:not(.active) { } selects all li without class 'active'",
+            "It negates all styles applied to an element",
+            "It is used to exclude elements from inheritance"
+        ],
+        "correct": "It selects elements that do NOT match the specified selector: li:not(.active) { } selects all li without class 'active'"
+    },
+    {
+        "question": "What does the CSS property white-space: nowrap do?",
+        "options": [
+            "Collapses multiple white spaces into one",
+            "Prevents text from wrapping to the next line",
+            "Adds white space around an element",
+            "Applies word-spacing of zero"
+        ],
+        "correct": "Prevents text from wrapping to the next line"
+    },
+    {
+        "question": "What is the correct HTML to make an image a hyperlink?",
+        "options": [
+            "<img src='pic.jpg' href='page.html'>",
+            "<a href='page.html'><img src='pic.jpg' alt='desc'></a>",
+            "<link href='page.html'><img src='pic.jpg'></link>",
+            "<img src='pic.jpg' link='page.html'>"
+        ],
+        "correct": "<a href='page.html'><img src='pic.jpg' alt='desc'></a>"
+    },
+    {
+        "question": "Which CSS property is used to change the style of list item markers (bullets/numbers)?",
+        "options": [
+            "list-decoration",
+            "bullet-style",
+            "list-style-type",
+            "marker-type"
+        ],
+        "correct": "list-style-type"
+    },
+    {
+        "question": "Which CSS value for list-style-type would use uppercase Roman numerals?",
+        "options": [
+            "upper-roman",
+            "roman-upper",
+            "type-upper-roman",
+            "roman"
+        ],
+        "correct": "upper-roman"
+    },
+    {
+        "question": "What is wrong with this CSS code: #myDiv { colour: red; font-size: 14; }?",
+        "options": [
+            "The selector syntax is incorrect",
+            "'colour' is not a valid CSS property (should be 'color'), and font-size needs a unit (e.g., 14px)",
+            "ID selectors cannot have more than one property",
+            "The semicolon after the last property is incorrect"
+        ],
+        "correct": "'colour' is not a valid CSS property (should be 'color'), and font-size needs a unit (e.g., 14px)"
+    },
+    {
+        "question": "In CSS, how do you target an element with BOTH class 'active' and class 'highlight'?",
+        "options": [
+            ".active, .highlight { }",
+            ".active .highlight { }",
+            ".active.highlight { }",
+            ".active + .highlight { }"
+        ],
+        "correct": ".active.highlight { }"
+    },
+    {
+        "question": "What is the output of this CSS rule applied to a paragraph: p { text-transform: capitalize; } with content 'hello world'?",
+        "options": [
+            "HELLO WORLD",
+            "hello world (no change)",
+            "Hello World",
+            "Hello world"
+        ],
+        "correct": "Hello World"
+    },
+    {
+        "question": "Which CSS property would you use to prevent a table's borders from doubling up between adjacent cells?",
+        "options": [
+            "border-collapse: collapse;",
+            "border-spacing: 0;",
+            "border-style: single;",
+            "cell-border: merge;"
+        ],
+        "correct": "border-collapse: collapse;"
+    },
+    {
+        "question": "What is the purpose of the <thead>, <tbody>, and <tfoot> elements in HTML tables?",
+        "options": [
+            "They are decorative; they don't affect table structure or accessibility",
+            "They semantically group table rows for better accessibility, styling control, and browser rendering",
+            "They are required for every HTML table or the table will not render",
+            "They replace <tr> and <td> in modern HTML5"
+        ],
+        "correct": "They semantically group table rows for better accessibility, styling control, and browser rendering"
+    },
+    {
+        "question": "What is the difference between the HTML attributes 'id' and 'class'?",
+        "options": [
+            "Both can be applied to multiple elements; the difference is only stylistic",
+            "An id must be unique per page; a class can be applied to multiple elements",
+            "A class must be unique per page; an id can be applied to multiple elements",
+            "id is for CSS only; class is for JavaScript only"
+        ],
+        "correct": "An id must be unique per page; a class can be applied to multiple elements"
+    },
+    {
+        "question": "What does the rel='noopener noreferrer' attribute do when used with target='_blank' on a link?",
+        "options": [
+            "It prevents the opened page from loading external resources",
+            "It prevents the new tab from accessing the original page via window.opener and hides the referrer header, improving security",
+            "It forces the link to open in an iframe",
+            "It blocks the browser's back button for the new tab"
+        ],
+        "correct": "It prevents the new tab from accessing the original page via window.opener and hides the referrer header, improving security"
+    },
+    {
+        "question": "Which HTML element is used to embed a scalable vector graphic inline in HTML?",
+        "options": [
+            "<vector>",
+            "<canvas>",
+            "<svg>",
+            "<graphic>"
+        ],
+        "correct": "<svg>"
+    },
+    {
+        "question": "What is the CSS object-fit property used for?",
+        "options": [
+            "It controls how a replaced element (like <img> or <video>) fits within its container box",
+            "It sets how CSS objects inherit properties",
+            "It defines the stacking order of overlapping elements",
+            "It applies a 3D transform to elements"
+        ],
+        "correct": "It controls how a replaced element (like <img> or <video>) fits within its container box"
+    },
+    {
+        "question": "What does the following code do: input:checked + label { font-weight: bold; }?",
+        "options": [
+            "Makes the label bold when the input receives focus",
+            "Makes the label bold that immediately follows a checked input (works with checkboxes/radio buttons)",
+            "Targets all labels that are siblings of any input",
+            "It is invalid CSS because input and label cannot be combined"
+        ],
+        "correct": "Makes the label bold that immediately follows a checked input (works with checkboxes/radio buttons)"
+    },
+    {
+        "question": "What CSS property controls the rendering direction of text (e.g., left-to-right or right-to-left)?",
+        "options": [
+            "text-align",
+            "writing-mode",
+            "direction",
+            "flow"
+        ],
+        "correct": "direction"
+    },
+    {
+        "question": "Which of the following correctly applies multiple CSS classes to a single HTML element?",
+        "options": [
+            "<div class='box' class='red'>",
+            "<div class='box, red'>",
+            "<div class='box red'>",
+            "<div classes='box red'>"
+        ],
+        "correct": "<div class='box red'>"
+    },
+    {
+        "question": "What will the following CSS do: a { text-decoration: none; } a:hover { text-decoration: underline; }?",
+        "options": [
+            "All links will always be underlined",
+            "Links will show no underline by default and show an underline only when hovered",
+            "Links will have an underline that disappears on hover",
+            "No underline will ever show because text-decoration: none overrides hover"
+        ],
+        "correct": "Links will show no underline by default and show an underline only when hover"
+    },
+    {
+        "question": "What is the HTML5 <figure> element typically paired with, and what is its purpose?",
+        "options": [
+            "<img>; to add a border around images",
+            "<figcaption>; to associate a caption with self-contained content like images, charts, or code snippets",
+            "<caption>; to provide a title for a table",
+            "<footer>; to add a footnote to a section"
+        ],
+        "correct": "<figcaption>; to associate a caption with self-contained content like images, charts, or code snippets"
+    },
+    {
+        "question": "What is the CSS word-break: break-all property used for?",
+        "options": [
+            "It splits words into separate letters",
+            "It forces line breaks between words only",
+            "It allows long words or strings to be broken and wrapped at any character to prevent overflow",
+            "It removes all word spacing"
+        ],
+        "correct": "It allows long words or strings to be broken and wrapped at any character to prevent overflow"
+    },
+    {
+        "question": "Which CSS property would you use to add space between the content of a table cell and its border?",
+        "options": [
+            "cell-padding",
+            "padding",
+            "border-spacing",
+            "margin"
+        ],
+        "correct": "padding"
+    },
+    {
+        "question": "In a CSS hero section, what combination of properties would make a full-viewport-height section with a centered background image that always covers the section?",
+        "options": [
+            "height: 100%; background-size: auto;",
+            "height: 100vh; background-size: cover; background-position: center;",
+            "min-height: 500px; background-repeat: repeat;",
+            "height: 100vw; background-size: contain;"
+        ],
+        "correct": "height: 100vh; background-size: cover; background-position: center;"
+    },
+    {
+        "question": "What is the correct way to link a favicon (browser tab icon) in HTML?",
+        "options": [
+            "<meta name='favicon' content='favicon.ico'>",
+            "<link rel='icon' href='favicon.ico' type='image/x-icon'>",
+            "<img src='favicon.ico' id='favicon'>",
+            "<link rel='favicon' src='favicon.ico'>"
+        ],
+        "correct": "<link rel='icon' href='favicon.ico' type='image/x-icon'>"
+    },
+    {
+        "question": "What is the purpose of the HTML <base> element?",
+        "options": [
+            "It defines the base font size for all text on the page",
+            "It specifies the base URL for all relative URLs in the document and optionally a default target",
+            "It sets the base background color of the page",
+            "It is the root container element of all HTML documents"
+        ],
+        "correct": "It specifies the base URL for all relative URLs in the document and optionally a default target"
+    },
+    {
+        "question": "What does the CSS property cursor: pointer do when applied to a <div>?",
+        "options": [
+            "Makes the div respond to click events in JavaScript",
+            "Changes the mouse cursor to a hand/pointer when hovering over the div, indicating it is clickable",
+            "Makes the div draggable",
+            "Enables touch events on mobile devices"
+        ],
+        "correct": "Changes the mouse cursor to a hand/pointer when hovering over the div, indicating it is clickable"
+    },
+    {
+        "question": "What is the difference between the HTML <header> element and the <head> element?",
+        "options": [
+            "They are synonymous and can be used in place of each other",
+            "<head> contains metadata not displayed on the page; <header> is a visible semantic section for introductory content",
+            "<header> contains metadata; <head> is a visible content section",
+            "<head> appears in the <body>; <header> appears outside the <body>"
+        ],
+        "correct": "<head> contains metadata not displayed on the page; <header> is a visible semantic section for introductory content"
+    },
+    {
+        "question": "Which of the following is a valid way to use an ID selector in CSS?",
+        "options": [
+            ".myID { color: blue; }",
+            "#myID { color: blue; }",
+            "id.myID { color: blue; }",
+            "@myID { color: blue; }"
+        ],
+        "correct": "#myID { color: blue; }"
+    },
+    {
+        "question": "What does the HTML attribute 'tabindex' control?",
+        "options": [
+            "The number of tabs displayed in a browser window",
+            "The order in which elements receive keyboard focus when the Tab key is pressed",
+            "The indentation level of the element",
+            "The z-index stacking order of overlapping elements"
+        ],
+        "correct": "The order in which elements receive keyboard focus when the Tab key is pressed"
+    },
+    {
+        "question": "What will happen in this HTML: <p>Line 1<br>Line 2</p>?",
+        "options": [
+            "A new paragraph will begin after 'Line 1'",
+            "A line break will be inserted inside the paragraph, placing 'Line 2' on the next line",
+            "The <br> will be treated as invisible and both lines appear on the same line",
+            "The browser will render an error symbol"
+        ],
+        "correct": "A line break will be inserted inside the paragraph, placing 'Line 2' on the next line"
+    },
+    {
+        "question": "What is the output of this HTML: <p>Price: &lt;b&gt;100&lt;/b&gt;</p>?",
+        "options": [
+            "Price: 100 (with 100 in bold)",
+            "Price: <b>100</b> (rendered as literal text, not bold)",
+            "An HTML error occurs",
+            "Price: b100b"
+        ],
+        "correct": "Price: <b>100</b> (rendered as literal text, not bold)"
+    },
+    {
+        "question": "Which CSS property controls the opacity of an element, and what is the range of valid values?",
+        "options": [
+            "transparency: 0 to 100",
+            "opacity: 0 to 1, where 0 is fully transparent and 1 is fully opaque",
+            "alpha: 0 to 255",
+            "opacity: 0% to 100%"
+        ],
+        "correct": "opacity: 0 to 1, where 0 is fully transparent and 1 is fully opaque"
+    },
+    {
+        "question": "What is a CSS 'stacking context' and what creates one?",
+        "options": [
+            "A named CSS layer created with @layer that controls cascade order",
+            "A three-dimensional rendering context created whenever an element has position: static",
+            "A self-contained layering environment created by certain CSS properties (like position + z-index, opacity < 1, transform, filter), within which z-index values are isolated",
+            "An ordering system that is only created by the root HTML element"
+        ],
+        "correct": "A self-contained layering environment created by certain CSS properties (like position + z-index, opacity < 1, transform, filter), within which z-index values are isolated"
+    },
+    {
+        "question": "A <nav> element is placed inside a <footer>. Is this valid HTML5?",
+        "options": [
+            "No, <nav> can only appear once per page inside <header>",
+            "Yes, <nav> can be used inside <footer> for secondary navigation such as site links",
+            "No, <footer> cannot contain block-level elements",
+            "Yes, but only if the <nav> contains at least 3 links"
+        ],
+        "correct": "Yes, <nav> can be used inside <footer> for secondary navigation such as site links"
+    },
+    {
+        "question": "What is a CSS 'box shadow' and which property applies it? Give an example.",
+        "options": [
+            "shadow-box: 2px 2px 5px black; — adds a drop shadow",
+            "box-shadow: 2px 2px 5px black; — offsets a shadow horizontally, vertically, with blur and color",
+            "drop-shadow: 2px 2px 5px black; — applies a filter-based shadow",
+            "element-shadow: offset-x offset-y blur color; — applies to block elements only"
+        ],
+        "correct": "box-shadow: 2px 2px 5px black; — offsets a shadow horizontally, vertically, with blur and color"
+    },
+    {
+        "question": "In HTML forms, what is the difference between GET and POST methods?",
+        "options": [
+            "GET appends data to the URL (visible, limited length); POST sends data in the request body (not visible in URL, no practical size limit)",
+            "POST appends data to the URL; GET sends data in the request body",
+            "GET is for file uploads; POST is for text inputs",
+            "GET is more secure than POST because data is encrypted"
+        ],
+        "correct": "GET appends data to the URL (visible, limited length); POST sends data in the request body (not visible in URL, no practical size limit)"
+    },
+    {
+        "question": "What does the CSS universal selector (*) do?",
+        "options": [
+            "It selects only the root element of the document",
+            "It selects every element on the page",
+            "It selects all class attributes across the page",
+            "It is a wildcard that only applies inside a specific selector"
+        ],
+        "correct": "It selects every element on the page"
+    },
+    {
+        "question": "What is wrong with this HTML form: <form><input type='text' name='user'><input type='submit'></form> — from an accessibility standpoint?",
+        "options": [
+            "The form is missing an action attribute",
+            "The text input is missing a <label> element, making it unclear to screen reader users what the field is for",
+            "The submit button must have a name attribute",
+            "The form method should be explicitly declared"
+        ],
+        "correct": "The text input is missing a <label> element, making it unclear to screen reader users what the field is for"
+    },
+    {
+        "question": "Which HTML5 element is used to represent self-contained content that can be independently reused?",
+        "options": [
+            "<section>",
+            "<article>",
+            "<div>",
+            "<aside>"
+        ],
+        "correct": "<article>"
+    },
+    {
+        "question": "Which element is used for marking navigation links in HTML5?",
+        "options": [
+            "<menu>",
+            "<nav>",
+            "<aside>",
+            "<header>"
+        ],
+        "correct": "<nav>"
+    },
+    {
+        "question": "Which of the following is correct about the difference between <section> and <div>?",
+        "options": [
+            "Both are semantic",
+            "<section> is semantic; <div> is non-semantic",
+            "<div> is semantic; <section> is non-semantic",
+            "Both are non-semantic"
+        ],
+        "correct": "<section> is semantic; <div> is non-semantic"
+    },
+    {
+        "question": "Which is NOT a valid HTML5 element?",
+        "options": [
+            "<main>",
+            "<footer>",
+            "<sidebar>",
+            "<header>"
+        ],
+        "correct": "<sidebar>"
+    },
+    {
+        "question": "Which CSS3 feature allows you to create rounded corners?",
+        "options": [
+            "border-style",
+            "border-radius",
+            "corner-radius",
+            "round-corner"
+        ],
+        "correct": "border-radius"
+    },
+    {
+        "question": "Which of the following creates a linear gradient background?",
+        "options": [
+            "linear-gradient(red, blue)",
+            "background-gradient(red, blue)",
+            "gradient(linear, red, blue)",
+            "bg-linear(red, blue)"
+        ],
+        "correct": "linear-gradient(red, blue)"
+    },
+    {
+        "question": "Which CSS3 property is used for transitions?",
+        "options": [
+            "motion",
+            "transition",
+            "animation",
+            "effect"
+        ],
+        "correct": "transition"
+    },
+    {
+        "question": "What will this code do: p::first-line { font-weight: bold; }?",
+        "options": [
+            "Makes entire paragraph bold",
+            "Makes first sentence bold",
+            "Makes first line bold",
+            "Makes first word bold"
+        ],
+        "correct": "Makes first line bold"
+    },
+    {
+        "question": "Which CSS3 layout module allows flexible box-based design?",
+        "options": [
+            "CSS Grid",
+            "Flexbox",
+            "Float Layout",
+            "Box Model"
+        ],
+        "correct": "Flexbox"
+    },
+    {
+        "question": "What does this rule do: div { display: grid; grid-template-columns: 1fr 2fr; }?",
+        "options": [
+            "Creates 2 equal columns",
+            "Creates 2 columns, 1:2 ratio",
+            "Creates 3 columns",
+            "Invalid CSS3 rule"
+        ],
+        "correct": "Creates 2 columns, 1:2 ratio"
+    },
+    {
+        "question": "Which CSS3 property is used to apply a shadow to text?",
+        "options": [
+            "text-decoration",
+            "text-shadow",
+            "font-shadow",
+            "box-shadow"
+        ],
+        "correct": "text-shadow"
+    },
+    {
+        "question": "What does the following CSS code achieve: div:hover { transform: rotate(15deg); }?",
+        "options": [
+            "Rotates the div permanently",
+            "Rotates the div when hovered",
+            "Rotates the background only",
+            "No effect"
+        ],
+        "correct": "Rotates the div when hovered"
+    },
+    {
+        "question": "The '<picture>' element is used primarily for:",
+        "options": [
+            "Embedding YouTube videos",
+            "Providing responsive images with multiple sources",
+            "Creating image maps with clickable areas",
+            "Defining a container for SVG graphics"
+        ],
+        "correct": "Providing responsive images with multiple sources"
+    },
+    {
+        "question": "For the code '<label for='email-address'>Email:</label><input type='email' id='email-address' name='email'>', which attribute must be unique on the page?",
+        "options": [
+            "The 'for' attribute in the '<label>' tag",
+            "The 'type' attribute in the '<input>' tag",
+            "The 'id' attribute in the '<input>' tag",
+            "The 'name' attribute in the '<input>' tag"
+        ],
+        "correct": "The 'id' attribute in the '<input>' tag"
+    },
+    {
+        "question": "What is the key semantic purpose of the '<article>' element compared to '<section>'?",
+        "options": [
+            "'<article>' is for standalone, distributable content, while '<section>' is for thematic grouping.",
+            "'<article>' must always be nested inside a '<section>'.",
+            "'<section>' is for standalone content, while '<article>' is for grouping.",
+            "They are semantically identical and can be used interchangeably."
+        ],
+        "correct": "'<article>' is for standalone, distributable content, while '<section>' is for thematic grouping."
+    },
+    {
+        "question": "Which input type would be most appropriate for selecting a value from a range of 1 to 100?",
+        "options": [
+            "<input type='number' min='1' max='100'>",
+            "<input type='range' min='1' max='100'>",
+            "Both A and B are equally appropriate.",
+            "<input type='slider'>"
+        ],
+        "correct": "Both A and B are equally appropriate."
+    },
+    {
+        "question": "To pre-select an '<option>' in a dropdown menu when the page loads, you use the attribute:",
+        "options": [
+            "selected='selected'",
+            "checked='checked'",
+            "default='true'",
+            "value='selected'"
+        ],
+        "correct": "selected='selected'"
+    },
+    {
+        "question": "Which tag is NOT a valid HTML5 semantic tag?",
+        "options": [
+            "<nav>",
+            "<header>",
+            "<frame>",
+            "<aside>"
+        ],
+        "correct": "<frame>"
+    },
+    {
+        "question": "The 'async' attribute in a '<script>' tag means:",
+        "options": [
+            "The script will be executed synchronously in the order it appears.",
+            "The script will be downloaded asynchronously and executed immediately, pausing the parser.",
+            "The script will be executed after the 'DOMContentLoaded' event.",
+            "The script will only run if the user interacts with the page."
+        ],
+        "correct": "The script will be downloaded asynchronously and executed immediately, pausing the parser."
+    },
+    {
+        "question": "To create a required text input field that must be filled out, you use:",
+        "options": [
+            "<input type='text' necessary='true'>",
+            "<input type='text' validate='required'>",
+            "<input type='text' required>",
+            "<input type='text' mustfill='yes'>"
+        ],
+        "correct": "<input type='text' required>"
+    },
+    {
+        "question": "The 'sandbox' attribute in an '<iframe>' is used to:",
+        "options": [
+            "Improve the loading performance of the iframe.",
+            "Create a restricted environment for the content, enhancing security.",
+            "Allow the iframe content to access the parent page's DOM.",
+            "Enable seamless rendering of the iframe border."
+        ],
+        "correct": "Create a restricted environment for the content, enhancing security."
+    },
+    {
+        "question": "Which code snippet correctly links a document-level CSS style sheet?",
+        "options": [
+            "<link src='styles.css' rel='stylesheet'>",
+            "<style href='styles.css'></style>",
+            "<a rel='stylesheet' href='styles.css'>Style</a>",
+            "<link href='styles.css' rel='stylesheet'>"
+        ],
+        "correct": "<link href='styles.css' rel='stylesheet'>"
+    },
+    {
+        "question": "Which selector has the highest specificity?",
+        "options": [
+            "#nav .list li a:hover",
+            "html body header h1",
+            "div > header > h1.title",
+            "a:hover"
+        ],
+        "correct": "#nav .list li a:hover"
+    },
+    {
+        "question": "Which code will create a 20px blur effect and move a div 30px to the right?",
+        "options": [
+            "filter: blur(20px) translateX(30px);",
+            "effect: blur(20px); transform: translateX(30px);",
+            "transform: blur(20px) translateX(30px);",
+            "filter: blur(20px); transform: translateX(30px);"
+        ],
+        "correct": "filter: blur(20px); transform: translateX(30px);"
+    },
+    {
+        "question": "To style every '<p>' element that is the first child of its parent, you would use:",
+        "options": [
+            "p:first-of-type",
+            "p:first-child",
+            "p:nth-child(1)",
+            "All of the above"
+        ],
+        "correct": "All of the above"
+    }
+]

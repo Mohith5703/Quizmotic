@@ -1,0 +1,262 @@
+[
+    {
+        "question": "How before advice works?",
+        "options": [
+            "Run advice before a class loads.",
+            "Run advice before a method execution.",
+            "Run advice before http response is to be returned.",
+            "Run advice before http request is to be processed."
+        ],
+        "correct": "Run advice before a method execution."
+    },
+    {
+        "question": "How after-returning advice works?",
+        "options": [
+            "Run advice after a class loads only if class loads successfully.",
+            "Run advice after a method execution only if the method completes successfully.",
+            "Run advice after http response is returned only if http response is success.",
+            "Run advice after http request is processed with no exception."
+        ],
+        "correct": "Run advice after a method execution only if the method completes successfully."
+    },
+    {
+        "question": "How after-throwing advice works?",
+        "options": [
+            "Run advice after a method execution only if the method exits by throwing an exception.",
+            "Run advice after a class loads only if the class throws an exception during load time.",
+            "Run advice after http response is returned with error status.",
+            "Run advice after http request is processed and an exception occurred."
+        ],
+        "correct": "Run advice after a method execution only if the method exits by throwing an exception."
+    },
+    {
+        "question": "How around advice works?",
+        "options": [
+            "Run advice before and after the advised method is invoked.",
+            "Run advice before and after a class is loaded.",
+            "Run advice before and after http response is returned.",
+            "Run advice before and after http request is processed."
+        ],
+        "correct": "Run advice before and after the advised method is invoked."
+    },
+    {
+        "question": "What is Spring MVC framework?",
+        "options": [
+            "Spring MVC framework is Model-Value-Class architecture and used to bind model data with values.",
+            "The Spring web MVC framework provides model-view-controller architecture and ready components that can be used to develop flexible and loosely coupled web applications.",
+            "Spring MVC framework is used for Transaction management for Web Applications.",
+            "Spring MVC framework is used for AOP for Web Applications."
+        ],
+        "correct": "The Spring web MVC framework provides model-view-controller architecture and ready components that can be used to develop flexible and loosely coupled web applications."
+    },
+    {
+        "question": "Which of the following is not a valid difference between @Inject and @Autowired annotations?",
+        "options": [
+            "There is no difference and both can be used interchangeably.",
+            "@Autowired is a legacy annotation whereas @Inject is its latest version.",
+            "@Inject annotation is part of Java EE 7’s Context and Dependency Injection framework while @Autowired is the Spring Frameworks own implementation.",
+            "None of these."
+        ],
+        "correct": "@Autowired is a legacy annotation whereas @Inject is its latest version."
+    },
+    {
+        "question": "Annotations work as metadata for classes and Spring uses annotations as an alternative to XML for declarative configuration. Is it true or false?",
+        "options": [
+            "true",
+            "false"
+        ],
+        "correct": "true"
+    },  
+    {
+        "question": "What are the ways to access Hibernate by using Spring?",
+        "options": [
+            "Inversion of Control with a Hibernate Template and Callback.",
+            "Extending HibernateDAOSupport and Applying an AOP Interceptor node.",
+            "Both of above.",
+            "None of above."
+        ],
+        "correct": "Both of above."
+    },
+    {
+        "question": "Which ORM Spring supports ?",
+        "options": [
+            "Hibernate",
+            "iBatis",
+            "JPA",
+            "All of above."
+        ],
+        "correct": "All of above."
+    },
+    {
+        "question": "Which of the following database is not supported using jdbcTemplate?",
+        "options": [
+            "MySql",
+            "PostgresSql",
+            "NoSql",
+            "Oracle"
+        ],
+        "correct": "NoSql"
+    },
+    {
+        "question": "Expression Language/ SpEL was introduced in which version of spring framework.",
+        "options": [
+            "1.0",
+            "2.0",
+            "3.0",
+            "4.0"
+        ],
+        "correct": "3.0"
+    },
+    {
+        "question": "Can we integrate Struts with Spring.",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "correct": "Yes"
+    },
+    {
+        "question": "By default a bean is lazily loaded.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": "False"
+    },
+    {
+        "question": "By default a bean is eagerly loaded.",
+        "options": [
+            "False",
+            "True"
+        ],
+        "correct": "True"
+    },
+    {
+        "question": "If a bean can be created any number of times, scope is",
+        "options": [
+            "session",
+            "global-session",
+            "prototype",
+            "request"
+        ],
+        "correct": "prototype"
+    },
+    {
+        "question": "What is the scope of stateless beans?",
+        "options": [
+            "global-session",
+            "singleton",
+            "prototype",
+            "request"
+        ],
+        "correct": "singleton"
+    },
+    {
+        "question": "What is the scope of stateful beans?",
+        "options": [
+            "session",
+            "global-session",
+            "prototype",
+            "request"
+        ],
+        "correct": "prototype"
+    },
+    {
+        "question": "If a bean is scoped to HTTP session, scope is",
+        "options": [
+            "global-session",
+            "session",
+            "prototype",
+            "request"
+        ],
+        "correct": "session"
+    },
+    {
+        "question": "Which of the following classes can be used to execute Sql queries in spring?",
+        "options": [
+            "JdbcTemplate",
+            "JDBCHelper",
+            "DBHelper",
+            "DBTemplate"
+        ],
+        "correct": "JdbcTemplate"
+    },
+    {
+        "question": "Which of the following classes can be used to call Stored Procedures in spring?",
+        "options": [
+            "SPHelper",
+            "JdbcTemplateCall",
+            "JdbcTemplate",
+            "SimpleJdbcCall"
+        ],
+        "correct": "SimpleJdbcCall"
+    },
+    {
+        "question": "Following class can be extended to create custom events in spring.",
+        "options": [
+            "SpringEvent",
+            "Event",
+            "ApplicationEvent",
+            "None of above"
+        ],
+        "correct": "ApplicationEvent"
+    },
+    {
+        "question": "Annotation to add security to your spring boot app?",
+        "options": [
+            "@EnableWebSecurity",
+            "@EnableSecurity",
+            "@EnableSpringSecurity"
+        ],
+        "correct": "@EnableWebSecurity"
+    },
+    {
+        "question": "Element used to specify access attributes for bean’s methods.",
+        "options": [
+            "security:protect",
+            "security:intercept",
+            "security:intercept-security",
+            "none of the mentioned"
+        ],
+        "correct": "security:protect"
+    },
+    {
+        "question": "How to reload my changes on Spring Boot without having to restart the server?",
+        "options": [
+            "org.springframework.boot spring-boot-devtools true",
+            "org.springframework.boot spring-boot-test true",
+            "org.springframework.boot spring-boot-web true",
+            "org.springframework.boot spring-boot-jasper true"
+        ],
+        "correct": "org.springframework.boot spring-boot-devtools true"
+    },
+    {
+        "question": "LoggerInterceptor which implements the HandlerInterceptor.The LoggerInterceptor will override the which following methods",
+        "options": [
+            "preHandlerBean(), postHandlerBean(), afterCompletion()",
+            "PreProcessHandler(), PostProcessHandler(), afterCompletion()",
+            "PreHandler(), PostHandler(), afterCompletion()",
+            "none"
+        ],
+        "correct": "PreHandler(), PostHandler(), afterCompletion()"
+    },
+    {
+        "question": "How does the Spring Batch work?",
+        "options": [
+            "step, ItemReader, ItemProcessor, ItemStreamWriter",
+            "step, ItemProcessor, ItemStreamWriter",
+            "step, ItemReader, ItemStreamWriter"
+        ],
+        "correct": "step, ItemReader, ItemProcessor, ItemStreamWriter"
+    },
+    {
+        "question": "Which of the following stands true for spring beans?",
+        "options": [
+            "Spring beans are managed by the Spring IoC container.",
+            "Spring beans are instantiated, assembled, and otherwise managed by a Spring IoC container.",
+            "Spring beans are simple POJOs.",
+            "All of the above."
+        ],
+        "correct": "All of the above."
+    }
+]

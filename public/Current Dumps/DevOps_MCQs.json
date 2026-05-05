@@ -1,0 +1,1082 @@
+[
+    {
+        "question": "What is the difference between 'git fetch' and 'git pull'?",
+        "options": [
+            "They are identical commands with different names",
+            "git fetch downloads remote changes without merging; git pull downloads AND merges remote changes into the current branch",
+            "git pull downloads changes without merging; git fetch downloads and merges automatically",
+            "git fetch only works with tags; git pull works with branches"
+        ],
+        "correct": "git fetch downloads remote changes without merging; git pull downloads AND merges remote changes into the current branch"
+    },
+    {
+        "question": "What does the following Git command do?\ngit reset --hard HEAD~2",
+        "options": [
+            "Moves HEAD back 2 commits, keeping staged and working directory changes intact",
+            "Moves HEAD back 2 commits and discards all changes in staging area and working directory",
+            "Creates a new commit that undoes the last 2 commits",
+            "Deletes the last 2 commits from the remote repository"
+        ],
+        "correct": "Moves HEAD back 2 commits and discards all changes in staging area and working directory"
+    },
+    {
+        "question": "What is the difference between 'git reset' and 'git revert'?",
+        "options": [
+            "git revert modifies history; git reset creates a new commit",
+            "git reset modifies commit history (moves HEAD); git revert creates a new commit that undoes a previous commit, preserving history — safer for shared branches",
+            "git reset is for staged files only; git revert is for committed files",
+            "They are identical in behavior"
+        ],
+        "correct": "git reset modifies commit history (moves HEAD); git revert creates a new commit that undoes a previous commit, preserving history — safer for shared branches"
+    },
+    {
+        "question": "What does 'git stash pop' do compared to 'git stash apply'?",
+        "options": [
+            "git stash pop applies the most recent stash and removes it from the stash list; git stash apply applies it but keeps it in the stash list",
+            "git stash apply removes the stash; git stash pop keeps it",
+            "They are identical",
+            "git stash pop only works on the latest stash; git stash apply works on any stash by index"
+        ],
+        "correct": "git stash pop applies the most recent stash and removes it from the stash list; git stash apply applies it but keeps it in the stash list"
+    },
+    {
+        "question": "What does the following command do?\ngit log --oneline --graph --all",
+        "options": [
+            "Shows the commit history of the current branch only in full detail",
+            "Displays a condensed, ASCII graph of all branches and their commit history in one line per commit",
+            "Merges all branches into a linear graph",
+            "Lists all tags and branches with their last commit"
+        ],
+        "correct": "Displays a condensed, ASCII graph of all branches and their commit history in one line per commit"
+    },
+    {
+        "question": "What is the purpose of 'git cherry-pick <commit-hash>'?",
+        "options": [
+            "It merges an entire branch into the current branch",
+            "It applies the changes introduced by a specific commit onto the current branch without merging the full branch",
+            "It selects the best commit from a merge conflict",
+            "It picks a commit and moves it to a different repository"
+        ],
+        "correct": "It applies the changes introduced by a specific commit onto the current branch without merging the full branch"
+    },
+    {
+        "question": "What is a 'detached HEAD' state in Git?",
+        "options": [
+            "HEAD points to a deleted branch",
+            "HEAD points directly to a specific commit rather than a branch; commits made here are not on any branch and may be lost",
+            "HEAD is corrupted and cannot be used",
+            "HEAD points to a remote tracking branch"
+        ],
+        "correct": "HEAD points directly to a specific commit rather than a branch; commits made here are not on any branch and may be lost"
+    },
+    {
+        "question": "What is the difference between a merge commit and a rebase in Git?",
+        "options": [
+            "Merge creates a new merge commit preserving branch history; rebase replays commits from one branch onto another, creating a linear history",
+            "Rebase creates a merge commit; merge creates a linear history",
+            "They produce identical results in all scenarios",
+            "Rebase is only used for resolving conflicts; merge is for integrating features"
+        ],
+        "correct": "Merge creates a new merge commit preserving branch history; rebase replays commits from one branch onto another, creating a linear history"
+    },
+    {
+        "question": "In GitHub, what is a Pull Request (PR)?",
+        "options": [
+            "A command to pull code from a remote repository",
+            "A request to merge changes from one branch (or fork) into another, enabling code review and discussion before merging",
+            "A way to pull Docker images from GitHub Container Registry",
+            "A request sent to collaborators to pull the latest code"
+        ],
+        "correct": "A request to merge changes from one branch (or fork) into another, enabling code review and discussion before merging"
+    },
+    {
+        "question": "What is the purpose of a '.gitignore' file?",
+        "options": [
+            "It lists files that Git should delete from the repository",
+            "It specifies intentionally untracked files and patterns that Git should ignore and not include in version control",
+            "It configures global Git settings for the repository",
+            "It prevents specific branches from being pushed to remote"
+        ],
+        "correct": "It specifies intentionally untracked files and patterns that Git should ignore and not include in version control"
+    },
+    {
+        "question": "What happens when you run 'git commit --amend'?",
+        "options": [
+            "Creates a new separate commit on top of the last one",
+            "Modifies the most recent commit by replacing it with a new commit that includes staged changes and/or an updated commit message",
+            "Reverts the last commit and stages all changes",
+            "Amends the remote repository's last commit directly"
+        ],
+        "correct": "Modifies the most recent commit by replacing it with a new commit that includes staged changes and/or an updated commit message"
+    },
+    {
+        "question": "What is the difference between 'git merge --ff' and 'git merge --no-ff'?",
+        "options": [
+            "--ff creates a merge commit; --no-ff performs a fast-forward and skips the merge commit",
+            "--ff (fast-forward) moves the branch pointer without a merge commit when possible; --no-ff always creates a merge commit, preserving branch history",
+            "--no-ff is faster because it skips history checks",
+            "They are identical in all scenarios"
+        ],
+        "correct": "--ff (fast-forward) moves the branch pointer without a merge commit when possible; --no-ff always creates a merge commit, preserving branch history"
+    },
+    {
+        "question": "What is the difference between 'forking' a repository and 'cloning' it on GitHub?",
+        "options": [
+            "Forking creates a server-side copy under your GitHub account; cloning creates a local copy on your machine",
+            "Cloning creates a server-side copy; forking creates a local copy",
+            "They are identical; forking is just GitHub's name for cloning",
+            "Forking only works for private repositories; cloning works for public ones"
+        ],
+        "correct": "Forking creates a server-side copy under your GitHub account; cloning creates a local copy on your machine"
+    },
+    {
+        "question": "What does 'git rebase -i HEAD~3' allow you to do?",
+        "options": [
+            "Rebase the current branch onto a remote branch interactively",
+            "Interactively rewrite the last 3 commits — squashing, editing messages, reordering, or dropping commits",
+            "Create 3 new branches from the last 3 commits",
+            "Merge the last 3 commits into a new branch"
+        ],
+        "correct": "Interactively rewrite the last 3 commits — squashing, editing messages, reordering, or dropping commits"
+    },
+    {
+        "question": "What is the purpose of 'git tag -a v1.0 -m \"Release 1.0\"'?",
+        "options": [
+            "Creates a lightweight tag (no metadata) on the current commit",
+            "Creates an annotated tag with a message, stored as a full Git object with tagger info and date",
+            "Tags a specific branch for deployment",
+            "Creates a release branch named v1.0"
+        ],
+        "correct": "Creates an annotated tag with a message, stored as a full Git object with tagger info and date"
+    },
+    {
+        "question": "What is the purpose of a Dockerfile?",
+        "options": [
+            "A configuration file that manages running Docker containers",
+            "A text file containing instructions to build a Docker image layer by layer",
+            "A file that defines Docker network and volume configurations",
+            "A YAML file for orchestrating multiple Docker containers"
+        ],
+        "correct": "A text file containing instructions to build a Docker image layer by layer"
+    },
+    {
+        "question": "What is the difference between the CMD and ENTRYPOINT instructions in a Dockerfile?",
+        "options": [
+            "CMD sets the image name; ENTRYPOINT sets the container name",
+            "ENTRYPOINT defines the main executable that always runs; CMD provides default arguments that can be overridden at runtime",
+            "CMD defines the main executable; ENTRYPOINT provides overridable defaults",
+            "They are identical; ENTRYPOINT is the newer syntax for CMD"
+        ],
+        "correct": "ENTRYPOINT defines the main executable that always runs; CMD provides default arguments that can be overridden at runtime"
+    },
+    {
+        "question": "What does the following Dockerfile instruction do?\nCOPY . /app\nWORKDIR /app\nRUN npm install",
+        "options": [
+            "Copies files, sets working directory to /app, and runs npm install inside the container during image build",
+            "Copies the /app directory to the host during container startup",
+            "Sets environment variables and installs npm globally",
+            "Mounts the current directory as a volume at /app"
+        ],
+        "correct": "Copies files, sets working directory to /app, and runs npm install inside the container during image build"
+    },
+    {
+        "question": "What is the difference between 'docker run' and 'docker exec'?",
+        "options": [
+            "docker run executes a command in a running container; docker exec creates a new container",
+            "docker run creates and starts a new container from an image; docker exec runs a command inside an already-running container",
+            "docker exec creates a new container; docker run restarts an existing one",
+            "They are identical commands"
+        ],
+        "correct": "docker run creates and starts a new container from an image; docker exec runs a command inside an already-running container"
+    },
+    {
+        "question": "What does 'docker run -d -p 8080:80 nginx' do?",
+        "options": [
+            "Runs nginx in the foreground and maps host port 80 to container port 8080",
+            "Runs nginx in detached (background) mode and maps host port 8080 to container port 80",
+            "Pulls and builds an nginx image from Docker Hub and deploys to port 8080",
+            "Runs nginx and creates a volume at port 8080"
+        ],
+        "correct": "Runs nginx in detached (background) mode and maps host port 8080 to container port 80"
+    },
+    {
+        "question": "What is the purpose of Docker volumes?",
+        "options": [
+            "To increase container CPU allocation",
+            "To persist data generated by and used by Docker containers beyond the container's lifecycle",
+            "To share network interfaces between containers",
+            "To store Docker images locally"
+        ],
+        "correct": "To persist data generated by and used by Docker containers beyond the container's lifecycle"
+    },
+    {
+        "question": "What is the difference between a Docker image and a Docker container?",
+        "options": [
+            "A container is a read-only template; an image is a running instance",
+            "An image is a read-only template with layers; a container is a running (or stopped) instance of an image with a writable layer",
+            "They are the same thing at different lifecycle stages",
+            "An image contains data; a container contains the application code"
+        ],
+        "correct": "An image is a read-only template with layers; a container is a running (or stopped) instance of an image with a writable layer"
+    },
+    {
+        "question": "What does the following Docker command do?\ndocker build -t myapp:1.0 -f Dockerfile.prod .",
+        "options": [
+            "Pulls myapp version 1.0 from Docker Hub",
+            "Builds a Docker image tagged as myapp:1.0 using Dockerfile.prod in the current directory as the build context",
+            "Runs myapp:1.0 container using a production configuration file",
+            "Tags an existing image myapp with version 1.0"
+        ],
+        "correct": "Builds a Docker image tagged as myapp:1.0 using Dockerfile.prod in the current directory as the build context"
+    },
+    {
+        "question": "What is the purpose of a multi-stage build in Docker?",
+        "options": [
+            "To build multiple images simultaneously",
+            "To reduce final image size by using intermediate build stages (e.g., compiling in one stage, copying only artifacts to a smaller runtime image)",
+            "To run multiple services in a single container",
+            "To build images for multiple platforms at once"
+        ],
+        "correct": "To reduce final image size by using intermediate build stages (e.g., compiling in one stage, copying only artifacts to a smaller runtime image)"
+    },
+    {
+        "question": "What does the following docker-compose.yml snippet configure?\nservices:\n  web:\n    image: nginx\n    ports:\n      - \"80:80\"\n  db:\n    image: postgres\n    environment:\n      POSTGRES_PASSWORD: secret",
+        "options": [
+            "Defines one service (web) with nginx and links it to a postgres instance",
+            "Defines two services: nginx mapped on port 80 and postgres with a password environment variable; both start together with docker-compose up",
+            "Creates two Docker networks and connects web and db to each",
+            "Builds custom images for nginx and postgres from local Dockerfiles"
+        ],
+        "correct": "Defines two services: nginx mapped on port 80 and postgres with a password environment variable; both start together with docker-compose up"
+    },
+    {
+        "question": "What is the difference between 'docker-compose up' and 'docker-compose up --build'?",
+        "options": [
+            "They are identical",
+            "docker-compose up starts services using cached images; docker-compose up --build forces a rebuild of images before starting",
+            "docker-compose up --build pulls images from registry; docker-compose up uses local images only",
+            "docker-compose up builds and starts; docker-compose up --build only builds without starting"
+        ],
+        "correct": "docker-compose up starts services using cached images; docker-compose up --build forces a rebuild of images before starting"
+    },
+    {
+        "question": "What is a Docker Registry and how is it different from Docker Hub?",
+        "options": [
+            "A Docker Registry is a local cache; Docker Hub is the global cache",
+            "A Docker Registry is the server-side storage system for Docker images; Docker Hub is Docker's public cloud-hosted registry (one implementation of a registry)",
+            "Docker Hub is open-source; a Docker Registry is always proprietary",
+            "They are identical terms used interchangeably"
+        ],
+        "correct": "A Docker Registry is the server-side storage system for Docker images; Docker Hub is Docker's public cloud-hosted registry (one implementation of a registry)"
+    },
+    {
+        "question": "What does 'docker network create --driver bridge my-network' do?",
+        "options": [
+            "Creates a host-mode network named my-network",
+            "Creates a user-defined bridge network named my-network that allows containers to communicate by name",
+            "Creates a network that spans multiple Docker hosts",
+            "Connects an existing container to a bridge network"
+        ],
+        "correct": "Creates a user-defined bridge network named my-network that allows containers to communicate by name"
+    },
+    {
+        "question": "What is the difference between the 'bridge', 'host', and 'none' Docker network modes?",
+        "options": [
+            "bridge: shares host network; host: isolated network; none: default",
+            "bridge: isolated network with NAT (default); host: container shares host's network stack directly; none: no networking",
+            "host: isolated with port mapping; bridge: shares host network; none: uses overlay",
+            "They are all identical in behavior but differ in performance"
+        ],
+        "correct": "bridge: isolated network with NAT (default); host: container shares host's network stack directly; none: no networking"
+    },
+    {
+        "question": "What is Docker Swarm and how does it relate to Kubernetes?",
+        "options": [
+            "Docker Swarm is a logging tool; Kubernetes is a monitoring tool",
+            "Both are container orchestration platforms; Docker Swarm is Docker's native, simpler orchestrator; Kubernetes is a more feature-rich, widely-adopted orchestrator",
+            "Docker Swarm is for single-node deployments; Kubernetes is for multi-cloud only",
+            "Kubernetes replaced Docker Swarm in Docker Desktop version 2+"
+        ],
+        "correct": "Both are container orchestration platforms; Docker Swarm is Docker's native, simpler orchestrator; Kubernetes is a more feature-rich, widely-adopted orchestrator"
+    },
+    {
+        "question": "What does the following command do in Docker Swarm?\ndocker service create --replicas 3 --name web nginx",
+        "options": [
+            "Creates 3 Docker containers named web locally",
+            "Creates a Swarm service named web with 3 replicated nginx containers distributed across the swarm nodes",
+            "Builds a nginx image with 3 layers",
+            "Starts 3 Docker Compose stacks"
+        ],
+        "correct": "Creates a Swarm service named web with 3 replicated nginx containers distributed across the swarm nodes"
+    },
+    {
+        "question": "What is the role of the Kubernetes Control Plane?",
+        "options": [
+            "It runs the application containers and workloads",
+            "It manages the cluster state, scheduling, and cluster-level decisions — components include API Server, etcd, Scheduler, and Controller Manager",
+            "It provides networking between pods",
+            "It stores container images for the cluster"
+        ],
+        "correct": "It manages the cluster state, scheduling, and cluster-level decisions — components include API Server, etcd, Scheduler, and Controller Manager"
+    },
+    {
+        "question": "What is a Kubernetes Pod?",
+        "options": [
+            "A virtual machine that runs on Kubernetes nodes",
+            "The smallest deployable unit in Kubernetes that can contain one or more containers sharing the same network namespace and storage",
+            "A grouping of multiple nodes in a cluster",
+            "A Kubernetes service endpoint"
+        ],
+        "correct": "The smallest deployable unit in Kubernetes that can contain one or more containers sharing the same network namespace and storage"
+    },
+    {
+        "question": "What is the purpose of a Kubernetes ReplicaSet?",
+        "options": [
+            "To manage rolling updates and rollbacks of Deployments",
+            "To ensure a specified number of pod replicas are running at all times, replacing pods that fail or are deleted",
+            "To define resource limits for containers",
+            "To expose pods to external traffic"
+        ],
+        "correct": "To ensure a specified number of pod replicas are running at all times, replacing pods that fail or are deleted"
+    },
+    {
+        "question": "What is the correct YAML to create a Kubernetes Pod running nginx?\nWhich field defines the container image?",
+        "options": [
+            "spec.containers.dockerfile",
+            "spec.containers[].image",
+            "metadata.image",
+            "spec.image"
+        ],
+        "correct": "spec.containers[].image"
+    },
+    {
+        "question": "What is the difference between a Kubernetes Deployment and a ReplicaSet?",
+        "options": [
+            "A Deployment manages a ReplicaSet and adds capabilities like rolling updates, rollbacks, and update strategies; ReplicaSet only ensures pod count",
+            "ReplicaSet manages Deployments; Deployment only manages individual Pods",
+            "They are identical; Deployment is just a newer name for ReplicaSet",
+            "Deployments are for stateful apps; ReplicaSets are for stateless apps"
+        ],
+        "correct": "A Deployment manages a ReplicaSet and adds capabilities like rolling updates, rollbacks, and update strategies; ReplicaSet only ensures pod count"
+    },
+    {
+        "question": "What does 'kubectl rollout undo deployment/myapp' do?",
+        "options": [
+            "Deletes the myapp deployment",
+            "Rolls back the myapp deployment to its previous revision",
+            "Pauses the current rollout",
+            "Scales the deployment to zero replicas"
+        ],
+        "correct": "Rolls back the myapp deployment to its previous revision"
+    },
+    {
+        "question": "What is the purpose of a Kubernetes Service?",
+        "options": [
+            "To schedule pods onto specific nodes",
+            "To provide a stable network endpoint (IP and DNS) for accessing a dynamic set of pods, enabling load balancing and service discovery",
+            "To define persistent storage for pods",
+            "To manage secrets and configuration"
+        ],
+        "correct": "To provide a stable network endpoint (IP and DNS) for accessing a dynamic set of pods, enabling load balancing and service discovery"
+    },
+    {
+        "question": "What is the difference between ClusterIP, NodePort, and LoadBalancer service types in Kubernetes?",
+        "options": [
+            "ClusterIP: exposes externally; NodePort: internal only; LoadBalancer: for databases",
+            "ClusterIP: internal cluster access only; NodePort: exposes on each node's IP at a static port; LoadBalancer: provisions an external cloud load balancer",
+            "LoadBalancer: internal cluster access; NodePort: external cloud LB; ClusterIP: static port on each node",
+            "They are all identical; the distinction is only in the YAML syntax"
+        ],
+        "correct": "ClusterIP: internal cluster access only; NodePort: exposes on each node's IP at a static port; LoadBalancer: provisions an external cloud load balancer"
+    },
+    {
+        "question": "What does the following Kubernetes YAML section define?\nresources:\n  requests:\n    memory: \"64Mi\"\n    cpu: \"250m\"\n  limits:\n    memory: \"128Mi\"\n    cpu: \"500m\"",
+        "options": [
+            "Node capacity limits for the entire cluster",
+            "Resource requests (guaranteed minimum) and limits (maximum allowed) for a container, used by the scheduler and enforced by the kubelet",
+            "Autoscaling thresholds for the HorizontalPodAutoscaler",
+            "Volume storage size and IOPS limits"
+        ],
+        "correct": "Resource requests (guaranteed minimum) and limits (maximum allowed) for a container, used by the scheduler and enforced by the kubelet"
+    },
+    {
+        "question": "What is etcd in a Kubernetes cluster?",
+        "options": [
+            "A container runtime used by Kubernetes",
+            "A distributed key-value store that serves as Kubernetes' backing store for all cluster state and configuration data",
+            "A monitoring tool for Kubernetes nodes",
+            "A Kubernetes plugin for DNS resolution"
+        ],
+        "correct": "A distributed key-value store that serves as Kubernetes' backing store for all cluster state and configuration data"
+    },
+    {
+        "question": "What is the purpose of a Kubernetes Namespace?",
+        "options": [
+            "A way to define DNS names for services",
+            "A virtual cluster within a physical cluster used to isolate resources, organize workloads, and apply access controls to different teams or environments",
+            "A group of nodes with similar hardware",
+            "A storage partition for persistent volumes"
+        ],
+        "correct": "A virtual cluster within a physical cluster used to isolate resources, organize workloads, and apply access controls to different teams or environments"
+    },
+    {
+        "question": "What does 'kubectl apply -f deployment.yaml' do compared to 'kubectl create -f deployment.yaml'?",
+        "options": [
+            "They are identical",
+            "kubectl apply creates or updates the resource (idempotent — safe to rerun); kubectl create fails if the resource already exists",
+            "kubectl create is idempotent; kubectl apply fails if the resource already exists",
+            "kubectl apply only works with Deployments; kubectl create works with all resource types"
+        ],
+        "correct": "kubectl apply creates or updates the resource (idempotent — safe to rerun); kubectl create fails if the resource already exists"
+    },
+    {
+        "question": "What is a Kubernetes ConfigMap used for?",
+        "options": [
+            "Storing sensitive data like passwords and API keys",
+            "Storing non-sensitive configuration data as key-value pairs that can be injected into pods as environment variables or mounted as files",
+            "Mapping container ports to node ports",
+            "Configuring the Kubernetes network plugin"
+        ],
+        "correct": "Storing non-sensitive configuration data as key-value pairs that can be injected into pods as environment variables or mounted as files"
+    },
+    {
+        "question": "What is the difference between a Kubernetes Secret and a ConfigMap?",
+        "options": [
+            "Secrets are stored in etcd encrypted by default; ConfigMaps store any data; they are functionally identical",
+            "Secrets are intended for sensitive data (stored base64-encoded in etcd, can be encrypted at rest); ConfigMaps are for non-sensitive configuration data",
+            "ConfigMaps allow larger data; Secrets have a 1KB limit",
+            "Secrets are only available to cluster admins; ConfigMaps are available to all users"
+        ],
+        "correct": "Secrets are intended for sensitive data (stored base64-encoded in etcd, can be encrypted at rest); ConfigMaps are for non-sensitive configuration data"
+    },
+    {
+        "question": "What does 'kubectl describe pod mypod' show that 'kubectl get pod mypod' does not?",
+        "options": [
+            "They show identical information",
+            "kubectl describe shows detailed info including events, conditions, container statuses, resource limits, and recent logs; kubectl get shows a summary status",
+            "kubectl get shows events; kubectl describe shows only metadata",
+            "kubectl describe is only for debugging crashed pods"
+        ],
+        "correct": "kubectl describe shows detailed info including events, conditions, container statuses, resource limits, and recent logs; kubectl get shows a summary status"
+    },
+    {
+        "question": "What is the role of the kube-scheduler in Kubernetes?",
+        "options": [
+            "It manages the lifecycle of etcd data",
+            "It watches for newly created pods with no assigned node and selects the best node based on resource requirements, constraints, and policies",
+            "It enforces network policies between pods",
+            "It handles rolling updates for Deployments"
+        ],
+        "correct": "It watches for newly created pods with no assigned node and selects the best node based on resource requirements, constraints, and policies"
+    },
+    {
+        "question": "What is a DaemonSet in Kubernetes?",
+        "options": [
+            "A set of privileged pods that manage cluster secrets",
+            "A controller that ensures exactly one pod runs on every (or selected) node — commonly used for log collectors, monitoring agents, and network plugins",
+            "A type of deployment that runs background batch jobs",
+            "A service that load-balances traffic across daemon processes"
+        ],
+        "correct": "A controller that ensures exactly one pod runs on every (or selected) node — commonly used for log collectors, monitoring agents, and network plugins"
+    },
+    {
+        "question": "What does the following kubectl command output?\nkubectl get pods -n production -o wide",
+        "options": [
+            "Lists all pods across all namespaces in wide format",
+            "Lists all pods in the 'production' namespace with extra info like node name and pod IP",
+            "Lists production deployments in wide format",
+            "Gets all production namespaces with extended labels"
+        ],
+        "correct": "Lists all pods in the 'production' namespace with extra info like node name and pod IP"
+    },
+    {
+        "question": "What is a Kubernetes Ingress resource?",
+        "options": [
+            "A type of pod that handles incoming cluster traffic",
+            "An API object that manages external HTTP/HTTPS access to services, providing routing rules, SSL termination, and name-based virtual hosting",
+            "A firewall rule for blocking external traffic",
+            "A load balancer service type that only works on-premises"
+        ],
+        "correct": "An API object that manages external HTTP/HTTPS access to services, providing routing rules, SSL termination, and name-based virtual hosting"
+    },
+    {
+        "question": "What is the purpose of the kubelet on a Kubernetes worker node?",
+        "options": [
+            "It runs the Kubernetes API server on worker nodes",
+            "It is the node agent that ensures containers described in PodSpecs are running and healthy, communicating with the control plane",
+            "It manages the cluster's DNS resolution",
+            "It provides a container runtime interface for scheduling"
+        ],
+        "correct": "It is the node agent that ensures containers described in PodSpecs are running and healthy, communicating with the control plane"
+    },
+    {
+        "question": "How do you set up a multi-node Kubernetes cluster using kubeadm? What is the first step on the master node?",
+        "options": [
+            "kubectl init --master",
+            "kubeadm init (with optional --pod-network-cidr flag), then configure kubectl with the generated kubeconfig",
+            "kubeadm bootstrap --master --flannel",
+            "systemctl start kubernetes-master"
+        ],
+        "correct": "kubeadm init (with optional --pod-network-cidr flag), then configure kubectl with the generated kubeconfig"
+    },
+    {
+        "question": "What command would you use to join a worker node to a kubeadm-initialized cluster?",
+        "options": [
+            "kubectl node add --master <ip>",
+            "kubeadm join <master-ip>:<port> --token <token> --discovery-token-ca-cert-hash sha256:<hash>",
+            "kubeadm connect --cluster <cluster-name>",
+            "kubectl join --node <worker-ip>"
+        ],
+        "correct": "kubeadm join <master-ip>:<port> --token <token> --discovery-token-ca-cert-hash sha256:<hash>"
+    },
+    {
+        "question": "What is Ansible and what makes it 'agentless'?",
+        "options": [
+            "Ansible is a container orchestration tool; agentless means it doesn't need containers",
+            "Ansible is a configuration management and automation tool; agentless means it connects to managed nodes via SSH (or WinRM) without installing any agent software on them",
+            "Ansible is agentless because it uses REST APIs instead of CLI",
+            "Ansible runs agents that install themselves and self-destruct after execution"
+        ],
+        "correct": "Ansible is a configuration management and automation tool; agentless means it connects to managed nodes via SSH (or WinRM) without installing any agent software on them"
+    },
+    {
+        "question": "What is an Ansible Playbook?",
+        "options": [
+            "A binary executable that runs Ansible commands",
+            "A YAML file that defines a set of plays (ordered sets of tasks) to be executed on specified hosts",
+            "A Python script that Ansible generates automatically",
+            "A GUI tool for managing Ansible inventories"
+        ],
+        "correct": "A YAML file that defines a set of plays (ordered sets of tasks) to be executed on specified hosts"
+    },
+    {
+        "question": "What is the purpose of the Ansible Inventory file?",
+        "options": [
+            "It lists all Ansible modules available for use",
+            "It defines the hosts and groups of hosts on which Ansible will run playbooks, along with connection variables",
+            "It stores encrypted secrets like passwords and SSH keys",
+            "It tracks the execution history of Ansible playbooks"
+        ],
+        "correct": "It defines the hosts and groups of hosts on which Ansible will run playbooks, along with connection variables"
+    },
+    {
+        "question": "What does the following Ansible task do?\n- name: Install nginx\n  apt:\n    name: nginx\n    state: present",
+        "options": [
+            "Removes nginx if it is installed",
+            "Installs the nginx package using apt if not already present, making the task idempotent",
+            "Downloads the nginx source code and compiles it",
+            "Starts the nginx service after installation"
+        ],
+        "correct": "Installs the nginx package using apt if not already present, making the task idempotent"
+    },
+    {
+        "question": "What is idempotency in Ansible and why is it important?",
+        "options": [
+            "Idempotency means tasks always run regardless of current state, ensuring fresh configuration",
+            "Idempotency means running a playbook multiple times produces the same result as running it once — Ansible only makes changes when needed, preventing unintended drift",
+            "Idempotency means Ansible tasks run in parallel to speed up execution",
+            "Idempotency means tasks can be rolled back automatically"
+        ],
+        "correct": "Idempotency means running a playbook multiple times produces the same result as running it once — Ansible only makes changes when needed, preventing unintended drift"
+    },
+    {
+        "question": "What are Ansible Roles used for?",
+        "options": [
+            "Defining user permissions within Ansible Tower",
+            "Organizing and reusing related tasks, variables, files, and templates in a standardized directory structure for modular playbooks",
+            "Assigning tasks to specific Ansible users",
+            "Defining the execution order of playbooks"
+        ],
+        "correct": "Organizing and reusing related tasks, variables, files, and templates in a standardized directory structure for modular playbooks"
+    },
+    {
+        "question": "What does the 'ansible-vault encrypt secrets.yml' command do?",
+        "options": [
+            "Decrypts an already encrypted file",
+            "Encrypts the secrets.yml file so sensitive data (passwords, keys) can be safely stored in version control",
+            "Creates a new empty vault and imports secrets.yml",
+            "Validates the syntax of secrets.yml for security issues"
+        ],
+        "correct": "Encrypts the secrets.yml file so sensitive data (passwords, keys) can be safely stored in version control"
+    },
+    {
+        "question": "What is the difference between an Ansible 'task' and an Ansible 'handler'?",
+        "options": [
+            "Tasks run once at the end of a play; handlers run at every step",
+            "Tasks execute in order during a play; handlers are triggered by 'notify' and run only once at the end of a play if notified — commonly used for restarting services",
+            "Handlers execute conditionally based on variables; tasks always execute",
+            "They are identical; handlers are just tasks with a different name"
+        ],
+        "correct": "Tasks execute in order during a play; handlers are triggered by 'notify' and run only once at the end of a play if notified — commonly used for restarting services"
+    },
+    {
+        "question": "What does the following Ansible snippet demonstrate?\n- name: Deploy config\n  template:\n    src: nginx.conf.j2\n    dest: /etc/nginx/nginx.conf\n  notify: restart nginx",
+        "options": [
+            "Copies a static file to the destination and starts nginx",
+            "Renders a Jinja2 template with variable substitution and deploys it; notifies the 'restart nginx' handler if the file changes",
+            "Creates a new nginx.conf from scratch using builtin defaults",
+            "Downloads nginx.conf from a remote URL and saves it locally"
+        ],
+        "correct": "Renders a Jinja2 template with variable substitution and deploys it; notifies the 'restart nginx' handler if the file changes"
+    },
+    {
+        "question": "Which Ansible module is used to run arbitrary shell commands on remote hosts?",
+        "options": [
+            "command (for simple commands) and shell (for commands requiring shell features like pipes and redirects)",
+            "execute",
+            "run",
+            "bash"
+        ],
+        "correct": "command (for simple commands) and shell (for commands requiring shell features like pipes and redirects)"
+    },
+    {
+        "question": "What is CI/CD and what is the difference between Continuous Delivery and Continuous Deployment?",
+        "options": [
+            "They are identical; the terms are used interchangeably",
+            "CI automates integration; CD (Delivery) automates building to a staging environment requiring manual approval to production; CD (Deployment) automatically deploys to production without manual approval",
+            "Continuous Delivery deploys to production automatically; Continuous Deployment requires manual approval",
+            "CI is a Docker concept; CD is a Kubernetes concept"
+        ],
+        "correct": "CI automates integration; CD (Delivery) automates building to a staging environment requiring manual approval to production; CD (Deployment) automatically deploys to production without manual approval"
+    },
+    {
+        "question": "What is Jenkins and what is its primary role in a CI/CD pipeline?",
+        "options": [
+            "Jenkins is a container runtime for running CI jobs",
+            "Jenkins is an open-source automation server that orchestrates CI/CD pipelines — building, testing, and deploying applications triggered by code changes",
+            "Jenkins is a code repository similar to GitHub",
+            "Jenkins is a monitoring tool for Kubernetes deployments"
+        ],
+        "correct": "Jenkins is an open-source automation server that orchestrates CI/CD pipelines — building, testing, and deploying applications triggered by code changes"
+    },
+    {
+        "question": "What is a Jenkinsfile and what are its two main syntaxes?",
+        "options": [
+            "A Jenkins configuration file in XML; syntaxes are freestyle and pipeline",
+            "A text file defining a Jenkins pipeline as code; supports Declarative Pipeline (structured, opinionated) and Scripted Pipeline (Groovy-based, flexible)",
+            "A YAML file for defining Jenkins jobs; syntaxes are sequential and parallel",
+            "A JSON file for configuring Jenkins plugins; syntaxes are simple and advanced"
+        ],
+        "correct": "A text file defining a Jenkins pipeline as code; supports Declarative Pipeline (structured, opinionated) and Scripted Pipeline (Groovy-based, flexible)"
+    },
+    {
+        "question": "What is the purpose of Maven in a CI/CD pipeline?",
+        "options": [
+            "Maven is a container runtime used to build Docker images",
+            "Maven is a Java build and dependency management tool that compiles code, runs tests, and packages applications (e.g., into JARs/WARs) in a CI pipeline",
+            "Maven is a version control tool similar to Git",
+            "Maven orchestrates the deployment of applications to Kubernetes"
+        ],
+        "correct": "Maven is a Java build and dependency management tool that compiles code, runs tests, and packages applications (e.g., into JARs/WARs) in a CI pipeline"
+    },
+    {
+        "question": "In a Jenkins pipeline, what does the following stage do?\nstage('Build') {\n    steps {\n        sh 'mvn clean package -DskipTests'\n    }\n}",
+        "options": [
+            "Runs unit tests and packages the application",
+            "Compiles and packages the Maven project into a JAR/WAR while skipping test execution",
+            "Cleans the Docker image and pushes to registry",
+            "Deploys the package to a Tomcat server"
+        ],
+        "correct": "Compiles and packages the Maven project into a JAR/WAR while skipping test execution"
+    },
+    {
+        "question": "What is the role of Apache Tomcat in a CI/CD pipeline?",
+        "options": [
+            "Tomcat is a build tool that compiles Java applications",
+            "Tomcat is a Java Servlet/JSP web server and application container used to deploy and serve Java web applications (WARs) as part of a CD pipeline",
+            "Tomcat is a container orchestrator for Java microservices",
+            "Tomcat manages Jenkins job queues"
+        ],
+        "correct": "Tomcat is a Java Servlet/JSP web server and application container used to deploy and serve Java web applications (WARs) as part of a CD pipeline"
+    },
+    {
+        "question": "In a Jenkins pipeline integrating Docker, what does the following step do?\nstage('Docker Build & Push') {\n    steps {\n        sh 'docker build -t myrepo/myapp:${BUILD_NUMBER} .'\n        sh 'docker push myrepo/myapp:${BUILD_NUMBER}'\n    }\n}",
+        "options": [
+            "Pulls a Docker image and tests it",
+            "Builds a Docker image tagged with the Jenkins build number and pushes it to a Docker registry",
+            "Builds and immediately deploys the container to production",
+            "Runs the application in Docker and captures output for testing"
+        ],
+        "correct": "Builds a Docker image tagged with the Jenkins build number and pushes it to a Docker registry"
+    },
+    {
+        "question": "What is the purpose of the 'deploy' stage in a Jenkins pipeline that uses kubectl?",
+        "options": [
+            "To build and test the Kubernetes YAML files",
+            "To apply Kubernetes manifests (via kubectl apply) to update deployments in the cluster with the newly built image",
+            "To scale down existing deployments before the new version is ready",
+            "To validate that the Kubernetes cluster is running"
+        ],
+        "correct": "To apply Kubernetes manifests (via kubectl apply) to update deployments in the cluster with the newly built image"
+    },
+    {
+        "question": "What is a Jenkins agent (node) in the context of a distributed build environment?",
+        "options": [
+            "A Jenkins plugin that monitors pipeline execution",
+            "A machine (physical, VM, or container) that connects to the Jenkins controller and executes build jobs, enabling parallel and distributed builds",
+            "The Jenkins server itself running all pipelines",
+            "An Ansible host managed by Jenkins for deployments"
+        ],
+        "correct": "A machine (physical, VM, or container) that connects to the Jenkins controller and executes build jobs, enabling parallel and distributed builds"
+    },
+    {
+        "question": "What does the following Declarative Jenkinsfile section configure?\nenvironment {\n    DOCKER_REGISTRY = 'docker.io/myuser'\n    IMAGE_TAG = \"${env.BUILD_NUMBER}\"\n}",
+        "options": [
+            "Defines Docker runtime settings for the Jenkins agent",
+            "Declares pipeline-level environment variables accessible to all stages as DOCKER_REGISTRY and a dynamic IMAGE_TAG using the Jenkins build number",
+            "Sets environment variables only for the first stage",
+            "Configures the Jenkins controller's Docker plugin settings"
+        ],
+        "correct": "Declares pipeline-level environment variables accessible to all stages as DOCKER_REGISTRY and a dynamic IMAGE_TAG using the Jenkins build number"
+    },
+    {
+        "question": "In a Jenkins-Ansible-Docker pipeline, what is the typical sequence of stages?",
+        "options": [
+            "Deploy → Build → Test → Push",
+            "Code Checkout → Build (Maven/compile) → Test → Docker Build → Docker Push → Ansible Deploy",
+            "Docker Pull → Ansible Install → Jenkins Build → Push to Git",
+            "Git Clone → Docker Run → Test → Kubernetes Apply"
+        ],
+        "correct": "Code Checkout → Build (Maven/compile) → Test → Docker Build → Docker Push → Ansible Deploy"
+    },
+    {
+        "question": "What is the purpose of Jenkins Credentials (Manage Credentials)?",
+        "options": [
+            "To manage Jenkins user accounts and RBAC",
+            "To securely store and inject sensitive data (SSH keys, passwords, tokens) into pipelines without exposing them in plaintext in Jenkinsfiles",
+            "To configure Jenkins agent connection credentials",
+            "To store Kubernetes kubeconfig files only"
+        ],
+        "correct": "To securely store and inject sensitive data (SSH keys, passwords, tokens) into pipelines without exposing them in plaintext in Jenkinsfiles"
+    },
+    {
+        "question": "What is the difference between 'docker stop' and 'docker kill'?",
+        "options": [
+            "docker kill gracefully shuts down a container; docker stop forcefully terminates it",
+            "docker stop sends SIGTERM (graceful shutdown with a timeout then SIGKILL); docker kill sends SIGKILL (immediate termination by default)",
+            "docker stop removes the container; docker kill only stops it",
+            "They are identical commands"
+        ],
+        "correct": "docker stop sends SIGTERM (graceful shutdown with a timeout then SIGKILL); docker kill sends SIGKILL (immediate termination by default)"
+    },
+    {
+        "question": "What does 'docker system prune -a' do?",
+        "options": [
+            "Removes only stopped containers",
+            "Removes all stopped containers, unused networks, dangling images, and all unused images (not just dangling ones) to free disk space",
+            "Removes all running containers forcefully",
+            "Resets Docker to factory settings"
+        ],
+        "correct": "Removes all stopped containers, unused networks, dangling images, and all unused images (not just dangling ones) to free disk space"
+    },
+    {
+        "question": "What is a 'dangling' Docker image?",
+        "options": [
+            "An image that is currently running in a container",
+            "An untagged image layer that is no longer referenced by any tagged image, typically left after rebuilding an image with the same tag",
+            "An image with a broken manifest",
+            "An image stored in a private registry without a valid SSL certificate"
+        ],
+        "correct": "An untagged image layer that is no longer referenced by any tagged image, typically left after rebuilding an image with the same tag"
+    },
+    {
+        "question": "What is the purpose of the .dockerignore file?",
+        "options": [
+            "It prevents Docker from running on certain directories",
+            "It specifies files and directories to exclude from the Docker build context, reducing build time and preventing sensitive files from being sent to the daemon",
+            "It lists images that should not be pulled from Docker Hub",
+            "It ignores Docker daemon errors during builds"
+        ],
+        "correct": "It specifies files and directories to exclude from the Docker build context, reducing build time and preventing sensitive files from being sent to the daemon"
+    },
+    {
+        "question": "What does 'docker inspect <container_id>' return?",
+        "options": [
+            "The container's live resource usage statistics",
+            "A JSON object with detailed low-level information about the container including its configuration, network settings, mounts, and state",
+            "The container's application logs",
+            "A list of all processes running inside the container"
+        ],
+        "correct": "A JSON object with detailed low-level information about the container including its configuration, network settings, mounts, and state"
+    },
+    {
+        "question": "In Kubernetes, what is a PersistentVolume (PV) and PersistentVolumeClaim (PVC)?",
+        "options": [
+            "PV is the storage request from a pod; PVC is the actual storage resource",
+            "PV is a cluster-level storage resource provisioned by an admin; PVC is a user's request for storage that binds to an appropriate PV",
+            "They are identical; PVC is just the newer API version of PV",
+            "PV stores ConfigMaps; PVC stores Secrets"
+        ],
+        "correct": "PV is a cluster-level storage resource provisioned by an admin; PVC is a user's request for storage that binds to an appropriate PV"
+    },
+    {
+        "question": "What is a Kubernetes StatefulSet and when would you use it instead of a Deployment?",
+        "options": [
+            "StatefulSet is used for any application that requires more than 3 replicas",
+            "StatefulSet provides stable network identities and persistent storage for each pod, ordered deployment/scaling — ideal for stateful apps like databases",
+            "StatefulSet is a deprecated feature replaced by Deployments with PVCs",
+            "StatefulSet is only available in enterprise Kubernetes distributions"
+        ],
+        "correct": "StatefulSet provides stable network identities and persistent storage for each pod, ordered deployment/scaling — ideal for stateful apps like databases"
+    },
+    {
+        "question": "What is Kubernetes Horizontal Pod Autoscaling (HPA)?",
+        "options": [
+            "Automatically adjusting the resource limits of a single pod",
+            "Automatically scaling the number of pod replicas in a Deployment/ReplicaSet based on observed CPU utilization or custom metrics",
+            "Adding more nodes to the cluster when resource usage is high",
+            "Vertically scaling a pod by increasing its CPU and memory limits"
+        ],
+        "correct": "Automatically scaling the number of pod replicas in a Deployment/ReplicaSet based on observed CPU utilization or custom metrics"
+    },
+    {
+        "question": "What does the following Kubernetes liveness probe do?\nlivenessProbe:\n  httpGet:\n    path: /health\n    port: 8080\n  initialDelaySeconds: 10\n  periodSeconds: 5",
+        "options": [
+            "Checks if the container is ready to receive traffic every 5 seconds",
+            "Sends an HTTP GET to /health on port 8080 every 5 seconds (after an initial 10s delay); if it fails, the kubelet restarts the container",
+            "Logs the container health status every 5 seconds",
+            "Terminates the pod if /health returns anything other than 404"
+        ],
+        "correct": "Sends an HTTP GET to /health on port 8080 every 5 seconds (after an initial 10s delay); if it fails, the kubelet restarts the container"
+    },
+    {
+        "question": "What is the difference between a liveness probe and a readiness probe in Kubernetes?",
+        "options": [
+            "They are identical; readiness is the old name for liveness",
+            "Liveness probe determines if a container should be restarted (unhealthy); readiness probe determines if a container is ready to receive traffic (if not ready, removed from Service endpoints)",
+            "Readiness probe restarts the container; liveness probe removes it from the service",
+            "Liveness probes only work with HTTP; readiness probes work with TCP and exec commands"
+        ],
+        "correct": "Liveness probe determines if a container should be restarted (unhealthy); readiness probe determines if a container is ready to receive traffic (if not ready, removed from Service endpoints)"
+    },
+    {
+        "question": "What is the purpose of Kubernetes RBAC (Role-Based Access Control)?",
+        "options": [
+            "To control network traffic between pods based on roles",
+            "To regulate who can perform which actions on which Kubernetes API resources using Roles, ClusterRoles, RoleBindings, and ClusterRoleBindings",
+            "To assign CPU and memory quotas to namespaces",
+            "To manage container image pull permissions from private registries"
+        ],
+        "correct": "To regulate who can perform which actions on which Kubernetes API resources using Roles, ClusterRoles, RoleBindings, and ClusterRoleBindings"
+    },
+    {
+        "question": "What is Docker's overlay2 storage driver and why is it significant?",
+        "options": [
+            "It is a legacy storage driver replaced by aufs",
+            "It is the recommended default Linux storage driver that efficiently manages image layers using copy-on-write semantics with minimal disk space usage",
+            "It provides encrypted storage for sensitive container data",
+            "It enables cross-host container storage without a volume plugin"
+        ],
+        "correct": "It is the recommended default Linux storage driver that efficiently manages image layers using copy-on-write semantics with minimal disk space usage"
+    },
+    {
+        "question": "What does the following docker-compose.yml 'depends_on' option do?\nservices:\n  web:\n    image: myapp\n    depends_on:\n      - db\n  db:\n    image: postgres",
+        "options": [
+            "Ensures the db service's application is fully initialized before web starts",
+            "Ensures Docker Compose starts the db container before the web container, but does NOT wait for db to be ready/healthy",
+            "Creates a network link between web and db",
+            "Prevents web from running if db exits with an error"
+        ],
+        "correct": "Ensures Docker Compose starts the db container before the web container, but does NOT wait for db to be ready/healthy"
+    },
+    {
+        "question": "What is a Jenkins webhook and why is it used?",
+        "options": [
+            "A Jenkins plugin for connecting to Docker registries",
+            "A mechanism where GitHub/GitLab sends an HTTP POST to Jenkins when events (like a push) occur, triggering an automatic pipeline build without polling",
+            "A Jenkins security feature for validating incoming API calls",
+            "A way to notify developers when builds fail"
+        ],
+        "correct": "A mechanism where GitHub/GitLab sends an HTTP POST to Jenkins when events (like a push) occur, triggering an automatic pipeline build without polling"
+    },
+    {
+        "question": "In a Jenkins pipeline, what does the 'post' block do?\npost {\n  success { mail to: 'team@company.com', subject: 'Build Passed' }\n  failure { slackSend message: 'Build Failed!' }\n}",
+        "options": [
+            "Defines pre-build steps that run before any stage",
+            "Defines post-build actions that run after the pipeline completes, conditionally based on build status (success, failure, always, unstable)",
+            "Configures Jenkins notifications for manual approval gates",
+            "Runs cleanup tasks only when the pipeline is aborted"
+        ],
+        "correct": "Defines post-build actions that run after the pipeline completes, conditionally based on build status (success, failure, always, unstable)"
+    },
+    {
+        "question": "What is the purpose of Ansible's 'when' conditional in a task?\n- name: Start nginx\n  service:\n    name: nginx\n    state: started\n  when: ansible_os_family == 'Debian'",
+        "options": [
+            "Runs the task when the playbook starts",
+            "Conditionally executes the task only when the target host's OS family is Debian, enabling conditional logic in playbooks",
+            "Runs the task only on the first execution",
+            "Skips the task if nginx is already installed"
+        ],
+        "correct": "Conditionally executes the task only when the target host's OS family is Debian, enabling conditional logic in playbooks"
+    },
+    {
+        "question": "What is 'git bisect' used for?",
+        "options": [
+            "Splitting a commit into two smaller commits",
+            "Using binary search through commit history to find the specific commit that introduced a bug",
+            "Dividing a repository into two separate repositories",
+            "Merging two branches by finding the midpoint commit"
+        ],
+        "correct": "Using binary search through commit history to find the specific commit that introduced a bug"
+    },
+    {
+        "question": "What does the EXPOSE instruction in a Dockerfile do?",
+        "options": [
+            "It automatically publishes the port to the host machine",
+            "It documents which port(s) the container listens on at runtime; it does NOT actually publish the port — that requires -p in docker run",
+            "It opens a firewall rule for the specified port",
+            "It creates a network binding between the container and the host on the specified port"
+        ],
+        "correct": "It documents which port(s) the container listens on at runtime; it does NOT actually publish the port — that requires -p in docker run"
+    },
+    {
+        "question": "What is the Kubernetes kube-proxy component responsible for?",
+        "options": [
+            "Proxying kubectl commands to the API server",
+            "Maintaining network rules on nodes (using iptables/IPVS) to enable communication to pods across the cluster and implement Service load balancing",
+            "Proxying container image pulls from the registry",
+            "Encrypting traffic between pods"
+        ],
+        "correct": "Maintaining network rules on nodes (using iptables/IPVS) to enable communication to pods across the cluster and implement Service load balancing"
+    },
+    {
+        "question": "What is the difference between 'git clone' and 'git init'?",
+        "options": [
+            "git init creates a new local repository; git clone creates a copy of an existing remote repository locally",
+            "git clone initializes a repository; git init copies a remote repository",
+            "They are identical; git init is the older command",
+            "git init creates a bare repository; git clone creates a normal repository"
+        ],
+        "correct": "git init creates a new local repository; git clone creates a copy of an existing remote repository locally"
+    },
+    {
+        "question": "What is an Ansible 'fact' and how is it collected?",
+        "options": [
+            "A hardcoded variable defined in the inventory file",
+            "System information about managed nodes (OS, IP, memory, etc.) automatically gathered at the start of a playbook run via the 'setup' module (gather_facts: yes)",
+            "A user-defined variable stored in group_vars",
+            "An Ansible module output that persists between playbook runs"
+        ],
+        "correct": "System information about managed nodes (OS, IP, memory, etc.) automatically gathered at the start of a playbook run via the 'setup' module (gather_facts: yes)"
+    },
+    {
+        "question": "What does the following Kubernetes command do?\nkubectl scale deployment myapp --replicas=5",
+        "options": [
+            "Sets a maximum of 5 pods for autoscaling",
+            "Immediately scales the myapp Deployment to run exactly 5 pod replicas",
+            "Scales the cluster to 5 nodes",
+            "Sets the minimum number of pods to 5"
+        ],
+        "correct": "Immediately scales the myapp Deployment to run exactly 5 pod replicas"
+    },
+    {
+        "question": "What is the purpose of the ARG instruction in a Dockerfile vs ENV?",
+        "options": [
+            "ARG is available only at runtime; ENV is available only at build time",
+            "ARG defines build-time variables passed with --build-arg (not available in running container); ENV defines environment variables available both at build time and in the running container",
+            "They are identical; ARG is for numeric values, ENV for strings",
+            "ENV encrypts values; ARG stores them in plaintext"
+        ],
+        "correct": "ARG defines build-time variables passed with --build-arg (not available in running container); ENV defines environment variables available both at build time and in the running container"
+    },
+    {
+        "question": "In Ansible, what is the difference between 'copy' and 'template' modules?",
+        "options": [
+            "copy transfers static files as-is to remote hosts; template renders Jinja2 template files with variable substitution before transferring",
+            "template copies files faster; copy supports Jinja2 templating",
+            "copy works for directories; template works only for single files",
+            "They are identical; template is the deprecated version of copy"
+        ],
+        "correct": "copy transfers static files as-is to remote hosts; template renders Jinja2 template files with variable substitution before transferring"
+    },
+    {
+        "question": "What does 'kubectl port-forward pod/mypod 8080:80' do?",
+        "options": [
+            "Permanently exposes pod port 80 on the host at port 8080",
+            "Creates a temporary tunnel that forwards local port 8080 to port 80 on the pod for debugging, without creating a Service",
+            "Updates the pod's containerPort to 8080",
+            "Creates a NodePort service mapping port 80 to 8080"
+        ],
+        "correct": "Creates a temporary tunnel that forwards local port 8080 to port 80 on the pod for debugging, without creating a Service"
+    },
+    {
+        "question": "What is the purpose of the '--record' flag in older kubectl commands (e.g., kubectl apply --record)?",
+        "options": [
+            "It saves the kubectl output to a log file",
+            "It annotates the resource with the command used, preserving it in the rollout history for auditing — deprecated in newer Kubernetes versions",
+            "It enables verbose logging for the API server",
+            "It records the current cluster state as a backup"
+        ],
+        "correct": "It annotates the resource with the command used, preserving it in the rollout history for auditing — deprecated in newer Kubernetes versions"
+    },
+    {
+        "question": "What does the following Jenkins pipeline code demonstrate?\nstage('Deploy to Kubernetes') {\n    steps {\n        withKubeConfig([credentialsId: 'k8s-cred']) {\n            sh 'kubectl set image deployment/myapp myapp=myrepo/myapp:${BUILD_NUMBER}'\n        }\n    }\n}",
+        "options": [
+            "Builds a Kubernetes image from scratch and deploys it",
+            "Uses stored Jenkins credentials to authenticate with Kubernetes and performs a rolling update of the myapp deployment to the newly built image",
+            "Creates a new Kubernetes cluster and deploys the application",
+            "Pulls the image from Kubernetes and caches it in Jenkins"
+        ],
+        "correct": "Uses stored Jenkins credentials to authenticate with Kubernetes and performs a rolling update of the myapp deployment to the newly built image"
+    },
+    {
+        "question": "What is the Git 'upstream' in the context of a forked repository?",
+        "options": [
+            "The main production branch of the forked repository",
+            "The original repository from which the fork was created, typically added as a remote to sync changes: git remote add upstream <original-url>",
+            "The remote named 'origin' on the forked repository",
+            "The GitHub Actions workflow that syncs forks automatically"
+        ],
+        "correct": "The original repository from which the fork was created, typically added as a remote to sync changes: git remote add upstream <original-url>"
+    },
+    {
+        "question": "What is the Kubernetes concept of 'taints and tolerations'?",
+        "options": [
+            "Taints allow pods to prefer certain nodes; tolerations repel pods from nodes",
+            "Taints are applied to nodes to repel pods; tolerations are applied to pods to allow them to be scheduled on tainted nodes",
+            "Taints define pod priority; tolerations define pod resource limits",
+            "They are network policies that control ingress and egress traffic"
+        ],
+        "correct": "Taints are applied to nodes to repel pods; tolerations are applied to pods to allow them to be scheduled on tainted nodes"
+    },
+    {
+        "question": "What is the purpose of 'docker-compose down -v'?",
+        "options": [
+            "Stops all containers and removes named/anonymous volumes defined in the compose file, completely cleaning up the environment",
+            "Stops containers but keeps volumes intact",
+            "Scales all services down to zero replicas",
+            "Removes only the networks created by docker-compose up"
+        ],
+        "correct": "Stops all containers and removes named/anonymous volumes defined in the compose file, completely cleaning up the environment"
+    },
+    {
+        "question": "In a Jenkins-Docker CI/CD pipeline, why would you mount the Docker socket (/var/run/docker.sock) into the Jenkins agent container?",
+        "options": [
+            "To give the Jenkins container access to the host filesystem",
+            "To allow the Jenkins agent container to communicate with the host's Docker daemon so it can build and push Docker images from within a container",
+            "To share Jenkins build artifacts with other containers",
+            "To enable Jenkins to access Kubernetes cluster configuration"
+        ],
+        "correct": "To allow the Jenkins agent container to communicate with the host's Docker daemon so it can build and push Docker images from within a container"
+    },
+    {
+        "question": "What is the difference between Ansible 'block' and 'include_tasks'?",
+        "options": [
+            "block groups tasks together enabling shared error handling (rescue/always); include_tasks dynamically includes a separate task file at runtime",
+            "include_tasks is the block equivalent with error handling; block includes external task files",
+            "They are identical in function",
+            "block is used for looping; include_tasks is used for conditional execution"
+        ],
+        "correct": "block groups tasks together enabling shared error handling (rescue/always); include_tasks dynamically includes a separate task file at runtime"
+    },
+    {
+        "question": "What does the following Kubernetes YAML define?\napiVersion: autoscaling/v2\nkind: HorizontalPodAutoscaler\nmetadata:\n  name: myapp-hpa\nspec:\n  scaleTargetRef:\n    apiVersion: apps/v1\n    kind: Deployment\n    name: myapp\n  minReplicas: 2\n  maxReplicas: 10\n  metrics:\n  - type: Resource\n    resource:\n      name: cpu\n      target:\n        type: Utilization\n        averageUtilization: 70",
+        "options": [
+            "A static Deployment with exactly 10 replicas",
+            "A HorizontalPodAutoscaler that scales the myapp Deployment between 2 and 10 replicas, targeting 70% average CPU utilization",
+            "A resource quota limiting myapp to 70% CPU usage",
+            "A scheduled cron job that scales myapp twice daily"
+        ],
+        "correct": "A HorizontalPodAutoscaler that scales the myapp Deployment between 2 and 10 replicas, targeting 70% average CPU utilization"
+    }
+]

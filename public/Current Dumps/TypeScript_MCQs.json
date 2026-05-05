@@ -1,0 +1,502 @@
+[
+  {
+    "question": "What is the primary purpose of TypeScript over plain JavaScript?",
+    "options": [
+      "TypeScript runs faster than JavaScript at runtime",
+      "TypeScript adds static type checking, enabling errors to be caught at compile time rather than runtime",
+      "TypeScript replaces JavaScript entirely in modern browsers",
+      "TypeScript is required for Node.js applications"
+    ],
+    "correct": "TypeScript adds static type checking, enabling errors to be caught at compile time rather than runtime"
+  },
+  {
+    "question": "What does the TypeScript compiler (tsc) produce as output?",
+    "options": [
+      "Bytecode that runs directly in the browser",
+      "A binary executable",
+      "Plain JavaScript files",
+      "A TypeScript declaration file (.d.ts) only"
+    ],
+    "correct": "Plain JavaScript files"
+  },
+  {
+    "question": "What is the difference between 'interface' and 'type' in TypeScript?",
+    "options": [
+      "They are completely identical and interchangeable in all cases",
+      "Interfaces can be extended and merged (declaration merging); type aliases are more flexible and can represent unions, intersections, and primitives",
+      "Type aliases can only represent primitive types",
+      "Interfaces are used at runtime; type aliases are erased before compilation"
+    ],
+    "correct": "Interfaces can be extended and merged (declaration merging); type aliases are more flexible and can represent unions, intersections, and primitives"
+  },
+  {
+    "question": "What will TypeScript infer as the type of 'result' in the following code?\n\nconst result = [1, 2, 3].map(x => x.toString());",
+    "options": [
+      "number[]",
+      "any[]",
+      "string[]",
+      "Array<number | string>"
+    ],
+    "correct": "string[]"
+  },
+  {
+    "question": "What is a 'union type' in TypeScript?",
+    "options": [
+      "A type that combines two interfaces into one",
+      "A type that allows a value to be one of several specified types",
+      "A type used exclusively with class inheritance",
+      "A type that enforces all properties to be optional"
+    ],
+    "correct": "A type that allows a value to be one of several specified types"
+  },
+  {
+    "question": "What does the following TypeScript code do?\n\nfunction padLeft(value: string, padding: string | number): string {\n  if (typeof padding === 'number') {\n    return ' '.repeat(padding) + value;\n  }\n  return padding + value;\n}",
+    "options": [
+      "It causes a compile error because union types cannot be used in if statements",
+      "It uses a type guard (typeof) to narrow the type of 'padding' within each branch",
+      "It converts 'padding' to a string in both branches",
+      "It is invalid TypeScript because the return type is ambiguous"
+    ],
+    "correct": "It uses a type guard (typeof) to narrow the type of 'padding' within each branch"
+  },
+  {
+    "question": "What is the 'any' type in TypeScript and why should it generally be avoided?",
+    "options": [
+      "'any' means the variable must accept all primitive types only",
+      "'any' opts out of type checking entirely, removing all compile-time safety and defeating the purpose of TypeScript",
+      "'any' is the default type for all variables in TypeScript",
+      "'any' slows down compilation significantly"
+    ],
+    "correct": "'any' opts out of type checking entirely, removing all compile-time safety and defeating the purpose of TypeScript"
+  },
+  {
+    "question": "What is the 'unknown' type in TypeScript, and how does it differ from 'any'?",
+    "options": [
+      "They are identical; 'unknown' is just a newer alias for 'any'",
+      "'unknown' is a type-safe counterpart to 'any'; you cannot perform operations on an 'unknown' value without first narrowing its type",
+      "'unknown' can only be used as a function return type",
+      "'unknown' automatically converts to 'string' when used in expressions"
+    ],
+    "correct": "'unknown' is a type-safe counterpart to 'any'; you cannot perform operations on an 'unknown' value without first narrowing its type"
+  },
+  {
+    "question": "What is the output type inferred by TypeScript for this function?\n\nfunction throwError(message: string): never {\n  throw new Error(message);\n}",
+    "options": [
+      "void",
+      "undefined",
+      "never",
+      "any"
+    ],
+    "correct": "never"
+  },
+  {
+    "question": "What is the difference between 'void' and 'never' return types in TypeScript?",
+    "options": [
+      "They are the same; both mean the function returns nothing",
+      "'void' means the function returns no useful value (may return undefined); 'never' means the function never returns at all (throws or runs forever)",
+      "'never' means the function returns null; 'void' means it returns undefined",
+      "'never' is used for async functions; 'void' for synchronous ones"
+    ],
+    "correct": "'void' means the function returns no useful value (may return undefined); 'never' means the function never returns at all (throws or runs forever)"
+  },
+  {
+    "question": "What does the '?' symbol mean when used in a TypeScript interface property, as in: name?: string?",
+    "options": [
+      "The property must be either a string or undefined, but is required",
+      "The property is optional and may be absent from the object",
+      "The property is nullable (string | null)",
+      "The property is read-only"
+    ],
+    "correct": "The property is optional and may be absent from the object"
+  },
+  {
+    "question": "What does the 'readonly' modifier do in a TypeScript interface or class?",
+    "options": [
+      "Makes the property accessible only from within the class",
+      "Prevents the property from being modified after it is initially set",
+      "Makes the property enumerable in for...in loops",
+      "Marks the property as deprecated"
+    ],
+    "correct": "Prevents the property from being modified after it is initially set"
+  },
+  {
+    "question": "What will the following TypeScript code produce?\n\ninterface Animal { name: string; }\ninterface Dog extends Animal { breed: string; }\n\nconst myDog: Dog = { name: 'Rex', breed: 'Labrador' };\nconsole.log(myDog.name);",
+    "options": [
+      "Compile error: Dog cannot extend Animal",
+      "Rex",
+      "undefined",
+      "Labrador"
+    ],
+    "correct": "Rex"
+  },
+  {
+    "question": "What is a TypeScript 'generic' and what problem does it solve?",
+    "options": [
+      "A generic is a class that can only be instantiated once",
+      "A generic allows you to write reusable, type-safe code that works with any type without sacrificing type information",
+      "A generic is TypeScript's version of JavaScript's 'any' type",
+      "A generic auto-infers types from function arguments only"
+    ],
+    "correct": "A generic allows you to write reusable, type-safe code that works with any type without sacrificing type information"
+  },
+  {
+    "question": "What is the type of 'output' in the following code?\n\nfunction identity<T>(arg: T): T {\n  return arg;\n}\nconst output = identity('hello');",
+    "options": [
+      "any",
+      "T",
+      "string",
+      "unknown"
+    ],
+    "correct": "string"
+  },
+  {
+    "question": "What does the following TypeScript generic constraint do?\n\nfunction getProperty<T, K extends keyof T>(obj: T, key: K): T[K] { return obj[key]; }",
+    "options": [
+      "It restricts T to only plain objects",
+      "It ensures K must be a valid key of T, making the key lookup type-safe",
+      "It causes a compile error because generics cannot use 'extends'",
+      "It creates a new type that combines T and K"
+    ],
+    "correct": "It ensures K must be a valid key of T, making the key lookup type-safe"
+  },
+  {
+    "question": "What is a TypeScript 'enum' and what does the following code output at runtime?\n\nenum Direction { Up = 1, Down, Left, Right }\nconsole.log(Direction.Left);",
+    "options": [
+      "2",
+      "3",
+      "'Left'",
+      "undefined"
+    ],
+    "correct": "3"
+  },
+  {
+    "question": "What is the difference between a 'const enum' and a regular 'enum' in TypeScript?",
+    "options": [
+      "const enums support string values; regular enums only support numbers",
+      "const enums are inlined at compile time (no runtime object is generated); regular enums produce a JavaScript object at runtime",
+      "const enums cannot be used in switch statements",
+      "They are identical; 'const' is just a style convention"
+    ],
+    "correct": "const enums are inlined at compile time (no runtime object is generated); regular enums produce a JavaScript object at runtime"
+  },
+  {
+    "question": "What is an 'intersection type' in TypeScript and how is it written?",
+    "options": [
+      "A type that can be either type A or type B, written as A | B",
+      "A type that combines multiple types into one, requiring all properties from each, written as A & B",
+      "A type shared between two interfaces, written as A && B",
+      "A type that removes overlapping properties between A and B"
+    ],
+    "correct": "A type that combines multiple types into one, requiring all properties from each, written as A & B"
+  },
+  {
+    "question": "What does the TypeScript 'as' keyword do in this code?\n\nconst input = document.getElementById('name') as HTMLInputElement;",
+    "options": [
+      "It casts the element to HTMLInputElement at runtime, changing its type",
+      "It is a type assertion that tells TypeScript to treat the value as HTMLInputElement at compile time, with no runtime effect",
+      "It throws an error if the element is not an HTMLInputElement",
+      "It converts the element to a different type"
+    ],
+    "correct": "It is a type assertion that tells TypeScript to treat the value as HTMLInputElement at compile time, with no runtime effect"
+  },
+  {
+    "question": "What is a 'discriminated union' (tagged union) in TypeScript?",
+    "options": [
+      "A union where TypeScript automatically removes invalid types",
+      "A pattern where each union member has a common literal type property (discriminant) used for type narrowing in switch/if statements",
+      "A union type that only allows primitive types",
+      "A union that is resolved at compile time and removed from output"
+    ],
+    "correct": "A pattern where each union member has a common literal type property (discriminant) used for type narrowing in switch/if statements"
+  },
+  {
+    "question": "What does the following TypeScript code demonstrate?\n\ntype Shape =\n  | { kind: 'circle'; radius: number }\n  | { kind: 'square'; side: number };\n\nfunction area(shape: Shape): number {\n  switch (shape.kind) {\n    case 'circle': return Math.PI * shape.radius ** 2;\n    case 'square': return shape.side ** 2;\n  }\n}",
+    "options": [
+      "A generic function with constrained types",
+      "A discriminated union with exhaustive type narrowing via a switch statement",
+      "An interface with two optional properties",
+      "A type alias that requires both circle and square properties"
+    ],
+    "correct": "A discriminated union with exhaustive type narrowing via a switch statement"
+  },
+  {
+    "question": "What is the TypeScript 'Partial<T>' utility type?",
+    "options": [
+      "A type that makes all properties of T required",
+      "A type that makes all properties of T optional",
+      "A type that picks only the first half of T's properties",
+      "A type that makes all properties of T readonly"
+    ],
+    "correct": "A type that makes all properties of T optional"
+  },
+  {
+    "question": "What does 'Required<T>' do, and how does it relate to 'Partial<T>'?",
+    "options": [
+      "Required<T> is identical to Partial<T>",
+      "Required<T> makes all optional properties of T mandatory; it is the inverse of Partial<T>",
+      "Required<T> adds new required properties to T",
+      "Required<T> removes all optional properties from T entirely"
+    ],
+    "correct": "Required<T> makes all optional properties of T mandatory; it is the inverse of Partial<T>"
+  },
+  {
+    "question": "What does the 'Pick<T, K>' utility type do?",
+    "options": [
+      "Removes the properties K from type T",
+      "Creates a new type by selecting only the specified properties K from type T",
+      "Picks the first K properties alphabetically from T",
+      "Makes only properties K optional in T"
+    ],
+    "correct": "Creates a new type by selecting only the specified properties K from type T"
+  },
+  {
+    "question": "What is the result of the following TypeScript type?\n\ntype UserPreview = Pick<{ id: number; name: string; email: string; age: number }, 'id' | 'name'>;",
+    "options": [
+      "{ id: number; name: string; email: string; age: number }",
+      "{ id: number; name: string }",
+      "{ email: string; age: number }",
+      "Compile error: Pick requires all keys"
+    ],
+    "correct": "{ id: number; name: string }"
+  },
+  {
+    "question": "What does the 'Omit<T, K>' utility type do?",
+    "options": [
+      "Creates a type with only the properties K from T",
+      "Creates a type with all properties of T except those specified in K",
+      "Makes properties K required in T",
+      "Omit is not a valid TypeScript utility type"
+    ],
+    "correct": "Creates a type with all properties of T except those specified in K"
+  },
+  {
+    "question": "What is the 'Record<K, V>' utility type used for?",
+    "options": [
+      "To record all type errors at compile time",
+      "To create a type with keys of type K and values of type V",
+      "To merge two records together",
+      "To create a read-only dictionary"
+    ],
+    "correct": "To create a type with keys of type K and values of type V"
+  },
+  {
+    "question": "What is a 'type guard' in TypeScript and what is an example of one?",
+    "options": [
+      "A special syntax to bypass type checking in specific blocks",
+      "A runtime check that narrows the type within a conditional block, e.g. typeof x === 'string' or x instanceof Date",
+      "A compiler option to enforce stricter type rules",
+      "A function decorator that validates types at runtime"
+    ],
+    "correct": "A runtime check that narrows the type within a conditional block, e.g. typeof x === 'string' or x instanceof Date"
+  },
+  {
+    "question": "What does a user-defined type guard function with the return type 'arg is Type' do?\n\nfunction isString(arg: unknown): arg is string {\n  return typeof arg === 'string';\n}",
+    "options": [
+      "It throws an error if arg is not a string",
+      "It narrows the type of arg to string in any code block where the function returns true",
+      "It converts arg to a string if it is not already",
+      "It is a compile-time-only assertion with no runtime behavior"
+    ],
+    "correct": "It narrows the type of arg to string in any code block where the function returns true"
+  },
+  {
+    "question": "What is the purpose of 'declaration files' (.d.ts) in TypeScript?",
+    "options": [
+      "To declare variables globally across all TypeScript files",
+      "To provide type information for JavaScript libraries that don't have TypeScript source, enabling type checking when using them",
+      "To declare all enums and interfaces in one place",
+      "To replace tsconfig.json for configuration"
+    ],
+    "correct": "To provide type information for JavaScript libraries that don't have TypeScript source, enabling type checking when using them"
+  },
+  {
+    "question": "What is the role of the 'tsconfig.json' file in a TypeScript project?",
+    "options": [
+      "To define npm scripts for the project",
+      "To configure the TypeScript compiler options such as target ECMAScript version, module system, strictness, and output directory",
+      "To list all TypeScript files manually for compilation",
+      "To store type declarations for third-party libraries"
+    ],
+    "correct": "To configure the TypeScript compiler options such as target ECMAScript version, module system, strictness, and output directory"
+  },
+  {
+    "question": "What does enabling 'strict: true' in tsconfig.json do?",
+    "options": [
+      "It enables only the 'noImplicitAny' check",
+      "It activates a set of strict type-checking options including noImplicitAny, strictNullChecks, strictFunctionTypes, and others",
+      "It prevents any JavaScript files from being included in the project",
+      "It makes all TypeScript errors into warnings instead"
+    ],
+    "correct": "It activates a set of strict type-checking options including noImplicitAny, strictNullChecks, strictFunctionTypes, and others"
+  },
+  {
+    "question": "What does 'strictNullChecks' enforce in TypeScript?",
+    "options": [
+      "That null and undefined are not allowed anywhere in the code",
+      "That null and undefined are not assignable to other types unless explicitly included in the type, preventing null reference errors",
+      "That all functions must explicitly return null",
+      "That all variables must be initialized with a non-null value"
+    ],
+    "correct": "That null and undefined are not assignable to other types unless explicitly included in the type, preventing null reference errors"
+  },
+  {
+    "question": "What is the non-null assertion operator (!) in TypeScript and when should it be used with caution?\n\nconst el = document.getElementById('app')!;",
+    "options": [
+      "It converts the value to a boolean",
+      "It tells TypeScript the value is definitely not null or undefined, bypassing null checks — it should be used sparingly since it removes safety guarantees",
+      "It throws a runtime error if the value is null",
+      "It is shorthand for the nullish coalescing operator"
+    ],
+    "correct": "It tells TypeScript the value is definitely not null or undefined, bypassing null checks — it should be used sparingly since it removes safety guarantees"
+  },
+  {
+    "question": "What is a 'mapped type' in TypeScript? What does the following produce?\n\ntype Readonly<T> = { readonly [K in keyof T]: T[K] };",
+    "options": [
+      "It maps over an array of type T at runtime",
+      "It creates a new type where every property of T is made readonly by iterating over T's keys",
+      "It creates a read-only array from T",
+      "It converts all T's values to string"
+    ],
+    "correct": "It creates a new type where every property of T is made readonly by iterating over T's keys"
+  },
+  {
+    "question": "What is a 'conditional type' in TypeScript?\n\ntype IsString<T> = T extends string ? 'yes' : 'no';",
+    "options": [
+      "A type that changes based on runtime conditions",
+      "A type that evaluates at compile time based on a condition, resolving to one type or another depending on whether T satisfies the constraint",
+      "A type that is optional if a condition is false",
+      "An if-else statement inside a type alias"
+    ],
+    "correct": "A type that evaluates at compile time based on a condition, resolving to one type or another depending on whether T satisfies the constraint"
+  },
+  {
+    "question": "What does the 'infer' keyword do inside a conditional type?",
+    "options": [
+      "It tells TypeScript to infer the generic parameter from usage",
+      "It allows TypeScript to extract and capture a type within a conditional type expression",
+      "It forces TypeScript to infer the return type of a function",
+      "It is used to declare a type variable in a regular type alias"
+    ],
+    "correct": "It allows TypeScript to extract and capture a type within a conditional type expression"
+  },
+  {
+    "question": "What is the 'ReturnType<T>' utility type?\n\nfunction greet(name: string): string { return `Hello ${name}`; }\ntype R = ReturnType<typeof greet>;",
+    "options": [
+      "R is string",
+      "R is (name: string) => string",
+      "R is any",
+      "R is void"
+    ],
+    "correct": "R is string"
+  },
+  {
+    "question": "What are TypeScript decorators and where are they commonly used?",
+    "options": [
+      "Decorators are a CSS-in-JS feature for TypeScript components",
+      "Decorators are special syntax (@expression) that can be applied to classes, methods, properties, or parameters to add metadata or modify behavior — commonly used in frameworks like Angular and NestJS",
+      "Decorators are TypeScript's version of Python's list comprehensions",
+      "Decorators are compile-time macros that expand to multiple lines of code"
+    ],
+    "correct": "Decorators are special syntax (@expression) that can be applied to classes, methods, properties, or parameters to add metadata or modify behavior — commonly used in frameworks like Angular and NestJS"
+  },
+  {
+    "question": "What does TypeScript's 'access modifiers' (public, private, protected) do in a class?",
+    "options": [
+      "They control network access permissions for class methods",
+      "They control the visibility of class members: public is accessible anywhere, private only within the class, protected within the class and subclasses",
+      "They only affect TypeScript compilation and are enforced at runtime in JavaScript",
+      "They are optional hints with no compile-time enforcement"
+    ],
+    "correct": "They control the visibility of class members: public is accessible anywhere, private only within the class, protected within the class and subclasses"
+  },
+  {
+    "question": "What is the TypeScript 'abstract' class and what distinguishes it from a regular class?",
+    "options": [
+      "An abstract class can be instantiated directly; a regular class cannot",
+      "An abstract class cannot be instantiated directly and may contain abstract methods that must be implemented by derived classes",
+      "An abstract class is a class with all optional properties",
+      "Abstract classes are the same as interfaces"
+    ],
+    "correct": "An abstract class cannot be instantiated directly and may contain abstract methods that must be implemented by derived classes"
+  },
+  {
+    "question": "What does the following TypeScript code demonstrate and will it compile?\n\nclass Animal {\n  constructor(private name: string) {}\n  speak(): string { return `${this.name} makes a noise.`; }\n}\nconst a = new Animal('Dog');\nconsole.log(a.name);",
+    "options": [
+      "It compiles and outputs 'Dog'",
+      "It causes a compile error because 'name' is private and cannot be accessed outside the class",
+      "It outputs undefined because private fields are deleted at runtime",
+      "It compiles but throws a runtime error"
+    ],
+    "correct": "It causes a compile error because 'name' is private and cannot be accessed outside the class"
+  },
+  {
+    "question": "What is 'declaration merging' in TypeScript and which construct supports it?",
+    "options": [
+      "Combining two .ts files into one during compilation",
+      "The ability to define the same interface multiple times and have TypeScript merge them into a single definition — supported by interfaces, not type aliases",
+      "Merging two type aliases together using the & operator",
+      "Overloading a function with different signatures"
+    ],
+    "correct": "The ability to define the same interface multiple times and have TypeScript merge them into a single definition — supported by interfaces, not type aliases"
+  },
+  {
+    "question": "What does the following code output and why?\n\ntype Flatten<T> = T extends Array<infer Item> ? Item : T;\ntype Str = Flatten<string[]>;\ntype Num = Flatten<number>;",
+    "options": [
+      "Str is string[], Num is never",
+      "Str is string, Num is number",
+      "Str is any, Num is any",
+      "Compile error: infer cannot be used with built-in types"
+    ],
+    "correct": "Str is string, Num is number"
+  },
+  {
+    "question": "What is the 'keyof' operator in TypeScript?",
+    "options": [
+      "A function that returns all keys of an object at runtime",
+      "A type operator that produces a union of the string literal types of an object type's keys",
+      "A method on the Object prototype available in TypeScript",
+      "A way to define allowed keys for a Record type"
+    ],
+    "correct": "A type operator that produces a union of the string literal types of an object type's keys"
+  },
+  {
+    "question": "What type does 'keyof { name: string; age: number }' produce?",
+    "options": [
+      "string",
+      "string | number",
+      "'name' | 'age'",
+      "{ name: string; age: number }"
+    ],
+    "correct": "'name' | 'age'"
+  },
+  {
+    "question": "What is 'module augmentation' in TypeScript?",
+    "options": [
+      "Adding new files to an existing npm package",
+      "Extending an existing module's types from outside, commonly used to add properties to third-party library types (e.g. adding fields to Express's Request interface)",
+      "Augmenting a class with new methods using decorators",
+      "Merging two npm packages at compile time"
+    ],
+    "correct": "Extending an existing module's types from outside, commonly used to add properties to third-party library types (e.g. adding fields to Express's Request interface)"
+  },
+  {
+    "question": "What does the 'satisfies' operator (introduced in TypeScript 4.9) do?\n\nconst palette = {\n  red: [255, 0, 0],\n  green: '#00ff00',\n} satisfies Record<string, string | number[]>;",
+    "options": [
+      "It casts 'palette' to Record<string, string | number[]>, losing specific property types",
+      "It validates that 'palette' conforms to the type while preserving the more specific inferred types of each property",
+      "It is identical to using 'as' for type assertions",
+      "It throws a runtime error if palette does not match the type"
+    ],
+    "correct": "It validates that 'palette' conforms to the type while preserving the more specific inferred types of each property"
+  },
+  {
+    "question": "What is the TypeScript 'Exclude<T, U>' utility type?\n\ntype T = Exclude<'a' | 'b' | 'c', 'a' | 'b'>;",
+    "options": [
+      "T is 'a' | 'b'",
+      "T is 'a' | 'b' | 'c'",
+      "T is 'c'",
+      "T is never"
+    ],
+    "correct": "T is 'c'"
+  }
+]

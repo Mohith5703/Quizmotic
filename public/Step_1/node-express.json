@@ -1,0 +1,97 @@
+[
+    {
+        "question": "What is the command used to create a new item when using mongoose?",
+        "options": [
+            "Book.Save()",
+            "Book.New()",
+            "Book.Create()"
+        ],
+        "correct": "Book.Save()"
+    },
+    {
+        "question": "What is the HTTP verb used to update a resource in REST?",
+        "options": [
+            "DELETE",
+            "GET",
+            "POST",
+            "PUT"
+        ],
+        "correct": "PUT"
+    },
+    {
+        "question": "Google's V8 Engine, also used in Chrome, provides what capability to node.js?",
+        "options": [
+            "JavaScript support",
+            "3rd party module repository",
+            "Support for HTML rendering and DOM manipulation",
+            "Asynchronous File and Network access"
+        ],
+        "correct": "JavaScript support"
+    },
+    {
+        "question": "What is the package you use to connect to MongoDB?",
+        "options": [
+            "Mongod",
+            "MongoConnect",
+            "Schema",
+            "Mongoose"
+        ],
+        "correct": "Mongoose"
+    },
+    {
+        "question": "Assigning a value to \"module.exports\" in a node.js JavaScript file",
+        "options": [
+            "allows that value to be imported into other JavaScript files in your project.",
+            "publishes the exported value to npm, node's package repository.",
+            "persists that value to disk, allowing you to retrieve it later."
+        ],
+        "correct": "allows that value to be imported into other JavaScript files in your project."
+    },
+    {
+        "question": "Running \"npm init\" will...",
+        "options": [
+            "initialize your project, creating a project.json file.",
+            "initialize the npm cli on your system.",
+            "download and add the \"init\" module to your node.js project."
+        ],
+        "correct": "initialize your project, creating a project.json file."
+    },
+    {
+        "question": "What is the module for Node that allows you to run a web server?",
+        "options": [
+            "Sublime",
+            "REST",
+            "FS",
+            "HTTP"
+        ],
+        "correct": "HTTP"
+    },
+    {
+        "question": "What is the mongoose command used to delete an item?",
+        "options": [
+            "delete()",
+            "trash()",
+            "remove()"
+        ],
+        "correct": "remove()"
+    },
+    {
+        "question": "What verb do you use to do a partial update on an item?",
+        "options": [
+            "Post",
+            "Patch",
+            "Put"
+        ],
+        "correct": "Patch"
+    },
+    {
+        "question": "What is the object that you use to pull query string params?",
+        "options": [
+            "res.query",
+            "res.params",
+            "req.query",
+            "req.params"
+        ],
+        "correct": "req.query"
+    }
+]

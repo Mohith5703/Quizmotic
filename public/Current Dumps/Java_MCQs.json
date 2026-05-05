@@ -1,0 +1,1622 @@
+[
+    {
+        "question": "Which of the following best describes the principle of Encapsulation in Java?",
+        "options": [
+            "A class can extend multiple parent classes",
+            "Binding data (fields) and methods together while restricting direct access to internal state via access modifiers",
+            "A subclass can override methods defined in its parent class",
+            "Objects of different classes can be treated as the same type"
+        ],
+        "correct": "Binding data (fields) and methods together while restricting direct access to internal state via access modifiers"
+    },
+    {
+        "question": "What is the output of the following code?\npublic class Test {\n    static int x = 10;\n    static { x += 5; }\n    public static void main(String[] args) {\n        System.out.println(x);\n        x += 3;\n    }\n    static { x *= 2; }\n}",
+        "options": [
+            "20",
+            "30",
+            "28",
+            "15"
+        ],
+        "correct": "30"
+    },
+    {
+        "question": "Which statement is TRUE about static members in Java?",
+        "options": [
+            "Static methods can access instance variables directly",
+            "Static blocks execute every time an object is created",
+            "Static members belong to the class and are shared across all instances",
+            "A static method can be overridden in a subclass"
+        ],
+        "correct": "Static members belong to the class and are shared across all instances"
+    },
+    {
+        "question": "What is the output of the following code?\npublic class Order {\n    int id;\n    { id = 5; System.out.print(\"IIB \"); }\n    Order() { System.out.print(\"CON \"); }\n    public static void main(String[] args) {\n        new Order();\n        new Order();\n    }\n}",
+        "options": [
+            "CON CON",
+            "IIB CON IIB CON",
+            "IIB IIB CON CON",
+            "CON IIB CON IIB"
+        ],
+        "correct": "IIB CON IIB CON"
+    },
+    {
+        "question": "What is the result of this expression in Java?\nint result = 010 + 0x10 + 10;",
+        "options": [
+            "30",
+            "36",
+            "34",
+            "Compilation error"
+        ],
+        "correct": "34"
+    },
+    {
+        "question": "Which primitive data type can store the value 200_000_000_000L?",
+        "options": [
+            "int",
+            "long",
+            "double",
+            "short"
+        ],
+        "correct": "long"
+    },
+    {
+        "question": "What happens during auto-widening (promotion) in the following code?\nbyte b = 10;\nshort s = 20;\nint result = b + s;",
+        "options": [
+            "Compilation error: mixed types cannot be added",
+            "b and s are automatically promoted to int before addition",
+            "result is of type short",
+            "Only b is promoted; s remains short"
+        ],
+        "correct": "b and s are automatically promoted to int before addition"
+    },
+    {
+        "question": "What is the output of the following?\nInteger a = 127;\nInteger b = 127;\nInteger c = 128;\nInteger d = 128;\nSystem.out.println((a == b) + \" \" + (c == d));",
+        "options": [
+            "true true",
+            "false false",
+            "true false",
+            "false true"
+        ],
+        "correct": "true false"
+    },
+    {
+        "question": "What is Auto-boxing in Java?",
+        "options": [
+            "Converting a larger primitive type to a smaller one",
+            "Automatic conversion of a primitive type to its corresponding Wrapper class object",
+            "Casting one object type to another",
+            "Packing multiple values into an array automatically"
+        ],
+        "correct": "Automatic conversion of a primitive type to its corresponding Wrapper class object"
+    },
+    {
+        "question": "What is the output of the following code?\nint x = 5;\nSystem.out.println(x++ + \" \" + ++x);",
+        "options": [
+            "5 7",
+            "6 7",
+            "5 6",
+            "6 6"
+        ],
+        "correct": "5 7"
+    },
+    {
+        "question": "Which of the following is the result of 5 >>> 1 in Java (unsigned right shift)?",
+        "options": [
+            "2",
+            "3",
+            "10",
+            "-3"
+        ],
+        "correct": "2"
+    },
+    {
+        "question": "What is the output of this code?\nint i = 0;\nfor (; i < 3; i++) {\n    if (i == 1) continue;\n    System.out.print(i + \" \");\n}",
+        "options": [
+            "0 1 2",
+            "0 2",
+            "1 2",
+            "0 1"
+        ],
+        "correct": "0 2"
+    },
+    {
+        "question": "What is the output of the labeled break in the following code?\nouter: for (int i = 0; i < 3; i++) {\n    for (int j = 0; j < 3; j++) {\n        if (j == 1) break outer;\n        System.out.print(i + \"\" + j + \" \");\n    }\n}",
+        "options": [
+            "00 01 10 11 20 21",
+            "00",
+            "00 10 20",
+            "00 01"
+        ],
+        "correct": "00"
+    },
+    {
+        "question": "Which access modifier allows access within the same class only?",
+        "options": [
+            "protected",
+            "default (no modifier)",
+            "private",
+            "package-private"
+        ],
+        "correct": "private"
+    },
+    {
+        "question": "A class in package com.app has a method with protected access. Which of the following CAN access it?",
+        "options": [
+            "Any class in any package",
+            "Only classes within com.app",
+            "Classes within com.app AND subclasses in other packages",
+            "Only the class itself and its inner classes"
+        ],
+        "correct": "Classes within com.app AND subclasses in other packages"
+    },
+    {
+        "question": "What is the purpose of the 'import' statement in Java?",
+        "options": [
+            "It copies the source code of the imported class into the current file",
+            "It tells the compiler where to find the class files referenced by simple name",
+            "It loads the class into JVM memory at compile time",
+            "It is mandatory; without it, classes from other packages cannot be used at all"
+        ],
+        "correct": "It tells the compiler where to find the class files referenced by simple name"
+    },
+    {
+        "question": "What is the output of the following inheritance example?\nclass A {\n    String name() { return \"A\"; }\n}\nclass B extends A {\n    String name() { return \"B\"; }\n}\nclass C extends B {}\npublic class Test {\n    public static void main(String[] args) {\n        A obj = new C();\n        System.out.println(obj.name());\n    }\n}",
+        "options": [
+            "A",
+            "B",
+            "C",
+            "Compilation error"
+        ],
+        "correct": "B"
+    },
+    {
+        "question": "Which keyword prevents a method from being overridden in Java?",
+        "options": [
+            "static",
+            "abstract",
+            "final",
+            "sealed"
+        ],
+        "correct": "final"
+    },
+    {
+        "question": "What is the difference between method overloading and method overriding?",
+        "options": [
+            "Overloading is resolved at runtime; overriding is resolved at compile time",
+            "Overloading allows same method name with different parameters in the same class (compile-time); overriding redefines a parent method in a subclass (runtime)",
+            "Overloading requires the same return type; overriding allows different return types",
+            "They are the same concept called by different names"
+        ],
+        "correct": "Overloading allows same method name with different parameters in the same class (compile-time); overriding redefines a parent method in a subclass (runtime)"
+    },
+    {
+        "question": "What is the output of the following code?\nclass Animal {\n    void speak() { System.out.println(\"Animal\"); }\n}\nclass Dog extends Animal {\n    void speak() { System.out.println(\"Dog\"); }\n    void fetch() { System.out.println(\"Fetch\"); }\n}\npublic class Test {\n    public static void main(String[] args) {\n        Animal a = new Dog();\n        a.speak();\n        a.fetch();\n    }\n}",
+        "options": [
+            "Animal\\nFetch",
+            "Dog\\nFetch",
+            "Dog\\nCompilation error",
+            "Compilation error: a.fetch() is invalid"
+        ],
+        "correct": "Compilation error: a.fetch() is invalid"
+    },
+    {
+        "question": "What is the key difference between an abstract class and an interface in Java 8+?",
+        "options": [
+            "Abstract classes can have constructors; interfaces cannot have constructors and can have default/static methods",
+            "Interfaces support multiple inheritance of type; abstract classes can only be extended once, and both can have concrete methods",
+            "Abstract classes cannot have any concrete methods",
+            "Interfaces require all methods to be public and abstract"
+        ],
+        "correct": "Interfaces support multiple inheritance of type; abstract classes can only be extended once, and both can have concrete methods"
+    },
+    {
+        "question": "Which of the following will cause a compilation error?\npublic abstract class Shape {\n    abstract double area();\n    void describe() { System.out.println(\"I am a shape\"); }\n}",
+        "options": [
+            "An abstract class having a concrete method",
+            "Instantiating Shape directly: Shape s = new Shape();",
+            "A concrete subclass that implements area()",
+            "Using Shape as a reference type"
+        ],
+        "correct": "Instantiating Shape directly: Shape s = new Shape();"
+    },
+    {
+        "question": "What is runtime polymorphism in Java and how is it achieved?",
+        "options": [
+            "It is achieved by method overloading and resolved at compile time",
+            "It is achieved by method overriding and dynamic dispatch — the JVM decides at runtime which overridden method to call based on the actual object type",
+            "It is achieved by casting objects between types explicitly",
+            "It is achieved using generics and type parameters"
+        ],
+        "correct": "It is achieved by method overriding and dynamic dispatch — the JVM decides at runtime which overridden method to call based on the actual object type"
+    },
+    {
+        "question": "What is the output of this code?\ntry {\n    int[] arr = new int[5];\n    arr[10] = 1;\n} catch (ArrayIndexOutOfBoundsException e) {\n    System.out.print(\"Caught \");\n} finally {\n    System.out.print(\"Finally\");\n}",
+        "options": [
+            "Caught",
+            "Finally",
+            "Caught Finally",
+            "Runtime error with no output"
+        ],
+        "correct": "Caught Finally"
+    },
+    {
+        "question": "Which of the following statements about checked vs unchecked exceptions is TRUE?",
+        "options": [
+            "Unchecked exceptions extend Exception directly; checked exceptions extend RuntimeException",
+            "Checked exceptions must be declared or handled at compile time; unchecked exceptions (RuntimeException subclasses) do not need to be",
+            "Checked exceptions are only thrown by the JVM; unchecked exceptions are thrown by the programmer",
+            "Both checked and unchecked exceptions are caught the same way"
+        ],
+        "correct": "Checked exceptions must be declared or handled at compile time; unchecked exceptions (RuntimeException subclasses) do not need to be"
+    },
+    {
+        "question": "What is the output of the following?\npublic class Test {\n    public static void main(String[] args) {\n        try {\n            return;\n        } finally {\n            System.out.println(\"Finally\");\n        }\n    }\n}",
+        "options": [
+            "No output",
+            "Finally",
+            "Compilation error",
+            "Runtime error"
+        ],
+        "correct": "Finally"
+    },
+    {
+        "question": "What does the 'assert' keyword do in Java, and how must it be enabled?",
+        "options": [
+            "It always throws AssertionError when a condition is false; no special flag needed",
+            "It is a debugging tool that throws AssertionError if a boolean condition is false; must be enabled with -ea JVM flag",
+            "It validates method parameters and throws IllegalArgumentException",
+            "It is equivalent to a runtime check using if/throw"
+        ],
+        "correct": "It is a debugging tool that throws AssertionError if a boolean condition is false; must be enabled with -ea JVM flag"
+    },
+    {
+        "question": "In Java multithreading, what is a race condition?",
+        "options": [
+            "A condition where two threads execute in a predictable alternating order",
+            "A situation where the outcome depends on the non-deterministic ordering of thread execution accessing shared mutable state",
+            "A deadlock where two threads wait for each other indefinitely",
+            "A situation where one thread runs faster than another"
+        ],
+        "correct": "A situation where the outcome depends on the non-deterministic ordering of thread execution accessing shared mutable state"
+    },
+    {
+        "question": "What is the difference between synchronized method and synchronized block in Java?",
+        "options": [
+            "synchronized method locks the class object; synchronized block locks the instance",
+            "synchronized method locks on 'this' (or the class for static methods); synchronized block allows locking on any specified object, enabling finer-grained control",
+            "synchronized blocks are always more performant and there is no functional difference",
+            "synchronized method can only be used in single-threaded programs"
+        ],
+        "correct": "synchronized method locks on 'this' (or the class for static methods); synchronized block allows locking on any specified object, enabling finer-grained control"
+    },
+    {
+        "question": "What is the output of the following?\npublic class Counter {\n    private int count = 0;\n    public synchronized void increment() { count++; }\n    public int getCount() { return count; }\n}\nGiven two threads each call increment() 1000 times, what is the likely final value of count?",
+        "options": [
+            "Less than 2000 due to race conditions",
+            "Exactly 2000 because synchronized ensures atomicity",
+            "More than 2000 due to thread scheduling overhead",
+            "0 because threads reset the counter"
+        ],
+        "correct": "Exactly 2000 because synchronized ensures atomicity"
+    },
+    {
+        "question": "Which Executor Framework class provides a thread pool that reuses a fixed number of threads?",
+        "options": [
+            "Executors.newCachedThreadPool()",
+            "Executors.newSingleThreadExecutor()",
+            "Executors.newFixedThreadPool(n)",
+            "Executors.newScheduledThreadPool(n)"
+        ],
+        "correct": "Executors.newFixedThreadPool(n)"
+    },
+    {
+        "question": "What is the difference between Runnable and Callable in the Executor Framework?",
+        "options": [
+            "Runnable can throw checked exceptions; Callable cannot",
+            "Callable returns a result (Future) and can throw checked exceptions; Runnable returns void and cannot throw checked exceptions",
+            "Runnable is used with thread pools; Callable only works with single threads",
+            "They are functionally identical; Callable is just a newer version of Runnable"
+        ],
+        "correct": "Callable returns a result (Future) and can throw checked exceptions; Runnable returns void and cannot throw checked exceptions"
+    },
+    {
+        "question": "Which of the following correctly describes the Java Garbage Collector?",
+        "options": [
+            "The programmer triggers GC by calling System.gc() and it runs immediately",
+            "GC automatically reclaims memory occupied by objects with no live strong references; System.gc() is only a hint",
+            "GC runs at a fixed interval set in the JVM configuration",
+            "GC only runs when the JVM throws an OutOfMemoryError"
+        ],
+        "correct": "GC automatically reclaims memory occupied by objects with no live strong references; System.gc() is only a hint"
+    },
+    {
+        "question": "What is a SoftReference in Java and when is it collected?",
+        "options": [
+            "It is collected immediately after no strong reference exists",
+            "It is never collected unless the program explicitly calls clear()",
+            "It is collected only when the JVM needs memory (low memory situation), making it suitable for caches",
+            "It behaves exactly like a WeakReference"
+        ],
+        "correct": "It is collected only when the JVM needs memory (low memory situation), making it suitable for caches"
+    },
+    {
+        "question": "What is the output of the following inner class code?\npublic class Outer {\n    int x = 10;\n    class Inner {\n        int x = 20;\n        void display() {\n            int x = 30;\n            System.out.println(x + \" \" + this.x + \" \" + Outer.this.x);\n        }\n    }\n    public static void main(String[] args) {\n        new Outer().new Inner().display();\n    }\n}",
+        "options": [
+            "10 20 30",
+            "30 10 20",
+            "30 20 10",
+            "20 30 10"
+        ],
+        "correct": "30 20 10"
+    },
+    {
+        "question": "Which of the following is true about a static nested class in Java?",
+        "options": [
+            "It can access the outer class's non-static members directly",
+            "It is instantiated using new Outer().new StaticNested()",
+            "It can only access static members of the outer class and is instantiated as new Outer.StaticNested()",
+            "It acts as a top-level class and has no relationship to the outer class"
+        ],
+        "correct": "It can only access static members of the outer class and is instantiated as new Outer.StaticNested()"
+    },
+    {
+        "question": "What is an anonymous inner class and when would you typically use it?",
+        "options": [
+            "A class without a name used to create a single-use instance that extends a class or implements an interface, commonly used for event handlers before Java 8 lambdas",
+            "A private inner class that has no access to the outer class",
+            "A class that is defined inside a method and can only be used within that method",
+            "A class that has no constructors or fields"
+        ],
+        "correct": "A class without a name used to create a single-use instance that extends a class or implements an interface, commonly used for event handlers before Java 8 lambdas"
+    },
+    {
+        "question": "What is the output of the following String operation?\nString s1 = \"Hello\";\nString s2 = \"Hello\";\nString s3 = new String(\"Hello\");\nSystem.out.println(s1 == s2);\nSystem.out.println(s1 == s3);\nSystem.out.println(s1.equals(s3));",
+        "options": [
+            "true\\nfalse\\ntrue",
+            "false\\nfalse\\ntrue",
+            "true\\ntrue\\ntrue",
+            "false\\nfalse\\nfalse"
+        ],
+        "correct": "true\\nfalse\\ntrue"
+    },
+    {
+        "question": "What is the difference between String, StringBuilder, and StringBuffer?",
+        "options": [
+            "String is mutable; StringBuilder is immutable and thread-safe; StringBuffer is immutable and not thread-safe",
+            "String is immutable; StringBuilder is mutable and not thread-safe; StringBuffer is mutable and thread-safe (synchronized)",
+            "String and StringBuffer are immutable; StringBuilder is mutable",
+            "They are functionally identical but have different memory footprints"
+        ],
+        "correct": "String is immutable; StringBuilder is mutable and not thread-safe; StringBuffer is mutable and thread-safe (synchronized)"
+    },
+    {
+        "question": "What is the output of this code?\nString s = \"Java Programming\";\nSystem.out.println(s.substring(5, 11));",
+        "options": [
+            "Progra",
+            "Progr",
+            "Program",
+            " Progr"
+        ],
+        "correct": "Progra"
+    },
+    {
+        "question": "Which method of the String class splits a string by a regex delimiter and returns a String array?",
+        "options": [
+            "tokenize(String regex)",
+            "split(String regex)",
+            "divide(String regex)",
+            "parse(String regex)"
+        ],
+        "correct": "split(String regex)"
+    },
+    {
+        "question": "What is the output of this IO code (assuming file 'test.txt' exists with content 'Java')?\nFileReader fr = new FileReader(\"test.txt\");\nBufferedReader br = new BufferedReader(fr);\nSystem.out.println(br.readLine());\nbr.close();",
+        "options": [
+            "J",
+            "Java",
+            "null",
+            "IOException at runtime"
+        ],
+        "correct": "Java"
+    },
+    {
+        "question": "What is the difference between FileInputStream and FileReader in Java IO?",
+        "options": [
+            "FileInputStream reads characters; FileReader reads bytes",
+            "FileInputStream reads raw bytes (binary data); FileReader reads characters using a character encoding (text data)",
+            "They are identical; FileReader is just a convenience wrapper with no functional difference",
+            "FileReader is faster because it buffers by default"
+        ],
+        "correct": "FileInputStream reads raw bytes (binary data); FileReader reads characters using a character encoding (text data)"
+    },
+    {
+        "question": "What is the purpose of try-with-resources (introduced in Java 7)?",
+        "options": [
+            "It allows multiple catch blocks to catch different exceptions",
+            "It automatically closes resources that implement AutoCloseable at the end of the try block, even if an exception occurs",
+            "It provides better performance by reusing resources across multiple try blocks",
+            "It prevents resources from being garbage collected prematurely"
+        ],
+        "correct": "It automatically closes resources that implement AutoCloseable at the end of the try block, even if an exception occurs"
+    },
+    {
+        "question": "What is the output of the following array code?\nint[] arr = {5, 3, 8, 1, 9, 2};\njava.util.Arrays.sort(arr);\nSystem.out.println(java.util.Arrays.binarySearch(arr, 8));",
+        "options": [
+            "2",
+            "4",
+            "3",
+            "2 (0-indexed position of 8 after sorting)"
+        ],
+        "correct": "4"
+    },
+    {
+        "question": "What is the difference between int[] arr1 = new int[5] and int[][] arr2 = new int[3][]?",
+        "options": [
+            "arr1 is a 1D array of 5 integers; arr2 is a 2D jagged array where each row can have a different length",
+            "arr1 is a static array; arr2 is a dynamic array",
+            "arr2 is illegal syntax",
+            "arr1 allocates memory; arr2 does not allocate memory yet for rows"
+        ],
+        "correct": "arr1 is a 1D array of 5 integers; arr2 is a 2D jagged array where each row can have a different length"
+    },
+    {
+        "question": "Which Object class method must be overridden alongside hashCode() to maintain the general contract in Java?",
+        "options": [
+            "toString()",
+            "compareTo()",
+            "equals()",
+            "clone()"
+        ],
+        "correct": "equals()"
+    },
+    {
+        "question": "What is the contract between equals() and hashCode() in Java?",
+        "options": [
+            "If a.equals(b) is true, then a.hashCode() must equal b.hashCode(); if hashCodes are equal, equals() must also return true",
+            "If a.equals(b) is true, then a.hashCode() must equal b.hashCode(); but equal hashCodes do not guarantee equals() returns true",
+            "hashCode() is only used for sorting; equals() is only used for Collections",
+            "There is no contract; they can be implemented independently"
+        ],
+        "correct": "If a.equals(b) is true, then a.hashCode() must equal b.hashCode(); but equal hashCodes do not guarantee equals() returns true"
+    },
+    {
+        "question": "What is the output of the following?\nObject obj = new Object();\nSystem.out.println(obj.toString().startsWith(\"java.lang.Object@\"));",
+        "options": [
+            "false",
+            "true",
+            "Compilation error",
+            "NullPointerException"
+        ],
+        "correct": "true"
+    },
+    {
+        "question": "What is the difference between ArrayList and LinkedList in the Java Collections Framework?",
+        "options": [
+            "ArrayList uses a doubly-linked list; LinkedList uses a dynamic array",
+            "ArrayList uses a dynamic array (fast random access, slow insert/delete at middle); LinkedList uses a doubly-linked list (fast insert/delete, slow random access)",
+            "LinkedList allows null values; ArrayList does not",
+            "ArrayList is thread-safe; LinkedList is not"
+        ],
+        "correct": "ArrayList uses a dynamic array (fast random access, slow insert/delete at middle); LinkedList uses a doubly-linked list (fast insert/delete, slow random access)"
+    },
+    {
+        "question": "What is the difference between HashMap and TreeMap?",
+        "options": [
+            "HashMap maintains insertion order; TreeMap maintains sorted (natural) order of keys",
+            "HashMap stores entries in a hash table (O(1) avg access, unordered); TreeMap stores entries in a red-black tree (O(log n) access, sorted by keys)",
+            "TreeMap allows null keys; HashMap does not",
+            "HashMap is synchronized; TreeMap is not"
+        ],
+        "correct": "HashMap stores entries in a hash table (O(1) avg access, unordered); TreeMap stores entries in a red-black tree (O(log n) access, sorted by keys)"
+    },
+    {
+        "question": "What will this Collections code output?\nList<Integer> list = new ArrayList<>(Arrays.asList(3, 1, 4, 1, 5, 9));\nCollections.sort(list);\nSystem.out.println(list.get(0) + \" \" + list.get(list.size()-1));",
+        "options": [
+            "3 9",
+            "1 9",
+            "1 5",
+            "3 5"
+        ],
+        "correct": "1 9"
+    },
+    {
+        "question": "What is the purpose of the Comparable and Comparator interfaces in Java?",
+        "options": [
+            "Comparable defines a natural ordering within the class (compareTo); Comparator defines an external/custom ordering (compare), useful for multiple sort strategies",
+            "Comparator defines natural ordering; Comparable defines external ordering",
+            "They are only used for sorting arrays, not Collections",
+            "Both are identical; Comparator is just a functional interface version of Comparable"
+        ],
+        "correct": "Comparable defines a natural ordering within the class (compareTo); Comparator defines an external/custom ordering (compare), useful for multiple sort strategies"
+    },
+    {
+        "question": "What is the difference between HashSet and TreeSet?",
+        "options": [
+            "HashSet maintains insertion order; TreeSet maintains sorted order",
+            "HashSet uses hashing (O(1) ops, no order guarantee); TreeSet uses a red-black tree (O(log n) ops, sorted natural order)",
+            "TreeSet allows duplicate elements; HashSet does not",
+            "HashSet is thread-safe; TreeSet is not"
+        ],
+        "correct": "HashSet uses hashing (O(1) ops, no order guarantee); TreeSet uses a red-black tree (O(log n) ops, sorted natural order)"
+    },
+    {
+        "question": "What does the following generic method signature mean?\npublic <T extends Comparable<T>> T findMax(List<T> list)",
+        "options": [
+            "T can be any type; Comparable is just a hint for the compiler",
+            "T must be a type that implements Comparable<T>, ensuring the elements can be compared to each other",
+            "T is bounded to only Number subclasses",
+            "The method returns a Comparable object, not necessarily T"
+        ],
+        "correct": "T must be a type that implements Comparable<T>, ensuring the elements can be compared to each other"
+    },
+    {
+        "question": "What is a wildcard in Java Generics? What does List<?> mean?",
+        "options": [
+            "List<?> means a List that can hold any type of object, but you can only read from it (not add arbitrary elements) safely",
+            "List<?> is the same as List<Object>; you can add any type to it",
+            "List<?> means an empty list with no type",
+            "Wildcards can only be used in method return types"
+        ],
+        "correct": "List<?> means a List that can hold any type of object, but you can only read from it (not add arbitrary elements) safely"
+    },
+    {
+        "question": "What is the output of the following Enum code?\npublic enum Season { SPRING, SUMMER, FALL, WINTER; }\nSystem.out.println(Season.FALL.ordinal() + \" \" + Season.FALL.name());",
+        "options": [
+            "3 FALL",
+            "2 FALL",
+            "2 fall",
+            "3 fall"
+        ],
+        "correct": "2 FALL"
+    },
+    {
+        "question": "Which of the following is a valid Enum feature in Java?",
+        "options": [
+            "Enums can extend other classes",
+            "Enums can implement interfaces and have fields, methods, and constructors",
+            "Enum constructors must be public",
+            "Enum values can be dynamically added at runtime"
+        ],
+        "correct": "Enums can implement interfaces and have fields, methods, and constructors"
+    },
+    {
+        "question": "What is a lambda expression in Java 8 and what must the target type be?",
+        "options": [
+            "A lambda is an anonymous function; the target type must be a functional interface (an interface with exactly one abstract method)",
+            "A lambda is a method reference; the target type can be any interface",
+            "A lambda is a shorthand for an anonymous class; target type can be abstract class or interface",
+            "A lambda must always return a value; void lambdas are not supported"
+        ],
+        "correct": "A lambda is an anonymous function; the target type must be a functional interface (an interface with exactly one abstract method)"
+    },
+    {
+        "question": "What is the output of the following Java 8 Stream code?\nList<Integer> nums = Arrays.asList(1, 2, 3, 4, 5);\nint result = nums.stream()\n    .filter(n -> n % 2 == 0)\n    .mapToInt(n -> n * n)\n    .sum();\nSystem.out.println(result);",
+        "options": [
+            "4 16",
+            "20",
+            "6",
+            "9"
+        ],
+        "correct": "20"
+    },
+    {
+        "question": "What is the difference between map() and flatMap() in Java 8 Streams?",
+        "options": [
+            "map() transforms elements one-to-one; flatMap() transforms each element to zero or more elements and flattens the result into a single stream",
+            "flatMap() applies the function in parallel; map() applies it sequentially",
+            "map() only works with numeric streams; flatMap() works with all types",
+            "They are identical; flatMap() was introduced to replace map()"
+        ],
+        "correct": "map() transforms elements one-to-one; flatMap() transforms each element to zero or more elements and flattens the result into a single stream"
+    },
+    {
+        "question": "What does the Optional class in Java 8 solve?",
+        "options": [
+            "It improves performance by lazily computing values",
+            "It wraps a possibly-null value to force explicit handling of the absence of a value, reducing NullPointerExceptions",
+            "It is a container for a fixed list of optional configuration values",
+            "It replaces null entirely; you cannot have null in Java 8+"
+        ],
+        "correct": "It wraps a possibly-null value to force explicit handling of the absence of a value, reducing NullPointerExceptions"
+    },
+    {
+        "question": "What is the output of the following?\nOptional<String> opt = Optional.of(\"Java\");\nSystem.out.println(opt.map(String::toUpperCase).orElse(\"Empty\"));",
+        "options": [
+            "Empty",
+            "java",
+            "JAVA",
+            "Java"
+        ],
+        "correct": "JAVA"
+    },
+    {
+        "question": "What is a default method in a Java 8 interface?",
+        "options": [
+            "A method with a default access modifier (package-private)",
+            "A concrete method defined in an interface using the 'default' keyword, providing a default implementation that implementing classes can optionally override",
+            "A method that is automatically generated if the implementing class doesn't provide one",
+            "An abstract method with a default return value"
+        ],
+        "correct": "A concrete method defined in an interface using the 'default' keyword, providing a default implementation that implementing classes can optionally override"
+    },
+    {
+        "question": "What are method references in Java 8? Which of the following is a valid instance method reference?",
+        "options": [
+            "String::length applied to Stream<String> using map() — it is NOT valid",
+            "String::length is a valid instance method reference that can be used as Function<String, Integer>",
+            "Method references can only refer to static methods",
+            "String::new is an instance method reference"
+        ],
+        "correct": "String::length is a valid instance method reference that can be used as Function<String, Integer>"
+    },
+    {
+        "question": "In Java 8 Streams, what is the difference between a terminal and an intermediate operation?",
+        "options": [
+            "Intermediate operations are lazy and return a Stream; terminal operations trigger processing and produce a result or side-effect",
+            "Terminal operations return a Stream; intermediate operations produce a result",
+            "Intermediate operations run in parallel; terminal operations run sequentially",
+            "They are the same; the distinction is only theoretical"
+        ],
+        "correct": "Intermediate operations are lazy and return a Stream; terminal operations trigger processing and produce a result or side-effect"
+    },
+    {
+        "question": "What does the Collectors.groupingBy() method do?",
+        "options": [
+            "It sorts stream elements by a classifier function",
+            "It collects stream elements into a Map, grouping them by the result of a classifier function",
+            "It partitions stream elements into exactly two groups",
+            "It counts elements by category"
+        ],
+        "correct": "It collects stream elements into a Map, grouping them by the result of a classifier function"
+    },
+    {
+        "question": "What are the key components of JVM Architecture?",
+        "options": [
+            "Compiler, Linker, Loader, Runtime",
+            "Class Loader, Runtime Data Areas (Heap, Stack, Method Area, PC Register, Native Stack), Execution Engine (Interpreter, JIT Compiler)",
+            "Source Parser, Bytecode Generator, Native Compiler",
+            "Java API, OS Bridge, Memory Manager"
+        ],
+        "correct": "Class Loader, Runtime Data Areas (Heap, Stack, Method Area, PC Register, Native Stack), Execution Engine (Interpreter, JIT Compiler)"
+    },
+    {
+        "question": "What is stored in the JVM Heap vs the JVM Stack?",
+        "options": [
+            "Heap stores primitive variables; Stack stores object instances",
+            "Heap stores object instances and class metadata; Stack stores method call frames, local variables, and references",
+            "Stack stores static variables; Heap stores local variables",
+            "Both Heap and Stack store the same types of data; the distinction is only about size"
+        ],
+        "correct": "Heap stores object instances and class metadata; Stack stores method call frames, local variables, and references"
+    },
+    {
+        "question": "What is Just-In-Time (JIT) compilation in the JVM?",
+        "options": [
+            "The JVM compiles Java source code to bytecode just before deployment",
+            "The JVM compiles frequently executed bytecode into native machine code at runtime to improve performance",
+            "JIT compiles .class files ahead of time into native executables",
+            "JIT is triggered only when the JVM runs out of interpreted bytecode"
+        ],
+        "correct": "The JVM compiles frequently executed bytecode into native machine code at runtime to improve performance"
+    },
+    {
+        "question": "What is the purpose of the @Override annotation?",
+        "options": [
+            "It forces the compiler to generate a new version of the method",
+            "It is a marker that tells the compiler to verify the method actually overrides a superclass/interface method, catching errors if it does not",
+            "It prevents the method from being overridden further down the hierarchy",
+            "It generates boilerplate code for the method at compile time"
+        ],
+        "correct": "It is a marker that tells the compiler to verify the method actually overrides a superclass/interface method, catching errors if it does not"
+    },
+    {
+        "question": "What does @FunctionalInterface annotation do?",
+        "options": [
+            "It marks an interface as eligible for use in streams only",
+            "It enforces at compile time that the interface has exactly one abstract method, making it usable as a lambda target",
+            "It generates the abstract method implementation automatically",
+            "It allows the interface to have multiple default methods only"
+        ],
+        "correct": "It enforces at compile time that the interface has exactly one abstract method, making it usable as a lambda target"
+    },
+    {
+        "question": "What is the @SuppressWarnings annotation used for?",
+        "options": [
+            "It suppresses runtime exceptions for the annotated element",
+            "It tells the compiler to suppress specific compiler warnings for the annotated element (e.g., @SuppressWarnings(\"unchecked\"))",
+            "It prevents the annotated method from logging warnings",
+            "It disables assertions for the annotated code block"
+        ],
+        "correct": "It tells the compiler to suppress specific compiler warnings for the annotated element (e.g., @SuppressWarnings(\"unchecked\"))"
+    },
+    {
+        "question": "What is a custom annotation in Java and what is the @Retention meta-annotation used for?",
+        "options": [
+            "@Retention specifies where the annotation is available: SOURCE (discarded after compile), CLASS (retained in bytecode), or RUNTIME (available via reflection)",
+            "@Retention sets the memory scope of the annotation; HEAP means it survives GC",
+            "@Retention is not a valid meta-annotation; @Target is used for retention",
+            "Custom annotations cannot be retained at runtime"
+        ],
+        "correct": "@Retention specifies where the annotation is available: SOURCE (discarded after compile), CLASS (retained in bytecode), or RUNTIME (available via reflection)"
+    },
+    {
+        "question": "In Java's HTTP Client API (Java 11+), what is the correct way to send a synchronous GET request?",
+        "options": [
+            "HttpClient.get(uri).execute()",
+            "HttpClient client = HttpClient.newHttpClient();\nHttpRequest req = HttpRequest.newBuilder().uri(URI.create(url)).GET().build();\nHttpResponse<String> res = client.send(req, HttpResponse.BodyHandlers.ofString());",
+            "new URL(url).openStream().read()",
+            "HttpConnector.get(url).response()"
+        ],
+        "correct": "HttpClient client = HttpClient.newHttpClient();\nHttpRequest req = HttpRequest.newBuilder().uri(URI.create(url)).GET().build();\nHttpResponse<String> res = client.send(req, HttpResponse.BodyHandlers.ofString());"
+    },
+    {
+        "question": "What feature was introduced in Java 13/14 as a preview for multi-line string literals?",
+        "options": [
+            "String blocks using triple quotes (\"\"\"...\"\"\")",
+            "Raw strings using backticks (`...`)",
+            "Heredoc syntax using @\"\"",
+            "Multi-line strings were already supported since Java 8"
+        ],
+        "correct": "String blocks using triple quotes (\"\"\"...\"\"\")"
+    },
+    {
+        "question": "What is the 'switch expression' feature introduced as a standard in Java 14?",
+        "options": [
+            "It adds a default case to every switch statement automatically",
+            "Switch can now be used as an expression returning a value, supports arrow (->)  labels, and eliminates fall-through by default",
+            "Switch expressions can now match on types like instanceof",
+            "It allows switch to work on all object types including custom classes"
+        ],
+        "correct": "Switch can now be used as an expression returning a value, supports arrow (->) labels, and eliminates fall-through by default"
+    },
+    {
+        "question": "What is the output of the following code using a switch expression?\nint day = 3;\nString name = switch (day) {\n    case 1 -> \"Monday\";\n    case 2 -> \"Tuesday\";\n    case 3 -> \"Wednesday\";\n    default -> \"Other\";\n};\nSystem.out.println(name);",
+        "options": [
+            "Other",
+            "Tuesday",
+            "Wednesday",
+            "Compilation error: switch cannot be used as expression"
+        ],
+        "correct": "Wednesday"
+    },
+    {
+        "question": "What is the output of the following code?\nint x = 10;\nObject obj = x;\nSystem.out.println(obj instanceof Integer);",
+        "options": [
+            "false",
+            "true",
+            "Compilation error",
+            "ClassCastException at runtime"
+        ],
+        "correct": "true"
+    },
+    {
+        "question": "What does the 'volatile' keyword guarantee in Java multithreading?",
+        "options": [
+            "Mutual exclusion: only one thread can access the variable at a time",
+            "Visibility: changes to a volatile variable made by one thread are immediately visible to all other threads; it does NOT guarantee atomicity of compound operations",
+            "Atomicity: read-modify-write operations on a volatile variable are atomic",
+            "Thread-safety: no synchronization is needed when using volatile"
+        ],
+        "correct": "Visibility: changes to a volatile variable made by one thread are immediately visible to all other threads; it does NOT guarantee atomicity of compound operations"
+    },
+    {
+        "question": "What is the output of the following?\nString s = \"Hello World\";\nSystem.out.println(s.indexOf(\"World\") + \" \" + s.lastIndexOf('l'));",
+        "options": [
+            "6 9",
+            "5 9",
+            "6 8",
+            "5 8"
+        ],
+        "correct": "6 9"
+    },
+    {
+        "question": "What happens when the following code executes?\nList<String> list = new ArrayList<>();\nlist.add(\"A\");\nlist.add(\"B\");\nlist.add(\"C\");\nfor (String s : list) {\n    if (s.equals(\"B\")) list.remove(s);\n}",
+        "options": [
+            "\"B\" is removed successfully and the loop completes normally",
+            "ConcurrentModificationException is thrown",
+            "ArrayIndexOutOfBoundsException is thrown",
+            "The list remains unchanged"
+        ],
+        "correct": "ConcurrentModificationException is thrown"
+    },
+    {
+        "question": "What is the purpose of the Iterator's remove() method compared to calling list.remove() inside a for-each loop?",
+        "options": [
+            "They are identical in behavior",
+            "Iterator.remove() safely removes the current element during iteration without throwing ConcurrentModificationException",
+            "Iterator.remove() removes all occurrences of an element",
+            "list.remove() is safer inside loops than Iterator.remove()"
+        ],
+        "correct": "Iterator.remove() safely removes the current element during iteration without throwing ConcurrentModificationException"
+    },
+    {
+        "question": "What is the difference between Stack and Deque for stack operations in Java?",
+        "options": [
+            "Stack is a newer API; Deque is legacy",
+            "Stack extends Vector (legacy, synchronized); ArrayDeque implementing Deque is the preferred modern alternative for stack operations",
+            "Deque only supports queue operations, not stack operations",
+            "They are identical and interchangeable"
+        ],
+        "correct": "Stack extends Vector (legacy, synchronized); ArrayDeque implementing Deque is the preferred modern alternative for stack operations"
+    },
+    {
+        "question": "What does the following code output?\nMap<String, Integer> map = new HashMap<>();\nmap.put(\"a\", 1);\nmap.put(\"b\", 2);\nmap.put(\"a\", 3);\nSystem.out.println(map.size() + \" \" + map.get(\"a\"));",
+        "options": [
+            "3 3",
+            "3 1",
+            "2 3",
+            "2 1"
+        ],
+        "correct": "2 3"
+    },
+    {
+        "question": "What does the computeIfAbsent() method do on a Map?",
+        "options": [
+            "It checks if a key is absent and throws an exception",
+            "If the specified key doesn't exist (or maps to null), it computes a new value using the provided function and inserts it",
+            "It replaces the existing value only if the key is already present",
+            "It merges an existing value with a computed value"
+        ],
+        "correct": "If the specified key doesn't exist (or maps to null), it computes a new value using the provided function and inserts it"
+    },
+    {
+        "question": "What is the output of the following code using String.format()?\nSystem.out.println(String.format(\"%-10s|%5d\", \"Java\", 42));",
+        "options": [
+            "Java      |   42",
+            "    Java  |42",
+            "Java|   42",
+            "Java      |42   "
+        ],
+        "correct": "Java      |   42"
+    },
+    {
+        "question": "Which collection maintains insertion order AND allows duplicate elements?",
+        "options": [
+            "HashSet",
+            "LinkedHashSet",
+            "ArrayList",
+            "TreeMap"
+        ],
+        "correct": "ArrayList"
+    },
+    {
+        "question": "What is the output of the following multithreading code?\nclass MyThread extends Thread {\n    public void run() { System.out.print(\"Thread \"); }\n}\npublic class Test {\n    public static void main(String[] args) {\n        MyThread t = new MyThread();\n        t.run();\n        t.start();\n    }\n}",
+        "options": [
+            "Thread (once, from start())",
+            "Thread Thread (both execute in the main thread)",
+            "Thread Thread (t.run() executes in main thread; t.start() in a new thread — order may vary)",
+            "Compilation error"
+        ],
+        "correct": "Thread Thread (t.run() executes in main thread; t.start() in a new thread — order may vary)"
+    },
+    {
+        "question": "What happens if you call start() on a thread that has already completed execution?",
+        "options": [
+            "The thread restarts from the beginning of its run() method",
+            "IllegalThreadStateException is thrown",
+            "The call is silently ignored",
+            "A new thread with the same run() logic is created"
+        ],
+        "correct": "IllegalThreadStateException is thrown"
+    },
+    {
+        "question": "Which Java 8 functional interface represents a function that takes two arguments and returns a result?",
+        "options": [
+            "BiConsumer<T, U>",
+            "BiFunction<T, U, R>",
+            "BinaryOperator<T>",
+            "BiPredicate<T, U>"
+        ],
+        "correct": "BiFunction<T, U, R>"
+    },
+    {
+        "question": "What is the output of the following stream operation?\nStream.of(\"a\", \"bb\", \"ccc\", \"dd\")\n    .sorted(Comparator.comparingInt(String::length).reversed())\n    .findFirst()\n    .ifPresent(System.out::println);",
+        "options": [
+            "a",
+            "ccc",
+            "dd",
+            "bb"
+        ],
+        "correct": "ccc"
+    },
+    {
+        "question": "Which is NOT a valid way to create a thread in Java?",
+        "options": [
+            "Extending the Thread class and overriding run()",
+            "Implementing the Runnable interface and passing to new Thread()",
+            "Implementing the Callable interface and passing to new Thread()",
+            "Using an ExecutorService with a Runnable task"
+        ],
+        "correct": "Implementing the Callable interface and passing to new Thread()"
+    },
+    {
+        "question": "What is the purpose of the transient keyword in Java?",
+        "options": [
+            "It marks a variable as temporary in the JVM stack",
+            "It prevents a field from being serialized when the object is written to an ObjectOutputStream",
+            "It prevents a field from being garbage collected",
+            "It marks a variable as thread-local"
+        ],
+        "correct": "It prevents a field from being serialized when the object is written to an ObjectOutputStream"
+    },
+    {
+        "question": "What is the difference between deep copy and shallow copy of an object in Java?",
+        "options": [
+            "Shallow copy duplicates all fields including nested object references (new nested objects); deep copy only copies the reference to nested objects",
+            "Shallow copy only copies the reference to nested objects (shared); deep copy duplicates the object and all nested objects recursively (independent)",
+            "They produce identical results for primitive-only objects",
+            "Deep copy is always implemented by the clone() method; shallow copy requires a copy constructor"
+        ],
+        "correct": "Shallow copy only copies the reference to nested objects (shared); deep copy duplicates the object and all nested objects recursively (independent)"
+    },
+    {
+        "question": "What does the instanceof pattern matching feature (Java 16 standard) allow?\nif (obj instanceof String s) { ... }",
+        "options": [
+            "It only checks if obj is a String without any assignment",
+            "It checks if obj is a String AND, if so, binds it to variable s within the if block — eliminating the need for an explicit cast",
+            "It replaces the cast but still requires manual null checking",
+            "Pattern matching is only available in switch statements, not if statements"
+        ],
+        "correct": "It checks if obj is a String AND, if so, binds it to variable s within the if block — eliminating the need for an explicit cast"
+    },
+    {
+        "question": "What is the output of the following code?\nclass Base {\n    Base() { System.out.print(\"Base \"); }\n}\nclass Child extends Base {\n    Child() { System.out.print(\"Child \"); }\n}\npublic class Test {\n    public static void main(String[] args) {\n        new Child();\n    }\n}",
+        "options": [
+            "Child",
+            "Base",
+            "Base Child",
+            "Child Base"
+        ],
+        "correct": "Base Child"
+    },
+    {
+        "question": "What is a WeakReference in Java and what is its primary use case?",
+        "options": [
+            "An object that can survive GC even with no strong references",
+            "A reference that doesn't prevent the referenced object from being garbage collected; used in WeakHashMap for cache-like structures where entries expire when keys are no longer strongly referenced",
+            "A reference used to implement soft-deleted objects",
+            "A reference that is collected before SoftReferences"
+        ],
+        "correct": "A reference that doesn't prevent the referenced object from being garbage collected; used in WeakHashMap for cache-like structures where entries expire when keys are no longer strongly referenced"
+    },
+    {
+        "question": "What is the output of the following?\nint[] a = {1, 2, 3};\nint[] b = a;\nb[0] = 99;\nSystem.out.println(a[0]);",
+        "options": [
+            "1",
+            "99",
+            "0",
+            "ArrayIndexOutOfBoundsException"
+        ],
+        "correct": "99"
+    },
+    {
+        "question": "Which of the following is true about Java's ConcurrentHashMap?",
+        "options": [
+            "It locks the entire map for every read and write operation",
+            "It uses segment-level (or bucket-level in Java 8+) locking allowing concurrent reads and limited concurrent writes without locking the entire map",
+            "It is identical to a synchronized HashMap",
+            "It does not allow null keys or null values and throws NullPointerException for all get() calls with a null key"
+        ],
+        "correct": "It uses segment-level (or bucket-level in Java 8+) locking allowing concurrent reads and limited concurrent writes without locking the entire map"
+    },
+    {
+        "question": "What does the reduce() terminal operation do in Java Streams?\nOptional<Integer> result = Stream.of(1,2,3,4,5).reduce((a, b) -> a + b);",
+        "options": [
+            "Returns the minimum value in the stream",
+            "Repeatedly applies the binary operator to combine elements into a single result; the above returns Optional[15]",
+            "Filters the stream down to a single element",
+            "Reduces the stream to a Stream<Integer> with one element"
+        ],
+        "correct": "Repeatedly applies the binary operator to combine elements into a single result; the above returns Optional[15]"
+    },
+    {
+        "question": "What is the difference between throw and throws in Java?",
+        "options": [
+            "'throw' declares exceptions a method might raise; 'throws' actually raises an exception",
+            "'throw' is used to actually throw an exception instance; 'throws' is used in the method signature to declare that the method may throw certain checked exceptions",
+            "They are interchangeable keywords",
+            "'throw' can only throw RuntimeExceptions; 'throws' handles all Exception types"
+        ],
+        "correct": "'throw' is used to actually throw an exception instance; 'throws' is used in the method signature to declare that the method may throw certain checked exceptions"
+    },
+    {
+        "question": "What is a local class in Java?",
+        "options": [
+            "A class defined within a package that has package-private access",
+            "A class defined within a method body; it can access final or effectively-final local variables and has access to the enclosing class members",
+            "A static nested class with private access",
+            "An inner class that can only be instantiated locally within the same file"
+        ],
+        "correct": "A class defined within a method body; it can access final or effectively-final local variables and has access to the enclosing class members"
+    },
+    {
+        "question": "What is printed by the following code?\nString s = \"abcabc\";\nSystem.out.println(s.replace('a', 'X').substring(2, 5));",
+        "options": [
+            "cXb",
+            "caX",
+            "cXb",
+            "Xbc"
+        ],
+        "correct": "cXb"
+    },
+    {
+        "question": "What is the output of the following code?\nList<String> list = Arrays.asList(\"c\", \"a\", \"b\");\nlist.stream()\n    .sorted()\n    .forEach(System.out::print);",
+        "options": [
+            "cab",
+            "abc",
+            "bac",
+            "cba"
+        ],
+        "correct": "abc"
+    },
+    {
+        "question": "What is the purpose of the 'super' keyword in Java?",
+        "options": [
+            "It creates a new instance of the parent class",
+            "It refers to the immediate parent class — used to call parent constructors (super()), access parent fields (super.field), or call overridden parent methods (super.method())",
+            "It is used to call static methods of the parent class",
+            "It overrides the parent class reference entirely"
+        ],
+        "correct": "It refers to the immediate parent class — used to call parent constructors (super()), access parent fields (super.field), or call overridden parent methods (super.method())"
+    },
+    {
+        "question": "What is covariant return type in Java?",
+        "options": [
+            "A return type that can be null or a valid value",
+            "When an overriding method declares a return type that is a subtype of the return type declared in the overridden parent method",
+            "When a method returns the same type as its parameter",
+            "It is a feature only available in generic methods"
+        ],
+        "correct": "When an overriding method declares a return type that is a subtype of the return type declared in the overridden parent method"
+    },
+    {
+        "question": "What is the purpose of the Collectors.toUnmodifiableList() method in Java 10+?",
+        "options": [
+            "It creates a list that allows nulls but prevents modification",
+            "It collects stream elements into an unmodifiable list that throws UnsupportedOperationException on mutation attempts",
+            "It is identical to Collectors.toList()",
+            "It creates a thread-safe unmodifiable list"
+        ],
+        "correct": "It collects stream elements into an unmodifiable list that throws UnsupportedOperationException on mutation attempts"
+    },
+    {
+        "question": "What is the output of the following?\nvar list = new ArrayList<String>();\nlist.add(\"Java\");\nlist.add(\"Streams\");\nvar result = list.stream().count();\nSystem.out.println(result);",
+        "options": [
+            "Compilation error: 'var' is not allowed with generics",
+            "2",
+            "0",
+            "java.lang.Long@..."
+        ],
+        "correct": "2"
+    },
+    {
+        "question": "What is the text block feature in Java 15 (standard)? What is the output of:\nString json = \"\"\"\n        {\"key\": \"value\"}\n        \"\"\";\nSystem.out.println(json.strip());",
+        "options": [
+            "{\"key\": \"value\"} (trailing newline stripped)",
+            "        {\"key\": \"value\"}         (with leading spaces)",
+            "{\"key\": \"value\"}\n (with newline)",
+            "Compilation error: text blocks not supported in Java 15"
+        ],
+        "correct": "{\"key\": \"value\"} (trailing newline stripped)"
+    },
+    {
+        "question": "What is the key difference between an interface default method and a method in an abstract class in Java 8?",
+        "options": [
+            "Default methods in interfaces cannot access state (fields); abstract class methods can access the class's instance fields",
+            "They are functionally identical",
+            "Abstract class methods can be private; interface default methods cannot",
+            "Default interface methods can only be void"
+        ],
+        "correct": "Default methods in interfaces cannot access state (fields); abstract class methods can access the class's instance fields"
+    },
+    {
+        "question": "Given: int[] arr = {1,2,3,4,5}; what does Arrays.stream(arr).average().getAsDouble() return?",
+        "options": [
+            "3",
+            "3.0",
+            "15.0",
+            "OptionalDouble.empty()"
+        ],
+        "correct": "3.0"
+    },
+    {
+        "question": "Which of the following is NOT a primitive data type in Java?",
+        "options": [
+            "int",
+            "boolean",
+            "String",
+            "char"
+        ],
+        "correct": "String"
+    },
+    {
+        "question": "What is the output of the following code snippet? int x = 5; System.out.println(x++ + ++x);",
+        "options": [
+            "10",
+            "11",
+            "12",
+            "13"
+        ],
+        "correct": "12"
+    },
+    {
+        "question": "Which access modifier makes a member accessible only within the same package and by subclasses?",
+        "options": [
+            "private",
+            "public",
+            "protected",
+            "default (no modifier)"
+        ],
+        "correct": "protected"
+    },
+    {
+        "question": "What does the 'final' keyword mean when applied to a method?",
+        "options": [
+            "The method cannot be overridden",
+            "The method cannot be called",
+            "The method returns a constant",
+            "The method is static"
+        ],
+        "correct": "The method cannot be overridden"
+    },
+    {
+        "question": "Which of the following correctly declares an abstract method?",
+        "options": [
+            "public abstract void method();",
+            "public void abstract method();",
+            "public abstract method();",
+            "abstract public void method() {}"
+        ],
+        "correct": "public abstract void method();"
+    },
+    {
+        "question": "What is the size of a 'double' variable in Java?",
+        "options": [
+            "32 bits",
+            "64 bits",
+            "16 bits",
+            "Depends on the JVM"
+        ],
+        "correct": "64 bits"
+    },
+    {
+        "question": "Which collection class allows null keys and null values and is not synchronized?",
+        "options": [
+            "Hashtable",
+            "HashMap",
+            "TreeMap",
+            "ConcurrentHashMap"
+        ],
+        "correct": "HashMap"
+    },
+    {
+        "question": "What is the output of: System.out.println(10 + 20 + \"30\");",
+        "options": [
+            "102030",
+            "3030",
+            "102030",
+            "1230"
+        ],
+        "correct": "3030"
+    },
+    {
+        "question": "Which interface must a class implement to be used in a for-each loop?",
+        "options": [
+            "Iterator",
+            "Iterable",
+            "Collection",
+            "List"
+        ],
+        "correct": "Iterable"
+    },
+    {
+        "question": "What does the 'volatile' keyword guarantee in Java?",
+        "options": [
+            "Thread safety for all operations",
+            "Visibility of changes to variables across threads",
+            "Atomicity of read-modify-write operations",
+            "Synchronization of method execution"
+        ],
+        "correct": "Visibility of changes to variables across threads"
+    },
+    {
+        "question": "Which of the following is a checked exception?",
+        "options": [
+            "NullPointerException",
+            "ArrayIndexOutOfBoundsException",
+            "IOException",
+            "ArithmeticException"
+        ],
+        "correct": "IOException"
+    },
+    {
+        "question": "What is the default value of a boolean variable in Java?",
+        "options": [
+            "true",
+            "false",
+            "null",
+            "0"
+        ],
+        "correct": "false"
+    },
+    {
+        "question": "Which method is called when an object is garbage collected?",
+        "options": [
+            "delete()",
+            "destroy()",
+            "finalize()",
+            "cleanup()"
+        ],
+        "correct": "finalize()"
+    },
+    {
+        "question": "Write a code snippet to create a thread by implementing the Runnable interface.",
+        "options": [
+            "class MyThread implements Runnable { public void run() {} } Thread t = new Thread(new MyThread());",
+            "class MyThread implements Runnable { public void start() {} } Thread t = new Thread(new MyThread());",
+            "class MyThread extends Runnable { public void run() {} } Thread t = new MyThread();",
+            "class MyThread implements Runnable { public void run() {} } Thread t = new MyThread();"
+        ],
+        "correct": "class MyThread implements Runnable { public void run() {} } Thread t = new Thread(new MyThread());"
+    },
+    {
+        "question": "What is the purpose of the 'synchronized' keyword?",
+        "options": [
+            "To create a copy of an object",
+            "To allow only one thread to execute a block of code at a time",
+            "To speed up execution of a method",
+            "To make a variable immutable"
+        ],
+        "correct": "To allow only one thread to execute a block of code at a time"
+    },
+    {
+        "question": "Which of the following is true about the 'StringBuilder' class?",
+        "options": [
+            "It is thread-safe",
+            "It is immutable",
+            "It is faster than StringBuffer for non-multithreaded scenarios",
+            "It extends the String class"
+        ],
+        "correct": "It is faster than StringBuffer for non-multithreaded scenarios"
+    },
+    {
+        "question": "What is the output of: System.out.println(\"Hello\".substring(1, 3));",
+        "options": [
+            "el",
+            "ell",
+            "Hel",
+            "Hell"
+        ],
+        "correct": "el"
+    },
+    {
+        "question": "Which design pattern ensures a class has only one instance and provides a global point of access to it?",
+        "options": [
+            "Factory Pattern",
+            "Singleton Pattern",
+            "Observer Pattern",
+            "Decorator Pattern"
+        ],
+        "correct": "Singleton Pattern"
+    },
+    {
+        "question": "What does the 'transient' keyword do in Java?",
+        "options": [
+            "Makes a variable volatile",
+            "Prevents a field from being serialized",
+            "Makes a variable temporary",
+            "Indicates a method is transitory"
+        ],
+        "correct": "Prevents a field from being serialized"
+    },
+    {
+        "question": "Which of the following statements about the 'equals()' method is correct?",
+        "options": [
+            "It compares object references by default",
+            "It must be overridden to compare content",
+            "It is defined in the Object class",
+            "All of the above"
+        ],
+        "correct": "All of the above"
+    },
+    {
+        "question": "Write a lambda expression to sort a List<String> in descending order.",
+        "options": [
+            "(a, b) -> b.compareTo(a)",
+            "(a, b) -> a.compareTo(b)",
+            "(a, b) -> { return a > b; }",
+            "Collections.sort(list, (a,b) -> a-b)"
+        ],
+        "correct": "(a, b) -> b.compareTo(a)"
+    },
+    {
+        "question": "What is the purpose of the 'break' statement in a switch case?",
+        "options": [
+            "To exit the entire program",
+            "To terminate the switch block and prevent fall-through",
+            "To skip the current iteration of a loop",
+            "To return a value from the switch"
+        ],
+        "correct": "To terminate the switch block and prevent fall-through"
+    },
+    {
+        "question": "Which of the following is a valid declaration of a two-dimensional array?",
+        "options": [
+            "int[][] arr = new int[5][5];",
+            "int[] arr[] = new int[5][5];",
+            "int arr[][] = new int[5][5];",
+            "All of the above"
+        ],
+        "correct": "All of the above"
+    },
+    {
+        "question": "What is the result of: Math.floor(3.9);",
+        "options": [
+            "3.0",
+            "4.0",
+            "3.9",
+            "3"
+        ],
+        "correct": "3.0"
+    },
+    {
+        "question": "Which exception is thrown when trying to access an array index that is out of bounds?",
+        "options": [
+            "IndexOutOfBoundsException",
+            "ArrayIndexOutOfBoundsException",
+            "IllegalArgumentException",
+            "NullPointerException"
+        ],
+        "correct": "ArrayIndexOutOfBoundsException"
+    },
+    {
+        "question": "What is the purpose of the 'this' keyword in Java?",
+        "options": [
+            "Refers to the superclass",
+            "Refers to the current object instance",
+            "Refers to the class itself",
+            "Creates a new instance of the class"
+        ],
+        "correct": "Refers to the current object instance"
+    },
+    {
+        "question": "Which of the following is NOT a valid way to create a String in Java?",
+        "options": [
+            "String s = new String(\"Hello\");",
+            "String s = \"Hello\";",
+            "String s = String(\"Hello\");",
+            "String s = new String(new char[]{'H','e','l','l','o'});"
+        ],
+        "correct": "String s = String(\"Hello\");"
+    },
+    {
+        "question": "What is the output of: System.out.println(1 + 2 + \"3\" + 4 + 5);",
+        "options": [
+            "3345",
+            "12345",
+            "33345",
+            "1515"
+        ],
+        "correct": "3345"
+    },
+    {
+        "question": "Which collection maintains elements in insertion order?",
+        "options": [
+            "HashSet",
+            "TreeSet",
+            "LinkedHashSet",
+            "ArrayList"
+        ],
+        "correct": "LinkedHashSet"
+    },
+    {
+        "question": "Write a try-catch block that handles both ArithmeticException and NullPointerException.",
+        "options": [
+            "try { } catch (ArithmeticException | NullPointerException e) { }",
+            "try { } catch (ArithmeticException e) { } catch (NullPointerException e) { }",
+            "Both A and B are valid",
+            "try { } catch (Exception e) { }"
+        ],
+        "correct": "Both A and B are valid"
+    },
+    {
+        "question": "What does the 'static' keyword mean when applied to a variable?",
+        "options": [
+            "The variable cannot be changed",
+            "The variable belongs to the class rather than any instance",
+            "The variable is local to a method",
+            "The variable is thread-safe"
+        ],
+        "correct": "The variable belongs to the class rather than any instance"
+    },
+    {
+        "question": "Which method is used to start a thread's execution?",
+        "options": [
+            "run()",
+            "start()",
+            "execute()",
+            "begin()"
+        ],
+        "correct": "start()"
+    },
+    {
+        "question": "What is the default capacity of an ArrayList?",
+        "options": [
+            "0",
+            "10",
+            "16",
+            "100"
+        ],
+        "correct": "10"
+    },
+    {
+        "question": "Which of the following is a marker interface?",
+        "options": [
+            "Runnable",
+            "Serializable",
+            "Comparable",
+            "Iterable"
+        ],
+        "correct": "Serializable"
+    },
+    {
+        "question": "What is the output of the following code? int[] arr = {1,2,3}; System.out.println(arr[3]);",
+        "options": [
+            "0",
+            "null",
+            "ArrayIndexOutOfBoundsException",
+            "Compilation error"
+        ],
+        "correct": "ArrayIndexOutOfBoundsException"
+    },
+    {
+        "question": "Which operator is used for bitwise AND in Java?",
+        "options": [
+            "&&",
+            "&",
+            "|",
+            "||"
+        ],
+        "correct": "&"
+    },
+    {
+        "question": "What is the purpose of the 'instanceof' operator?",
+        "options": [
+            "To create a new instance of a class",
+            "To test whether an object is an instance of a particular class or interface",
+            "To compare two objects for equality",
+            "To clone an object"
+        ],
+        "correct": "To test whether an object is an instance of a particular class or interface"
+    },
+    {
+        "question": "Which of the following statements about inheritance is true in Java?",
+        "options": [
+            "A class can extend multiple classes",
+            "An interface can extend multiple interfaces",
+            "A class can implement multiple classes",
+            "An interface can extend multiple classes"
+        ],
+        "correct": "An interface can extend multiple interfaces"
+    },
+    {
+        "question": "What is the output of: System.out.println(10 % 3);",
+        "options": [
+            "3",
+            "1",
+            "0",
+            "3.33"
+        ],
+        "correct": "1"
+    },
+    {
+        "question": "Which package contains the Collections framework?",
+        "options": [
+            "java.util",
+            "java.lang",
+            "java.collections",
+            "java.io"
+        ],
+        "correct": "java.util"
+    },
+    {
+        "question": "Write a code snippet to create an immutable class with a single field 'name'.",
+        "options": [
+            "public final class Person { private final String name; public Person(String name) { this.name = name; } public String getName() { return name; } }",
+            "public class Person { private String name; public Person(String name) { this.name = name; } public String getName() { return name; } }",
+            "public final class Person { private String name; public Person(String name) { this.name = name; } public void setName(String name) { this.name = name; } }",
+            "public class Person { public final String name; }"
+        ],
+        "correct": "public final class Person { private final String name; public Person(String name) { this.name = name; } public String getName() { return name; } }"
+    },
+    {
+        "question": "What is the purpose of the 'continue' statement in loops?",
+        "options": [
+            "To exit the loop entirely",
+            "To skip the current iteration and proceed to the next",
+            "To restart the loop from the beginning",
+            "To pause the loop execution"
+        ],
+        "correct": "To skip the current iteration and proceed to the next"
+    },
+    {
+        "question": "Which of the following is true about method overloading?",
+        "options": [
+            "Methods must have the same name and same parameters",
+            "Methods must have different return types",
+            "Methods must have the same name but different parameter lists",
+            "Methods must be in different classes"
+        ],
+        "correct": "Methods must have the same name but different parameter lists"
+    },
+    {
+        "question": "What is the output of: String s1 = \"Java\"; String s2 = \"Java\"; System.out.println(s1 == s2);",
+        "options": [
+            "true",
+            "false",
+            "Compilation error",
+            "null"
+        ],
+        "correct": "true"
+    },
+    {
+        "question": "Which exception is thrown when a null reference is accessed?",
+        "options": [
+            "NullReferenceException",
+            "NullPointerException",
+            "IllegalArgumentException",
+            "ClassCastException"
+        ],
+        "correct": "NullPointerException"
+    },
+    {
+        "question": "What is the purpose of the 'enum' keyword in Java?",
+        "options": [
+            "To define a set of named constants",
+            "To enumerate elements in a collection",
+            "To count the number of objects created",
+            "To create an enumeration of methods"
+        ],
+        "correct": "To define a set of named constants"
+    },
+    {
+        "question": "Which method is called automatically when an object is created?",
+        "options": [
+            "init()",
+            "create()",
+            "constructor",
+            "new()"
+        ],
+        "correct": "constructor"
+    },
+    {
+        "question": "What is the range of the 'byte' data type in Java?",
+        "options": [
+            "-128 to 127",
+            "0 to 255",
+            "-32768 to 32767",
+            "-2^31 to 2^31-1"
+        ],
+        "correct": "-128 to 127"
+    },
+    {
+        "question": "Which of the following is a valid functional interface in Java?",
+        "options": [
+            "Interface with multiple abstract methods",
+            "Interface with exactly one abstract method",
+            "Interface with no methods",
+            "Any interface with the @Functional annotation"
+        ],
+        "correct": "Interface with exactly one abstract method"
+    },
+    {
+        "question": "Write a code snippet to convert a List<String> to a String[] array.",
+        "options": [
+            "list.toArray(new String[0]);",
+            "(String[]) list.toArray();",
+            "list.toArray(String[]::new);",
+            "Both A and C are correct"
+        ],
+        "correct": "Both A and C are correct"
+    }
+]

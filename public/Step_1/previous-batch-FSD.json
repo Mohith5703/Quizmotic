@@ -1,0 +1,527 @@
+[
+  {
+    "question": "Which event occurs when the user clicks on the HTML element ?",
+    "options": [
+      "onmouseover",
+      "onchange",
+      "onmouseclick",
+      "onclick"
+    ],
+    "correct": "onclick"
+  },
+  {
+    "question": "The correct HTML tag to left align the content inside a table cell is :-",
+    "options": [
+      "<td align=\"left\">",
+      "<td leftalign>",
+      "<td align=\"leftalign\">",
+      "<td>"
+    ],
+    "correct": "<td align=\"left\">"
+  },
+  {
+    "question": "What is the output of the Java Code Snippet ?\nStringJoiner astring = new StringJoiner(“-”, ” ( “, ” ) ”);\nastring.add(“A”); \nastring.add(“B”); \nastring.add(“C”);",
+    "options": [
+      "(A-B-C)",
+      "(A)-(B)-(C)",
+      "(-A-)(-B-)(-C-)"
+    ],
+    "correct": "(A-B-C)"
+  },
+  {
+    "question": "What are the Different Modes of Autowiring ?",
+    "options": [
+      "byName,byType,constructor,autodetect.",
+      "byName,byType,constructor,autocorrect.",
+      "byName,byContent,constructor,autodetect.",
+      "byName,byContent,setter,autodetect."
+    ],
+    "correct": "byName,byType,constructor,autodetect."
+  },
+  {
+    "question": "Which Annotation is used to refer to Pointcuts.",
+    "options": [
+      "@PointCut.",
+      "@PointCutExecution.",
+      "@PointCutBefore."
+    ],
+    "correct": "@PointCut."
+  },
+  {
+    "question": "Which of the below API Calls provides you the security information ?\n1) HttpServletRequest.isUserinRole()\n2) HttpServletRequest.getUserPrincipal()",
+    "options": [
+      "Only 1",
+      "Only 2",
+      "Both i and ii"
+    ],
+    "correct": "Both i and ii"
+  },
+  {
+    "question": "What does it mean by publishing a REST service in Spring ?\ni. Publishing an application’s data as Json over a REST service.\nii.Publishing an application’s data as XML over a REST service.\nIii. Sharing Database within two microservices using Spring Data Access Object (DAO).",
+    "options": [
+      "Only 1",
+      "Only 1 and 2",
+      "Only 2",
+      "All of the above."
+    ],
+    "correct": "Only 1 and 2"
+  },
+  {
+    "question": "Which element is used to restrict the access to a particular URL within Spring Security ?",
+    "options": [
+      "restrict-url",
+      "intercept-url",
+      "intercept-restrict."
+    ],
+    "correct": "intercept-url"
+  },
+  {
+    "question": "What is used to dispatch requests to the WEB Application ?",
+    "options": [
+      "DispatchherServlet.",
+      "ViewHandler.",
+      "ViewResolver."
+    ],
+    "correct": "DispatchherServlet."
+  },
+  {
+    "question": "Which annotation is used to create Primary KEY : Foreign KEY relation between two tables ?",
+    "options": [
+      "ForeignKey.",
+      "JoinedKey.",
+      "JoinColumn."
+    ],
+    "correct": "JoinColumn."
+  },
+  {
+    "question": "You can only use Hibernate in ORM in Spring Boot Applications.",
+    "options": [
+      "TRUE",
+      "FALSE"
+    ],
+    "correct": "FALSE"
+  },
+  {
+    "question": "In your Data Access Object (DAO) method , you neither need to surround your code with a try/catch block nor declare throwing an exception in the method signature.",
+    "options": [
+      "TRUE",
+      "FALSE"
+    ],
+    "correct": "FALSE"
+  },
+  {
+    "question": "Which annotation is used as a substitute for the initialization method ?",
+    "options": [
+      "@PostConstruct.",
+      "@PreDestroy.",
+      "@PreConstruct."
+    ],
+    "correct": "@PostConstruct."
+  },
+  {
+    "question": "A logger location where logging information is sent is called",
+    "options": [
+      "appender.",
+      "logger",
+      "component."
+    ],
+    "correct": "appender."
+  },
+  {
+    "question": "By default, a bean is lazily loaded in Spring.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": "False"
+  },
+  {
+    "question": "Sharding a MongoDB database across many server instances can be achieved with ____",
+    "options": [
+      "LAN",
+      "SAN.",
+      "MAN"
+    ],
+    "correct": "LAN"
+  },
+  {
+    "question": "In MongoDB , which is the operation that uses an index often , having better performance than those who do NOT use an index ?",
+    "options": [
+      "SELECT.",
+      "UPDATE",
+      "DELETE.",
+      "SORT."
+    ],
+    "correct": "SORT."
+  },
+  {
+    "question": "Which one is NOT a spring data MongoDB annotation ?",
+    "options": [
+      "@Document",
+      "@Field",
+      "@Entity",
+      "@Query."
+    ],
+    "correct": "@Entity"
+  },
+  {
+    "question": "What type of management does “Capped Collections” provide for inserted documents in MongoDB ?",
+    "options": [
+      "FIFO.",
+      "LIFO",
+      "LRU",
+      "MRU"
+    ],
+    "correct": "FIFO."
+  },
+  {
+    "question": "Identify the incorrect statement on MongoDB ?",
+    "options": [
+      "Secondary Indices are not available in MongoDB.",
+      "MongoDB supports search by field, range queries and regular expression matches.",
+      "MongoDB can store the business subject in the minimal number of documents."
+    ],
+    "correct": "Secondary Indices are not available in MongoDB."
+  },
+  {
+    "question": "In MongoDB, which of the following methods return one document ?",
+    "options": [
+      "findOne()",
+      "findOne1()",
+      "selectOne()"
+    ],
+    "correct": "findOne()"
+  },
+  {
+    "question": "Redux is an exclusive feature of the React store ?",
+    "options": [
+      "TRUE",
+      "FALSE"
+    ],
+    "correct": "FALSE"
+  },
+  {
+    "question": "Identify the correct ES6 statement.\ni. var React = require(‘react’);\nii. import React from react;\niii. module.exports = Component.\niv. export default Component.",
+    "options": [
+      "Only i and ii",
+      "Only iv",
+      "Only i,ii and iv",
+      "Only ii and iv"
+    ],
+    "correct": "Only ii and iv"
+  },
+  {
+    "question": "You can also use an ES6 class to define a component in React.",
+    "options": [
+      "True.",
+      "False."
+    ],
+    "correct": "True."
+  },
+  {
+    "question": "Which of the below methods are NOT a part of React Component’s lifecycle ?",
+    "options": [
+      "Initial Rendering.",
+      "Render / Re-Render.",
+      "unMounting.",
+      "Remote URL calls."
+    ],
+    "correct": "Remote URL calls."
+  },
+  {
+    "question": "Identify the correct statement in MongoDB.",
+    "options": [
+      "Queries specify criteria, or conditions , which identify the documents that MongoDB returns to the clients.",
+      "Write Operations , or queries , retrieve data stored in the database.",
+      "The selection limits the amount of data that MongoDB returns to the client over the network."
+    ],
+    "correct": "Queries specify criteria, or conditions , which identify the documents that MongoDB returns to the clients."
+  },
+  {
+    "question": "Identify the incorrect statement on MongoDB.",
+    "options": [
+      "Secondary indices are not available in MongoDB.",
+      "MongoDB supports search by field, range queries, and regular expression searches.",
+      "MongoDB can store the business subject in the minimal number of documents."
+    ],
+    "correct": "Secondary indices are not available in MongoDB."
+  },
+  {
+    "question": "Which of the following is not a callback method of React ?",
+    "options": [
+      "render()",
+      "componentDidMount()",
+      "componentFailedToMount()",
+      "componentWillunMount()"
+    ],
+    "correct": "componentFailedToMount()"
+  },
+  {
+    "question": "How can we render JSX in the browser ?\ni. Using Babel\nii. Using Typescript.\niii. Using Flux.\niv. Using Redux.",
+    "options": [
+      "Only i and ii",
+      "Only iv",
+      "Only i,ii and iv",
+      "Only iii and iv."
+    ],
+    "correct": "Only i and ii"
+  },
+  {
+    "question": "What is the command line tool introduced for the JS engine in Java 8 ?",
+    "options": [
+      "jjs",
+      "jss",
+      "jfs",
+      "jbd"
+    ],
+    "correct": "jjs"
+  },
+  {
+    "question": "Which of the following is the immutable Java List static factory method ?",
+    "options": [
+      "List.of",
+      "List.immutable.",
+      "List.create"
+    ],
+    "correct": "List.of"
+  },
+  {
+    "question": "Which of the following statements are true about Java ?\ni. A finally block is executed, only after the catch block is executed.\nii. A finally block is executed whether an exception is thrown or not.\niii. A finally block is NOT Mandatory.\niv. A finally block is executed, only if an exception occurs.",
+    "options": [
+      "i",
+      "iv",
+      "i and iv",
+      "ii and iii"
+    ],
+    "correct": "ii and iii"
+  },
+  {
+    "question": "Which Java Class has natural sorting implemented ?",
+    "options": [
+      "LinkedHashSet.",
+      "TreeSet",
+      "HashSet"
+    ],
+    "correct": "TreeSet"
+  },
+  {
+    "question": "Is the following a valid Java code snippet ?\nOptional< String > aValue = Optional.of(“Not Empty”);\nif(aValue.isPresent()) {\nSystem.out.println(“Got Not Empty”);\n}",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": "True"
+  },
+  {
+    "question": "Service discovery tools help by reducing the problem of how processes and services in a cluster can find and talk to one another.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": "True"
+  },
+  {
+    "question": "In Java Optional.ofNullable() method of the Optional Class, returns a Non-empty Optional if the given object has a value, otherwise it returns an empty Optional.",
+    "options": [
+      "true",
+      "false"
+    ],
+    "correct": "true"
+  },
+  {
+    "question": "Which of the following types of Java methods cannot be type parameterized ?",
+    "options": [
+      "FINAL methods.",
+      "Overriding methods.",
+      "Overloading methods."
+    ],
+    "correct": "Overriding methods."
+  },
+  {
+    "question": "Which of the following statements is true about microservices architecture ?\ni. Microservices applications are required to be deployed on the same physical host.\nii. Microservices architecture supports high availability of individual microservices.\niii. Microservices cannot be used if a company is embracing DevOps.\niv. Microservices are designed using a bounded context that can communicate with other bounded contexts.",
+    "options": [
+      "Only i",
+      "Only ii",
+      "Only ii and iv",
+      "All of the above."
+    ],
+    "correct": "All of the above."
+  },
+  {
+    "question": "Load Balancing improves the distribution of workloads across multiple computing resources , such as computers or a computer cluster.",
+    "options": [
+      "True.",
+      "False."
+    ],
+    "correct": "True."
+  },
+  {
+    "question": "What are the core operations of DevOps with applications development and with infrastructure.",
+    "options": [
+      "Provisioning, Configuration and Orchestration.",
+      "Code Building, Coverage and Unit Testing.",
+      "Packaging and Deployment.",
+      "All of the above."
+    ],
+    "correct": "All of the above."
+  },
+  {
+    "question": "Which CSS property is used to change the font of an element ?",
+    "options": [
+      "font",
+      "font-family",
+      "font-style",
+      "font-weight"
+    ],
+    "correct": "font-family"
+  },
+  {
+    "question": "The Bootstrap grid system is based on how many columns ?",
+    "options": [
+      "12",
+      "3",
+      "6",
+      "9"
+    ],
+    "correct": "12"
+  },
+  {
+    "question": "After you initialize a new GIT repository and create a file named git-quiz.html , which of the following commands will NOT work if needed?",
+    "options": [
+      "git add git-quiz.html",
+      "git status",
+      "git add",
+      "git commit -m “gut quiz web file added”"
+    ],
+    "correct": "git add"
+  },
+  {
+    "question": "Choose the correct HTML element to define important text.",
+    "options": [
+      "<strong>",
+      "<b>",
+      "<i>",
+      "<em>"
+    ],
+    "correct": "<strong>"
+  },
+  {
+    "question": "Which is the correct CSS Syntax ?",
+    "options": [
+      "body color-black",
+      "{body color-black}",
+      "body {color:black;}",
+      "{body;color;black}"
+    ],
+    "correct": "body {color:black;}"
+  },
+  {
+    "question": "Which Bootstrap class adds zebra-stripes to a table ?",
+    "options": [
+      "table-bordered.",
+      "table-zebra.",
+      "table-stripped",
+      "even and odd"
+    ],
+    "correct": "table-stripped"
+  },
+  {
+    "question": "The __ Javascript method is like the mathematical “for all” quantifier , which resumes true if and only if the function returns true for all elements in the array.",
+    "options": [
+      "every()",
+      "some()",
+      "all()",
+      "forall()"
+    ],
+    "correct": "every()"
+  },
+  {
+    "question": "How can you detect the client’s browser name in Javascript ?",
+    "options": [
+      "class.navName",
+      "navigator.appName",
+      "browser.name",
+      "window.browser."
+    ],
+    "correct": "navigator.appName"
+  },
+  {
+    "question": "Which of the following methods CANNOT be used to add array elements in Javascript ?",
+    "options": [
+      "push()",
+      "splice()",
+      "shift()",
+      "All can be used."
+    ],
+    "correct": "shift()"
+  },
+  {
+    "question": "In Javascript __ __ is a comma separated list of colon separated name value pairs enclosed within curly braces.",
+    "options": [
+      "An object prototype.",
+      "A map object.",
+      "An class",
+      "An object literal."
+    ],
+    "correct": "An object literal."
+  },
+  {
+    "question": "In Javascript , what is the observation made of the statement if (!a[i]) continue ?",
+    "options": [
+      "i and ii only.",
+      "ii and iii only.",
+      "i and iii only.",
+      "i,ii and iii"
+    ],
+    "correct": "i,ii and iii"
+  },
+  {
+    "question": "Which of these methods is the ultimate element selection method and a very powerful technique by which client side Javascript programs can select the document elements that they are going to manipulate ?",
+    "options": [
+      "querySelectAll()",
+      "querySelector()",
+      "querySelect()",
+      "querySelectorAll()"
+    ],
+    "correct": "querySelectorAll()"
+  },
+  {
+    "question": "To use the Angular HttpClient component, you must import the ____ module.",
+    "options": [
+      "HttpClientModule.",
+      "HttpModule.",
+      "Http"
+    ],
+    "correct": "HttpClientModule."
+  },
+  {
+    "question": "In Angular , one can create local HTML reference or HTML tag using variable which starts with character ____",
+    "options": [
+      "@",
+      "#",
+      "“",
+      "&"
+    ],
+    "correct": "#"
+  },
+  {
+    "question": "Which of these Angular services can be injected in your component to the dynamic mode navigation ?",
+    "options": [
+      "Routing.",
+      "RouterService.",
+      "RoutingService",
+      "Router"
+    ],
+    "correct": "Router"
+  },
+  {
+    "question": "In Angular , which of the following wild card route paths will you use to define a 404 route ?",
+    "options": [
+      "**",
+      "/",
+      "##",
+      "default"
+    ],
+    "correct": "**"
+  }
+]

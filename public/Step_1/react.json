@@ -1,0 +1,364 @@
+[
+    {
+        "question": "The string \"api/route\" in Express is an example of a...",
+        "options": [
+            "Middleware",
+            "Route",
+            "Error Handler"
+        ],
+        "correct": "Route"
+    },
+    {
+        "question": "Which library allows the use of the \"require\" keyword in front-end code?",
+        "options": [
+            "guid",
+            "Browserify",
+            "React",
+            "jQuery"
+        ],
+        "correct": "Browserify"
+    },
+    {
+        "question": "The ______ attribute of a React form is called when the main action button inside the form is pressed.",
+        "options": [
+            "onSubmit",
+            "onChange",
+            "onComplete"
+        ],
+        "correct": "onSubmit"
+    },
+    {
+        "question": "Which of the following are automation tools?",
+        "options": [
+            "Gulp",
+            "JSX",
+            "Express"
+        ],
+        "correct": "Gulp"
+    },
+    {
+        "question": "Which of the following is not a method of a dispatcher?",
+        "options": [
+            "register",
+            "vector",
+            "dispatch"
+        ],
+        "correct": "vector"
+    },
+    {
+        "question": "What React function is used to define a new element tag?",
+        "options": [
+            "renderComponent",
+            "createClass",
+            "setInnerHTML"
+        ],
+        "correct": "createClass"
+    },
+    {
+        "question": "Isomorphic means to focus exclusively on an app's back-end.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": "False"
+    },
+    {
+        "question": "React's abstraction of the document object model is often called...",
+        "options": [
+            "Virtual DOM",
+            "Meta DOM",
+            "Virtualized Model"
+        ],
+        "correct": "Virtual DOM"
+    },
+    {
+        "question": "True or false: The only thing that can change the data inside a store is the store itself.",
+        "options": [
+            "false",
+            "true"
+        ],
+        "correct": "true"
+    },
+    {
+        "question": "The Gulp task which takes a stream and outputs a file is...",
+        "options": [
+            "src",
+            "task",
+            "dest"
+        ],
+        "correct": "dest"
+    },
+    {
+        "question": "The best way to detect when a user has completed a form is",
+        "options": [
+            "to handle the onClick event on the form's submit element",
+            "to handle the onBlur event of the last form element",
+            "to handle the form's onSubmit event",
+            "to accumulate the onChange events for each form element"
+        ],
+        "correct": "to handle the form's onSubmit event"
+    },
+    {
+        "question": "React is",
+        "options": [
+            "A library that represents asynchronous data streams with observables",
+            "A comprehensive client-side application framework",
+            "An optimizing compiler for JavaScript",
+            "A client-side library providing rendering and event handling"
+        ],
+        "correct": "A client-side library providing rendering and event handling"
+    },
+    {
+        "question": "Routing can be added to a React application by",
+        "options": [
+            "adding an HTML5 or hash fragment based routing library",
+            "rendering the application on the server using react-page",
+            "handling the window.onLocationChanged event",
+            "using the React.route function"
+        ],
+        "correct": "adding an HTML5 or hash fragment based routing library"
+    },
+    {
+        "question": "Behavior is shared between components using",
+        "options": [
+            "propTypes",
+            "state",
+            "mixins",
+            "props"
+        ],
+        "correct": "mixins"
+    },
+    {
+        "question": "An advantage of React is",
+        "options": [
+            "jQuery syntax",
+            "static type checking",
+            "speed",
+            "easy integration with other JavaScript libraries"
+        ],
+        "correct": "speed"
+    },
+    {
+        "question": "The JSX pre-processor is packaged as a",
+        "options": [
+            "dynamic link library",
+            "Nuget package",
+            "Gem",
+            "npm module"
+        ],
+        "correct": "npm module"
+    },
+    {
+        "question": "The just-in-time JSX transformer is good for",
+        "options": [
+            "integrating with JavaScript tools",
+            "simple development workflow",
+            "reusing behavior",
+            "performance"
+        ],
+        "correct": "simple development workflow"
+    },
+    {
+        "question": "The function that creates React components is",
+        "options": [
+            "React.component.extend",
+            "React.createComponent",
+            "React.renderComponent",
+            "React.createClass"
+        ],
+        "correct": "React.createClass"
+    },
+    {
+        "question": "How does React Router make URL params accessible to components?",
+        "options": [
+            "parseUrlParams",
+            "State",
+            "getUrlParams",
+            "Props"
+        ],
+        "correct": "Props"
+    },
+    {
+        "question": "Why is the Link component useful?",
+        "options": [
+            "It allows you to hyperlink to routes by name",
+            "It enhances page load performance",
+            "It removes invalid characters from the URL",
+            "It provides faster navigation than hyperlinks"
+        ],
+        "correct": "It allows you to hyperlink to routes by name"
+    },
+    {
+        "question": "How do Flux stores find out about Flux actions?",
+        "options": [
+            "They query the server via AJAX",
+            "They poll HTML5 localstorage",
+            "They register a callback with the dispatcher.",
+            "They call action creators directly"
+        ],
+        "correct": "They register a callback with the dispatcher."
+    },
+    {
+        "question": "Where should mutable data for React components be stored?",
+        "options": [
+            "props",
+            "reactData",
+            "state",
+            "React.cookie"
+        ],
+        "correct": "state"
+    },
+    {
+        "question": "What mechanism is recommended for passing data down to child components in React?",
+        "options": [
+            "props",
+            "sendChildData",
+            "getDefaultProps",
+            "state"
+        ],
+        "correct": "props"
+    },
+    {
+        "question": "What is JSX?",
+        "options": [
+            "A language that looks like JavaScript that compiles to HTML.",
+            "A styling language that compiles down to CSS.",
+            "A language for querying RESTful web services.",
+            "A language that looks like HTML that compiles down to JavaScript."
+        ],
+        "correct": "A language that looks like HTML that compiles down to JavaScript."
+    },
+    {
+        "question": "What function should all your JSX be placed in?",
+        "options": [
+            "render",
+            "compile",
+            "jsx",
+            "emit"
+        ],
+        "correct": "render"
+    },
+    {
+        "question": "What does the “webpack” command do?",
+        "options": [
+            "Runs React Local Development Server.",
+            "Transpiles all the Javascript down into one file.",
+            "Both A and B."
+        ],
+        "correct": "Both A and B."
+    },
+    {
+        "question": "Which of the following API is a MUST for every React Component?",
+        "options": [
+            "getInitialState.",
+            "render",
+            "renderComponent."
+        ],
+        "correct": "renderComponent."
+    },
+    {
+        "question": "What are the advantages of React?",
+        "options": [
+            "React can be used on client as well as server side.",
+            "Using React increases readability and makes maintainability easier.",
+            "React can be used with any other framework (Backbone.js, Angular.js) as it is just a View Layer.",
+            "All of the above."
+        ],
+        "correct": "All of the above."
+    },
+    {
+        "question": "How does React handle the Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA) standard?",
+        "options": [
+            "aria-* HTML attributes are fully supported in JSX; these attributes should be lowercase.",
+            "React processes aria-* attributes separately and updates the DOM for accessibility.",
+            "aria-* attributes should be converted to camelCase like other attributes.",
+            "React is yet to support the WAI-ARIA standard."
+        ],
+        "correct": "React is yet to support the WAI-ARIA standard."
+    },
+    {
+        "question": "What is React in MVC?",
+        "options": [
+            "Controller",
+            "Middleware",
+            "Model",
+            "Router"
+        ],
+        "correct": "Controller"
+    },
+    {
+        "question": "What is React?",
+        "options": [
+            "Just a server-side framework",
+            "Just a user-interface framework",
+            "Both a server-side framework as well as a user-interface framework"
+        ],
+        "correct": "Both a server-side framework as well as a user-interface framework"
+    },
+    {
+        "question": "What are the limitations of React?",
+        "options": [
+            "React is only for the view layer of the app.",
+            "React uses inline templating and JSX which can seem awkward.",
+            "The library of React is too large.",
+            "All of the above"
+        ],
+        "correct": "All of the above"
+    },
+    {
+        "question": "How can you access the state of a component from inside of a member function in React?",
+        "options": [
+            "this.getState()",
+            "this.prototype.stateValue",
+            "this.state",
+            "this.values"
+        ],
+        "correct": "this.values"
+    },
+    {
+        "question": "You can also use an ES6 class to define a component in React.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": "True"
+    },
+    {
+        "question": "Which of the following API is a MUST for every React component?",
+        "options": [
+            "getInitialState",
+            "render",
+            "renderComponent"
+        ],
+        "correct": "renderComponent"
+    },
+    {
+        "question": "At the highest level, React components have lifecycle events that fall into _______.",
+        "options": [
+            "Initialization",
+            "State/Property updates",
+            "Destruction",
+            "All of the above"
+        ],
+        "correct": "All of the above"
+    },
+    {
+        "question": "What does the \"webpack\" command do?",
+        "options": [
+            "Transpiles all the Javascript down into one file",
+            "Runs react local development server",
+            "Both A and B"
+        ],
+        "correct": "Both A and B"
+    },
+    {
+        "question": "What is React in MVC?",
+        "options": [
+            "Controller",
+            "Middleware",
+            "Model",
+            "Router"
+        ],
+        "correct": "Model"
+    }
+]

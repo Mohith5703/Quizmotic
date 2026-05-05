@@ -1,0 +1,1532 @@
+[
+    {
+        "question": "Which of the following is the correct way to declare a variable in JavaScript that cannot be reassigned?",
+        "options": [
+            "let x = 10;",
+            "var x = 10;",
+            "const x = 10;",
+            "static x = 10;"
+        ],
+        "correct": "const x = 10;"
+    },
+    {
+        "question": "What is the output of: console.log(typeof null);",
+        "options": [
+            "\"null\"",
+            "\"object\"",
+            "\"undefined\"",
+            "\"number\""
+        ],
+        "correct": "\"object\""
+    },
+    {
+        "question": "Which of the following is NOT a JavaScript data type?",
+        "options": [
+            "Symbol",
+            "BigInt",
+            "Float",
+            "Undefined"
+        ],
+        "correct": "Float"
+    },
+    {
+        "question": "What will the following code output? for (var i = 0; i < 3; i++) { setTimeout(() => console.log(i), 0); }",
+        "options": [
+            "0 1 2",
+            "3 3 3",
+            "0 0 0",
+            "1 2 3"
+        ],
+        "correct": "3 3 3"
+    },
+    {
+        "question": "Which method is used to add an element to the end of an array?",
+        "options": [
+            "push()",
+            "pop()",
+            "shift()",
+            "unshift()"
+        ],
+        "correct": "push()"
+    },
+    {
+        "question": "What is the purpose of the 'this' keyword in JavaScript?",
+        "options": [
+            "Refers to the current function",
+            "Refers to the global object by default in non-strict mode",
+            "Refers to the parent object of the current execution context",
+            "All of the above"
+        ],
+        "correct": "All of the above"
+    },
+    {
+        "question": "Write a function that returns the sum of all numbers in an array using reduce.",
+        "options": [
+            "arr.reduce((acc, val) => acc + val, 0)",
+            "arr.reduce((acc, val) => acc + val)",
+            "arr.reduce((acc, val) => { return acc + val; }, 0)",
+            "All of the above are correct"
+        ],
+        "correct": "All of the above are correct"
+    },
+    {
+        "question": "Which of the following correctly creates a shallow copy of an object?",
+        "options": [
+            "Object.assign({}, obj)",
+            "{ ...obj }",
+            "JSON.parse(JSON.stringify(obj))",
+            "Both A and B are correct"
+        ],
+        "correct": "Both A and B are correct"
+    },
+    {
+        "question": "What is a closure in JavaScript?",
+        "options": [
+            "A function that is immediately invoked",
+            "A function that has access to variables from its outer scope even after the outer function has returned",
+            "A function that is defined inside an object",
+            "A function that takes another function as an argument"
+        ],
+        "correct": "A function that has access to variables from its outer scope even after the outer function has returned"
+    },
+    {
+        "question": "What is the output of: console.log(0.1 + 0.2 === 0.3);",
+        "options": [
+            "true",
+            "false",
+            "undefined",
+            "TypeError"
+        ],
+        "correct": "false"
+    },
+    {
+        "question": "Which array method creates a new array with all elements that pass a test?",
+        "options": [
+            "map()",
+            "filter()",
+            "reduce()",
+            "forEach()"
+        ],
+        "correct": "filter()"
+    },
+    {
+        "question": "What does the '=== ' operator do?",
+        "options": [
+            "Compares only values, not types",
+            "Compares both values and types without type coercion",
+            "Assigns a value to a variable",
+            "Compares references only"
+        ],
+        "correct": "Compares both values and types without type coercion"
+    },
+    {
+        "question": "Write a promise that resolves after 1 second.",
+        "options": [
+            "new Promise((resolve) => setTimeout(resolve, 1000))",
+            "Promise.delay(1000)",
+            "setTimeout(() => Promise.resolve(), 1000)",
+            "Promise.resolve().setTimeout(1000)"
+        ],
+        "correct": "new Promise((resolve) => setTimeout(resolve, 1000))"
+    },
+    {
+        "question": "What is the output of: console.log([] + []);",
+        "options": [
+            "[]",
+            "\"\"",
+            "undefined",
+            "TypeError"
+        ],
+        "correct": "\"\""
+    },
+    {
+        "question": "Which of the following is NOT a valid way to define a function in JavaScript?",
+        "options": [
+            "function foo() {}",
+            "const foo = function() {};",
+            "const foo = () => {};",
+            "def foo(): {}"
+        ],
+        "correct": "def foo(): {}"
+    },
+    {
+        "question": "What is event delegation in JavaScript?",
+        "options": [
+            "Attaching an event listener to a parent element to handle events on child elements",
+            "Delegating events to a web worker",
+            "Passing event objects between functions",
+            "Automatically triggering events"
+        ],
+        "correct": "Attaching an event listener to a parent element to handle events on child elements"
+    },
+    {
+        "question": "What will the following code output? console.log(1 + '2' + 3);",
+        "options": [
+            "6",
+            "123",
+            "15",
+            "33"
+        ],
+        "correct": "123"
+    },
+    {
+        "question": "Which method is used to remove the last element from an array and return it?",
+        "options": [
+            "pop()",
+            "push()",
+            "shift()",
+            "slice()"
+        ],
+        "correct": "pop()"
+    },
+    {
+        "question": "What is the purpose of the 'async/await' syntax?",
+        "options": [
+            "To write asynchronous code in a synchronous style",
+            "To make functions run faster",
+            "To create web workers",
+            "To handle errors more easily"
+        ],
+        "correct": "To write asynchronous code in a synchronous style"
+    },
+    {
+        "question": "Write a function that uses destructuring to extract the 'name' and 'age' properties from an object.",
+        "options": [
+            "const { name, age } = person;",
+            "const name = person.name; const age = person.age;",
+            "const [name, age] = person;",
+            "Both A and B are correct but A is destructuring"
+        ],
+        "correct": "Both A and B are correct but A is destructuring"
+    },
+    {
+        "question": "What is the output of: console.log(typeof NaN);",
+        "options": [
+            "\"NaN\"",
+            "\"number\"",
+            "\"undefined\"",
+            "\"object\""
+        ],
+        "correct": "\"number\""
+    },
+    {
+        "question": "Which of the following statements about the 'map()' method is true?",
+        "options": [
+            "It modifies the original array",
+            "It returns a new array of the same length",
+            "It returns a new array with only elements that pass a test",
+            "It executes a function for each array element but returns undefined"
+        ],
+        "correct": "It returns a new array of the same length"
+    },
+    {
+        "question": "What is the purpose of the 'bind()' method?",
+        "options": [
+            "To create a new function with a fixed 'this' value",
+            "To combine two functions",
+            "To attach an event listener",
+            "To bind a variable to a scope"
+        ],
+        "correct": "To create a new function with a fixed 'this' value"
+    },
+    {
+        "question": "What will the following code output? console.log([] == false);",
+        "options": [
+            "true",
+            "false",
+            "undefined",
+            "TypeError"
+        ],
+        "correct": "true"
+    },
+    {
+        "question": "Which of the following is a way to prevent default behavior of an event?",
+        "options": [
+            "event.stopPropagation()",
+            "event.preventDefault()",
+            "return false",
+            "Both B and C are correct"
+        ],
+        "correct": "Both B and C are correct"
+    },
+    {
+        "question": "What is the output of: console.log(!!\"false\");",
+        "options": [
+            "false",
+            "true",
+            "undefined",
+            "\"false\""
+        ],
+        "correct": "true"
+    },
+    {
+        "question": "Write a function that returns a new array containing only unique values from the input array.",
+        "options": [
+            "[...new Set(arr)]",
+            "arr.filter((v, i, a) => a.indexOf(v) === i)",
+            "Both A and B are correct",
+            "arr.unique()"
+        ],
+        "correct": "Both A and B are correct"
+    },
+    {
+        "question": "What is the difference between 'let' and 'var'?",
+        "options": [
+            "let is block-scoped, var is function-scoped",
+            "let cannot be redeclared in the same scope",
+            "let is not hoisted in the same way as var",
+            "All of the above"
+        ],
+        "correct": "All of the above"
+    },
+    {
+        "question": "What will the following code output? const obj = { a: 1, b: 2 }; const { a, c } = obj; console.log(c);",
+        "options": [
+            "2",
+            "undefined",
+            "null",
+            "ReferenceError"
+        ],
+        "correct": "undefined"
+    },
+    {
+        "question": "Which method converts a JSON string into a JavaScript object?",
+        "options": [
+            "JSON.stringify()",
+            "JSON.parse()",
+            "JSON.toObject()",
+            "JSON.decode()"
+        ],
+        "correct": "JSON.parse()"
+    },
+    {
+        "question": "What is the purpose of the 'Set' object in JavaScript?",
+        "options": [
+            "To store unique values of any type",
+            "To store key-value pairs",
+            "To store ordered lists",
+            "To store binary data"
+        ],
+        "correct": "To store unique values of any type"
+    },
+    {
+        "question": "Write a function that delays execution using setTimeout and returns a promise.",
+        "options": [
+            "function delay(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }",
+            "function delay(ms) { setTimeout(() => {}, ms); }",
+            "function delay(ms) { return Promise.setTimeout(ms); }",
+            "function delay(ms) { return new Promise((resolve, reject) => { setTimeout(reject, ms); }); }"
+        ],
+        "correct": "function delay(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }"
+    },
+    {
+        "question": "What is the output of: console.log(3 > 2 > 1);",
+        "options": [
+            "true",
+            "false",
+            "undefined",
+            "TypeError"
+        ],
+        "correct": "false"
+    },
+    {
+        "question": "Which of the following is a valid way to create a class in ES6?",
+        "options": [
+            "class MyClass { constructor() {} }",
+            "const MyClass = class { constructor() {} }",
+            "Both A and B are valid",
+            "function MyClass() { this.constructor = function() {}; }"
+        ],
+        "correct": "Both A and B are valid"
+    },
+    {
+        "question": "What is the purpose of the 'Symbol' data type?",
+        "options": [
+            "To create unique identifiers",
+            "To represent mathematical symbols",
+            "To create private properties",
+            "Both A and C are correct"
+        ],
+        "correct": "Both A and C are correct"
+    },
+    {
+        "question": "What will the following code output? console.log(1 < 2 < 3);",
+        "options": [
+            "true",
+            "false",
+            "undefined",
+            "TypeError"
+        ],
+        "correct": "true"
+    },
+    {
+        "question": "Which method is used to flatten an array to a specified depth?",
+        "options": [
+            "flat()",
+            "flatten()",
+            "reduce()",
+            "concat()"
+        ],
+        "correct": "flat()"
+    },
+    {
+        "question": "What is a 'callback hell' in JavaScript?",
+        "options": [
+            "An infinite loop of callbacks",
+            "Nested callbacks that become hard to read and maintain",
+            "A debugging tool for callbacks",
+            "A design pattern for error handling"
+        ],
+        "correct": "Nested callbacks that become hard to read and maintain"
+    },
+    {
+        "question": "Write a function that checks if a variable is an array.",
+        "options": [
+            "Array.isArray(variable)",
+            "variable instanceof Array",
+            "Both A and B are correct",
+            "typeof variable === 'array'"
+        ],
+        "correct": "Both A and B are correct"
+    },
+    {
+        "question": "What is the output of: console.log('5' - 3);",
+        "options": [
+            "2",
+            "53",
+            "NaN",
+            "TypeError"
+        ],
+        "correct": "2"
+    },
+    {
+        "question": "Which of the following statements about arrow functions is true?",
+        "options": [
+            "They have their own 'this' context",
+            "They cannot be used as constructors",
+            "They cannot use the 'arguments' object",
+            "Both B and C are correct"
+        ],
+        "correct": "Both B and C are correct"
+    },
+    {
+        "question": "What is the purpose of the 'spread' operator (...) in JavaScript?",
+        "options": [
+            "To spread elements of an iterable into individual elements",
+            "To create a shallow copy of an array or object",
+            "To pass array elements as arguments to a function",
+            "All of the above"
+        ],
+        "correct": "All of the above"
+    },
+    {
+        "question": "What will the following code output? console.log(!![]);",
+        "options": [
+            "true",
+            "false",
+            "[]",
+            "undefined"
+        ],
+        "correct": "true"
+    },
+    {
+        "question": "Which method is used to combine two or more arrays?",
+        "options": [
+            "concat()",
+            "merge()",
+            "join()",
+            "combine()"
+        ],
+        "correct": "concat()"
+    },
+    {
+        "question": "What is the output of: console.log(typeof (function() {}));",
+        "options": [
+            "\"function\"",
+            "\"object\"",
+            "\"undefined\"",
+            "\"array\""
+        ],
+        "correct": "\"function\""
+    },
+    {
+        "question": "Write a function that throttles another function to execute at most once every specified milliseconds.",
+        "options": [
+            "function throttle(func, limit) { let inThrottle; return function() { if (!inThrottle) { func.apply(this, arguments); inThrottle = true; setTimeout(() => inThrottle = false, limit); } } }",
+            "function throttle(func, limit) { return function() { setTimeout(() => func.apply(this, arguments), limit); } }",
+            "function throttle(func, limit) { let lastCall = 0; return function() { const now = Date.now(); if (now - lastCall >= limit) { lastCall = now; func.apply(this, arguments); } } }",
+            "Both A and C are valid throttle implementations"
+        ],
+        "correct": "Both A and C are valid throttle implementations"
+    },
+    {
+        "question": "What is the purpose of the 'WeakMap' object?",
+        "options": [
+            "A Map with weak references to keys, allowing garbage collection",
+            "A Map that only stores weak values",
+            "A Map that is not enumerable",
+            "Both A and C are correct"
+        ],
+        "correct": "Both A and C are correct"
+    },
+    {
+        "question": "What will the following code output? console.log([] + {});",
+        "options": [
+            "[object Object]",
+            "{}[]",
+            "[]",
+            "undefined"
+        ],
+        "correct": "[object Object]"
+    },
+    {
+        "question": "Which of the following is a valid way to create a deep clone of an object (excluding special cases like Date, RegExp)?",
+        "options": [
+            "JSON.parse(JSON.stringify(obj))",
+            "structuredClone(obj)",
+            "_.cloneDeep(obj) (Lodash)",
+            "All of the above"
+        ],
+        "correct": "All of the above"
+    },
+    {
+        "question": "What is the output of: console.log(Number(\"123abc\"));",
+        "options": [
+            "123",
+            "NaN",
+            "undefined",
+            "0"
+        ],
+        "correct": "NaN"
+    },
+    {
+        "question": "What is the output of: console.log(typeof null)?",
+        "options": [
+            "null",
+            "undefined",
+            "object",
+            "string"
+        ],
+        "correct": "object"
+    },
+    {
+        "question": "Which of the following correctly explains the difference between 'var', 'let', and 'const' in JavaScript?",
+        "options": [
+            "'var' is block-scoped; 'let' and 'const' are function-scoped",
+            "'var' is function-scoped and hoisted; 'let' and 'const' are block-scoped and not initialized during hoisting",
+            "'const' variables can be reassigned; 'let' variables cannot",
+            "'let' and 'var' behave identically; only 'const' differs"
+        ],
+        "correct": "'var' is function-scoped and hoisted; 'let' and 'const' are block-scoped and not initialized during hoisting"
+    },
+    {
+        "question": "What does the following code output?\n\nconsole.log(0.1 + 0.2 === 0.3);",
+        "options": [
+            "true",
+            "false",
+            "undefined",
+            "NaN"
+        ],
+        "correct": "false"
+    },
+    {
+        "question": "Which operator returns the data type of a variable as a string?",
+        "options": [
+            "instanceof",
+            "typeof",
+            "datatype()",
+            "type"
+        ],
+        "correct": "typeof"
+    },
+    {
+        "question": "What is the result of: console.log(5 == '5') and console.log(5 === '5') respectively?",
+        "options": [
+            "false, false",
+            "true, true",
+            "true, false",
+            "false, true"
+        ],
+        "correct": "true, false"
+    },
+    {
+        "question": "What will this code output?\n\nlet x = 10;\nif (x > 5) {\n  let x = 20;\n  console.log(x);\n}\nconsole.log(x);",
+        "options": [
+            "20, 20",
+            "10, 10",
+            "20, 10",
+            "10, 20"
+        ],
+        "correct": "20, 10"
+    },
+    {
+        "question": "What does the nullish coalescing operator (??) do?",
+        "options": [
+            "Returns the left operand if it is falsy, otherwise the right",
+            "Returns the right operand only if the left is null or undefined",
+            "Acts as a shorthand for the ternary operator in all cases",
+            "Converts null to 0 and undefined to empty string"
+        ],
+        "correct": "Returns the right operand only if the left is null or undefined"
+    },
+    {
+        "question": "What is the output of this code?\n\nconsole.log(1 + '2' + 3);",
+        "options": [
+            "6",
+            "123",
+            "'123'",
+            "15"
+        ],
+        "correct": "123"
+    },
+    {
+        "question": "Which control flow statement is used to exit a switch case block and prevent fall-through?",
+        "options": [
+            "exit",
+            "return",
+            "break",
+            "continue"
+        ],
+        "correct": "break"
+    },
+    {
+        "question": "What will this loop print?\n\nfor (let i = 0; i < 3; i++) {\n  if (i === 1) continue;\n  console.log(i);\n}",
+        "options": [
+            "0, 1, 2",
+            "0, 2",
+            "1",
+            "0, 1"
+        ],
+        "correct": "0, 2"
+    },
+    {
+        "question": "What is the result of the following code?\n\nconst obj = { a: 1, b: 2 };\nconst { a, c = 5 } = obj;\nconsole.log(a, c);",
+        "options": [
+            "1 undefined",
+            "1 5",
+            "undefined 5",
+            "Error"
+        ],
+        "correct": "1 5"
+    },
+    {
+        "question": "Which method creates a new object with the specified prototype object?",
+        "options": [
+            "Object.assign()",
+            "Object.create()",
+            "Object.new()",
+            "Object.prototype()"
+        ],
+        "correct": "Object.create()"
+    },
+    {
+        "question": "What does Object.freeze() do to an object?",
+        "options": [
+            "Creates a deep clone of the object",
+            "Prevents new properties from being added and existing properties from being modified or deleted",
+            "Prevents only deletion of properties, but allows modification",
+            "Converts the object to a read-only string"
+        ],
+        "correct": "Prevents new properties from being added and existing properties from being modified or deleted"
+    },
+    {
+        "question": "What is the output of this code?\n\nconst arr = [1, 2, 3];\nconst [first, ...rest] = arr;\nconsole.log(rest);",
+        "options": [
+            "[1]",
+            "[2, 3]",
+            "[1, 2]",
+            "[3]"
+        ],
+        "correct": "[2, 3]"
+    },
+    {
+        "question": "Which Array method returns a new array with only the elements that pass a test?",
+        "options": [
+            "map()",
+            "reduce()",
+            "filter()",
+            "find()"
+        ],
+        "correct": "filter()"
+    },
+    {
+        "question": "What does the following code return?\n\n[1, 2, 3].reduce((acc, val) => acc + val, 0);",
+        "options": [
+            "[1, 2, 3]",
+            "6",
+            "0",
+            "undefined"
+        ],
+        "correct": "6"
+    },
+    {
+        "question": "What is the difference between Array.prototype.map() and Array.prototype.forEach()?",
+        "options": [
+            "forEach modifies the original array; map does not",
+            "map returns a new array; forEach returns undefined",
+            "map can only be used with numbers; forEach works with any type",
+            "They are functionally identical"
+        ],
+        "correct": "map returns a new array; forEach returns undefined"
+    },
+    {
+        "question": "What is the output of this code?\n\nconsole.log([1, 2, 3].map(x => x * 2).filter(x => x > 4));",
+        "options": [
+            "[2, 4, 6]",
+            "[6]",
+            "[4, 6]",
+            "[5, 6]"
+        ],
+        "correct": "[6]"
+    },
+    {
+        "question": "What is a closure in JavaScript?",
+        "options": [
+            "A function that can only be called once",
+            "A function that has access to variables in its outer lexical scope even after the outer function has returned",
+            "A function with no parameters",
+            "A method used to close a browser window"
+        ],
+        "correct": "A function that has access to variables in its outer lexical scope even after the outer function has returned"
+    },
+    {
+        "question": "What will the following code output?\n\nfunction outer() {\n  let count = 0;\n  return function() {\n    count++;\n    return count;\n  };\n}\nconst inc = outer();\nconsole.log(inc());\nconsole.log(inc());",
+        "options": [
+            "1, 1",
+            "0, 1",
+            "1, 2",
+            "undefined, undefined"
+        ],
+        "correct": "1, 2"
+    },
+    {
+        "question": "What is the difference between function declarations and function expressions in terms of hoisting?",
+        "options": [
+            "Both are fully hoisted",
+            "Neither is hoisted",
+            "Function declarations are fully hoisted; function expressions are not initialized until runtime",
+            "Function expressions are fully hoisted; function declarations are not"
+        ],
+        "correct": "Function declarations are fully hoisted; function expressions are not initialized until runtime"
+    },
+    {
+        "question": "What does the 'this' keyword refer to inside an arrow function?",
+        "options": [
+            "The arrow function itself",
+            "The global object always",
+            "The lexically enclosing context where the arrow function was defined",
+            "undefined in strict mode, global in non-strict mode"
+        ],
+        "correct": "The lexically enclosing context where the arrow function was defined"
+    },
+    {
+        "question": "What is the output of this code?\n\nconst greet = (name = 'World') => `Hello, ${name}!`;\nconsole.log(greet());",
+        "options": [
+            "Hello, undefined!",
+            "Hello, !",
+            "Hello, World!",
+            "Error"
+        ],
+        "correct": "Hello, World!"
+    },
+    {
+        "question": "Which of the following is the correct way to call a function with a specific 'this' value and pass arguments one by one?",
+        "options": [
+            "fn.bind(thisArg, arg1, arg2)",
+            "fn.call(thisArg, arg1, arg2)",
+            "fn.apply(thisArg, arg1, arg2)",
+            "fn.run(thisArg, arg1, arg2)"
+        ],
+        "correct": "fn.call(thisArg, arg1, arg2)"
+    },
+    {
+        "question": "What is a pure function?",
+        "options": [
+            "A function written in strict mode only",
+            "A function that returns a value and has no side effects, always producing the same output for the same inputs",
+            "A function that only accepts primitive types",
+            "A function declared with the 'pure' keyword"
+        ],
+        "correct": "A function that returns a value and has no side effects, always producing the same output for the same inputs"
+    },
+    {
+        "question": "In Node.js, what is the purpose of the 'process.argv' array?",
+        "options": [
+            "It lists all currently running processes",
+            "It contains the command-line arguments passed when the Node.js process was launched",
+            "It stores environment variables for the current process",
+            "It represents the arguments of the last function call"
+        ],
+        "correct": "It contains the command-line arguments passed when the Node.js process was launched"
+    },
+    {
+        "question": "What is the Node.js module system's primary mechanism for sharing code between files?",
+        "options": [
+            "Using the global window object",
+            "Using 'import' and 'export' with script tags",
+            "Using 'require()' to import and 'module.exports' to export",
+            "Using the 'include()' function"
+        ],
+        "correct": "Using 'require()' to import and 'module.exports' to export"
+    },
+    {
+        "question": "What is the difference between the CommonJS 'require' system and ES Modules 'import' in Node.js?",
+        "options": [
+            "require is synchronous; ES module imports are asynchronous and statically analyzed",
+            "require is only for built-in modules; import is for npm packages",
+            "They are identical; 'import' is just newer syntax",
+            "require works only on Windows; import works on all platforms"
+        ],
+        "correct": "require is synchronous; ES module imports are asynchronous and statically analyzed"
+    },
+    {
+        "question": "When reading a file using Node.js's 'fs' module, what is the key difference between fs.readFile() and fs.readFileSync()?",
+        "options": [
+            "readFile reads the entire file; readFileSync reads line by line",
+            "readFile is asynchronous and non-blocking; readFileSync is synchronous and blocks the event loop",
+            "readFileSync is faster for large files; readFile is faster for small files",
+            "readFile returns a Buffer; readFileSync returns a string"
+        ],
+        "correct": "readFile is asynchronous and non-blocking; readFileSync is synchronous and blocks the event loop"
+    },
+    {
+        "question": "What does the following Node.js code do?\n\nconst fs = require('fs');\nfs.appendFile('log.txt', 'New entry\\n', (err) => {\n  if (err) throw err;\n});",
+        "options": [
+            "Creates a new file called log.txt and overwrites it",
+            "Appends 'New entry\\n' to log.txt, creating it if it doesn't exist",
+            "Reads the contents of log.txt and logs them",
+            "Deletes log.txt and recreates it"
+        ],
+        "correct": "Appends 'New entry\\n' to log.txt, creating it if it doesn't exist"
+    },
+    {
+        "question": "Which Node.js built-in module is used to work with file and directory paths in a cross-platform way?",
+        "options": [
+            "fs",
+            "os",
+            "path",
+            "url"
+        ],
+        "correct": "path"
+    },
+    {
+        "question": "In Node.js debugging with the '--inspect' flag, which tool is commonly used to connect to the debugger?",
+        "options": [
+            "Node's built-in debug console only",
+            "Chrome DevTools via chrome://inspect",
+            "The npm debug package exclusively",
+            "Postman"
+        ],
+        "correct": "Chrome DevTools via chrome://inspect"
+    },
+    {
+        "question": "What is the Event Loop in Node.js?",
+        "options": [
+            "A for loop that processes all network requests",
+            "A mechanism that allows Node.js to perform non-blocking I/O operations by offloading operations to the system kernel and processing callbacks when complete",
+            "The main thread that handles all CPU-intensive tasks",
+            "A Node.js-specific implementation of the while loop"
+        ],
+        "correct": "A mechanism that allows Node.js to perform non-blocking I/O operations by offloading operations to the system kernel and processing callbacks when complete"
+    },
+    {
+        "question": "What is 'callback hell' and what is the primary way to avoid it in modern Node.js?",
+        "options": [
+            "Using too many callbacks in one file; avoided by reducing function count",
+            "Deeply nested callbacks that are hard to read; avoided by using Promises or async/await",
+            "Callbacks that are never called; avoided by using try-catch",
+            "Synchronous callbacks; avoided by using setTimeout"
+        ],
+        "correct": "Deeply nested callbacks that are hard to read; avoided by using Promises or async/await"
+    },
+    {
+        "question": "What does 'async/await' in Node.js ultimately rely on under the hood?",
+        "options": [
+            "Callbacks",
+            "Generators",
+            "Promises",
+            "Event emitters"
+        ],
+        "correct": "Promises"
+    },
+    {
+        "question": "What will the following code log?\n\nasync function fetchData() {\n  return 42;\n}\nconsole.log(fetchData());",
+        "options": [
+            "42",
+            "undefined",
+            "Promise { 42 }",
+            "Error: fetchData is not a Promise"
+        ],
+        "correct": "Promise { 42 }"
+    },
+    {
+        "question": "Which npm package is commonly used in Node.js to make HTTP requests to external APIs?",
+        "options": [
+            "fs",
+            "http",
+            "node-fetch or axios",
+            "express"
+        ],
+        "correct": "node-fetch or axios"
+    },
+    {
+        "question": "In an Express.js web server, what does the following code create?\n\nconst app = express();\napp.get('/', (req, res) => {\n  res.send('Hello');\n});",
+        "options": [
+            "A POST route at the root URL",
+            "A GET route at '/' that responds with 'Hello'",
+            "A middleware function for all routes",
+            "A database connection"
+        ],
+        "correct": "A GET route at '/' that responds with 'Hello'"
+    },
+    {
+        "question": "In Node.js, what is the 'http' module used for?",
+        "options": [
+            "Sending emails via HTTP",
+            "Creating HTTP servers and making HTTP requests natively without external packages",
+            "Parsing HTTP headers only",
+            "Managing HTTPS certificates"
+        ],
+        "correct": "Creating HTTP servers and making HTTP requests natively without external packages"
+    },
+    {
+        "question": "What does the following code accomplish in a Node.js weather app context?\n\nconst url = `https://api.weather.com/v1?q=${encodeURIComponent(city)}&appid=${apiKey}`;",
+        "options": [
+            "Creates a URL with a raw city string and hardcoded key",
+            "Encodes the city name to be URL-safe and embeds it with an API key in the query string",
+            "Only works if the city has no special characters",
+            "Sends a GET request immediately"
+        ],
+        "correct": "Encodes the city name to be URL-safe and embeds it with an API key in the query string"
+    },
+    {
+        "question": "When deploying a Node.js app to Heroku, what file tells Heroku how to start the application?",
+        "options": [
+            "package.json (main field)",
+            "Procfile",
+            "server.config.js",
+            ".env"
+        ],
+        "correct": "Procfile"
+    },
+    {
+        "question": "What is the purpose of the 'PORT' environment variable when deploying a Node.js app?",
+        "options": [
+            "To set the MongoDB port",
+            "To allow the hosting platform to assign a dynamic port, which the app should listen on",
+            "To define the SSH port for deployment",
+            "To specify which npm registry to use"
+        ],
+        "correct": "To allow the hosting platform to assign a dynamic port, which the app should listen on"
+    },
+    {
+        "question": "What does 'process.env' provide in a Node.js application?",
+        "options": [
+            "A list of all running Node.js processes",
+            "Access to environment variables set in the operating system or .env file",
+            "The current working directory of the process",
+            "Metadata about the installed Node.js version"
+        ],
+        "correct": "Access to environment variables set in the operating system or .env file"
+    },
+    {
+        "question": "In Mongoose, what is the purpose of defining a Schema?",
+        "options": [
+            "To create the MongoDB database itself",
+            "To define the structure, types, and validation rules for documents in a collection",
+            "To write raw SQL queries",
+            "To configure the MongoDB connection string"
+        ],
+        "correct": "To define the structure, types, and validation rules for documents in a collection"
+    },
+    {
+        "question": "What does the following Mongoose code do?\n\nconst User = mongoose.model('User', userSchema);\nconst user = new User({ name: 'Alice' });\nuser.save();",
+        "options": [
+            "Updates an existing user named Alice",
+            "Creates a new User document in MongoDB and saves it",
+            "Deletes a user named Alice from the database",
+            "Queries for a user named Alice"
+        ],
+        "correct": "Creates a new User document in MongoDB and saves it"
+    },
+    {
+        "question": "What is the difference between a Promise's .then() and async/await syntax for handling asynchronous operations?",
+        "options": [
+            ".then() is synchronous; async/await is asynchronous",
+            "async/await is syntactic sugar over Promises, making asynchronous code look and behave like synchronous code",
+            ".then() can only handle one Promise; async/await handles multiple",
+            "They are not interchangeable"
+        ],
+        "correct": "async/await is syntactic sugar over Promises, making asynchronous code look and behave like synchronous code"
+    },
+    {
+        "question": "In a REST API built with Express and Mongoose, what HTTP method and status code should be used when successfully creating a new resource?",
+        "options": [
+            "GET with 200",
+            "POST with 201",
+            "PUT with 200",
+            "POST with 200"
+        ],
+        "correct": "POST with 201"
+    },
+    {
+        "question": "What is the role of middleware in Express.js?",
+        "options": [
+            "Functions that serve static HTML files",
+            "Functions that have access to req, res, and next, and can execute code, modify req/res, or end the request-response cycle",
+            "The layer between MongoDB and the Express router",
+            "A built-in Express function for JWT authentication"
+        ],
+        "correct": "Functions that have access to req, res, and next, and can execute code, modify req/res, or end the request-response cycle"
+    },
+    {
+        "question": "What does app.use(express.json()) do in an Express application?",
+        "options": [
+            "Enables JSON responses for all routes",
+            "Parses incoming requests with JSON payloads and makes data available in req.body",
+            "Converts all route handler return values to JSON",
+            "Validates that all incoming data is valid JSON"
+        ],
+        "correct": "Parses incoming requests with JSON payloads and makes data available in req.body"
+    },
+    {
+        "question": "How is authentication typically implemented in a Node.js REST API to protect routes?",
+        "options": [
+            "Using sessions only with express-session",
+            "By checking a password on every request in the route handler",
+            "Using JSON Web Tokens (JWT) where a token is verified via middleware before reaching protected routes",
+            "Node.js has built-in authentication that is enabled via a flag"
+        ],
+        "correct": "Using JSON Web Tokens (JWT) where a token is verified via middleware before reaching protected routes"
+    },
+    {
+        "question": "In a Mongoose Task model for a multi-user app, what would the following schema field accomplish?\n\nowner: { type: mongoose.Schema.Types.ObjectId, required: true, ref: 'User' }",
+        "options": [
+            "Stores the user's email as a reference",
+            "Creates a foreign key-like reference to a User document by its MongoDB ObjectId",
+            "Automatically populates the user's data whenever a task is retrieved",
+            "Limits one task per user"
+        ],
+        "correct": "Creates a foreign key-like reference to a User document by its MongoDB ObjectId"
+    },
+    {
+        "question": "What is the purpose of Mongoose's .populate() method?",
+        "options": [
+            "To add default values to a schema",
+            "To replace a referenced ObjectId with the actual document data from the referenced collection",
+            "To insert multiple documents at once",
+            "To validate all fields in a document before saving"
+        ],
+        "correct": "To replace a referenced ObjectId with the actual document data from the referenced collection"
+    },
+    {
+        "question": "In Express.js, how do you implement pagination for a GET /tasks endpoint using query parameters?",
+        "options": [
+            "Using req.body.page and req.body.limit",
+            "Using req.params.page and req.params.limit",
+            "Using req.query.page and req.query.limit with Mongoose's .skip() and .limit()",
+            "Pagination is handled automatically by Mongoose"
+        ],
+        "correct": "Using req.query.page and req.query.limit with Mongoose's .skip() and .limit()"
+    },
+    {
+        "question": "What npm package is commonly used to hash passwords securely before storing them in a database?",
+        "options": [
+            "crypto",
+            "md5",
+            "bcryptjs",
+            "jsonwebtoken"
+        ],
+        "correct": "bcryptjs"
+    },
+    {
+        "question": "What is the purpose of 'multer' in a Node.js application?",
+        "options": [
+            "To handle multipart/form-data, primarily used for file uploads",
+            "To multiply values in a MongoDB query",
+            "To manage multiple MongoDB connections",
+            "To compress response bodies"
+        ],
+        "correct": "To handle multipart/form-data, primarily used for file uploads"
+    },
+    {
+        "question": "What does the following Mongoose middleware do?\n\nuserSchema.pre('save', async function(next) {\n  if (this.isModified('password')) {\n    this.password = await bcrypt.hash(this.password, 8);\n  }\n  next();\n});",
+        "options": [
+            "Hashes the password after every save",
+            "Automatically hashes the password only when it has been modified, before saving to the database",
+            "Validates the password format before saving",
+            "Sends a hashed password in the response"
+        ],
+        "correct": "Automatically hashes the password only when it has been modified, before saving to the database"
+    },
+    {
+        "question": "Which package is commonly used to send transactional emails from a Node.js application?",
+        "options": [
+            "nodemailer or SendGrid",
+            "mailparser",
+            "emailjs",
+            "smtp-handler"
+        ],
+        "correct": "nodemailer or SendGrid"
+    },
+    {
+        "question": "In the context of Node.js testing with Jest, what does the describe() block do?",
+        "options": [
+            "Executes an asynchronous test",
+            "Groups related tests together for organization",
+            "Defines a test assertion",
+            "Mocks a module"
+        ],
+        "correct": "Groups related tests together for organization"
+    },
+    {
+        "question": "What is the purpose of jest.fn() when testing Node.js code?",
+        "options": [
+            "To run tests in a separate process",
+            "To create a mock function that can track calls, arguments, and return values",
+            "To assert that a function throws an error",
+            "To import the Jest testing framework"
+        ],
+        "correct": "To create a mock function that can track calls, arguments, and return values"
+    },
+    {
+        "question": "What npm package is commonly used alongside Jest to test Express HTTP endpoints without starting a live server?",
+        "options": [
+            "axios",
+            "supertest",
+            "http-mock",
+            "nock"
+        ],
+        "correct": "supertest"
+    },
+    {
+        "question": "What is the core difference between unit tests and integration tests in a Node.js context?",
+        "options": [
+            "Unit tests test the entire application; integration tests test individual functions",
+            "Unit tests test individual functions in isolation; integration tests test how multiple parts of the system work together",
+            "Integration tests are faster than unit tests",
+            "Unit tests require a running server; integration tests do not"
+        ],
+        "correct": "Unit tests test individual functions in isolation; integration tests test how multiple parts of the system work together"
+    },
+    {
+        "question": "In Socket.io, what is the difference between socket.emit() and io.emit()?",
+        "options": [
+            "socket.emit sends to all clients; io.emit sends to one",
+            "socket.emit sends a message to that specific client only; io.emit broadcasts to all connected clients",
+            "io.emit is used on the client side; socket.emit on the server side",
+            "They are identical"
+        ],
+        "correct": "socket.emit sends a message to that specific client only; io.emit broadcasts to all connected clients"
+    },
+    {
+        "question": "What event does Socket.io fire when a new client connects to the server?",
+        "options": [
+            "'message'",
+            "'connect'",
+            "'connection'",
+            "'open'"
+        ],
+        "correct": "'connection'"
+    },
+    {
+        "question": "In a Socket.io chat app, what does socket.to(room).emit('event', data) do?",
+        "options": [
+            "Sends the event to all clients including the sender in the specified room",
+            "Sends the event to all clients in the specified room except the sender",
+            "Sends the event only to the sender",
+            "Broadcasts globally to all rooms"
+        ],
+        "correct": "Sends the event to all clients in the specified room except the sender"
+    },
+    {
+        "question": "What is the purpose of Express Router in a large Node.js application?",
+        "options": [
+            "To manage database connections",
+            "To modularize route definitions, grouping related routes into separate files",
+            "To replace the need for middleware",
+            "To automatically generate API documentation"
+        ],
+        "correct": "To modularize route definitions, grouping related routes into separate files"
+    },
+    {
+        "question": "What does app.use('/api/users', userRouter) do in Express?",
+        "options": [
+            "Creates a new user automatically at the /api/users endpoint",
+            "Mounts the userRouter middleware at the /api/users path prefix",
+            "Restricts all routes to the /api/users path",
+            "Proxies all requests to an external users API"
+        ],
+        "correct": "Mounts the userRouter middleware at the /api/users path prefix"
+    },
+    {
+        "question": "In the Express generator, what is the default template engine used?",
+        "options": [
+            "EJS",
+            "Handlebars",
+            "Jade/Pug",
+            "Mustache"
+        ],
+        "correct": "Jade/Pug"
+    },
+    {
+        "question": "What is req.params used for in an Express route defined as GET /users/:id?",
+        "options": [
+            "To access query string parameters like ?sort=asc",
+            "To access the named route segments, e.g. req.params.id would contain the user's id",
+            "To access data sent in the request body",
+            "To access HTTP request headers"
+        ],
+        "correct": "To access the named route segments, e.g. req.params.id would contain the user's id"
+    },
+    {
+        "question": "What is the Passport.js library used for in an Express application?",
+        "options": [
+            "Database schema validation",
+            "Authentication middleware that supports various strategies like local, OAuth, and JWT",
+            "Password hashing and salting",
+            "Session management only"
+        ],
+        "correct": "Authentication middleware that supports various strategies like local, OAuth, and JWT"
+    },
+    {
+        "question": "In a MongoDB-connected Express app, what is the recommended way to handle a failed database connection?",
+        "options": [
+            "Ignore the error and let the app run without a database",
+            "Log the error and exit the process or implement retry logic",
+            "Restart the server automatically with process.restart()",
+            "Switch to a local file-based storage automatically"
+        ],
+        "correct": "Log the error and exit the process or implement retry logic"
+    },
+    {
+        "question": "What does the following JavaScript code output?\n\nPromise.resolve(1)\n  .then(x => x + 1)\n  .then(x => { throw new Error('err') })\n  .catch(err => console.log('caught'));",
+        "options": [
+            "2, then throws uncaught error",
+            "caught",
+            "1",
+            "Error: err"
+        ],
+        "correct": "caught"
+    },
+    {
+        "question": "What is the output of this code?\n\nconst arr = [1, [2, [3, [4]]]];\nconsole.log(arr.flat(Infinity));",
+        "options": [
+            "[1, [2, [3, [4]]]]",
+            "[1, 2, [3, [4]]]",
+            "[1, 2, 3, 4]",
+            "Error: flat() does not accept Infinity"
+        ],
+        "correct": "[1, 2, 3, 4]"
+    },
+    {
+        "question": "What does the optional chaining operator (?.) do in JavaScript?",
+        "options": [
+            "Returns the default value if the left side is false",
+            "Safely accesses nested properties, returning undefined if any intermediate value is null or undefined instead of throwing an error",
+            "Chains multiple Promises together",
+            "Checks if a variable is defined"
+        ],
+        "correct": "Safely accesses nested properties, returning undefined if any intermediate value is null or undefined instead of throwing an error"
+    },
+    {
+        "question": "What is the output of the following?\n\nconst a = [1, 2, 3];\nconst b = a;\nb.push(4);\nconsole.log(a.length);",
+        "options": [
+            "3",
+            "4",
+            "undefined",
+            "Error"
+        ],
+        "correct": "4"
+    },
+    {
+        "question": "What does JSON.parse(JSON.stringify(obj)) accomplish?",
+        "options": [
+            "A shallow clone of the object",
+            "A deep clone of the object, but it fails with functions, undefined, and circular references",
+            "Converts the object to a string permanently",
+            "Validates that an object is valid JSON"
+        ],
+        "correct": "A deep clone of the object, but it fails with functions, undefined, and circular references"
+    },
+    {
+        "question": "What is the result of this code?\n\nconsole.log(typeof NaN);",
+        "options": [
+            "NaN",
+            "undefined",
+            "number",
+            "string"
+        ],
+        "correct": "number"
+    },
+    {
+        "question": "In JavaScript, what is the purpose of Symbol()?",
+        "options": [
+            "To create a special numeric type",
+            "To create a unique and immutable primitive value, often used as object property keys to avoid naming collisions",
+            "To define private class methods",
+            "To create a reference to a DOM element"
+        ],
+        "correct": "To create a unique and immutable primitive value, often used as object property keys to avoid naming collisions"
+    },
+    {
+        "question": "What does this code log?\n\nconst obj = { a: 1 };\nObject.defineProperty(obj, 'b', { value: 2, writable: false, enumerable: false });\nconsole.log(Object.keys(obj));",
+        "options": [
+            "['a', 'b']",
+            "['a']",
+            "['b']",
+            "[]"
+        ],
+        "correct": "['a']"
+    },
+    {
+        "question": "What is the purpose of the 'yargs' package in a Node.js CLI application?",
+        "options": [
+            "To parse and handle command-line arguments in a structured way",
+            "To compress files from the command line",
+            "To execute shell commands from Node.js",
+            "To manage environment variables in .env files"
+        ],
+        "correct": "To parse and handle command-line arguments in a structured way"
+    },
+    {
+        "question": "What does the EventEmitter class in Node.js allow you to do?",
+        "options": [
+            "Send HTTP events to the browser",
+            "Create objects that can emit named events and register listeners that are called when those events occur",
+            "Emit browser DOM events from Node.js",
+            "Create WebSocket connections"
+        ],
+        "correct": "Create objects that can emit named events and register listeners that are called when those events occur"
+    },
+    {
+        "question": "In Node.js, what is a stream and why is it beneficial for reading large files?",
+        "options": [
+            "A stream is a synchronous file reader; it's faster because it avoids callbacks",
+            "A stream allows reading data in chunks, so the entire file doesn't need to be loaded into memory at once",
+            "A stream is a network connection protocol built into Node.js",
+            "Streams are only useful for video data"
+        ],
+        "correct": "A stream allows reading data in chunks, so the entire file doesn't need to be loaded into memory at once"
+    },
+    {
+        "question": "What is the purpose of package-lock.json in a Node.js project?",
+        "options": [
+            "To lock the Node.js version for the project",
+            "To record the exact versions of all installed dependencies, ensuring reproducible installs across environments",
+            "To prevent other developers from installing new packages",
+            "To store private API keys securely"
+        ],
+        "correct": "To record the exact versions of all installed dependencies, ensuring reproducible installs across environments"
+    },
+    {
+        "question": "What does the following Express code do?\n\napp.use((err, req, res, next) => {\n  console.error(err.stack);\n  res.status(500).send('Something broke!');\n});",
+        "options": [
+            "Creates a standard route handler for all GET requests",
+            "Defines a global error-handling middleware (identified by 4 parameters) that catches errors passed to next(err)",
+            "Handles 404 not found errors",
+            "Validates request bodies for all routes"
+        ],
+        "correct": "Defines a global error-handling middleware (identified by 4 parameters) that catches errors passed to next(err)"
+    },
+    {
+        "question": "In Mongoose, what is the difference between .find() and .findOne()?",
+        "options": [
+            ".find() returns the first match; .findOne() returns all matches",
+            ".findOne() returns the first matching document or null; .find() returns an array of all matching documents",
+            "They are identical",
+            ".findOne() is for SQL databases; .find() is for MongoDB"
+        ],
+        "correct": ".findOne() returns the first matching document or null; .find() returns an array of all matching documents"
+    },
+    {
+        "question": "What is the HTTP method used to partially update a resource in a RESTful API?",
+        "options": [
+            "PUT",
+            "POST",
+            "PATCH",
+            "UPDATE"
+        ],
+        "correct": "PATCH"
+    },
+    {
+        "question": "In Mongoose, how would you query for all tasks where 'completed' is true, sorted by 'createdAt' descending?",
+        "options": [
+            "Task.find({ completed: true }).sort('-createdAt')",
+            "Task.get({ completed: true }).orderBy('createdAt', 'desc')",
+            "Task.filter({ completed: true }).sort({ createdAt: -1 })",
+            "Task.query({ completed: true, sort: '-createdAt' })"
+        ],
+        "correct": "Task.find({ completed: true }).sort('-createdAt')"
+    },
+    {
+        "question": "What does the following Node.js code accomplish?\n\nconst path = require('path');\nconst publicPath = path.join(__dirname, '../public');\napp.use(express.static(publicPath));",
+        "options": [
+            "Serves files from the 'public' folder as static assets",
+            "Creates a new directory called 'public'",
+            "Compiles static assets at build time",
+            "Restricts access to files in the public directory"
+        ],
+        "correct": "Serves files from the 'public' folder as static assets"
+    },
+    {
+        "question": "What is the purpose of CORS (Cross-Origin Resource Sharing) in an Express API?",
+        "options": [
+            "To compress API responses",
+            "To control which origins are allowed to make requests to the API, preventing unauthorized cross-origin access",
+            "To enable HTTPS on the Express server",
+            "To manage database connections across multiple origins"
+        ],
+        "correct": "To control which origins are allowed to make requests to the API, preventing unauthorized cross-origin access"
+    },
+    {
+        "question": "In a Node.js Task app with authentication, what is the purpose of storing user-specific tokens in a 'tokens' array on the User model?",
+        "options": [
+            "To allow a user to be logged in on multiple devices simultaneously",
+            "To store the user's password history",
+            "To limit the number of tasks a user can create",
+            "To cache API responses for the user"
+        ],
+        "correct": "To allow a user to be logged in on multiple devices simultaneously"
+    },
+    {
+        "question": "What does the following code output?\n\nconst p = new Promise((resolve, reject) => {\n  reject('error');\n  resolve('success');\n});\np.catch(e => console.log(e));",
+        "options": [
+            "success",
+            "error",
+            "Both 'error' and 'success'",
+            "undefined"
+        ],
+        "correct": "error"
+    },
+    {
+        "question": "In Express.js, what happens when you call next() inside a middleware function?",
+        "options": [
+            "The response is sent back to the client",
+            "The next matching route handler or middleware in the stack is called",
+            "The server moves to the next HTTP request",
+            "The current middleware is re-executed"
+        ],
+        "correct": "The next matching route handler or middleware in the stack is called"
+    },
+    {
+        "question": "What is the output of this JavaScript code?\n\nconst map = new Map();\nmap.set('a', 1);\nmap.set('b', 2);\nconsole.log(map.size);",
+        "options": [
+            "undefined",
+            "2",
+            "1",
+            "{ a: 1, b: 2 }"
+        ],
+        "correct": "2"
+    },
+    {
+        "question": "What does Promise.all() do when one of the Promises rejects?",
+        "options": [
+            "It ignores the rejection and waits for all others to settle",
+            "It immediately rejects with the reason of the first rejection",
+            "It resolves with an array containing the error for the failed promise",
+            "It retries the failed promise up to 3 times"
+        ],
+        "correct": "It immediately rejects with the reason of the first rejection"
+    },
+    {
+        "question": "In Node.js, what is the purpose of the 'dotenv' package?",
+        "options": [
+            "To create .dot files for Git configuration",
+            "To load environment variables from a .env file into process.env during development",
+            "To validate environment variables at startup",
+            "To encrypt sensitive configuration values"
+        ],
+        "correct": "To load environment variables from a .env file into process.env during development"
+    },
+    {
+        "question": "What is middleware order significance in Express.js?",
+        "options": [
+            "Order does not matter; Express automatically determines the correct sequence",
+            "Middleware is executed in the order it is defined; incorrect ordering can cause routes to be unreachable or middleware to be skipped",
+            "Only error-handling middleware is order-sensitive",
+            "Middleware order matters only for authentication"
+        ],
+        "correct": "Middleware is executed in the order it is defined; incorrect ordering can cause routes to be unreachable or middleware to be skipped"
+    },
+    {
+        "question": "What is the difference between MongoDB's insertOne() and Mongoose's .save() method?",
+        "options": [
+            "They are identical",
+            "insertOne() is a raw MongoDB driver method; .save() is a Mongoose method that also runs schema validations and middleware hooks",
+            ".save() only updates existing documents; insertOne() only creates new ones",
+            "insertOne() runs middleware; .save() does not"
+        ],
+        "correct": "insertOne() is a raw MongoDB driver method; .save() is a Mongoose method that also runs schema validations and middleware hooks"
+    },
+    {
+        "question": "What does this JavaScript code log?\n\nfunction foo() {\n  console.log(this);\n}\nconst bar = foo.bind({ name: 'Test' });\nbar();",
+        "options": [
+            "undefined",
+            "{ name: 'Test' }",
+            "The global object",
+            "foo function object"
+        ],
+        "correct": "{ name: 'Test' }"
+    },
+    {
+        "question": "In Node.js, what is the difference between require('module') and require('./module')?",
+        "options": [
+            "They are identical",
+            "require('module') looks for a built-in or npm package in node_modules; require('./module') loads a local file relative to the current file",
+            "require('./module') is asynchronous; require('module') is synchronous",
+            "require('module') only works for built-in modules; npm packages use import"
+        ],
+        "correct": "require('module') looks for a built-in or npm package in node_modules; require('./module') loads a local file relative to the current file"
+    },
+    {
+        "question": "What will this Node.js code output, assuming it runs successfully?\n\nsetTimeout(() => console.log('timeout'), 0);\nPromise.resolve().then(() => console.log('promise'));\nconsole.log('sync');",
+        "options": [
+            "timeout, promise, sync",
+            "sync, timeout, promise",
+            "sync, promise, timeout",
+            "promise, sync, timeout"
+        ],
+        "correct": "sync, promise, timeout"
+    },
+    {
+        "question": "In Express, what does res.json() do differently from res.send() when passed an object?",
+        "options": [
+            "res.json() sets the Content-Type to application/json and stringifies the object; res.send() may not set the correct Content-Type",
+            "They behave identically for objects",
+            "res.send() is faster; res.json() is for large payloads",
+            "res.json() compresses the response; res.send() does not"
+        ],
+        "correct": "res.json() sets the Content-Type to application/json and stringifies the object; res.send() may not set the correct Content-Type"
+    },
+    {
+        "question": "What is a race condition in the context of async Node.js code?",
+        "options": [
+            "When two setTimeout calls fire at the same time",
+            "When the outcome of a program depends on the unpredictable timing of multiple asynchronous operations",
+            "When a Promise rejects before it resolves",
+            "When Node.js runs out of memory processing concurrent requests"
+        ],
+        "correct": "When the outcome of a program depends on the unpredictable timing of multiple asynchronous operations"
+    },
+    {
+        "question": "In an Express app using Passport.js local strategy, what is the role of the 'verify callback'?",
+        "options": [
+            "To hash the user's password before login",
+            "To find the user in the database and verify credentials, then call done() with the user or false",
+            "To serialize the user into the session",
+            "To define which routes require authentication"
+        ],
+        "correct": "To find the user in the database and verify credentials, then call done() with the user or false"
+    },
+    {
+        "question": "What is the correct way to handle async errors in an Express route so they reach the error-handling middleware?",
+        "options": [
+            "Wrap the logic in a try-catch and call next(err) in the catch block",
+            "Throw the error directly inside the async function",
+            "Use process.on('uncaughtException') inside the route",
+            "Express automatically catches async errors in route handlers"
+        ],
+        "correct": "Wrap the logic in a try-catch and call next(err) in the catch block"
+    }
+]

@@ -1,0 +1,228 @@
+[
+  {
+    "question": "After you initialize a new Git repository and create a file named git-quiz.html, which of the following commands will NOT work if issued?",
+    "options": [
+      "git add git-quiz.html",
+      "git status",
+      "git add .",
+      "git commit -m \"git quiz web file added\""
+    ],
+    "correct": "git commit -m \"git quiz web file added\""
+  },
+  {
+    "question": "Which of the following are the benefits of using Gradle over Maven? Select all that apply.",
+    "options": [
+      "Gradle supports more languages than Maven.",
+      "Gradle incorporates Maven features as well as additional functionality.",
+      "Gradle builds are successful more often than Maven builds.",
+      "A Gradle build is 1000 times faster than a Maven build."
+    ],
+    "correct": "Gradle supports more languages than Maven., Gradle incorporates Maven features as well as additional functionality."
+  },
+  {
+    "question": "State whether the statement is true or false. Adopting Agile is necessary prior to embracing DevOps practices.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": "False"
+  },
+  {
+    "question": "What is continuous testing?",
+    "options": [
+      "Testing continuously for 24 hours",
+      "Manually testing each build, end-to-end",
+      "Automated testing",
+      "Automated testing on each continuous deployment"
+    ],
+    "correct": "Automated testing on each continuous deployment"
+  },
+  {
+    "question": "Adopting DevOps requires planning that spans which of the following? Select all that apply.",
+    "options": [
+      "People",
+      "Efforts",
+      "Process",
+      "Tools/Technology"
+    ],
+    "correct": "People, Process, Tools/Technology"
+  },
+  {
+    "question": "Which DevOps principle focuses on product and service thinking?",
+    "options": [
+      "Customer-centric action",
+      "Continuous improvement",
+      "Create with the end in mind",
+      "Automate everything you can"
+    ],
+    "correct": "Create with the end in mind"
+  },
+  {
+    "question": "Shift-left concept refers to moving everything to the earlier phase in the ________ cycle.",
+    "options": [
+      "Requirement",
+      "Development",
+      "Design",
+      "Testing"
+    ],
+    "correct": "Development"
+  },
+  {
+    "question": "In order to minimize risks to the business within DevOps, what is the main goal of version control?",
+    "options": [
+      "Ensure the ability to alert when configuration changes from the desired state.",
+      "Ensure the ability to re-create the previous state of the test environment.",
+      "Ensure the ability to re-create the production environment and build processes.",
+      "Ensure the ability to share the source code between different developers teams."
+    ],
+    "correct": "Ensure the ability to re-create the previous state of the test environment."
+  },
+  {
+    "question": "What is a continuous build? Select all that apply.",
+    "options": [
+      "A build that runs non-stop, over and over again.",
+      "A build that has not failed in 10 continuous attempts.",
+      "A build that is executed every hour/day by a continuous integration server.",
+      "A build that is executed on every commit by a continuous integration server."
+    ],
+    "correct": "A build that is executed every hour/day by a continuous integration server., A build that is executed on every commit by a continuous integration server."
+  },
+  {
+    "question": "DevOps is primarily about:",
+    "options": [
+      "Tools and their usage",
+      "Processes and adherence",
+      "Governance and audit processes",
+      "Tools, processes, and culture"
+    ],
+    "correct": "Tools, processes, and culture"
+  },
+  {
+    "question": "Which statement best describes the relationship between DevOps and Continuous Delivery?",
+    "options": [
+      "DevOps and Continuous Delivery are the same thing.",
+      "DevOps and Continuous Delivery share a background in Agile methods and LEAN thinking.",
+      "DevOps and Continuous Delivery share common processes.",
+      "DevOps and Continuous Delivery are not related and are mutually exclusive."
+    ],
+    "correct": "DevOps and Continuous Delivery share a background in Agile methods and LEAN thinking."
+  },
+  {
+    "question": "How does a DevOps organization act in principle when it comes to financing its work?",
+    "options": [
+      "It finances special projects to serve its clients.",
+      "It finances products and services to serve its clients.",
+      "It finances teams in matrix organizations and these teams are responsible for handling their own budgets.",
+      "It finances development and operations teams separately, so they take care of their own business."
+    ],
+    "correct": "It finances products and services to serve its clients."
+  },
+  {
+    "question": "In Kubernetes, a node is:",
+    "options": [
+      "A worker machine",
+      "A tool for starting a kubernetes cluster on a local machine",
+      "A machine that coordinates the scheduling and management of application containers on the cluster",
+      "A virtual machine"
+    ],
+    "correct": "A worker machine"
+  },
+  {
+    "question": "GIT can be integrated with Jenkins.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": "True"
+  },
+  {
+    "question": "POM in Maven stands for ________.",
+    "options": [
+      "Project Object Model",
+      "Process Object Model",
+      "Project Object Method",
+      "All of the above"
+    ],
+    "correct": "Project Object Model"
+  },
+  {
+    "question": "What is a widely used reusable asset to reinforce information security of deliverables from your DevOps team?",
+    "options": [
+      "Data storage systems",
+      "Handling the logging of sensitive client information",
+      "Data transfer between clients and software",
+      "All of the above"
+    ],
+    "correct": "All of the above"
+  },
+  {
+    "question": "DevOps is NOT a set of ______ steps.",
+    "options": [
+      "Development",
+      "Fixed",
+      "Testing",
+      "Design"
+    ],
+    "correct": "Fixed"
+  },
+  {
+    "question": "What is the sequence in which Maven looks for the resources?",
+    "options": [
+      "Local -❯ Remote - Maven Central",
+      "Remote-❯ Maven Central - ❯ Local",
+      "Remote-❯ Local -❯ Maven Central",
+      "Maven Central -❯ Local -❯ Remote"
+    ],
+    "correct": "Local -❯ Remote - Maven Central"
+  },
+  {
+    "question": "Why is it recommended that production and development environments should be similar?",
+    "options": [
+      "It is easier to manage for the ops team.",
+      "It improves the accuracy of testing, eases the task of deployment of software, and reduces chances of major problems when deploying software into production.",
+      "People can fix defects directly in the production environment.",
+      "Development environments are cheaper, hence it makes sense to make the production environment similar (and cheaper) to the development environments."
+    ],
+    "correct": "It improves the accuracy of testing, eases the task of deployment of software, and reduces chances of major problems when deploying software into production."
+  },
+  {
+    "question": "DevOps can be implemented in any _________.",
+    "options": [
+      "Process",
+      "Environment",
+      "Defects",
+      "None of the above"
+    ],
+    "correct": "Environment"
+  },
+  {
+    "question": "What is continuous deployment? Select all that apply.",
+    "options": [
+      "Deployment on every code push/commit",
+      "Deployment every hour/day",
+      "Local deployment on the developer's laptop",
+      "Deployment on IBM Cloud"
+    ],
+    "correct": "Deployment on every code push/commit"
+  },
+  {
+    "question": "In DevOps, one of the significant ROI areas is:",
+    "options": [
+      "Zero defects",
+      "Faster time to value",
+      "Less feedback",
+      "Less customer experience"
+    ],
+    "correct": "Faster time to value"
+  },
+  {
+    "question": "How do you remove local (untracked) files and directories from the current Git working tree?",
+    "options": [
+      "Only i",
+      "Only ii and iii",
+      "Only i and iv",
+      "All of the above."
+    ],
+    "correct": "Only i"
+  }
+]

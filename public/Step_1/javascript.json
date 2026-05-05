@@ -1,0 +1,246 @@
+[
+    {
+        "question": "What built-in functions allows you to convert a string into an integer?",
+        "options": [
+            "toInt()",
+            "parseInt()",
+            "toInteger()",
+            "parseString()"
+        ],
+        "correct": "parseInt()"
+    },
+    {
+        "question": "What is the catch method for a promise?",
+        "options": [
+            "To compose two promises",
+            "To listen to the result of a promise",
+            "To listen only for a rejected promise",
+            "There is no catch method on a promise"
+        ],
+        "correct": "To listen only for a rejected promise"
+    },
+    {
+        "question": "What is the effect of using await?",
+        "options": [
+            "The awaited function runs in parallel",
+            "A promise is returned from a function instead of a value",
+            "A value is returned from a function instead of a promise"
+        ],
+        "correct": "A value is returned from a function instead of a promise"
+    },
+    {
+        "question": "What is a function in JavaScript?",
+        "options": [
+            "An instance of a class",
+            "A statement that evaluates an expression",
+            "A block of organized, reusable code that performs a single action",
+            "Code that allows us to write loops"
+        ],
+        "correct": "A block of organized, reusable code that performs a single action"
+    },
+    {
+        "question": "What does an async function return?",
+        "options": [
+            "A promise in a promise",
+            "The value returned from the function",
+            "A promise"
+        ],
+        "correct": "A promise"
+    },
+    {
+        "question": "What is dependency injection?",
+        "options": [
+            "A coding technique in which all dependencies are defined with import statements",
+            "A coding technique for registering services",
+            "A coding pattern in which a class receives the instances of objects it needs from an external source"
+        ],
+        "correct": "A coding pattern in which a class receives the instances of objects it needs from an external source"
+    },
+    {
+        "question": "Which is the proper syntax to make sessionTemplate available by name from a JavaScript module?",
+        "options": [
+            "export function sessionTemplate(sessions) {...}",
+            "export default function sessionTemplate(sessions) {...}",
+            "module.exports = function sessionTemplate(sessions) {...}",
+            "require function sessionTemplate(sessions) {...}"
+        ],
+        "correct": "export function sessionTemplate(sessions) {...}"
+    },
+    {
+        "question": "What is a callback?",
+        "options": [
+            "A function that is called when a parallel operation is done",
+            "A boolean that is set to true when a parallel operation is done",
+            "A function that can be used with the 'await' keyword"
+        ],
+        "correct": "A function that is called when a parallel operation is done"
+    },
+    {
+        "question": "There is no catch method on a promise",
+        "options": [
+            "true",
+            "false"
+        ],
+        "correct": "false"
+    },
+    {
+        "question": "What is blog.name?\nvar blog = { name: 'Ski Utah' };\nvar updatedBlog = blog;\nupdatedBlog.name = 'Rocky Mountain Skiing';",
+        "options": [
+            "Ski Utah",
+            "undefined",
+            "blog",
+            "Rocky Mountain Skiing"
+        ],
+        "correct": "Rocky Mountain Skiing"
+    },
+    {
+        "question": "What is the output of the following?\ngreet = function(...months){\n    months.forEach(month => console.log('Month: ' + month));\n}\ngreet([ 'Jan', 'Feb']);",
+        "options": [
+            "Jan Feb",
+            "ReferenceError",
+            "Month: Jan,Feb",
+            "Month: Jan",
+            "Month: Feb"
+        ],
+        "correct": "Month: Jan,Feb"
+    },
+    {
+        "question": "What is the relationship between JavaScript and ECMAScript?",
+        "options": [
+            "ECMAScript is a standard that JavaScript implements.",
+            "They are different terms for the same thing.",
+            "JavaScript is a standard that ECMAScript implements.",
+            "JavaScript is an old term for what is now called ECMAScript."
+        ],
+        "correct": "ECMAScript is a standard that JavaScript implements."
+    },
+    {
+        "question": "What will show in the console when this code runs?\nvar value = \"no value\";\nconsole.log(!!value );",
+        "options": [
+            "false",
+            "(an empty string)",
+            "true",
+            "no value"
+        ],
+        "correct": "true"
+    },
+    {
+        "question": "What is the output of the following?\nfunction display(num1, num2) {\n    console.log(num1, num2);\n}\nlet nums = \"12345\";\ndisplay(...nums);",
+        "options": [
+            "1 2",
+            "21",
+            "12345",
+            "45"
+        ],
+        "correct": "1 2"
+    },
+    {
+        "question": "What is the console output of the following code block:\nfunction printName() {\n  name = \"Mary\";\n  name = \"John\";\n  console.log(name);\n}",
+        "options": [
+            "Empty",
+            "None",
+            "John",
+            "Mary"
+        ],
+        "correct": "John"
+    },
+    {
+        "question": "Where is the correct place to insert a Javascript?",
+        "options": [
+            "The head section",
+            "Both the head section and the body section are correct.",
+            "The title section.",
+            "The footer section."
+        ],
+        "correct": "Both the head section and the body section are correct."
+    },
+    {
+        "question": "What syntax allows for a variable number of arguments to a function where the arguments are passed as an array?",
+        "options": [
+            "function([]numbers) { }",
+            "function(*numbers) { }",
+            "function(...numbers) { }",
+            "function(numbers[]) { }"
+        ],
+        "correct": "function(...numbers) { }"
+    },
+    {
+        "question": "What statement will load a module from a script named employee.js?",
+        "options": [
+            "reference \"employee\";",
+            "import \"employee\";",
+            "import \"employee.js\";",
+            "reference \"employee.js\";"
+        ],
+        "correct": "import \"employee.js\";"
+    },
+    {
+        "question": "Which flags are required to run nodes with ES6?",
+        "options": [
+            "harmony and strict-mode",
+            "experimental and strict-mode",
+            "harmony and block-binding",
+            "harmony and experimental"
+        ],
+        "correct": "harmony and experimental"
+    },
+    {
+        "question": "What contextual keyword is used in a class definition to identify a function containing initialization logic for an object?",
+        "options": [
+            "ctor",
+            "new",
+            "constructor",
+            "class"
+        ],
+        "correct": "constructor"
+    },
+    {
+        "question": "What syntax will create the array [1, 2, 3, 4, 5, 6]?",
+        "options": [
+            "[1, 2, [3, 4]..., 5, 6];",
+            "[1, 2, ...[3, 4], 5, 6];",
+            "[1, 2, [3, 4], 5, 6];",
+            "[1, 2, {3, 4}, 5, 6];"
+        ],
+        "correct": "[1, 2, ...[3, 4], 5, 6];"
+    },
+    {
+        "question": "What symbol identifies a generator function?",
+        "options": [
+            "&",
+            "@",
+            "$",
+            "*"
+        ],
+        "correct": "*"
+    },
+    {
+        "question": "By default, if you load a module that's not a JavaScript file, what will SystemJS do?",
+        "options": [
+            "Raise an error when loading the module.",
+            "Attempt to load the module as if it were a JavaScript file.",
+            "Look for a plugin with the name of the file extension to load the file."
+        ],
+        "correct": "Look for a plugin with the name of the file extension to load the file."
+    },
+    {
+        "question": "Babel compiles the JavaScript code you write into",
+        "options": [
+            "ECMAScript 5",
+            "ECMAScript 7",
+            "ECMAScript 3",
+            "ECMAScript 6"
+        ],
+        "correct": "ECMAScript 5"
+    },
+    {
+        "question": "Which of these phrases describes Babel?",
+        "options": [
+            "JavaScript compiler",
+            "Requires a runtime",
+            "A programming language",
+            "Experimental"
+        ],
+        "correct": "JavaScript compiler"
+    }
+]

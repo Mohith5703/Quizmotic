@@ -1,0 +1,268 @@
+[
+    {
+        "question": "Which of the following codes will not throw an error?",
+        "options": [
+            "JSON.parse(”);",
+            "JSON.parse(null);",
+            "JSON.parse();",
+            "JSON.parse({});"
+        ],
+        "correct": "JSON.parse(null);"
+    },
+    {
+        "question": "What does JSONP stand for?",
+        "options": [
+            "JSON Procedures",
+            "JSON Parsing",
+            "JSON with padding",
+            "JSON Programming"
+        ],
+        "correct": "JSON with padding"
+    },
+    {
+        "question": "What is the value of json in the following code?\nvar obj = { fruit: ‘apple’, toJSON: function () { return ‘orange’; } }; var json = JSON.stringify({x: obj});",
+        "options": [
+            "{“x”:”orange”}",
+            "{“fruit”:”apple”}",
+            "{“x”:”apple”}",
+            "{“fruit”:”orange”}"
+        ],
+        "correct": "{“x”:”orange”}"
+    },
+    {
+        "question": "What is the MIME type of JSON?",
+        "options": [
+            "application/x-json",
+            "text/json",
+            "application/json",
+            "application/javascript"
+        ],
+        "correct": "application/json"
+    },
+    {
+        "question": "What function will convert a JavaScript object to a JSON string?",
+        "options": [
+            "JSON.text()",
+            "JSON.serialize()",
+            "JSON.toString()",
+            "JSON.stringify()"
+        ],
+        "correct": "JSON.stringify()"
+    },
+    {
+        "question": "In the below notation, Student is of type { “Student”: [ “Amy”, “Bob”, “John” ] }",
+        "options": [
+            "Not a valid JSON string",
+            "Array",
+            "Class",
+            "Object"
+        ],
+        "correct": "Array"
+    },
+    {
+        "question": "To use observables, Angular uses a third-party library called . . . . . . .",
+        "options": [
+            "ng2-bootstrap",
+            "angular-cli",
+            "numeral",
+            "Reactive Extensions (RxJS)"
+        ],
+        "correct": "Reactive Extensions (RxJS)"
+    },
+    {
+        "question": "We subscribe to the observable ourselves using the actual . . . . . . method. The downside is that you have to manage the subscription yourself.",
+        "options": [
+            "subscribe()",
+            "subs()",
+            "subscribed()",
+            "None of above"
+        ],
+        "correct": "subscribe()"
+    },
+    {
+        "question": "The . . . . . . . filter waits for a promise and returns the most recent value received. It then updates the view.",
+        "options": [
+            "sync",
+            "async",
+            "promise",
+            "custom"
+        ],
+        "correct": "async"
+    },
+    {
+        "question": "If you chain multiple pipes together, they are executed . . . . .",
+        "options": [
+            "in parallel",
+            "LIFO order",
+            "in the order in which you specify them",
+            "none of above"
+        ],
+        "correct": "none of above"
+    },
+    {
+        "question": "Observables help you manage . . . . . . . . data.",
+        "options": [
+            "synchronous",
+            "asynchronous",
+            "Both asynchronous & synchronous",
+            "None of above"
+        ],
+        "correct": "asynchronous"
+    },
+    {
+        "question": "What is the output of:\nconsole.log(x);\nvar x = 5;",
+        "options": [
+            "5",
+            "undefined",
+            "ReferenceError",
+            "null"
+        ],
+        "correct": "undefined"
+    },
+    {
+        "question": "Promises are more advanced than Observables.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": "False"
+    },
+    {
+        "question": "Which class is used to create a black navigation bar?",
+        "options": [
+            ".navbar-default",
+            ".navbar-black",
+            ".navbar-dark",
+            ".navbar-inverse"
+        ],
+        "correct": ".navbar-inverse"
+    },
+    {
+        "question": "The .container-fluid class provides",
+        "options": [
+            "Fixed width container",
+            "Table format",
+            "To create a Form",
+            "Full width container"
+        ],
+        "correct": "Full width container"
+    },
+    {
+        "question": "What keywords are reserved in JSON and cannot be used as keys?",
+        "options": [
+            "Value",
+            "Object",
+            "There are none.",
+            "Key"
+        ],
+        "correct": "There are none."
+    },
+    {
+        "question": "How to get information about browsers?",
+        "options": [
+            "Browser",
+            "version",
+            "navigator"
+        ],
+        "correct": "navigator"
+    },
+    {
+        "question": "Display property?",
+        "options": [
+            "None",
+            "inline",
+            "inline-block",
+            "block",
+            "All"
+        ],
+        "correct": "All"
+    },
+    {
+        "question": "----- is an HTML specification used to add more information to HTML tags.",
+        "options": [
+            "Macrodata",
+            "Microdata",
+            "Minidata",
+            "Modifydata"
+        ],
+        "correct": "Microdata"
+    },
+    {
+        "question": "What is the purpose of the mimeTypes property of a plug-in entry?",
+        "options": [
+            "Contains MIME properties",
+            "Contains MIME sizes",
+            "Contains MIME types",
+            "Contains MIME methods"
+        ],
+        "correct": "Contains MIME types"
+    },
+    {
+        "question": "Which of the following can be implemented using animation?",
+        "options": [
+            "Fireworks",
+            "fade Effect",
+            "Roll-in or Roll-out",
+            "All of the mentioned"
+        ],
+        "correct": "All of the mentioned"
+    },
+    {
+        "question": "Which is the property that represents the content displayed in the window?",
+        "options": [
+            "document",
+            "content",
+            "window",
+            "frame"
+        ],
+        "correct": "document"
+    },
+    {
+        "question": "How can we make methods available on all objects?",
+        "options": [
+            "Object.add(methods)",
+            "Object.methods(add)",
+            "Object.add.methods(...)",
+            "Object.prototype"
+        ],
+        "correct": "Object.prototype"
+    },
+    {
+        "question": "The four kinds of class members are______",
+        "options": [
+            "Instance methods, Instance fields, Static method, Dynamic method",
+            "Instance fields,Instance methods, Class fields, class methods",
+            "Instance fields, non-Instance fields, Dynamic methods, Global methods",
+            "Global methods, Local methods, Dynamic methods, Static methods"
+        ],
+        "correct": "Instance fields,Instance methods, Class fields, class methods"
+    },
+    {
+        "question": "Which field is required in",
+        "options": [
+            "required",
+            "minlength",
+            "Both"
+        ],
+        "correct": "required"
+    },
+    {
+        "question": "How can we add/ delete in an array and return the removed item.",
+        "options": [
+            "slice",
+            "shift",
+            "reverse",
+            "splice"
+        ],
+        "correct": "splice"
+    },
+    {
+        "question": "How to get information about browser",
+        "options": [
+            "Browser",
+            "Version",
+            "navigator"
+        ],
+        "correct": "navigator"
+    }
+]

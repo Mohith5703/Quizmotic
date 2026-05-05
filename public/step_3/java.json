@@ -1,0 +1,1146 @@
+[
+  {
+    "question": "What is the basis for equality state in Java Identity HashMap?",
+    "options": [
+      "Hash Code and equals",
+      "Name",
+      "Reference"
+    ],
+    "correct": "Reference"
+  },
+  {
+    "question": "In Java, which of the following can be marked static?",
+    "options": [
+      "Methods, Variables, Initialization Blocks, Outer Classes, and Nested Classes",
+      "Methods, Variables, Initialization Blocks, and Nested Classes",
+      "Methods, Variables, Initialization Blocks, and Outer Classes",
+      "Methods, Variables, and Initialization Block"
+    ],
+    "correct": "Methods, Variables, Initialization Blocks, and Nested Classes"
+  },
+  {
+    "question": "What is the output of the following Java code snippet?\npublic class home implements Runnable {\n    public void run() {\n        System.out.printf(\"%d\",3);\n    }\n    public static void main(String[] args) throws InterruptedException {\n        Thread thread = new Thread(new home());\n        thread.start();\n        System.out.printf(\"%d\",1);\n        thread.join();\n        System.out.printf(\"%d\",2);\n    }\n}",
+    "options": [
+      "132",
+      "123",
+      "213",
+      "312"
+    ],
+    "correct": "132"
+  },
+  {
+    "question": "Which of the following statements is false about Java main method?",
+    "options": [
+      "We can override main method.",
+      "Main method should be declared public and static.",
+      "Main method should have only 1 argument of type String array.",
+      "We can overload main method."
+    ],
+    "correct": "We can override main method."
+  },
+  {
+    "question": "HTTP2 Client API is introduced in Java 9.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": "True"
+  },
+  {
+    "question": "Pick the right statement about creating a custom Java annotation.",
+    "options": [
+      "Annotations are created by using @interface, followed by annotation name.",
+      "An annotation can have elements as well. They look like methods. We should not provide implementation for these elements.",
+      "All annotations extend java.lang.annotation.Annotation interface. Annotations cannot include any extends clause.",
+      "All of the above"
+    ],
+    "correct": "All of the above"
+  },
+  {
+    "question": "What is the max capacity of a Java Blocking Queue?",
+    "options": [
+      "Integer.INFINITY",
+      "Integer.MAX_VALUE",
+      "BigDecimal.MAX_VALUE"
+    ],
+    "correct": "Integer.MAX_VALUE"
+  },
+  {
+    "question": "Which of the following is the immutable Java List static factory method?",
+    "options": [
+      "List.of",
+      "List.immutable",
+      "List.create"
+    ],
+    "correct": "List.of"
+  },
+  {
+    "question": "What is the command line tool introduced for JS engine in Java 8?",
+    "options": [
+      "jjs",
+      "jss",
+      "jfs",
+      "jbd"
+    ],
+    "correct": "jjs"
+  },
+  {
+    "question": "Which of these Java code snippets is a correct way of defining generic method?",
+    "options": [
+      "public <T> methodName() { }",
+      "<T> methodName(T1, T2, …, Tn) { }",
+      "All of the above"
+    ],
+    "correct": "public <T> methodName() { }"
+  },
+  {
+    "question": "In Java 9, private methods are allowed in Interfaces.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": "True"
+  },
+  {
+    "question": "Java system properties can be set or modified at runtime.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": "True"
+  },
+  {
+    "question": "Identify the Java class used to create a new Process.",
+    "options": [
+      "ProcessBuilder",
+      "ProcessFactory",
+      "Process",
+      "Thread"
+    ],
+    "correct": "ProcessBuilder"
+  },
+  {
+    "question": "Pick the correct Java method reference usages.",
+    "options": [
+      "object::instanceMethod",
+      "Class::staticMethod",
+      "Class::new",
+      "All of the above"
+    ],
+    "correct": "All of the above"
+  },
+  {
+    "question": "Which is the correct Java code snippet to be used to create a Functional Interface?",
+    "options": [
+      "interface MyFunctionalInterface implements Functional {",
+      "@FunctionalInterface interface MyFunctionalInterface {",
+      "@Functional interface MyFunctionalInterface {"
+    ],
+    "correct": "@FunctionalInterface interface MyFunctionalInterface {"
+  },
+  {
+    "question": "Which one will allow traversing a Java collection in each direction?",
+    "options": [
+      "ListIterator",
+      "Iterator",
+      "MapIterator",
+      "SetIterator"
+    ],
+    "correct": "ListIterator"
+  },
+  {
+    "question": "In Java, which method is used to inform the observer of the change in observed object?",
+    "options": [
+      "Check",
+      "Update",
+      "Inform",
+      "notify"
+    ],
+    "correct": "Update"
+  },
+  {
+    "question": "In Java, it is NOT possible to override default serialization.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": "False"
+  },
+  {
+    "question": "Pick the class that is NOT part of Java collection framework.",
+    "options": [
+      "Map",
+      "List",
+      "Queue",
+      "Struct"
+    ],
+    "correct": "Struct"
+  },
+  {
+    "question": "Identify the parts of lambda expression in Java.\ni) Name\nii) Parameter list\niii) Body\niv) Return Type",
+    "options": [
+      "i",
+      "iv",
+      "i and iv",
+      "ii and iii"
+    ],
+    "correct": "ii and iii"
+  },
+  {
+    "question": "Java Functional Interface can be defined as _____.",
+    "options": [
+      "Simple Abstract Markup",
+      "Simple Active Markup",
+      "Single Ambivalue Method",
+      "Single Abstract Method"
+    ],
+    "correct": "Single Abstract Method"
+  },
+  {
+    "question": "Which is the correct API to manage reactive streams in Java?",
+    "options": [
+      "java.util.concurrent.Flow",
+      "java.util.concurrent.Flow.Publisher",
+      "java.util.concurrent.Flow.Processor",
+      "All of the above"
+    ],
+    "correct": "All of the above"
+  },
+  {
+    "question": "In Java, which of the following data structure classes CANNOT be type parameterized?",
+    "options": [
+      "List",
+      "Set",
+      "Array",
+      "Map"
+    ],
+    "correct": "Array"
+  },
+  {
+    "question": "Which of these OOPS concept is enabled by method overriding in Java?",
+    "options": [
+      "Polymorphism",
+      "Abstraction",
+      "Inheritance",
+      "Encapsulation"
+    ],
+    "correct": "Polymorphism"
+  },
+  {
+    "question": "What is the output of the following Java code snippet?\nclass First {\n    public First() {\n        System.out.println(\"F\");\n    }\n}\nclass Second extends First {\n    public Second() {\n        System.out.println(\"S\");\n    }\n}\nclass Third extends Second {\n    public Third() {\n        System.out.println(\"T\");\n    }\n}\npublic class TestClass {\n    public static void main(String[] args) {\n        Third c = new Third();\n    }\n}",
+    "options": [
+      "TSF",
+      "T",
+      "F",
+      "FST"
+    ],
+    "correct": "FST"
+  },
+  {
+    "question": "How does one assign system property values to variable using Java class fields?",
+    "options": [
+      "@Autowire(\"${aProperty}\") private String aSysProp;",
+      "@Environment(\"${aProperty}\") private String aSysProp;",
+      "@Property(\"${aProperty}\") private String aSysProp;",
+      "@Value(\"${aProperty}\") private String aSysProp;"
+    ],
+    "correct": "@Value(\"${aProperty}\") private String aSysProp;"
+  },
+  {
+    "question": "Which of the following types of Java methods CANNOT be Type parameterized?",
+    "options": [
+      "Final methods",
+      "Overriding methods",
+      "Overloaded methods"
+    ],
+    "correct": "Overriding methods"
+  },
+  {
+    "question": "Pick the correct Java Stream API’s?",
+    "options": [
+      "Stream.allMatch",
+      "Stream.noneMatch",
+      "Stream.anyMatch",
+      "All the above"
+    ],
+    "correct": "All the above"
+  },
+  {
+    "question": "Which class is introduced in Java 8 to get the current milliseconds?",
+    "options": [
+      "Clock",
+      "Current Time",
+      "Date Time",
+      "Time"
+    ],
+    "correct": "Clock"
+  },
+  {
+    "question": "In Java, which of these class types supports sequential and parallel processing of data?",
+    "options": [
+      "Queue",
+      "Lambda",
+      "ExecutorService",
+      "Streams"
+    ],
+    "correct": "Streams"
+  },
+  {
+    "question": "Which Java Set implementation is sorted and synchronized?",
+    "options": [
+      "TreeSet",
+      "LinkedHashSet",
+      "HashSet",
+      "ConcurrentSkipListSet"
+    ],
+    "correct": "ConcurrentSkipListSet"
+  },
+  {
+    "question": "Which of the following statements is NOT correct for JVM?",
+    "options": [
+      "JVM acts as a translator that translates different Machine code (on the basis of Host Machine) for a common Byte Code.",
+      "JVM is a Virtual Machine that acts as an intermediary between Java Application and Host Operating System.",
+      "JVM reads Byte Code and generates Machine Code.",
+      "JVM reads Source Code and generates Byte Code."
+    ],
+    "correct": "JVM reads Source Code and generates Byte Code."
+  },
+  {
+    "question": "Is the following a valid Java code snippet?\nOptional aValue = Optional.of(\"Not Empty\"); \nif (aValue.ifPresent()) { \nSystem.out.println(\"Got Not Empty\"); \n}",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": "False"
+  },
+  {
+    "question": "Java Stream does NOT store the elements. It simply performs the aggregate operations to get the desired stream of data.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": "True"
+  },
+  {
+    "question": "Which Java class is used to apply reduction or aggregate functions on streams?",
+    "options": [
+      "Filters",
+      "Reduction",
+      "Collectors"
+    ],
+    "correct": "Collectors"
+  },
+  {
+    "question": "Which of the following statements are true about Java finally block?\ni. A finally block is executed, only after the catch block is executed.\nii. A finally block is executed whether an exception is thrown or not.\niii. A finally block is NOT mandatory.\niv. A finally block is executed, only if an exception occurs.",
+    "options": [
+      "i",
+      "iv",
+      "i and iv",
+      "ii and iii"
+    ],
+    "correct": "ii and iii"
+  },
+  {
+    "question": "Which of these is a standard Java Interface?",
+    "options": [
+      "Serializable",
+      "Long",
+      "System",
+      "Collections"
+    ],
+    "correct": "Serializable"
+  },
+  {
+    "question": "What is the replacement for PermGen space in Java 8?",
+    "options": [
+      "FixedGen",
+      "Metaspace",
+      "MetaGenspace"
+    ],
+    "correct": "Metaspace"
+  },
+  {
+    "question": "What is the output of the following Java code snippet?\nStringJoiner astring = new StringJoiner(\"-\", \"{\", \"}\"); \nastring.add(\"A\"); \nastring.add(\"B\"); \nastring.add(\"C\");",
+    "options": [
+      "{A-B-C}",
+      "{A}-{B}-{C}",
+      "{–A–}{–B–}{–C–}"
+    ],
+    "correct": "{A-B-C}"
+  },
+  {
+    "question": "What is the return type of Java Lambda expressions?",
+    "options": [
+      "Void",
+      "Lambda",
+      "Function",
+      "Regex"
+    ],
+    "correct": "Function"
+  },
+  {
+    "question": "Name the two types of streams in Java.",
+    "options": [
+      "Sync and async",
+      "Sequential and parallel",
+      "Random and ordered"
+    ],
+    "correct": "Sequential and parallel"
+  },
+  {
+    "question": "What is the difference between peek() and dequeue()?",
+    "options": [
+      "peek() returns the next item in line but dequeue() removes and returns the next item in line",
+      "peek() and dequeue() return the next item in line",
+      "peek() and dequeue() remove and return the next item in line"
+    ],
+    "correct": "peek() returns the next item in line but dequeue() removes and returns the next item in line"
+  },
+  {
+    "question": "Which one of the following statements on Java String is correct?",
+    "options": [
+      "replace() method replaces only first occurrences of a character in invoking string with the given character.",
+      "replace() method replaces last occurrence of a character in invoking string with the given character.",
+      "replace() method replaces all occurrences of one character in invoking string with the given character.",
+      "replace() method replaces all the characters in invoking string with the given character."
+    ],
+    "correct": "replace() method replaces all occurrences of one character in invoking string with the given character."
+  },
+  {
+    "question": "What is the result of the following Java code snippet?\nclass Animal { public String noise() { return \"peep\"; } }\nclass Dog extends Animal { public String noise() { return \"bark\"; } }\nclass Cat extends Animal { public String noise() { return \"meow\"; } }\nAnimal animal = new Dog(); \nCat cat = (Cat) animal; \nSystem.out.println(cat.noise());",
+    "options": [
+      "peep",
+      "bark",
+      "meow",
+      "Compilation fails",
+      "An exception is thrown at runtime"
+    ],
+    "correct": "An exception is thrown at runtime"
+  },
+  {
+    "question": "What is the output of the following Java code snippet?\nclass A { void foo() throws Exception { throw new Exception(); } }\nclass SubB2 extends A { void foo() { System.out.println(\"B \"); } }\nclass HelloWorld { public static void main(String[] args) { A a = new SubB2(); a.foo(); } }",
+    "options": [
+      "B",
+      "B, followed by an Exception.",
+      "Compilation fails due to an error on line 9.",
+      "Compilation fails due to an error on line 15."
+    ],
+    "correct": "Compilation fails due to an error on line 15."
+  },
+  {
+    "question": "What is the output of the following Java code snippet?\nclass multithreaded_programming {\n    public static void main(String args[]) {\n        Thread t = Thread.currentThread();\n        t.setName(\"new thread\");\n        System.out.println(t);\n    }\n}",
+    "options": [
+      "Thread[main,5,main]",
+      "Thread[new thread,5,main]",
+      "Thread[Thread-0,5,main]",
+      "Compilation fails"
+    ],
+    "correct": "Thread[new thread,5,main]"
+  },
+  {
+    "question": "Observe the code:\npublic class MyRunnable implements Runnable {\n    public void run() {\n        // some code\n    }\n}\nWhich of these will create and start this thread?",
+    "options": [
+      "new MyRunnable().start()",
+      "new Thread(new MyRunnable()).run()",
+      "new Thread(new MyRunnable()).start()",
+      "MyRunnable.startThread()"
+    ],
+    "correct": "new Thread(new MyRunnable()).start()"
+  },
+  {
+    "question": "Observe the code below:\nclass Mammal { }\nclass Raccoon extends Mammal {\n    Mammal m = new Mammal();\n}\nclass BabyRaccoon extends Mammal { }\nWhich four statements are true? (Choose four)",
+    "options": [
+      "A) Raccoon is-a Mammal.",
+      "B) Raccoon has-a Mammal.",
+      "C) BabyRaccoon is-a Mammal.",
+      "D) BabyRaccoon is-a Raccoon.",
+      "E) BabyRaccoon has-a Mammal.",
+      "F) BabyRaccoon is-a BabyRaccoon."
+    ],
+    "correct": "A, B, C, F"
+  },
+  {
+    "question": "Observe the following code:\nimport java.io.*;\npublic class filesinputoutput {\n    public static void main(String[] args) {\n        String obj = \"abc\";\n        byte b[] = obj.getBytes();\n        ByteArrayInputStream obj1 = new ByteArrayInputStream(b);\n        for (int i = 0; i < 2; ++i) {\n            int c;\n            while ((c = obj1.read()) != -1) {\n                if (i == 0) {\n                    System.out.print(Character.toUpperCase((char)c));\n                }\n            }\n        }\n    }\n}",
+    "options": [
+      "abc",
+      "ABC",
+      "Abc",
+      "Compilation fails"
+    ],
+    "correct": "ABC"
+  },
+  {
+    "question": "Predict the output of the code:\nclass output {\n    public static void main(String args[]) {\n        StringBuffer s1 = new StringBuffer(\"Hello World\");\n        s1.insert(6, \"Good \");\n        System.out.println(s1);\n    }\n}",
+    "options": [
+      "HelloGoodWorld",
+      "HellGoodoWorld",
+      "HellGood oWorld",
+      "Hello Good World"
+    ],
+    "correct": "Hello Good World"
+  },
+  {
+    "question": "Which of these keywords cannot be used for a class which has been declared final?",
+    "options": [
+      "abstract",
+      "extends",
+      "abstract and extends",
+      "None of the mentioned"
+    ],
+    "correct": "abstract"
+  },
+  {
+    "question": "Predict the output: sos('1' + new Integer(2) + 3);",
+    "options": [
+      "6",
+      "123",
+      "33",
+      "Compilation fails"
+    ],
+    "correct": "123"
+  },
+  {
+    "question": "Observe the code and predict the output:\nint a[] = new int[]{1, 2, 6, 4, 5}; \nint b[] = new int[5]; \nb[2] = a[2]; \na[2] = 10; \nSystem.out.println(b[2]);",
+    "options": [
+      "10",
+      "6",
+      "2",
+      "Compilation fails"
+    ],
+    "correct": "6"
+  },
+  {
+    "question": "What is the output of this program?\nimport java.util.*; \nclass vector { \n    public static void main(String args[]) { \n        Vector obj = new Vector(4, 2); \n        obj.addElement(new Integer(3)); \n        obj.addElement(new Integer(2)); \n        obj.addElement(new Integer(5)); \n        obj.removeAll(obj); \n        System.out.println(obj.isEmpty()); \n    } \n}",
+    "options": [
+      "0",
+      "1",
+      "true",
+      "false"
+    ],
+    "correct": "true"
+  },
+  {
+    "question": "What is the output?\nimport java.util.*; \nclass Maps { \n    public static void main(String args[]) { \n        TreeMap obj = new TreeMap(); \n        obj.put(\"A\", new Integer(1)); \n        obj.put(\"B\", new Integer(2)); \n        obj.put(\"C\", new Integer(3)); \n        System.out.println(obj.entrySet()); \n    } \n}",
+    "options": [
+      "[A, B, C]",
+      "[1, 2, 3]",
+      "{A=1, B=2, C=3}",
+      "[A=1, B=2, C=3]"
+    ],
+    "correct": "[A=1, B=2, C=3]"
+  },
+  {
+    "question": "What is the output?\nimport java.util.*; \nclass Bitset { \n    public static void main(String args[]) { \n        BitSet obj = new BitSet(5); \n        for (int i = 0; i < 5; ++i) \n            obj.set(i); \n        obj.clear(2); \n        System.out.print(obj); \n    } \n}",
+    "options": [
+      "{0, 1, 3, 4}",
+      "{0, 1, 2, 4}",
+      "{0, 1, 2, 3, 4}",
+      "{0, 0, 0, 3, 4}"
+    ],
+    "correct": "{0, 1, 3, 4}"
+  },
+  {
+    "question": "What is the output?\nimport java.util.*; \nclass Array { \n    public static void main(String args[]) { \n        int array[] = new int[5]; \n        for (int i = 5; i > 0; i--) \n            array[5-i] = i; \n        Arrays.fill(array, 1, 4, 8); \n        for (int i = 0; i < 5; i++) \n            System.out.print(array[i]); \n    } \n}",
+    "options": [
+      "12885",
+      "12845",
+      "58881",
+      "54881"
+    ],
+    "correct": "58881"
+  },
+  {
+    "question": "What is the output of the following program?\nimport java.util.*; \nclass Collection_Algos { \n    public static void main(String args[]) { \n        LinkedList list = new LinkedList(); \n        list.add(new Integer(2)); \n        list.add(new Integer(8)); \n        list.add(new Integer(5)); \n        list.add(new Integer(1)); \n        Iterator i = list.iterator(); \n        Collections.reverse(list); \n        Collections.shuffle(list); \n        while(i.hasNext()) \n            System.out.print(i.next() + \" \"); \n    } \n}",
+    "options": [
+      "2 8 5 1",
+      "1 5 8 2",
+      "1 2 5 8",
+      "Any random order"
+    ],
+    "correct": "Any random order"
+  },
+  {
+    "question": "What is the output?\nimport java.util.*; \nclass Collection_Algos { \n    public static void main(String args[]) { \n        LinkedList list = new LinkedList(); \n        list.add(new Integer(2)); \n        list.add(new Integer(8)); \n        list.add(new Integer(5)); \n        list.add(new Integer(1)); \n        Iterator i = list.iterator(); \n        Collections.reverse(list); \n        Collections.sort(list); \n        while(i.hasNext()) \n            System.out.print(i.next() + \" \"); \n    } \n}",
+    "options": [
+      "2 8 5 1",
+      "1 5 8 2",
+      "1 2 5 8",
+      "2 1 8 5"
+    ],
+    "correct": "1 2 5 8"
+  },
+  {
+    "question": "What is the output?\nimport java.util.*; \npublic class genericstack<E> { \n    Stack stk = new Stack(); \n    public void push(E obj) { stk.push(obj); } \n    public E pop() { return (E)stk.pop(); } \n} \nclass Output { \n    public static void main(String args[]) { \n        genericstack gs = new genericstack(); \n        gs.push(\"Hello\"); \n        System.out.print(gs.pop() + \" \"); \n        genericstack gs2 = new genericstack(); \n        gs2.push(36); \n        System.out.println(gs2.pop()); \n    } \n}",
+    "options": [
+      "Error",
+      "Hello",
+      "36",
+      "Hello 36"
+    ],
+    "correct": "Error"
+  },
+  {
+    "question": "What is the output?\nclass output { \n    public static void main(String args[]) { \n        StringBuffer c = new StringBuffer(\"Hello\"); \n        StringBuffer c1 = new StringBuffer(\" World\"); \n        c.append(c1); \n        System.out.println(c); \n    } \n}",
+    "options": [
+      "Hello",
+      "World",
+      "HelloWorld",
+      "Hello World"
+    ],
+    "correct": "Hello World"
+  },
+  {
+    "question": "What is the output of the following Java code snippet?\nclass exception_handling {\n    public static void main(String args[]) {\n        try {\n            System.out.print(\"Hello\" + \" \" + 1 / 0);\n        }\n        catch(ArithmeticException e) {\n            System.out.print(\"World\");\n        }\n    }\n}",
+    "options": [
+      "Hello",
+      "World",
+      "HelloWorld",
+      "Hello World"
+    ],
+    "correct": "World"
+  },
+  {
+    "question": "What is the output of the following Java code snippet?\nclass output {\n    public static void main(String args[]) {\n        char c[] = {'a', '1', 'b', ' ', 'A', '0'};\n        for (int i = 0; i < 5; ++i) {\n            if (Character.isDigit(c[i]))\n                System.out.println(c[i] + \" is a digit\");\n            if (Character.isWhitespace(c[i]))\n                System.out.println(c[i] + \" is a Whitespace char\");\n            if (Character.isUpperCase(c[i]))\n                System.out.println(c[i] + \" is an Upper case Letter\");\n            if (Character.isLowerCase(c[i]))\n                System.out.println(c[i] + \" is a lower case Letter\");\n            i = i + 3;\n        }\n    }\n}",
+    "options": [
+      "a is a lower case Letter, is White space character",
+      "b is a lower case Letter, is White space character",
+      "a is a lower case Letter, A is an Upper case Letter",
+      "a is a lower case Letter, 0 is a digit"
+    ],
+    "correct": "a is a lower case Letter, A is an Upper case Letter"
+  },
+  {
+    "question": "What is the output of the following Java code snippet?\nimport java.io.*;\nclass filesinputoutput {\n    public static void main(String args[]) throws IOException {\n        InputStream obj = new FileInputStream(\"inputoutput.java\");\n        System.out.print(obj.available());\n    }\n}\nNote: inputoutput.java is stored in the disk.",
+    "options": [
+      "true",
+      "false",
+      "prints number of bytes in file",
+      "prints number of characters in the file"
+    ],
+    "correct": "prints number of bytes in file"
+  },
+  {
+    "question": "Observe the code:\nimport java.io.*;\npublic class filesinputoutput {\n    public static void main(String[] args) throws IOException {\n        String obj = \"abc\";\n        byte b[] = obj.getBytes();\n        ByteArrayInputStream obj1 = new ByteArrayInputStream(b);\n        ByteArrayOutputStream obj2 = new ByteArrayOutputStream();\n        for (int i = 0; i < 2; ++i) {\n            int c;\n            while ((c = obj1.read()) != -1) {\n                if (i == 0) {\n                    System.out.print(Character.toUpperCase((char)c));\n                    obj2.write(c);\n                }\n            }\n        }\n        System.out.println(\"\\n\" + obj2.toString());\n    }\n}",
+    "options": [
+      "abc",
+      "ABC",
+      "ABC abc",
+      "Compilation fails"
+    ],
+    "correct": "ABC"
+  },
+  {
+    "question": "Which of these methods are used to read in from file?",
+    "options": [
+      "get()",
+      "read()",
+      "scan()",
+      "readFileInput()"
+    ],
+    "correct": "read()"
+  },
+  {
+    "question": "What is the output of the code?\npublic class Test8 {\n    public static void main(String args[]) {\n        Number numberRef = new Integer(0);\n        Double doubleRef = (Double)numberRef;\n    }\n}",
+    "options": [
+      "0",
+      "0.0",
+      "Compilation fails",
+      "Throws exception"
+    ],
+    "correct": "Throws exception"
+  },
+  {
+    "question": "What is the output of the following Java code snippet?\nimport java.io.*;\nclass HelloWorld {\n    public static void main(String[] args) {\n        StringBuffer s1 = new StringBuffer(\"Hello\");\n        StringBuffer s2 = s1.reverse();\n        System.out.println(s2);\n    }\n}",
+    "options": [
+      "Hello",
+      "olleH",
+      "HELLO",
+      "Compilation fails"
+    ],
+    "correct": "olleH"
+  },
+  {
+    "question": "Which pattern is used in the following code?\nimport java.util.*;\nclass HelloWorld {\n    public static void main(String args[]) {\n        List List = new ArrayList();\n        List.add(\"cricket\");\n        List.add(\"football\");\n        List.add(\"hockey\");\n        Iterator it = List.iterator();\n        while(it.hasNext()) {\n            String s = (String) it.next();\n        }\n    }\n}",
+    "options": [
+      "Observer",
+      "Singleton",
+      "Iterator",
+      "Factory"
+    ],
+    "correct": "Iterator"
+  },
+  {
+    "question": "java.util.Enumeration is an example of which pattern?",
+    "options": [
+      "Observer",
+      "Singleton",
+      "Iterator",
+      "Factory"
+    ],
+    "correct": "Iterator"
+  },
+  {
+    "question": "Which of the following correctly starts a thread for a class X that implements Runnable?",
+    "options": [
+      "X run = new X(); Thread t = new Thread(run); t.start();",
+      "X run = new X(); run.start();",
+      "Thread t = new Thread(); t.run(new X());",
+      "new X().startThread();"
+    ],
+    "correct": "X run = new X(); Thread t = new Thread(run); t.start();"
+  },
+  {
+    "question": "Predict the output of the code:\nimport java.util.*;   \nclass HelloWorld {   \n    public static void main(String args[]) {   \n        try {   \n            int a = 5;   \n            int b = 0;   \n            int c = a / b;   \n            System.out.println(\"World\");   \n        }   \n        catch(Exception e) {   \n            System.out.println(\"hello\");   \n        }   \n    }   \n}",
+    "options": [
+      "World",
+      "hello",
+      "World hello",
+      "Compilation fails"
+    ],
+    "correct": "hello"
+  },
+  {
+    "question": "What is the output of the following code snippet?\nint a = 10;   \nint b = 0;   \nint c = a / b;   \nSystem.out.println(\"c\");",
+    "options": [
+      "10",
+      "0",
+      "c",
+      "runtime exception"
+    ],
+    "correct": "runtime exception"
+  },
+  {
+    "question": "Which method will contain the body of the thread?",
+    "options": [
+      "start()",
+      "run()",
+      "main()",
+      "init()"
+    ],
+    "correct": "run()"
+  },
+  {
+    "question": "Which two of the following methods are defined in class Thread?",
+    "options": [
+      "start() and run()",
+      "wait() and notify()",
+      "run() and wait()",
+      "start() and notify()"
+    ],
+    "correct": "start() and run()"
+  },
+  {
+    "question": "Assume the following method is properly synchronized and called from a thread A on an object B: wait(2000); After calling this method, when will thread A become a candidate to get another turn at the CPU?",
+    "options": [
+      "After thread A is notified, or after two seconds.",
+      "After the lock on B is released, or after two seconds.",
+      "Two seconds after thread A is notified.",
+      "Two seconds after lock B is released."
+    ],
+    "correct": "After thread A is notified, or after two seconds."
+  },
+  {
+    "question": "Predict the output:\nclass Test {   \n    public static void main(String[] args) {   \n        String str = new String(\".....\");   \n        do {   \n            str = \"Hello Stop World\";   \n            System.out.println(str);   \n        } while(str != \"Strong\");   \n    }   \n}",
+    "options": [
+      "Hello Stop World",
+      "Strong",
+      ".....",
+      "Compilation fails"
+    ],
+    "correct": "Hello Stop World"
+  },
+  {
+    "question": "The code snippet below is an example of which of the following?\nLong myLong = 21L;",
+    "options": [
+      "Auto boxing",
+      "Auto unboxing",
+      "Auto casting",
+      "Auto instancing"
+    ],
+    "correct": "Auto boxing"
+  },
+  {
+    "question": "What is the result?\ninterface TestA { String toString(); }\npublic class Test {\n    public static void main(String[] args) {\n        System.out.println(new TestA() {\n            public String toString() {\n                return \"test\";\n            }\n        });\n    }\n}",
+    "options": [
+      "test",
+      "null",
+      "An exception is thrown at runtime",
+      "Compilation fails"
+    ],
+    "correct": "test"
+  },
+  {
+    "question": "Output of GenericTest Program:\npublic class Test {\n    public static void main(String[] args) {\n        GenericTest arr[] = new GenericTest[5]; \n        arr[0] = new GenericTest(\"Java\"); \n        arr[1] = new GenericTest(1);\n        for(GenericTest o : arr) {\n            System.out.println(o);\n        }\n    }\n}",
+    "options": [
+      "Prints object hashcodes and a final null",
+      "Java, 1, null, null, null",
+      "Compilation fails",
+      "Runtime Exception"
+    ],
+    "correct": "Prints object hashcodes and a final null"
+  },
+  {
+    "question": "Output of substring program:\npublic class Test {\n    public static void main(String[] args) {\n        String word = \"IDEAL\";\n        System.out.println(word.substring(0, word.length()-1) + word);\n    }\n}",
+    "options": [
+      "DEAL",
+      "IDEAIDEAL",
+      "IDEAL",
+      "IDEA"
+    ],
+    "correct": "DEAL"
+  },
+  {
+    "question": "How many threads are created from the main class by default?",
+    "options": [
+      "2 threads",
+      "Only 1 thread (main thread)",
+      "0 threads",
+      "Depends on the JVM"
+    ],
+    "correct": "Only 1 thread (main thread)"
+  },
+  {
+    "question": "What happens if you try to start the same thread two times (e.g., t1.start(); t1.start();)?",
+    "options": [
+      "The thread runs twice",
+      "The second call is ignored",
+      "Compilation fails",
+      "A runtime exception is thrown"
+    ],
+    "correct": "Compilation fails"
+  },
+  {
+    "question": "What is the output of the following code?\nclass Output { \n    public static void main(String args[]) { \n        Object obj = new Object(); \n        System.out.print(obj.getClass()); \n    } \n}",
+    "options": [
+      "Object",
+      "class Object",
+      "class java.lang.Object",
+      "java.lang.Object"
+    ],
+    "correct": "class java.lang.Object"
+  },
+  {
+    "question": "What is the output of the following code?\nclass A { \n    int i; \n    int j; \n    A() { \n        i = 1; \n        j = 2; \n    } \n} \nclass Output { \n    public static void main(String args[]) { \n        A obj1 = new A(); \n        System.out.println(obj1.toString()); \n    } \n}",
+    "options": [
+      "A",
+      "1 2",
+      "String associated with obj1, e.g., A@5e265ba4",
+      "Compilation fails"
+    ],
+    "correct": "String associated with obj1, e.g., A@5e265ba4"
+  },
+  {
+    "question": "What is the output of the divide method if an exception occurs?\npublic void divide(int a, int b) { \n    try { \n        int c = a / b; \n    } \n    catch(Exception e) { \n        System.out.println(\"Exception\"); \n    } \n    finally { \n        System.out.println(\"finally\"); \n    } \n}",
+    "options": [
+      "Only Exception is printed",
+      "Only finally is printed",
+      "Both Exception and finally are printed if exception occurs",
+      "Compilation fails"
+    ],
+    "correct": "Both Exception and finally are printed if exception occurs"
+  },
+  {
+    "question": "Insert the appropriate code to pass an anonymous inner class to fubar():\npublic int fubar(Foo foo) { return foo.bar(); }\nfubar( // insert code here );",
+    "options": [
+      "new Foo()",
+      "new Foo() { public int bar() { return 1; } }",
+      "new Foo(1)",
+      "Foo.bar()"
+    ],
+    "correct": "new Foo() { public int bar() { return 1; } }"
+  },
+  {
+    "question": "What is the output of the following code?\nclass Main { \n    String getValue(String word) { \n        System.out.println(word); \n        if (word.length() == 1) { \n            return \"\"; \n        } else { \n            return getValue(word.substring(0, word.length() - 1)) + word.charAt(word.length() - 1); \n        } \n    } \n    public static void main(String[] args) { \n        Main obj = new Main(); \n        System.out.println(obj.getValue(\"DEMOS\")); \n    } \n}",
+    "options": [
+      "D",
+      "DEMOS",
+      "EMOS",
+      "Empty String"
+    ],
+    "correct": "EMOS"
+  },
+  {
+    "question": "What sort of compilation error will you get for 'abstract abc(int a, int b) { }' and how do you fix it?",
+    "options": [
+      "Missing return type",
+      "Method cannot have a body",
+      "Syntax error",
+      "Give return type void. and remove empty parenthesis."
+    ],
+    "correct": "Give return type void. and remove empty parenthesis."
+  },
+  {
+    "question": "Will this code compile?\ninterface ATOB { String s = \"yo\"; public void meth(); }\ninterface BTOC { }\ninterface C extends ATOB, BTOC { \n    public void meth(); \n    public void meth(int x); \n}",
+    "options": [
+      "Yes, this code will compile without any error",
+      "No, compilation fails due to multiple inheritance",
+      "No, compilation fails because of variable s",
+      "No, compilation fails because of method overloading"
+    ],
+    "correct": "Yes, this code will compile without any error"
+  },
+  {
+    "question": "How can I inherit both the interface 'Data' and abstract class 'Info'?",
+    "options": [
+      "class Xyz extends Info implements Data { void load() { } }",
+      "class Xyz implements Data, Info { void load() { } }",
+      "class Xyz extends Info, Data { void load() { } }",
+      "Not possible in Java"
+    ],
+    "correct": "class Xyz extends Info implements Data { void load() { } }"
+  },
+  {
+    "question": "Will this code compile?\nclass ATOB { static public String str = \"abc\"; }\nclass BTOC extends ATOB { static public String str = \"bcr\"; }\nclass Main {\n    public static void main(String[] args) {\n        BTOC obj = new BTOC();\n        System.out.println(obj.str);\n    }\n}",
+    "options": [
+      "Yes, will compile fine and print \"abc\"",
+      "Yes. will compile fine, but str is being overwritten in B class.",
+      "No, compilation fails",
+      "Runtime exception"
+    ],
+    "correct": "Yes. will compile fine, but str is being overwritten in B class."
+  },
+  {
+    "question": "Which of these handles the exception when no catch is used?",
+    "options": [
+      "Default handler",
+      "Finally",
+      "Throw handler",
+      "Java run time system"
+    ],
+    "correct": "Default handler"
+  },
+  {
+    "question": "What is the output of the following code?\nclass Main {\n    static boolean foo(char c) {\n        System.out.print(c);\n        return true;\n    }\n    public static void main(String[] args) {\n        int i = 0;\n        for(foo('A'); foo('B') && (i < 2); foo('C')) {\n            i++;\n            foo('D');\n        }\n    }\n}",
+    "options": [
+      "ABCD",
+      "ABDCBDCB",
+      "ABABAB",
+      "ADBCC"
+    ],
+    "correct": "ABDCBDCB"
+  },
+  {
+    "question": "What is the output of the following code?\nimport java.util.*;\nclass Main {\n    public static void main(String[] args) {\n        TreeSet al = new TreeSet();\n        al.add(\"7\");\n        al.add(9);\n        Iterator itr = al.iterator();\n        while(itr.hasNext()) {\n            System.out.println(itr.next());\n        }\n    }\n}",
+    "options": [
+      "7 9",
+      "9 7",
+      "error: incompatible types: String cannot be converted to Integer (line 5)",
+      "Runtime Exception"
+    ],
+    "correct": "error: incompatible types: String cannot be converted to Integer (line 5)"
+  },
+  {
+    "question": "Which implementation of Set would you choose if you want the iterator of Set to give objects in the order they were inserted?",
+    "options": [
+      "LinkedHashSet",
+      "TreeSet",
+      "HashSet"
+    ],
+    "correct": "LinkedHashSet"
+  },
+  {
+    "question": "What is the output of the following code?\nimport java.util.*;\nclass TestHashMaps {\n    public static void main(String args[]) {\n        HashMap hm = new HashMap();\n        hm.put(100, \"John\");\n        hm.put(101, \"Paul\");\n        hm.put(102, \"George\");\n        hm.put(103, \"Ringo\");\n        for (Map.Entry m : hm.entrySet()) {\n            System.out.println(m.getKey() + \" \" + m.getValue());\n        }\n    }\n}",
+    "options": [
+      "100 John 101 Paul 102 George 103 Ringo",
+      "100 John 101 Paul 102 George",
+      "103 Ringo 102 George 101 Paul 100 John",
+      "Compilation error"
+    ],
+    "correct": "100 John 101 Paul 102 George 103 Ringo"
+  },
+  {
+    "question": "What is the output of the following code?\nimport java.util.*;\npublic class SortOf {\n    public static void main(String[] args) {\n        ArrayList a = new ArrayList();\n        a.add(1);\n        a.add(5);\n        a.add(3);\n        Collections.sort(a);\n        a.add(2);\n        Collections.reverse(a);\n        System.out.println(a);\n    }\n}",
+    "options": [
+      "[1, 2, 3, 5]",
+      "[2, 1, 3, 5]",
+      "[2, 5, 3, 1]",
+      "[5, 3, 2, 1]",
+      "[1, 3, 5, 2]",
+      "Compilation fails",
+      "An exception is thrown at runtime"
+    ],
+    "correct": "[2, 5, 3, 1]"
+  },
+  {
+    "question": "Which Man class properly represents the relationship \"Man has a best friend who is a Dog\"?",
+    "options": [
+      "class Man extends Dog { }",
+      "class Man implements Dog { }",
+      "class Man { private BestFriend dog; }",
+      "class Man { private Dog bestFriend; }",
+      "class Man { private Dog; }",
+      "class Man { private BestFriend; }"
+    ],
+    "correct": "class Man { private Dog bestFriend; }"
+  },
+  {
+    "question": "What is the output of the following code?\nclass Alpha { public void foo() { System.out.print(\"Afoo \"); } }\nclass Beta extends Alpha { public void foo() { System.out.print(\"Bfoo \"); } }\npublic class Main {\n    public static void main(String[] args) {\n        Alpha a = new Beta();\n        Beta b = (Beta)a;\n        a.foo();\n        b.foo();\n    }\n}",
+    "options": [
+      "Afoo Afoo",
+      "Afoo Bfoo",
+      "Bfoo Afoo",
+      "Bfoo Bfoo",
+      "Compilation fails"
+    ],
+    "correct": "Bfoo Bfoo"
+  },
+  {
+    "question": "Which code fragment inserted before 'String s = df.format(date);' allows the code to compile?",
+    "options": [
+      "df = new DateFormat();",
+      "df = Date.getFormat();",
+      "df = date.getFormat();",
+      "df = DateFormat.getFormat();",
+      "df = DateFormat.getInstance();"
+    ],
+    "correct": "df = DateFormat.getInstance();"
+  },
+  {
+    "question": "What is the output of the following code?\npublic class Base { \n    public static final String FOO = \"foo\"; \n    public static void main(String[] args) { \n        Base b = new Base(); \n        Sub s = new Sub(); \n        System.out.print(Base.FOO); \n        System.out.print(Sub.FOO); \n        System.out.print(b.FOO); \n        System.out.print(s.FOO); \n        System.out.print(((Base)s).FOO); \n    }  } \nclass Sub extends Base { \n    public static final String FOO = \"bar\"; \n}",
+    "options": [
+      "foofoofoofoofoo",
+      "foobarfoobarbar",
+      "foobarfoofoofoo",
+      "foobarfoobarfoo",
+      "barbarbarbarbar",
+      "foofoofoobarbar",
+      "foofoofoobarfoo"
+    ],
+    "correct": "foobarfoobarfoo"
+  },
+  {
+    "question": "A programmer discovers that it is necessary to make changes to each report to support new wireless printers because of the design of the application. Which two design concepts most likely explain this situation?",
+    "options": [
+      "Inheritance",
+      "Low cohesion",
+      "Tight coupling",
+      "High cohesion",
+      "Loose coupling",
+      "Object immutability"
+    ],
+    "correct": "Low cohesion, Tight coupling"
+  },
+  {
+    "question": "A team realizes they can reduce the number of methods in a new API without losing any functionality. Which two OO principles will they be promoting?",
+    "options": [
+      "Looser coupling",
+      "Tighter coupling",
+      "Lower cohesion",
+      "Higher cohesion",
+      "Weaker encapsulation",
+      "Stronger encapsulation"
+    ],
+    "correct": "Looser coupling"
+  },
+  {
+    "question": "The current design allows other classes to access methods in the utility class that should be accessible only to methods within the utility class itself. What design issue has been discovered?",
+    "options": [
+      "Tight coupling",
+      "Low cohesion",
+      "High cohesion",
+      "Loose coupling",
+      "Weak encapsulation",
+      "Strong encapsulation"
+    ],
+    "correct": "Weak encapsulation"
+  },
+  {
+    "question": "What is the output of the following code?\npublic class TestString1 { \n    public static void main(String[] args) { \n        String str = \"420\"; \n        str += 42; \n        System.out.print(str); \n    } \n}",
+    "options": [
+      "42",
+      "420",
+      "462",
+      "42042",
+      "Compilation fails",
+      "An exception is thrown at runtime"
+    ],
+    "correct": "42042"
+  },
+  {
+    "question": "Which three are valid on the line marked? \npublic interface Status { \n/* insert code here */ int MY_VALUE = 10; \n}",
+    "options": [
+      "final",
+      "static",
+      "native",
+      "public",
+      "private",
+      "abstract",
+      "protected"
+    ],
+    "correct": "final, static, public"
+  },
+  {
+    "question": "An algorithm requires a java.util.List that provides an efficient implementation of add(0, object), but does NOT need to support quick random access. What supports these requirements?",
+    "options": [
+      "java.util.Queue",
+      "java.util.ArrayList",
+      "java.util.LinearList",
+      "java.util.LinkedList"
+    ],
+    "correct": "java.util.LinkedList"
+  },
+  {
+    "question": "Which three are true based on the provided code?\ninterface Jumper { public void jump(); }\nclass Animal {}\nclass Dog extends Animal { Tail tail; }\nclass Beagle extends Dog implements Jumper { public void jump() {} }\nclass Cat implements Jumper { public void jump() {} }",
+    "options": [
+      "Cat is-a Animal",
+      "Cat is-a Jumper",
+      "Dog is-a Animal",
+      "Dog is-a Jumper",
+      "Cat has-a Animal",
+      "Beagle has-a Tail",
+      "Beagle is-a Jumper"
+    ],
+    "correct": "Cat is-a Jumper, Dog is-a Animal, Beagle has-a Tail"
+  },
+  {
+    "question": "Which class correctly uses the Data interface and Info abstract class?",
+    "options": [
+      "public class Employee extends Info implements Data { public void load() { /* do something */ } }",
+      "public class Employee implements Info extends Data { public void load() { /* do something */ } }",
+      "public class Employee extends Info implements Data { public void load() { /* do something */ } public void Info.load() { /* do something */ } }",
+      "public class Employee implements Info extends Data { public void Data.load() { /* do something */ } public void load() { /* do something */ } }",
+      "public class Employee implements Info extends Data { public void load() { /* do something */ } public void Info.load() { /* do something */ } }",
+      "public class Employee extends Info implements Data { public void Data.load() { /* do something */ } public void Info.load() { /* do something */ } }"
+    ],
+    "correct": "public class Employee extends Info implements Data { public void load() { /* do something */ } }"
+  },
+  {
+    "question": "What is the output of the following code?\nclass TestA { public void start() { System.out.println(\"TestA\"); } }\nclass TestB extends TestA { public void start() { System.out.println(\"TestB\"); } \npublic static void main(String[] args) { ((TestA)new TestB()).start(); } }",
+    "options": [
+      "TestA",
+      "TestB",
+      "Compilation fails",
+      "An exception is thrown at runtime"
+    ],
+    "correct": "TestB"
+  },
+  {
+    "question": "What is the output?\nimport java.io.*; \nclass files { \n    public static void main(String args[]) { \n        File obj = new File(\"/java/system\"); \n        System.out.print(obj.getName()); \n    } \n}",
+    "options": [
+      "java",
+      "system",
+      "java/system",
+      "/java/system"
+    ],
+    "correct": "system"
+  },
+  {
+    "question": "What is the output of obj.getAbsolutePath() if the file is made in the C drive?\nFile obj = new File(\"/java/system\");",
+    "options": [
+      "java",
+      "system",
+      "java/system",
+      "/java/system"
+    ],
+    "correct": "/java/system"
+  },
+  {
+    "question": "What is the output of the code if no command line arguments are provided (args.length is 0)?",
+    "options": [
+      "TypeA",
+      "TypeB",
+      "0TypeA"
+    ],
+    "correct": "TypeB"
+  }
+]

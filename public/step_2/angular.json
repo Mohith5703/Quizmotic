@@ -1,0 +1,172 @@
+[
+  {
+    "question": "Scope act as glue between controller and view.",
+    "options": [
+      "true",
+      "false"
+    ],
+    "correct": "true"
+  },
+  {
+    "question": "We can use $dirty and $invalid flags to do the form validations.",
+    "options": [
+      "true",
+      "false"
+    ],
+    "correct": "true"
+  },
+  {
+    "question": "AngularJS expressions behave in same way as ng-bind directives.",
+    "options": [
+      "false",
+      "true"
+    ],
+    "correct": "true"
+  },
+  {
+    "question": "AngularJS Expressions are written inside double braces like {{ expression}}.",
+    "options": [
+      "false",
+      "true"
+    ],
+    "correct": "true"
+  },
+  {
+    "question": "Which of the following is true about AngularJS expressions?",
+    "options": [
+      "Expressions are used to bind application data to html.",
+      "Expressions are written inside double braces like {{ expression}}.",
+      "Expressions behave in same way as ng-bind directives.",
+      "All of the above."
+    ],
+    "correct": "All of the above."
+  },
+  {
+    "question": "Model available in $rootScope can be overridden by its all child scopes.",
+    "options": [
+      "true",
+      "false"
+    ],
+    "correct": "true"
+  },
+  {
+    "question": "Which of the following is true about AngularJS?",
+    "options": [
+      "AngularJS is a framework to build large scale and high performance web appliation while keeping them as easy-to-maintain.",
+      "AngularJS provides developers options to write client side application (using JavaScript) in a clean MVC (Model View Controller) way.",
+      "AngularJS is a powerful JavaScript based development framework to create RICH Internet Application(RIA).",
+      "All of the above"
+    ],
+    "correct": "All of the above"
+  },
+  {
+    "question": "Are application written using AngularJS cross browser compliant?",
+    "options": [
+      "true",
+      "false"
+    ],
+    "correct": "true"
+  },
+  {
+    "question": "Using service method, we define a service and then assign method to it.",
+    "options": [
+      "true",
+      "false"
+    ],
+    "correct": "true"
+  },
+  {
+    "question": "AngularJS uses two way data binding.",
+    "options": [
+      "false",
+      "true"
+    ],
+    "correct": "true"
+  },
+  {
+    "question": "Templates can be a single file (like index.html) or multiple views in one page.",
+    "options": [
+      "true",
+      "false"
+    ],
+    "correct": "true"
+  },
+  {
+    "question": "Which of the following is true about AngularJS service?",
+    "options": [
+      "Services are JavaScript functions.",
+      "Services are responsible to do specific tasks only",
+      "Inbuilt services are always prefixed with $ symbol.",
+      "All of the above."
+    ],
+    "correct": "All of the above."
+  },
+  {
+    "question": "$rootScope is the parent of all of the scope variables.",
+    "options": [
+      "true",
+      "false"
+    ],
+    "correct": "true"
+  },
+  {
+    "question": "What happens when page containing AngularJS based Application loads.",
+    "options": [
+      "HTML document is loaded into the browser, and evaluated by the browser.",
+      "AngularJS JavaScript file is loaded; the angular global object is created.",
+      "JavaScript which registers controller functions is executed.",
+      "All of the above."
+    ],
+    "correct": "All of the above."
+  },
+  {
+    "question": "In controllers, model data is accessed via $scope object.",
+    "options": [
+      "true",
+      "false"
+    ],
+    "correct": "true"
+  },
+  {
+    "question": "AngularJS Expressions are used to bind application data to html.",
+    "options": [
+      "true",
+      "false"
+    ],
+    "correct": "true"
+  },
+  {
+    "question": "AngularJS expressions are written using.",
+    "options": [
+      "double braces like {{ expression}}",
+      "single braces like {expression}",
+      "small bracket like (expression)",
+      "capital bracket like [expression]"
+    ],
+    "correct": "double braces like {{ expression}}"
+  },
+  {
+    "question": "lowercase filter is applied to an expression using pipe character.",
+    "options": [
+      "false",
+      "true"
+    ],
+    "correct": "true"
+  },
+  {
+    "question": "AngularJS applications can run on all major browsers and smart phones including Android and iOS based phones/tablets.",
+    "options": [
+      "true",
+      "false"
+    ],
+    "correct": "true"
+  },
+  {
+    "question": "currency filter is applied to an expression using pipe character.",
+    "options": [
+      "true",
+      "false"
+    ],
+    "correct": "true"
+  }
+]

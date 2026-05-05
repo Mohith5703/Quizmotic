@@ -1,0 +1,692 @@
+[
+  {
+    "question": "We need to tell AngularJS what part of our HTML page contains the AngularJS app. You do so by adding the . . . . attribute to the root HTML element of the AngularJS app.",
+    "options": [
+      "ng-app",
+      "ag-app",
+      "js-app",
+      "aj-app"
+    ],
+    "correct": "ng-app"
+  },
+  {
+    "question": "AngularJS can show or hide HTML depending on the state of data in the model. You do so using a set of AngularJS directives such as . . . . . . which are created specifically for that purpose.",
+    "options": [
+      "ng-shown, ng-hidden",
+      "ng-show, ng-hide",
+      "nt-show, nt-hide",
+      "ng-shows, ng-hides"
+    ],
+    "correct": "ng-show, ng-hide"
+  },
+  {
+    "question": "EventEmitter class’s simple interface, which basically encompass two methods . . . . . . . . . can therefore be used to trigger custom events and listen to events as well, both synchronously or asynchronously.",
+    "options": [
+      "exit()",
+      "superscript()",
+      "subscribe()",
+      "emit()"
+    ],
+    "correct": "subscribe()"
+  },
+  {
+    "question": "The . . . . . . . . . directive substitutes the normal href property and makes it easier to work with route links in Angular 2. Moreover if we want to navigate between routes, we use the . . . . . . . . . . . directive.",
+    "options": [
+      "RouterLinks",
+      "RouterLinking",
+      "RouterLink",
+      "RouterLinq"
+    ],
+    "correct": "RouterLink"
+  },
+  {
+    "question": "Three main components of Routing are . . . . . . . . . . .",
+    "options": [
+      "RouteObject",
+      "RouterOutlet",
+      "RouterState",
+      "RouterLink"
+    ],
+    "correct": "RouteObject, RouterOutlet, RouterLink"
+  },
+  {
+    "question": "Route . . . . . . . . . . allow us to pass values in our url to our component so we can dynamically change our view content.",
+    "options": [
+      "pipes",
+      "modules",
+      "variables",
+      "parameters"
+    ],
+    "correct": "parameters"
+  },
+  {
+    "question": "To use observables, Angular uses a third-party library called . . . . . . .",
+    "options": [
+      "ng2-bootstrap",
+      "angular-cli",
+      "numeral",
+      "Reactive Extensions (RxJS)"
+    ],
+    "correct": "Reactive Extensions (RxJS)"
+  },
+  {
+    "question": "Observables help you manage . . . . . . . . data.",
+    "options": [
+      "synchronous",
+      "asynchronous",
+      "Both asynchronous & synchronous",
+      "None of above"
+    ],
+    "correct": "asynchronous"
+  },
+  {
+    "question": "We subscribe to the observable ourselves using the actual . . . . . . method. The downside is that you have to manage the subscription yourself.",
+    "options": [
+      "subscribe()",
+      "subs()",
+      "subscribed()",
+      "None of above"
+    ],
+    "correct": "subscribe()"
+  },
+  {
+    "question": "A promise represents the final result of an . . . . . . . operation.",
+    "options": [
+      "asynchronous",
+      "synchronous"
+    ],
+    "correct": "asynchronous"
+  },
+  {
+    "question": "The promise becomes . . . . . . after resolving or rejecting.",
+    "options": [
+      "mutable",
+      "ignored",
+      "immutable",
+      "recurring"
+    ],
+    "correct": "immutable"
+  },
+  {
+    "question": "Which of the following is not built-in pipe in Angular",
+    "options": [
+      "DatePipe",
+      "CurrencyPipe",
+      "DataPipe",
+      "PercentPipe"
+    ],
+    "correct": "DataPipe"
+  },
+  {
+    "question": "If you chain multiple pipes together, they are executed . . . . .",
+    "options": [
+      "in parallel",
+      "LIFO order",
+      "in the order in which you specify them",
+      "none of above"
+    ],
+    "correct": "in the order in which you specify them"
+  },
+  {
+    "question": "The . . . . . . . filter waits for a promise and returns the most recent value received. It then updates the view.",
+    "options": [
+      "sync",
+      "async",
+      "promise",
+      "custom"
+    ],
+    "correct": "async"
+  },
+  {
+    "question": "The . . . . . decorator allows us to define the pipe name that is globally available for use in any template in the across application.",
+    "options": [
+      "@pipeName",
+      "@pipeDeco",
+      "$Pipe",
+      "@Pipe"
+    ],
+    "correct": "@Pipe"
+  },
+  {
+    "question": "Data bindings are applied as . . . . . . . . or as special sequences of characters in strings.",
+    "options": [
+      "expressions",
+      "attributes on HTML elements",
+      "elements itself",
+      "none of above"
+    ],
+    "correct": "attributes on HTML elements"
+  },
+  {
+    "question": "A data binding has these four parts:",
+    "options": [
+      "host element, curly brackets, target, expression",
+      "host element, square brackets, target, evaluation",
+      "host element, square brackets, target, expression",
+      "host element, parentheses, target, expression"
+    ],
+    "correct": "host element, square brackets, target, expression"
+  },
+  {
+    "question": "Attribute binding is similar to property binding but is tied to the . . . . . . . . rather than the DOM property.",
+    "options": [
+      "Page attribute",
+      "DOM attribute",
+      "Root attribute",
+      "HTML attribute"
+    ],
+    "correct": "HTML attribute"
+  },
+  {
+    "question": "To make your applications ready for animations, you must include the AngularJS Animate library and then you must refer to the . . . . . module in your application.",
+    "options": [
+      "ng-repeat",
+      "ngAnimation",
+      "ngAnimate",
+      "None of above"
+    ],
+    "correct": "ngAnimate"
+  },
+  {
+    "question": "Using the . . . . . . animation function, the parent animation can allow the child animation to run at the exact correct time.",
+    "options": [
+      "animateChild",
+      "childAnimate",
+      "animateInner",
+      "innerChild"
+    ],
+    "correct": "animateChild"
+  },
+  {
+    "question": "Animations are fired using animation property bindings which are prefixed with an . . . . symbol.",
+    "options": [
+      "&",
+      "#",
+      "$",
+      "@"
+    ],
+    "correct": "@"
+  },
+  {
+    "question": ". . . . . . . is an animation-specific function that is designed to be used inside of Angular's animation DSL language. It is used to kick off a reusable animation that is created using animation().",
+    "options": [
+      "useAnimation",
+      "reuseAnimation",
+      "in-useAnimation",
+      "All of above"
+    ],
+    "correct": "useAnimation"
+  },
+  {
+    "question": "It's always possible to make use of animation input parameters by setting even more data via the . . . . . property.",
+    "options": [
+      "options.param",
+      "option.params",
+      "option.param",
+      "options.params"
+    ],
+    "correct": "options.params"
+  },
+  {
+    "question": "Which of the following bootstrap styles are used to create a vertical pills navigation?",
+    "options": [
+      ".nav, .nav-tabs",
+      ".nav, .nav-pills",
+      ".nav, .nav-pills, .nav-stacked",
+      ".nav, .nav-tabs, .nav-justified"
+    ],
+    "correct": ".nav, .nav-pills, .nav-stacked"
+  },
+  {
+    "question": "Which of the following bootstrap styles are used to create a justified tabs navigation?",
+    "options": [
+      ".nav, .nav-tabs",
+      ".nav, .nav-pills",
+      ".nav, .nav-pills, .nav-stacked",
+      ".nav, .nav-tabs, .nav-justified"
+    ],
+    "correct": ".nav, .nav-tabs, .nav-justified"
+  },
+  {
+    "question": "Which class indicates a dropdown menu?",
+    "options": [
+      ".dropdown-list",
+      ".select",
+      ".dropdown"
+    ],
+    "correct": ".dropdown"
+  },
+  {
+    "question": "Bootstrap’s grid system allows up to",
+    "options": [
+      "6 columns across the page",
+      "12 columns across the page",
+      "8 columns across the page",
+      "10 columns across the page"
+    ],
+    "correct": "12 columns across the page"
+  },
+  {
+    "question": "Which of the following class makes round corner image for automatically adjust to fit the size of the screen?",
+    "options": [
+      ".img-res-image",
+      ".img-responsive-image",
+      ".img-responsive",
+      ".img-res"
+    ],
+    "correct": ".img-responsive"
+  },
+  {
+    "question": "Which class should be used to indicate a button group?",
+    "options": [
+      "btn-group-buttons",
+      "btn-group",
+      "btn-grp",
+      "btn-buttons"
+    ],
+    "correct": "btn-group"
+  },
+  {
+    "question": "On the opposite side of event bindings (()) lie Angular's square-bracket syntax ([]) which signify a . . . . . .",
+    "options": [
+      "property binding",
+      "class binding",
+      "style binding",
+      "both A & B"
+    ],
+    "correct": "property binding"
+  },
+  {
+    "question": "Which object oriented terms are supported by Typescript?",
+    "options": [
+      "Modules",
+      "Classes",
+      "Interfaces",
+      "All of these"
+    ],
+    "correct": "All of these"
+  },
+  {
+    "question": "What are the types of access modifiers supported by TypeScript?",
+    "options": [
+      "Public",
+      "Private",
+      "Protected",
+      "All of these"
+    ],
+    "correct": "All of these"
+  },
+  {
+    "question": "Which of the following code will not throw an error?",
+    "options": [
+      "JSON.parse(”);",
+      "JSON.parse(null);",
+      "JSON.parse();",
+      "JSON.parse({});"
+    ],
+    "correct": "JSON.parse(null);"
+  },
+  {
+    "question": "What does JSONP stand for?",
+    "options": [
+      "JSON Procedures",
+      "JSON Parsing",
+      "JSON with padding",
+      "JSON Programming"
+    ],
+    "correct": "JSON with padding"
+  },
+  {
+    "question": "What is the value of json in the following code?\nvar obj = { fruit: ‘apple’, toJSON: function () { return ‘orange’; } }; var json = JSON.stringify({x: obj});",
+    "options": [
+      "{“x”:”orange”}",
+      "{“fruit”:”apple”}",
+      "{“x”:”apple”}",
+      "{“fruit”:”orange”}"
+    ],
+    "correct": "{“x”:”orange”}"
+  },
+  {
+    "question": "What is the MIME type of JSON?",
+    "options": [
+      "application/x-json",
+      "text/json",
+      "application/json",
+      "application/javascript"
+    ],
+    "correct": "application/json"
+  },
+  {
+    "question": "What function will convert a JavaScript object to a JSON string?",
+    "options": [
+      "JSON.text()",
+      "JSON.serialize()",
+      "JSON.toString()",
+      "JSON.stringify()"
+    ],
+    "correct": "JSON.stringify()"
+  },
+  {
+    "question": "In the below notation, Student is of type { “Student”: [ “Amy”, “Bob”, “John” ] }",
+    "options": [
+      "Not a valid JSON string",
+      "Array",
+      "Class",
+      "Object"
+    ],
+    "correct": "Array"
+  },
+  {
+    "question": "To use observables, Angular uses a third-party library called . . . . . . .",
+    "options": [
+      "ng2-bootstrap",
+      "angular-cli",
+      "numeral",
+      "Reactive Extensions (RxJS)"
+    ],
+    "correct": "Reactive Extensions (RxJS)"
+  },
+  {
+    "question": "We subscribe to the observable ourselves using the actual . . . . . . method. The downside is that you have to manage the subscription yourself.",
+    "options": [
+      "subscribe()",
+      "subs()",
+      "subscribed()",
+      "None of above"
+    ],
+    "correct": "subscribe()"
+  },
+  {
+    "question": "Which of the following is not built-in pipe in Angular",
+    "options": [
+      "DatePipe",
+      "CurrencyPipe",
+      "DataPipe",
+      "PercentPipe"
+    ],
+    "correct": "DataPipe"
+  },
+  {
+    "question": "The . . . . . . . filter waits for a promise and returns the most recent value received. It then updates the view.",
+    "options": [
+      "sync",
+      "async",
+      "promise",
+      "custom"
+    ],
+    "correct": "async"
+  },
+  {
+    "question": "If you chain multiple pipes together, they are executed . . . . .",
+    "options": [
+      "in parallel",
+      "LIFO order",
+      "in the order in which you specify them",
+      "none of above"
+    ],
+    "correct": "in the order in which you specify them"
+  },
+  {
+    "question": "Observables help you manage . . . . . . . . data.",
+    "options": [
+      "synchronous",
+      "asynchronous",
+      "Both asynchronous & synchronous",
+      "None of above"
+    ],
+    "correct": "asynchronous"
+  },
+  {
+    "question": "The . . . . . decorator allows us to define the pipe name that is globally available for use in any template in the across application.",
+    "options": [
+      "pipeName",
+      "pipeDeco",
+      "Pipe",
+      "None"
+    ],
+    "correct": "Pipe"
+  },
+  {
+    "question": "Three main components of Routing are . . . . . . . . . . .",
+    "options": [
+      "RouteObject",
+      "RouterOutlet",
+      "RouterState",
+      "RouterLink"
+    ],
+    "correct": "RouteObject, RouterOutlet, RouterLink"
+  },
+  {
+    "question": "Route . . . . . . . . . . allow us to pass values in our url to our component so we can dynamically change our view content.",
+    "options": [
+      "pipes",
+      "modules",
+      "variables",
+      "parameters"
+    ],
+    "correct": "parameters"
+  },
+  {
+    "question": "Promises are more advanced than Observables.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": "False"
+  },
+  {
+    "question": "Which class is used to create a black navigation bar?",
+    "options": [
+      ".navbar-default",
+      ".navbar-black",
+      ".navbar-dark",
+      ".navbar-inverse"
+    ],
+    "correct": ".navbar-inverse"
+  },
+  {
+    "question": "The .container-fluid class provides",
+    "options": [
+      "Fixed width container",
+      "Table format",
+      "To create a Form",
+      "Full width container"
+    ],
+    "correct": "Full width container"
+  },
+  {
+    "question": "Typescript uses which datatype?",
+    "options": [
+      "boolean",
+      "string",
+      "Number",
+      "void",
+      "All the above"
+    ],
+    "correct": "All the above"
+  },
+  {
+    "question": "What keywords are reserved in JSON and cannot be used as keys?",
+    "options": [
+      "Value",
+      "Object",
+      "There are none.",
+      "Key"
+    ],
+    "correct": "There are none."
+  },
+  {
+    "question": "How to get information about browser?",
+    "options": [
+      "Browser",
+      "version",
+      "navigator"
+    ],
+    "correct": "navigator"
+  },
+  {
+    "question": "Which of the following are valid values for the CSS display property?",
+    "options": [
+      "None",
+      "inline",
+      "inline-block",
+      "block",
+      "All of the above"
+    ],
+    "correct": "All of the above"
+  },
+  {
+    "question": "----- is an HTML specification used to add more information to HTML tags.",
+    "options": [
+      "Macrodata",
+      "Microdata",
+      "Minidata",
+      "Modifydata"
+    ],
+    "correct": "Microdata"
+  },
+  {
+    "question": "What is the purpose of the mimeTypes property of a plug-in entry?",
+    "options": [
+      "Contains MIME properties",
+      "Contains MIME sizes",
+      "Contains MIME types",
+      "Contains MIME methods"
+    ],
+    "correct": "Contains MIME types"
+  },
+  {
+    "question": "Which of the following can be implemented using animation?",
+    "options": [
+      "Fireworks",
+      "fade Effect",
+      "Roll-in or Roll-out",
+      "All of the mentioned"
+    ],
+    "correct": "All of the mentioned"
+  },
+  {
+    "question": "Which is the property that represents the content displayed in the window?",
+    "options": [
+      "document",
+      "content",
+      "window",
+      "frame"
+    ],
+    "correct": "document"
+  },
+  {
+    "question": "How can we make methods available on all objects?",
+    "options": [
+      "Object.add(methods)",
+      "Object.methods(add)",
+      "Object.add.methods(...)",
+      "Object.prototype"
+    ],
+    "correct": "Object.prototype"
+  },
+  {
+    "question": "The four kinds of class members are______",
+    "options": [
+      "Instance methods, Instance fields, Static method, Dynamic method",
+      "Instance fields, Instance methods, Class fields, class methods",
+      "Instance fields, non-Instance fields, Dynamic methods, Global methods",
+      "Global methods, Local methods, Dynamic methods, Static methods"
+    ],
+    "correct": "Instance fields, Instance methods, Class fields, class methods"
+  },
+  {
+    "question": "How to declare a variable in Typescript?",
+    "options": [
+      "Var",
+      "Let",
+      "Both"
+    ],
+    "correct": "Both"
+  },
+  {
+    "question": "Typescript uses which datatype?",
+    "options": [
+      "String",
+      "Number",
+      "Boolean",
+      "All above option"
+    ],
+    "correct": "All above option"
+  },
+  {
+    "question": "Default access modifier in TypeScript?",
+    "options": [
+      "public",
+      "private",
+      "protected"
+    ],
+    "correct": "public"
+  },
+  {
+    "question": "Which field is required in form validation?",
+    "options": [
+      "required",
+      "minlength",
+      "Both"
+    ],
+    "correct": "required"
+  },
+  {
+    "question": "How to implement inheritance in TypeScript?",
+    "options": [
+      "implements",
+      "extends"
+    ],
+    "correct": "extends"
+  },
+  {
+    "question": "Which keyword we can't use in JSON?",
+    "options": [
+      "Object",
+      "key",
+      "value",
+      "None"
+    ],
+    "correct": "None"
+  },
+  {
+    "question": "How can we add/delete in an array and return the removed item?",
+    "options": [
+      "slice",
+      "shift",
+      "reverse",
+      "splice"
+    ],
+    "correct": "splice"
+  },
+  {
+    "question": "How to get information about the browser?",
+    "options": [
+      "Browser",
+      "Version",
+      "navigator"
+    ],
+    "correct": "navigator"
+  },
+  {
+    "question": "Which of the following are valid values for the display property?",
+    "options": [
+      "None",
+      "inline",
+      "inline-block",
+      "block",
+      "All of the above"
+    ],
+    "correct": "All of the above"
+  },
+  {
+    "question": "Typescript is co...........",
+    "options": [
+      "It supports overloading",
+      "partial",
+      "No"
+    ],
+    "correct": "It supports overloading"
+  }
+]

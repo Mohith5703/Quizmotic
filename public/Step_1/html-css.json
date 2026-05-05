@@ -1,0 +1,142 @@
+[
+    {
+        "question": "Whenever you are assigning two classes to a tag, you must separate them with a",
+        "options": [
+            "Space",
+            "Comma",
+            "Dash"
+        ],
+        "correct": "Space"
+    },
+    {
+        "question": "____________ contains the navigation menu, or other navigation functionality for the page",
+        "options": [
+            "section",
+            "header",
+            "nav",
+            "aside"
+        ],
+        "correct": "nav"
+    },
+    {
+        "question": "The main purpose of the placeholder attribute in input controls is:",
+        "options": [
+            "Allow the end-user to remember the location in form",
+            "There is no such attribute known as \"placeholder\"",
+            "Allow the end-user to replace the data control with another",
+            "Display \"watermark\" data to assist the end-user"
+        ],
+        "correct": "Display \"watermark\" data to assist the end-user"
+    },
+    {
+        "question": "Which of the following values are accepted by the float Property?",
+        "options": [
+            "left",
+            "right",
+            "none",
+            "all of the above"
+        ],
+        "correct": "all of the above"
+    },
+    {
+        "question": "Which of the following CSS Property controls how an element is positioned?",
+        "options": [
+            "position",
+            "set",
+            "static",
+            "fix"
+        ],
+        "correct": "position"
+    },
+    {
+        "question": "If You are designing a column to occupy 3 of the 12 columns in your desktop design, what is the width in CSS?",
+        "options": [
+            "Width:25%",
+            "Width:33.3333%",
+            "Width:21%"
+        ],
+        "correct": "Width:25%"
+    },
+    {
+        "question": "In what direction does float will work? img { float: right; }",
+        "options": [
+            "left",
+            "top",
+            "bottom",
+            "right"
+        ],
+        "correct": "right"
+    },
+    {
+        "question": "Which of the following CSS Property sets the stacking order of positioned elements?",
+        "options": [
+            "x-index",
+            "y-index",
+            "z-index"
+        ],
+        "correct": "z-index"
+    },
+    {
+        "question": "You indicate a class selector with",
+        "options": [
+            "the hash (#) symbol",
+            "the dot (.)",
+            "the tag"
+        ],
+        "correct": "the dot (.)"
+    },
+    {
+        "question": "Which of the following media queries would apply to a tablet reporting a screen width of 768px?",
+        "options": [
+            "@media only screen and (min-width: 1140px){}",
+            "@media only screen and (min-width: 641px){}",
+            "@media only screen and (max-width: 1140px){}"
+        ],
+        "correct": "@media only screen and (min-width: 641px){}"
+    },
+    {
+        "question": "To get the first or nth child you use",
+        "options": [
+            "the nested selector",
+            "A pseudo-class"
+        ],
+        "correct": "A pseudo-class"
+    },
+    {
+        "question": "Which of the following rules allows users to import style rules from other style sheets?",
+        "options": [
+            "@media",
+            "@important",
+            "@import",
+            "@style"
+        ],
+        "correct": "@import"
+    },
+    {
+        "question": "I have a <p> which is the child of a <div> which is the child of a <section>, does the style in the section affect the p tag?",
+        "options": [
+            "Yes, inheritance accumulates",
+            "No, only the immediate parent's style is inherited"
+        ],
+        "correct": "Yes, inheritance accumulates"
+    },
+    {
+        "question": "Which HTML tag allows styling from an external .css file?",
+        "options": [
+            "link",
+            "css",
+            "style"
+        ],
+        "correct": "link"
+    },
+    {
+        "question": "Which of the following properties sets the distance between an element’s right border and the rightmost edge of its content?",
+        "options": [
+            "auto",
+            "padding-left",
+            "padding-right",
+            "Padding-top"
+        ],
+        "correct": "padding-right"
+    }
+]

@@ -1,0 +1,102 @@
+[
+    {
+        "question": "In MongoDB, what is the equivalent of SQL term row?",
+        "options": [
+            "Primary Key",
+            "Index",
+            "Field",
+            "Document"
+        ],
+        "correct": "Document"
+    },
+    {
+        "question": "What is the equivalent of the following SQL command in MongoDB?\nUPDATE user\nSET email = ‘NA’\nWHERE age < 18",
+        "options": [
+            "db.user.updateMany({ gt: { $age= 18 } },{ $set: {email = \"NA\" } })",
+            "db.user.updateMany({ age: { $lt: 18 } },{ $set: {email : \"NA\" } })",
+            "db.user.updateMany({ gt: { $age: 18 } },{ $set: {email : \"NA\" } })",
+            "db.user.updateMany({ age: { $gt: 18 } },{ $set: {email : \"NA\" } })"
+        ],
+        "correct": "db.user.updateMany({ age: { $lt: 18 } },{ $set: {email : \"NA\" } })"
+    },
+    {
+        "question": "How would you limit the results of a find to 10 items?",
+        "options": [
+            "adb.collection.find({},{limit:10})",
+            "db.collection.find().limit(10)",
+            "db.collection.limit(query, 10)",
+            "This is not possible in the node.js driver"
+        ],
+        "correct": "db.collection.find().limit(10)"
+    },
+    {
+        "question": "Which of the following code will give an error on the MongoDB command shell?",
+        "options": [
+            "use databasename",
+            "show dbs",
+            "USE databasename",
+            "Db"
+        ],
+        "correct": "USE databasename"
+    },
+    {
+        "question": "What theorem or principal MongoDB follows?",
+        "options": [
+            "APAC",
+            "Always-Sync",
+            "ASCII",
+            "CAP"
+        ],
+        "correct": "CAP"
+    },
+    {
+        "question": "What is NoSQL?",
+        "options": [
+            "No Object SQL",
+            "No SQL Server",
+            "Not Only SQL",
+            "No Relational Database"
+        ],
+        "correct": "Not Only SQL"
+    },
+    {
+        "question": "When there is no match of the document in the collection what do upsert: true do?",
+        "options": [
+            "Delete",
+            "Nothing",
+            "Insert",
+            "Update"
+        ],
+        "correct": "Insert"
+    },
+    {
+        "question": "Upon running the following command, what all the fields will be returned in the output?\ndb.collection.find( { qty: { $gt: 6 } }, { name: 1, _id: 0 } )",
+        "options": [
+            "_id",
+            "name",
+            "_id, name",
+            "name1, _id0"
+        ],
+        "correct": "name"
+    },
+    {
+        "question": "What method is used to remove a single item from a MongoDB collection?",
+        "options": [
+            "db.collection.deleteOne()",
+            "db.collection.delete()",
+            "db.collection.removeOne()",
+            "db.collection.remove()"
+        ],
+        "correct": "db.collection.deleteOne()"
+    },
+    {
+        "question": "In the following command, what does the second parameter represent?\ndb.collection.find( { qty: { $gt: 6 } }, { name: 1, wins: 1 } )",
+        "options": [
+            "Read Concern",
+            "Projection",
+            "Write Concern",
+            "Query"
+        ],
+        "correct": "Projection"
+    }
+]

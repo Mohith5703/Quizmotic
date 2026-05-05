@@ -1,0 +1,245 @@
+[
+  {
+    "question": "How do you automatically generate fields in a TypeScript class?",
+    "options": [
+      "Add the public keyword to a constructor parameter",
+      "None of these",
+      "Use the auto keyword",
+      "TypeScript doesn't support automatically generated fields"
+    ],
+    "correct": "Add the public keyword to a constructor parameter"
+  },
+  {
+    "question": "To change the datatype from one type to another, we require",
+    "options": [
+      "TypeOperator",
+      "TypeAssertion",
+      "InferredTyping"
+    ],
+    "correct": "TypeAssertion"
+  },
+  {
+    "question": "For a variable, Without Specifying any data type is",
+    "options": [
+      "InferredTyping",
+      "TypeOperator",
+      "TypeAssertion"
+    ],
+    "correct": "InferredTyping"
+  },
+  {
+    "question": "Which of the following is valid command to compile typescript file?",
+    "options": [
+      "ts abc.ts",
+      "t abc.ts",
+      "tsc abc.ts",
+      "tst abc.ts"
+    ],
+    "correct": "tsc abc.ts"
+  },
+  {
+    "question": "What will be output of: var a:string=47; console.log(\"Value of a=\"+a);",
+    "options": [
+      "Value of a=47",
+      "Value of a=0",
+      "Value of a=",
+      "None of the above"
+    ],
+    "correct": "None of the above"
+  },
+  {
+    "question": "Internal Modules are known as namespaces in Typescript.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": "True"
+  },
+  {
+    "question": "function fun1(...params) { console.log(params.length); } fun1(); fun1(5); fun1(5, 6, 7); Which concept resemble the above program",
+    "options": [
+      "String Interpolation",
+      "Tagged Templates",
+      "Spread Operator/Rest Parameters",
+      "Object Destructuring"
+    ],
+    "correct": "Spread Operator/Rest Parameters"
+  },
+  {
+    "question": "What is async/await?",
+    "options": [
+      "New syntax to write JavaScript promises",
+      "New syntax to consume JavaScript promises",
+      "New syntax to consume asynchronous callbacks"
+    ],
+    "correct": "New syntax to consume JavaScript promises"
+  },
+  {
+    "question": "Which of the following is an attribute css selector?",
+    "options": [
+      "[selector]",
+      ".selector",
+      "#selector"
+    ],
+    "correct": "[selector]"
+  },
+  {
+    "question": "When is it recommended to pass this.setState a function instead of an object?",
+    "options": [
+      "When the new state should completely replace the old state.",
+      "When the new state does not depend on the old state.",
+      "When the new state depends on the old state."
+    ],
+    "correct": "When the new state depends on the old state."
+  },
+  {
+    "question": "Where should you sort and filter data?",
+    "options": [
+      "In a directive",
+      "In a pipe",
+      "In your component",
+      "In a filter"
+    ],
+    "correct": "In your component"
+  },
+  {
+    "question": "When bootstrapping an Angular app, how do you specify the main, top-level app component to be used?",
+    "options": [
+      "You add the component as a package in your SystemJs config.",
+      "You load the component directly in your index.html file.",
+      "You add the component to the bootstrap array in your main app module.",
+      "You load the component directly from your main SystemJs package (e.g. main.ts)."
+    ],
+    "correct": "You add the component to the bootstrap array in your main app module."
+  },
+  {
+    "question": "What syntax do you use to render the App component into an HTML element with id \"root\"?",
+    "options": [
+      "ReactDOM.render(App, document.getElementById(\"root\"));",
+      "React.render(App, document.getElementById(\"root\"));",
+      "ReactDOM.mountNode(<App />, document.getElementById(\"root\"));",
+      "ReactDOM.render(<App />, document.getElementById(\"root\"));"
+    ],
+    "correct": "ReactDOM.render(<App />, document.getElementById(\"root\"));"
+  },
+  {
+    "question": "What is the name of the file that manages TypeScript projects?",
+    "options": [
+      "tsproj.config",
+      "tsmeta.json",
+      "tsconfig.json",
+      "package.json"
+    ],
+    "correct": "tsconfig.json"
+  },
+  {
+    "question": "How would you define a string type variable with the value bar in TypeScript?",
+    "options": [
+      "let string: foo = 'bar';",
+      "let foo:string = 'bar';",
+      "let string foo = 'bar';",
+      "let foo (string) = 'bar';"
+    ],
+    "correct": "let foo:string = 'bar';"
+  },
+  {
+    "question": "What theorem or principal MongoDB follows?",
+    "options": [
+      "APAC",
+      "Always-Sync",
+      "ASCII",
+      "CAP"
+    ],
+    "correct": "CAP"
+  },
+  {
+    "question": "Upon running the following command, what all the fields will be returned in the output?\ndb.collection.find( { qty: { $gt: 6 } }, { name: 1, _id: 0 } )",
+    "options": [
+      "_id",
+      "name",
+      "_id, name",
+      "name1, _id0"
+    ],
+    "correct": "name"
+  },
+  {
+    "question": "In the following command, what does the second parameter represent?\ndb.collection.find( { qty: { $gt: 6 } }, { name: 1, wins: 1 } )",
+    "options": [
+      "Read Concern",
+      "Projection",
+      "Write Concern",
+      "Query"
+    ],
+    "correct": "Projection"
+  },
+  {
+    "question": "EventEmitter class’s simple interface, which basically encompass two methods . . . . . . . . . can therefore be used to trigger custom events and listen to events as well, both synchronously or asynchronously.",
+    "options": [
+      "exit()",
+      "superscript()",
+      "subscribe()",
+      "emit()"
+    ],
+    "correct": "subscribe()"
+  },
+  {
+    "question": "Three main components of Routing are . . . . . . . . . . .",
+    "options": [
+      "RouteObject",
+      "RouterOutlet",
+      "RouterState",
+      "RouterLink"
+    ],
+    "correct": "RouteObject, RouterOutlet, RouterLink"
+  },
+  {
+    "question": "To use observables, Angular uses a third-party library called . . . . . . .",
+    "options": [
+      "ng2-bootstrap",
+      "angular-cli",
+      "numeral",
+      "Reactive Extensions (RxJS)"
+    ],
+    "correct": "Reactive Extensions (RxJS)"
+  },
+  {
+    "question": "Observables help you manage . . . . . . . . data.",
+    "options": [
+      "synchronous",
+      "asynchronous",
+      "Both asynchronous & synchronous",
+      "None of above"
+    ],
+    "correct": "asynchronous"
+  },
+  {
+    "question": "The promise becomes . . . . . . after resolving or rejecting.",
+    "options": [
+      "mutable",
+      "ignored",
+      "immutable",
+      "recurring"
+    ],
+    "correct": "immutable"
+  },
+  {
+    "question": "Which of the following is not built-in pipe in Angular",
+    "options": [
+      "DatePipe",
+      "CurrencyPipe",
+      "DataPipe",
+      "PercentPipe"
+    ],
+    "correct": "DataPipe"
+  },
+  {
+    "question": "If you chain multiple pipes together, they are executed . . . . .",
+    "options": [
+      "in parallel",
+      "LIFO order",
+      "in the order in which you specify them",
+      "none of above"
+    ],
+    "correct": "in the order in which you specify them"
+  }
+]

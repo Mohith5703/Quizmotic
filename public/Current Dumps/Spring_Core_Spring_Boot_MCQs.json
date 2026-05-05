@@ -1,0 +1,1012 @@
+[
+    {
+        "question": "What is the Spring IoC (Inversion of Control) container responsible for?",
+        "options": [
+            "Managing HTTP requests and responses",
+            "Creating, configuring, and managing the lifecycle of beans and their dependencies",
+            "Handling database transactions automatically",
+            "Compiling Java source files at runtime"
+        ],
+        "correct": "Creating, configuring, and managing the lifecycle of beans and their dependencies"
+    },
+    {
+        "question": "What is Dependency Injection in the context of Spring Framework?",
+        "options": [
+            "A design pattern where objects create their own dependencies internally",
+            "A technique where the Spring container injects the required dependencies into a bean rather than the bean creating them",
+            "A way to inject SQL queries into Spring beans",
+            "A method to inject JavaScript into Spring MVC views"
+        ],
+        "correct": "A technique where the Spring container injects the required dependencies into a bean rather than the bean creating them"
+    },
+    {
+        "question": "Which Spring XML configuration correctly performs setter injection for a 'name' property?",
+        "options": [
+            "<bean id='emp' class='Employee'><constructor-arg value='John'/></bean>",
+            "<bean id='emp' class='Employee'><property name='name' value='John'/></bean>",
+            "<bean id='emp' class='Employee'><inject name='name' value='John'/></bean>",
+            "<bean id='emp' class='Employee'><set name='name' value='John'/></bean>"
+        ],
+        "correct": "<bean id='emp' class='Employee'><property name='name' value='John'/></bean>"
+    },
+    {
+        "question": "What is the difference between setter injection and constructor injection in Spring?",
+        "options": [
+            "Setter injection is mandatory; constructor injection is optional",
+            "Constructor injection injects dependencies via the constructor at object creation time; setter injection injects via setter methods after construction",
+            "Setter injection is only for primitive types; constructor injection is for objects",
+            "They are identical internally; the choice is purely stylistic with no functional difference"
+        ],
+        "correct": "Constructor injection injects dependencies via the constructor at object creation time; setter injection injects via setter methods after construction"
+    },
+    {
+        "question": "Which two Spring bean lifecycle callback methods are called after a bean is initialized and before it is destroyed?",
+        "options": [
+            "onStart() and onStop()",
+            "init-method and destroy-method (or @PostConstruct and @PreDestroy)",
+            "afterInit() and beforeDestroy()",
+            "setup() and teardown()"
+        ],
+        "correct": "init-method and destroy-method (or @PostConstruct and @PreDestroy)"
+    },
+    {
+        "question": "What is the default bean scope in Spring?",
+        "options": [
+            "prototype",
+            "request",
+            "singleton",
+            "session"
+        ],
+        "correct": "singleton"
+    },
+    {
+        "question": "What is the difference between 'singleton' and 'prototype' bean scopes in Spring?",
+        "options": [
+            "Singleton creates one instance per class; prototype creates one instance per method call",
+            "Singleton creates a single shared instance per Spring container; prototype creates a new instance every time the bean is requested",
+            "Prototype is the default scope; singleton must be explicitly declared",
+            "Singleton beans are thread-safe by default; prototype beans are not"
+        ],
+        "correct": "Singleton creates a single shared instance per Spring container; prototype creates a new instance every time the bean is requested"
+    },
+    {
+        "question": "What does the 'dependency-check' attribute in a Spring bean definition do?",
+        "options": [
+            "It validates that all dependencies are in the classpath at compile time",
+            "It ensures that all properties of the bean are set during initialization, throwing an exception if any are unsatisfied",
+            "It checks for circular dependencies and resolves them automatically",
+            "It verifies that all dependencies are available in the Maven repository"
+        ],
+        "correct": "It ensures that all properties of the bean are set during initialization, throwing an exception if any are unsatisfied"
+    },
+    {
+        "question": "What is an 'inner bean' in Spring XML configuration?",
+        "options": [
+            "A bean defined inside a Java inner class",
+            "A bean defined inline within another bean's property or constructor-arg element, not accessible from outside",
+            "A bean with a prototype scope nested inside a singleton bean",
+            "A private bean accessible only within the same XML configuration file"
+        ],
+        "correct": "A bean defined inline within another bean's property or constructor-arg element, not accessible from outside"
+    },
+    {
+        "question": "Which Spring XML element is used to inject a list of values into a bean property?",
+        "options": [
+            "<array>",
+            "<collection>",
+            "<list>",
+            "<items>"
+        ],
+        "correct": "<list>"
+    },
+    {
+        "question": "What does the 'autowire' attribute in a Spring bean definition do?",
+        "options": [
+            "It automatically generates setter methods for the bean",
+            "It tells the Spring container to automatically resolve and inject collaborating beans without explicit configuration",
+            "It validates that all wired beans are of the correct type at startup",
+            "It enables AOP proxying for the bean automatically"
+        ],
+        "correct": "It tells the Spring container to automatically resolve and inject collaborating beans without explicit configuration"
+    },
+    {
+        "question": "What is the difference between autowire='byName' and autowire='byType' in Spring?",
+        "options": [
+            "byName matches beans by their Java class name; byType matches by their XML id",
+            "byName injects by matching the property name to a bean id; byType injects by matching the property's type to a bean type in the container",
+            "byType is the default; byName must be explicitly enabled",
+            "They are identical; both match by bean id"
+        ],
+        "correct": "byName injects by matching the property name to a bean id; byType injects by matching the property's type to a bean type in the container"
+    },
+    {
+        "question": "Which annotation is used to mark a class as a Spring-managed component for component scanning?",
+        "options": [
+            "@Bean",
+            "@Component",
+            "@Inject",
+            "@Managed"
+        ],
+        "correct": "@Component"
+    },
+    {
+        "question": "What is the difference between @Component, @Service, @Repository, and @Controller in Spring?",
+        "options": [
+            "They have entirely different behaviors and cannot be used interchangeably",
+            "All are specializations of @Component; @Service, @Repository, and @Controller add semantic meaning and may enable additional framework features like exception translation",
+            "@Service is for REST endpoints; @Repository is for SOAP services",
+            "@Controller is for console applications; @Component is for web apps only"
+        ],
+        "correct": "All are specializations of @Component; @Service, @Repository, and @Controller add semantic meaning and may enable additional framework features like exception translation"
+    },
+    {
+        "question": "What does @Autowired do when applied to a field or constructor in Spring?",
+        "options": [
+            "It creates a new instance of the field's class",
+            "It tells Spring to automatically inject a matching bean into that field or constructor parameter",
+            "It makes the field publicly accessible from other beans",
+            "It marks the field as a primary bean qualifier"
+        ],
+        "correct": "It tells Spring to automatically inject a matching bean into that field or constructor parameter"
+    },
+    {
+        "question": "What happens if Spring finds multiple beans of the same type when using @Autowired?",
+        "options": [
+            "Spring picks the first one alphabetically",
+            "Spring throws a NoUniqueBeanDefinitionException; this can be resolved using @Qualifier or @Primary",
+            "Spring injects all matching beans as a list automatically",
+            "Spring picks the most recently defined bean"
+        ],
+        "correct": "Spring throws a NoUniqueBeanDefinitionException; this can be resolved using @Qualifier or @Primary"
+    },
+    {
+        "question": "In Spring JDBC, what is the purpose of JdbcTemplate?",
+        "options": [
+            "To generate SQL queries automatically from entity classes",
+            "To simplify JDBC operations by handling connection management, exception translation, and resource cleanup",
+            "To provide an ORM layer over JDBC",
+            "To cache all SQL results in memory automatically"
+        ],
+        "correct": "To simplify JDBC operations by handling connection management, exception translation, and resource cleanup"
+    },
+    {
+        "question": "What does the JdbcTemplate.query() method return and what interface is typically used to map rows?",
+        "options": [
+            "A ResultSet object mapped using ResultSetExtractor only",
+            "A List mapped using RowMapper, which maps each row of a ResultSet to a Java object",
+            "A Map<String, Object> for each row automatically",
+            "A Stream of SQL row data"
+        ],
+        "correct": "A List mapped using RowMapper, which maps each row of a ResultSet to a Java object"
+    },
+    {
+        "question": "What is the role of Spring ORM in integrating Hibernate with Spring?",
+        "options": [
+            "Spring ORM replaces Hibernate with its own ORM implementation",
+            "Spring ORM provides integration support for ORM frameworks like Hibernate, managing SessionFactory, transactions, and exception translation",
+            "Spring ORM automatically generates database schemas from Java classes",
+            "Spring ORM is only for JPA and does not support Hibernate directly"
+        ],
+        "correct": "Spring ORM provides integration support for ORM frameworks like Hibernate, managing SessionFactory, transactions, and exception translation"
+    },
+    {
+        "question": "In Spring MVC, what is the role of the DispatcherServlet?",
+        "options": [
+            "It serves static files like CSS and JavaScript",
+            "It acts as the front controller, receiving all HTTP requests and delegating them to the appropriate handler (controller)",
+            "It is responsible for rendering JSP views directly",
+            "It manages the database connection pool for all requests"
+        ],
+        "correct": "It acts as the front controller, receiving all HTTP requests and delegating them to the appropriate handler (controller)"
+    },
+    {
+        "question": "What does the @RequestMapping annotation do in a Spring MVC controller?",
+        "options": [
+            "It injects the HTTP request object into the method",
+            "It maps HTTP requests to specific handler methods or classes based on URL and HTTP method",
+            "It configures the view resolver for the controller",
+            "It validates request parameters automatically"
+        ],
+        "correct": "It maps HTTP requests to specific handler methods or classes based on URL and HTTP method"
+    },
+    {
+        "question": "How does a Spring MVC controller send data to a UI view using the Model object?",
+        "options": [
+            "By returning the data directly as a String from the handler method",
+            "By adding attributes to the Model object, which are then accessible in the view template as variables",
+            "By storing data in the HttpSession explicitly",
+            "By writing directly to the HttpServletResponse output stream"
+        ],
+        "correct": "By adding attributes to the Model object, which are then accessible in the view template as variables"
+    },
+    {
+        "question": "What is the purpose of @RequestParam in a Spring MVC controller method?",
+        "options": [
+            "To map a path variable from the URL",
+            "To extract a query parameter or form field value from the HTTP request and bind it to a method parameter",
+            "To inject the entire request body as a Java object",
+            "To validate that a request parameter is not null"
+        ],
+        "correct": "To extract a query parameter or form field value from the HTTP request and bind it to a method parameter"
+    },
+    {
+        "question": "What is the difference between @RequestParam and @PathVariable in Spring MVC?",
+        "options": [
+            "They are identical; both extract values from the URL",
+            "@RequestParam extracts query string parameters (e.g., ?name=John); @PathVariable extracts template variables from the URI path (e.g., /users/{id})",
+            "@PathVariable is for POST requests; @RequestParam is for GET requests",
+            "@RequestParam requires the parameter to be mandatory; @PathVariable allows optional parameters"
+        ],
+        "correct": "@RequestParam extracts query string parameters (e.g., ?name=John); @PathVariable extracts template variables from the URI path (e.g., /users/{id})"
+    },
+    {
+        "question": "What is ModelMap in Spring MVC and how does it differ from Model?",
+        "options": [
+            "ModelMap is for REST APIs; Model is for MVC views",
+            "ModelMap extends LinkedHashMap and is an implementation of Model; both serve the same purpose of passing data to views, but ModelMap provides additional Map operations",
+            "Model is used in Spring Boot; ModelMap is only for Spring MVC",
+            "ModelMap automatically serializes data to JSON; Model does not"
+        ],
+        "correct": "ModelMap extends LinkedHashMap and is an implementation of Model; both serve the same purpose of passing data to views, but ModelMap provides additional Map operations"
+    },
+    {
+        "question": "In Spring MVC with ORM, what annotation is used to demarcate a transactional method?",
+        "options": [
+            "@Commit",
+            "@Transactional",
+            "@Rollback",
+            "@Atomic"
+        ],
+        "correct": "@Transactional"
+    },
+    {
+        "question": "What is Spring AOP (Aspect-Oriented Programming) used for?",
+        "options": [
+            "Building asynchronous APIs",
+            "Modularizing cross-cutting concerns like logging, security, and transaction management by defining them in a separate aspect rather than scattering them across the codebase",
+            "Replacing Spring MVC's controller layer",
+            "Automatically generating REST endpoints from service classes"
+        ],
+        "correct": "Modularizing cross-cutting concerns like logging, security, and transaction management by defining them in a separate aspect rather than scattering them across the codebase"
+    },
+    {
+        "question": "In Spring AOP, what is a 'pointcut'?",
+        "options": [
+            "The actual code that runs when an aspect is triggered",
+            "An expression that defines which join points (method executions) an advice should be applied to",
+            "The object returned after an aspect intercepts a method",
+            "A Spring bean that manages all aspect configurations"
+        ],
+        "correct": "An expression that defines which join points (method executions) an advice should be applied to"
+    },
+    {
+        "question": "What is the difference between @Before, @After, and @Around advice in Spring AOP?",
+        "options": [
+            "@Before runs before and after; @After only runs after; @Around is for exceptions",
+            "@Before runs before the method; @After runs after (regardless of outcome); @Around wraps the method execution, allowing control before, after, and around the join point",
+            "@Around is the only one that can prevent method execution; the others are informational only",
+            "They are identical and can be used interchangeably"
+        ],
+        "correct": "@Before runs before the method; @After runs after (regardless of outcome); @Around wraps the method execution, allowing control before, after, and around the join point"
+    },
+    {
+        "question": "What is Java-based Spring configuration and how is it enabled?",
+        "options": [
+            "Using @SpringConfig on the main class",
+            "Using @Configuration on a class to define beans with @Bean methods, replacing XML configuration",
+            "Using properties files to configure bean definitions",
+            "Enabling a flag in pom.xml to use Java instead of XML"
+        ],
+        "correct": "Using @Configuration on a class to define beans with @Bean methods, replacing XML configuration"
+    },
+    {
+        "question": "What does @ComponentScan do in a Java-based Spring configuration class?",
+        "options": [
+            "It scans for available Spring Boot starters in the classpath",
+            "It tells Spring to scan the specified packages for @Component-annotated classes and register them as beans",
+            "It validates all components for proper annotations",
+            "It generates component documentation automatically"
+        ],
+        "correct": "It tells Spring to scan the specified packages for @Component-annotated classes and register them as beans"
+    },
+    {
+        "question": "What is Spring Boot's auto-configuration and what annotation enables it?",
+        "options": [
+            "Spring Boot reads your code and writes configuration for you, enabled by @AutoConfig",
+            "Spring Boot automatically configures beans based on the classpath, properties, and existing beans, enabled by @EnableAutoConfiguration (included in @SpringBootApplication)",
+            "Auto-configuration is enabled by including spring-boot-starter in pom.xml only",
+            "It is always active and cannot be disabled"
+        ],
+        "correct": "Spring Boot automatically configures beans based on the classpath, properties, and existing beans, enabled by @EnableAutoConfiguration (included in @SpringBootApplication)"
+    },
+    {
+        "question": "What does the @SpringBootApplication annotation combine?",
+        "options": [
+            "@Component, @Service, and @Repository",
+            "@Configuration, @EnableAutoConfiguration, and @ComponentScan",
+            "@SpringConfig, @AutoWire, and @Scan",
+            "@RestController, @RequestMapping, and @EnableWebMvc"
+        ],
+        "correct": "@Configuration, @EnableAutoConfiguration, and @ComponentScan"
+    },
+    {
+        "question": "What is an embedded server in Spring Boot and what is the default?",
+        "options": [
+            "A virtual machine bundled with the application; default is JBoss",
+            "A servlet container packaged within the application JAR so no external server installation is needed; default is Tomcat",
+            "A mock server used for testing; default is MockMvc",
+            "A cloud server provisioned automatically; default is AWS"
+        ],
+        "correct": "A servlet container packaged within the application JAR so no external server installation is needed; default is Tomcat"
+    },
+    {
+        "question": "What is the purpose of 'application.properties' or 'application.yml' in a Spring Boot project?",
+        "options": [
+            "To define the database schema for the application",
+            "To externalize configuration properties like server port, database URL, and logging levels",
+            "To list all Spring Boot starter dependencies",
+            "To configure the build tool (Maven/Gradle)"
+        ],
+        "correct": "To externalize configuration properties like server port, database URL, and logging levels"
+    },
+    {
+        "question": "What is Spring Data JPA and what problem does it solve?",
+        "options": [
+            "A Spring module for raw JDBC operations with type-safe queries",
+            "A Spring module that reduces boilerplate data access code by providing repository interfaces with built-in CRUD operations and query generation",
+            "A replacement for Hibernate that uses SQL instead of JPQL",
+            "A caching layer that stores JPA entities in memory"
+        ],
+        "correct": "A Spring module that reduces boilerplate data access code by providing repository interfaces with built-in CRUD operations and query generation"
+    },
+    {
+        "question": "What does extending JpaRepository<T, ID> give you in Spring Data JPA?",
+        "options": [
+            "Only the save() and findById() methods",
+            "Full CRUD operations, pagination, sorting, and the ability to define custom query methods",
+            "A direct connection to the database without Hibernate",
+            "Automatic REST endpoint generation"
+        ],
+        "correct": "Full CRUD operations, pagination, sorting, and the ability to define custom query methods"
+    },
+    {
+        "question": "How does Spring Data JPA derive a query from a method named 'findByLastNameAndEmail'?",
+        "options": [
+            "It throws an error because custom method names are not supported",
+            "Spring parses the method name and automatically generates a JPQL query based on the naming convention (findBy + field names + conditions)",
+            "It requires a corresponding @Query annotation to work",
+            "It executes a full table scan and filters in Java"
+        ],
+        "correct": "Spring parses the method name and automatically generates a JPQL query based on the naming convention (findBy + field names + conditions)"
+    },
+    {
+        "question": "What annotation is used to define a custom JPQL or native SQL query on a Spring Data JPA repository method?",
+        "options": [
+            "@SQL",
+            "@Query",
+            "@HQL",
+            "@NativeQuery"
+        ],
+        "correct": "@Query"
+    },
+    {
+        "question": "In a Spring Boot REST API, what does @RestController do?",
+        "options": [
+            "It combines @Controller and @ResponseBody, making every method return data serialized directly to the HTTP response body",
+            "It restricts the controller to only handle REST requests",
+            "It is the same as @Controller but only for GET requests",
+            "It automatically generates Swagger documentation for the controller"
+        ],
+        "correct": "It combines @Controller and @ResponseBody, making every method return data serialized directly to the HTTP response body"
+    },
+    {
+        "question": "What is the correct Spring Boot REST controller method to handle a POST request for creating a new resource?",
+        "options": [
+            "@GetMapping('/users') public User createUser(@RequestBody User user)",
+            "@PostMapping('/users') public ResponseEntity<User> createUser(@RequestBody User user)",
+            "@PutMapping('/users') public User createUser(@RequestParam User user)",
+            "@CreateMapping('/users') public User createUser(@RequestBody User user)"
+        ],
+        "correct": "@PostMapping('/users') public ResponseEntity<User> createUser(@RequestBody User user)"
+    },
+    {
+        "question": "What does @RequestBody do in a Spring Boot REST controller method?",
+        "options": [
+            "It extracts a single field from the request body",
+            "It deserializes the HTTP request body (typically JSON) into a Java object",
+            "It validates that the request body is not empty",
+            "It maps request headers to a Java object"
+        ],
+        "correct": "It deserializes the HTTP request body (typically JSON) into a Java object"
+    },
+    {
+        "question": "What is ResponseEntity in Spring Boot and why is it used?",
+        "options": [
+            "A special DTO class that wraps response data",
+            "A Spring class that represents the full HTTP response including status code, headers, and body, giving fine-grained control over the response",
+            "An interface that must be implemented by all REST controllers",
+            "A utility for converting Java objects to JSON"
+        ],
+        "correct": "A Spring class that represents the full HTTP response including status code, headers, and body, giving fine-grained control over the response"
+    },
+    {
+        "question": "How do you create a REST client in Spring Boot to call an external API?",
+        "options": [
+            "Using HttpClient from java.net only",
+            "Using RestTemplate or the newer WebClient (from Spring WebFlux) to make HTTP requests to external services",
+            "Using @FeignClient only, which is mandatory for REST clients",
+            "REST clients cannot be created inside Spring Boot applications"
+        ],
+        "correct": "Using RestTemplate or the newer WebClient (from Spring WebFlux) to make HTTP requests to external services"
+    },
+    {
+        "question": "What is the purpose of Spring Boot Profiles?",
+        "options": [
+            "To define user profiles for authentication",
+            "To allow different configurations (e.g., database URLs, logging levels) to be active for different environments like dev, test, and prod",
+            "To configure CPU and memory profiles for the JVM",
+            "To define multiple main classes for different entry points"
+        ],
+        "correct": "To allow different configurations (e.g., database URLs, logging levels) to be active for different environments like dev, test, and prod"
+    },
+    {
+        "question": "How do you activate a specific Spring Boot profile named 'prod'?",
+        "options": [
+            "By naming the config file application.properties only",
+            "By setting spring.profiles.active=prod in application.properties or via the command line as --spring.profiles.active=prod",
+            "By annotating the main class with @ActiveProfile('prod')",
+            "Profiles are activated automatically based on the OS environment"
+        ],
+        "correct": "By setting spring.profiles.active=prod in application.properties or via the command line as --spring.profiles.active=prod"
+    },
+    {
+        "question": "What logging framework does Spring Boot use by default, and how do you set the log level for a package?",
+        "options": [
+            "Log4j by default; set via log4j.properties",
+            "SLF4J with Logback by default; set via logging.level.com.example=DEBUG in application.properties",
+            "Java Util Logging by default; set via logging.config=logback.xml",
+            "Log4j2 by default; set via @LogLevel annotation"
+        ],
+        "correct": "SLF4J with Logback by default; set via logging.level.com.example=DEBUG in application.properties"
+    },
+    {
+        "question": "What is Spring Boot Actuator used for?",
+        "options": [
+            "To automate deployment of Spring Boot applications",
+            "To provide production-ready features like health checks, metrics, environment info, and monitoring endpoints",
+            "To generate REST API documentation automatically",
+            "To manage database migrations at startup"
+        ],
+        "correct": "To provide production-ready features like health checks, metrics, environment info, and monitoring endpoints"
+    },
+    {
+        "question": "What endpoint does Spring Boot Actuator expose to check the application's health status?",
+        "options": [
+            "/actuator/status",
+            "/actuator/health",
+            "/actuator/ping",
+            "/actuator/alive"
+        ],
+        "correct": "/actuator/health"
+    },
+    {
+        "question": "What is Spring Security and what does it provide out of the box?",
+        "options": [
+            "A library for encrypting database passwords only",
+            "A comprehensive security framework providing authentication, authorization, CSRF protection, session management, and more",
+            "A firewall configuration tool for Spring applications",
+            "A security scanner that detects vulnerabilities in Spring code"
+        ],
+        "correct": "A comprehensive security framework providing authentication, authorization, CSRF protection, session management, and more"
+    },
+    {
+        "question": "What happens when you add spring-boot-starter-security to a Spring Boot project without any additional configuration?",
+        "options": [
+            "Nothing; security must be manually configured to take effect",
+            "All endpoints are secured and Spring generates a default password printed to the console, requiring HTTP Basic authentication",
+            "Only the /admin endpoint is secured by default",
+            "The application fails to start until a SecurityConfig class is provided"
+        ],
+        "correct": "All endpoints are secured and Spring generates a default password printed to the console, requiring HTTP Basic authentication"
+    },
+    {
+        "question": "What is Thymeleaf in Spring Boot?",
+        "options": [
+            "A database migration tool for Spring Boot",
+            "A server-side Java template engine that renders HTML views and integrates naturally with Spring MVC",
+            "A JavaScript framework bundled with Spring Boot",
+            "A REST API testing tool for Spring Boot applications"
+        ],
+        "correct": "A server-side Java template engine that renders HTML views and integrates naturally with Spring MVC"
+    },
+    {
+        "question": "What is database caching in Spring Boot and which annotation enables method-level caching?",
+        "options": [
+            "Database caching stores query results in a file; enabled by @FileCacheable",
+            "Caching stores the result of expensive method calls in memory; method-level caching is enabled with @Cacheable",
+            "Spring Boot caches all database results automatically without configuration",
+            "Database caching is only available with Redis and requires @RedisCache"
+        ],
+        "correct": "Caching stores the result of expensive method calls in memory; method-level caching is enabled with @Cacheable"
+    },
+    {
+        "question": "What is Spring Batch used for?",
+        "options": [
+            "Running multiple Spring Boot applications simultaneously",
+            "Processing large volumes of records in batch jobs with support for reading, processing, writing, retry, and skip logic",
+            "Batching multiple REST API calls into one HTTP request",
+            "Managing bulk inserts into MongoDB"
+        ],
+        "correct": "Processing large volumes of records in batch jobs with support for reading, processing, writing, retry, and skip logic"
+    },
+    {
+        "question": "In Spring Boot testing with MockMvc, what does the following code test?\n\nmockMvc.perform(get('/api/users'))\n  .andExpect(status().isOk())\n  .andExpect(jsonPath('$[0].name').value('Alice'));",
+        "options": [
+            "It sends an actual HTTP GET request to a live server",
+            "It performs a mock HTTP GET to /api/users and asserts the response status is 200 and the first element's name is 'Alice'",
+            "It tests the database query for the users table",
+            "It validates the request body of a POST request"
+        ],
+        "correct": "It performs a mock HTTP GET to /api/users and asserts the response status is 200 and the first element's name is 'Alice'"
+    },
+    {
+        "question": "What annotation is used to configure a Spring Boot test that loads only the web layer (controllers) without the full application context?",
+        "options": [
+            "@SpringBootTest",
+            "@WebMvcTest",
+            "@ContextConfiguration",
+            "@MockMvcTest"
+        ],
+        "correct": "@WebMvcTest"
+    },
+    {
+        "question": "What is Spring JMS and what is it used for?",
+        "options": [
+            "A Spring module for JSON marshalling and serialisation",
+            "A Spring module that simplifies working with Java Message Service (JMS) for asynchronous messaging between applications",
+            "A module for managing JavaScript modules in Spring MVC",
+            "A module for sending HTTP messages between microservices"
+        ],
+        "correct": "A Spring module that simplifies working with Java Message Service (JMS) for asynchronous messaging between applications"
+    },
+    {
+        "question": "What annotation is used to mark a Spring method as a JMS message listener?",
+        "options": [
+            "@JmsConsumer",
+            "@MessageHandler",
+            "@JmsListener",
+            "@QueueListener"
+        ],
+        "correct": "@JmsListener"
+    },
+    {
+        "question": "What is Swagger (Springdoc/SpringFox) used for in a Spring Boot REST API?",
+        "options": [
+            "To automatically test all REST endpoints",
+            "To automatically generate interactive API documentation from your REST controller code",
+            "To secure REST endpoints with OAuth2",
+            "To validate request and response JSON schemas"
+        ],
+        "correct": "To automatically generate interactive API documentation from your REST controller code"
+    },
+    {
+        "question": "What annotation is used in Spring Boot to validate that a request field is not blank?",
+        "options": [
+            "@Required",
+            "@NotEmpty",
+            "@NotBlank",
+            "@NonNull"
+        ],
+        "correct": "@NotBlank"
+    },
+    {
+        "question": "How do you trigger Bean Validation in a Spring Boot REST controller for an incoming request body?",
+        "options": [
+            "Validation happens automatically without any annotation",
+            "By adding @Valid or @Validated before the @RequestBody parameter in the controller method",
+            "By calling validate() on the object manually inside the method",
+            "By configuring a validation.xml file"
+        ],
+        "correct": "By adding @Valid or @Validated before the @RequestBody parameter in the controller method"
+    },
+    {
+        "question": "What is Spring Data REST and what does it do automatically?",
+        "options": [
+            "A Spring module for writing raw REST API controllers",
+            "A Spring module that automatically exposes Spring Data repositories as HATEOAS-compliant REST endpoints with no controller code needed",
+            "A testing framework for REST APIs in Spring Boot",
+            "A library that converts Spring MVC controllers to RESTful endpoints"
+        ],
+        "correct": "A Spring module that automatically exposes Spring Data repositories as HATEOAS-compliant REST endpoints with no controller code needed"
+    },
+    {
+        "question": "What does HATEOAS stand for and what does it mean in a REST API context?",
+        "options": [
+            "Hypermedia As The Engine Of Application State; API responses include links to related actions/resources, allowing clients to navigate the API dynamically",
+            "HTTP And Type-Encoded Object Access Standard; it defines the JSON format for REST responses",
+            "High Availability Technology Enabling Online API Services; it ensures uptime",
+            "Hypermedia Annotation Technology for Encoding Object And State; it is a Spring-specific standard"
+        ],
+        "correct": "Hypermedia As The Engine Of Application State; API responses include links to related actions/resources, allowing clients to navigate the API dynamically"
+    },
+    {
+        "question": "What dependency is added to a Spring Boot project to enable Spring Data REST?",
+        "options": [
+            "spring-boot-starter-web",
+            "spring-boot-starter-data-rest",
+            "spring-data-rest-webmvc",
+            "spring-boot-starter-rest"
+        ],
+        "correct": "spring-boot-starter-data-rest"
+    },
+    {
+        "question": "By default, what HTTP endpoints does Spring Data REST expose for a repository named 'CustomerRepository' managing 'Customer' entities?",
+        "options": [
+            "Only /customers (GET and POST)",
+            "/customers (GET, POST), /customers/{id} (GET, PUT, PATCH, DELETE)",
+            "/api/customer only",
+            "Spring Data REST does not expose DELETE by default"
+        ],
+        "correct": "/customers (GET, POST), /customers/{id} (GET, PUT, PATCH, DELETE)"
+    },
+    {
+        "question": "How do you change the base path for all Spring Data REST endpoints?",
+        "options": [
+            "By annotating the repository with @BasePath('/api')",
+            "By setting spring.data.rest.base-path=/api in application.properties",
+            "By overriding the DispatcherServlet mapping",
+            "The base path cannot be changed in Spring Data REST"
+        ],
+        "correct": "By setting spring.data.rest.base-path=/api in application.properties"
+    },
+    {
+        "question": "What annotation is used to customize the path of a Spring Data REST repository endpoint?",
+        "options": [
+            "@RequestMapping",
+            "@RepositoryRestResource(path='...')",
+            "@RestResource(path='...')",
+            "@EndpointPath"
+        ],
+        "correct": "@RepositoryRestResource(path='...')"
+    },
+    {
+        "question": "How do you hide a specific Spring Data REST repository method from being exposed as a REST endpoint?",
+        "options": [
+            "By making the method private",
+            "By annotating the method with @RestResource(exported = false)",
+            "By removing the method from the repository interface",
+            "By adding @Hidden to the repository class"
+        ],
+        "correct": "By annotating the method with @RestResource(exported = false)"
+    },
+    {
+        "question": "How does Spring Data REST support pagination in list endpoints?",
+        "options": [
+            "Pagination must be manually implemented in a custom controller",
+            "By extending PagingAndSortingRepository, Spring Data REST automatically supports ?page and ?size query parameters",
+            "Pagination is not supported by Spring Data REST",
+            "By configuring a @Pageable annotation on the repository interface"
+        ],
+        "correct": "By extending PagingAndSortingRepository, Spring Data REST automatically supports ?page and ?size query parameters"
+    },
+    {
+        "question": "What query parameter is used to sort results in a Spring Data REST endpoint?",
+        "options": [
+            "?orderBy=fieldName",
+            "?sortBy=fieldName",
+            "?sort=fieldName,asc",
+            "?order=fieldName&direction=asc"
+        ],
+        "correct": "?sort=fieldName,asc"
+    },
+    {
+        "question": "How do you customize JSON serialization in Spring Data REST, for example to rename a JSON field?",
+        "options": [
+            "By modifying the Spring Data REST source code",
+            "By using Jackson annotations such as @JsonProperty on entity fields to control JSON output",
+            "By configuring a custom serializer in application.properties",
+            "JSON field names always match Java field names and cannot be changed"
+        ],
+        "correct": "By using Jackson annotations such as @JsonProperty on entity fields to control JSON output"
+    },
+    {
+        "question": "What does @JsonIgnore do when applied to an entity field in a Spring Data REST API?",
+        "options": [
+            "It marks the field as required in the JSON input",
+            "It excludes the field from both JSON serialization (output) and deserialization (input)",
+            "It converts the field value to null in the JSON output",
+            "It only hides the field from GET responses but includes it in POST"
+        ],
+        "correct": "It excludes the field from both JSON serialization (output) and deserialization (input)"
+    },
+    {
+        "question": "How do you define a custom finder method in a Spring Data REST repository?\n\nList<Customer> findByLastName(@Param('name') String lastName);",
+        "options": [
+            "It cannot be done; Spring Data REST only supports findAll and findById",
+            "Spring Data REST automatically exposes this as a search endpoint at /customers/search/findByLastName?name=Smith",
+            "The method requires a custom @Controller to be exposed as a REST endpoint",
+            "The method must be annotated with @GetMapping to work"
+        ],
+        "correct": "Spring Data REST automatically exposes this as a search endpoint at /customers/search/findByLastName?name=Smith"
+    },
+    {
+        "question": "What annotation is used to expose a custom controller method as part of a Spring Data REST endpoint?",
+        "options": [
+            "@RepositoryRestController",
+            "@RestDataController",
+            "@DataRestEndpoint",
+            "@SpringDataController"
+        ],
+        "correct": "@RepositoryRestController"
+    },
+    {
+        "question": "How do you secure a specific Spring Data REST endpoint in a Spring Security configuration?",
+        "options": [
+            "By annotating the repository with @Secured",
+            "By configuring HttpSecurity in a SecurityFilterChain to require authentication for specific URL patterns like /api/customers/**",
+            "Spring Data REST endpoints cannot be secured individually",
+            "By setting spring.data.rest.secure=true in application.properties"
+        ],
+        "correct": "By configuring HttpSecurity in a SecurityFilterChain to require authentication for specific URL patterns like /api/customers/**"
+    },
+    {
+        "question": "What is a microservice architecture and how does Spring Boot support it?",
+        "options": [
+            "A single large application; Spring Boot provides tools to compress it",
+            "An architecture where an application is composed of small, independently deployable services; Spring Boot supports it with embedded servers, Spring Cloud integration, and easy REST API creation",
+            "A database-centric architecture; Spring Boot supports it through Spring Data",
+            "An architecture only for mobile apps; Spring Boot provides REST endpoints for them"
+        ],
+        "correct": "An architecture where an application is composed of small, independently deployable services; Spring Boot supports it with embedded servers, Spring Cloud integration, and easy REST API creation"
+    },
+    {
+        "question": "What is the purpose of @Entity and @Table annotations in a Spring Boot JPA entity class?",
+        "options": [
+            "@Entity marks a class as a managed Spring bean; @Table defines its REST endpoint",
+            "@Entity marks a Java class as a JPA entity mapped to a database table; @Table specifies the table name when it differs from the class name",
+            "@Table creates the database table at startup; @Entity defines validation rules",
+            "They are only used with Spring Data REST and not with regular Spring Data JPA"
+        ],
+        "correct": "@Entity marks a Java class as a JPA entity mapped to a database table; @Table specifies the table name when it differs from the class name"
+    },
+    {
+        "question": "What does the following Spring Boot JPA configuration property do?\n\nspring.jpa.hibernate.ddl-auto=update",
+        "options": [
+            "It drops and recreates the database schema on every startup",
+            "It automatically updates the database schema to reflect entity changes without dropping existing data",
+            "It disables automatic schema management",
+            "It validates the schema against entities but makes no changes"
+        ],
+        "correct": "It automatically updates the database schema to reflect entity changes without dropping existing data"
+    },
+    {
+        "question": "What is the N+1 query problem in JPA and how can it be avoided?",
+        "options": [
+            "When a query returns N+1 more rows than expected; fixed by adding LIMIT clauses",
+            "When fetching N entities results in N additional queries to load their associations; avoided by using JOIN FETCH in JPQL or setting FetchType.EAGER thoughtfully",
+            "When N+1 database connections are opened simultaneously; fixed by connection pooling",
+            "A problem unique to Spring Data REST pagination; fixed by changing the page size"
+        ],
+        "correct": "When fetching N entities results in N additional queries to load their associations; avoided by using JOIN FETCH in JPQL or setting FetchType.EAGER thoughtfully"
+    },
+    {
+        "question": "What does @OneToMany(mappedBy = 'customer') signify in a JPA entity?",
+        "options": [
+            "The current entity has one record for every many customers",
+            "The current entity has a one-to-many relationship with another entity, and 'customer' is the field in the other entity that owns the foreign key",
+            "It creates a new table called 'customer' in the database",
+            "It restricts the relationship to a maximum of one record"
+        ],
+        "correct": "The current entity has a one-to-many relationship with another entity, and 'customer' is the field in the other entity that owns the foreign key"
+    },
+    {
+        "question": "In Spring Boot, what does @MockBean do in a unit test class?",
+        "options": [
+            "It creates a real instance of the bean in the test context",
+            "It adds a Mockito mock for the specified bean into the Spring application context, replacing any existing bean of that type",
+            "It creates a mock HTTP server for testing REST endpoints",
+            "It is equivalent to @Mock from Mockito and only works outside Spring context"
+        ],
+        "correct": "It adds a Mockito mock for the specified bean into the Spring application context, replacing any existing bean of that type"
+    },
+    {
+        "question": "What is the purpose of @Transactional on a test method in Spring Boot?",
+        "options": [
+            "It makes the test run faster by batching database operations",
+            "It wraps the test in a transaction that is automatically rolled back after the test completes, keeping the database clean",
+            "It commits all changes made during the test to the real database",
+            "It is required for all tests that access the database"
+        ],
+        "correct": "It wraps the test in a transaction that is automatically rolled back after the test completes, keeping the database clean"
+    },
+    {
+        "question": "Which HTTP status code should a Spring Boot REST API return when a requested resource is not found?",
+        "options": [
+            "400 Bad Request",
+            "403 Forbidden",
+            "404 Not Found",
+            "500 Internal Server Error"
+        ],
+        "correct": "404 Not Found"
+    },
+    {
+        "question": "How do you handle exceptions globally in a Spring Boot REST API?",
+        "options": [
+            "By wrapping every controller method in a try-catch block",
+            "By using @ControllerAdvice with @ExceptionHandler methods that intercept exceptions thrown from any controller",
+            "By configuring a global exception handler in application.properties",
+            "Spring Boot automatically handles all exceptions with appropriate HTTP status codes"
+        ],
+        "correct": "By using @ControllerAdvice with @ExceptionHandler methods that intercept exceptions thrown from any controller"
+    },
+    {
+        "question": "What does the following Spring Boot code accomplish?\n\n@ExceptionHandler(ResourceNotFoundException.class)\npublic ResponseEntity<String> handleNotFound(ResourceNotFoundException ex) {\n    return ResponseEntity.status(HttpStatus.NOT_FOUND).body(ex.getMessage());\n}",
+        "options": [
+            "It logs the exception to a file",
+            "It intercepts ResourceNotFoundException anywhere in the application and returns a 404 HTTP response with the exception message",
+            "It rethrows the exception after logging it",
+            "It only handles the exception for the controller it is defined in"
+        ],
+        "correct": "It intercepts ResourceNotFoundException anywhere in the application and returns a 404 HTTP response with the exception message"
+    },
+    {
+        "question": "What is the purpose of @Column(nullable = false, unique = true) on a JPA entity field?",
+        "options": [
+            "It applies validation at the Java layer only",
+            "It maps the field to a database column with NOT NULL and UNIQUE constraints at the schema level",
+            "It makes the field required in JSON input for REST APIs",
+            "It prevents the field from being serialized to JSON"
+        ],
+        "correct": "It maps the field to a database column with NOT NULL and UNIQUE constraints at the schema level"
+    },
+    {
+        "question": "In Spring Data JPA, what is the difference between save() and saveAndFlush()?",
+        "options": [
+            "save() persists only new entities; saveAndFlush() also updates existing ones",
+            "save() schedules the changes in the persistence context; saveAndFlush() immediately synchronizes changes to the database",
+            "saveAndFlush() is deprecated; save() should always be used",
+            "They are identical in behaviour"
+        ],
+        "correct": "save() schedules the changes in the persistence context; saveAndFlush() immediately synchronizes changes to the database"
+    },
+    {
+        "question": "What does the following Spring AOP expression match?\n\n@Pointcut('execution(* com.example.service.*.*(..))')",
+        "options": [
+            "All methods in the com.example package only",
+            "All methods in all classes within the com.example.service package, with any return type and any arguments",
+            "Only public methods in com.example.service classes",
+            "All constructors in com.example.service classes"
+        ],
+        "correct": "All methods in all classes within the com.example.service package, with any return type and any arguments"
+    },
+    {
+        "question": "What is the @Value annotation used for in Spring?",
+        "options": [
+            "To define the default value for a database column",
+            "To inject a value from application.properties, a system property, or a Spring Expression directly into a field",
+            "To mark a method as a computed property",
+            "To assign a value to a bean at definition time in XML"
+        ],
+        "correct": "To inject a value from application.properties, a system property, or a Spring Expression directly into a field"
+    },
+    {
+        "question": "What does @ConfigurationProperties(prefix = 'app.mail') do in Spring Boot?",
+        "options": [
+            "It reads only the app.mail entry from application.properties",
+            "It binds all properties with the prefix 'app.mail' from application.properties to the fields of the annotated class",
+            "It configures the mail server for the application automatically",
+            "It creates a new properties file for mail configuration"
+        ],
+        "correct": "It binds all properties with the prefix 'app.mail' from application.properties to the fields of the annotated class"
+    },
+    {
+        "question": "What is the role of the PlatformTransactionManager in Spring?",
+        "options": [
+            "It manages concurrent HTTP requests on the platform",
+            "It is the central abstraction for transaction management, used by @Transactional to begin, commit, and rollback transactions",
+            "It manages the lifecycle of all Spring beans",
+            "It handles database connection pooling"
+        ],
+        "correct": "It is the central abstraction for transaction management, used by @Transactional to begin, commit, and rollback transactions"
+    },
+    {
+        "question": "What is lazy loading vs. eager loading in JPA, and what are the defaults for @ManyToOne and @OneToMany?",
+        "options": [
+            "Both default to LAZY loading",
+            "Lazy loading fetches associations only when accessed; eager loads immediately. @ManyToOne defaults to EAGER; @OneToMany defaults to LAZY",
+            "Both default to EAGER loading",
+            "Lazy vs eager only matters for Spring Data REST, not regular JPA"
+        ],
+        "correct": "Lazy loading fetches associations only when accessed; eager loads immediately. @ManyToOne defaults to EAGER; @OneToMany defaults to LAZY"
+    },
+    {
+        "question": "In Spring Boot, what does the following test annotation combination do?\n\n@SpringBootTest\n@AutoConfigureMockMvc",
+        "options": [
+            "Loads only the web layer without starting a server",
+            "Loads the full application context and auto-configures a MockMvc instance for integration testing the web layer",
+            "Creates a real HTTP server on a random port for testing",
+            "Loads only the service and repository layers without the web layer"
+        ],
+        "correct": "Loads the full application context and auto-configures a MockMvc instance for integration testing the web layer"
+    },
+    {
+        "question": "What is the purpose of the @Param annotation in a Spring Data JPA @Query method?\n\n@Query('SELECT u FROM User u WHERE u.email = :email')\nUser findByEmail(@Param('email') String email);",
+        "options": [
+            "It marks the parameter as required at runtime",
+            "It binds the method parameter to the named parameter :email in the JPQL query",
+            "It validates that the email parameter is a valid email format",
+            "It is only needed for native SQL queries, not JPQL"
+        ],
+        "correct": "It binds the method parameter to the named parameter :email in the JPQL query"
+    },
+    {
+        "question": "What is the difference between PUT and PATCH in a RESTful API built with Spring Boot?",
+        "options": [
+            "PUT is for creating resources; PATCH is for deleting them",
+            "PUT replaces the entire resource; PATCH applies a partial update to specific fields only",
+            "They are interchangeable; the choice is purely stylistic",
+            "PATCH is not supported natively in Spring Boot"
+        ],
+        "correct": "PUT replaces the entire resource; PATCH applies a partial update to specific fields only"
+    },
+    {
+        "question": "In a Spring Boot project, what does the following property do?\n\nspring.jpa.show-sql=true",
+        "options": [
+            "It enables the H2 console for viewing the database",
+            "It logs all SQL statements generated by Hibernate to the console",
+            "It validates all SQL queries at startup",
+            "It shows slow SQL queries only"
+        ],
+        "correct": "It logs all SQL statements generated by Hibernate to the console"
+    },
+    {
+        "question": "What is the correct way to inject a property value with a default fallback in Spring Boot using @Value?",
+        "options": [
+            "@Value('${app.timeout}') private int timeout;",
+            "@Value('${app.timeout:30}') private int timeout;",
+            "@Value('${app.timeout || 30}') private int timeout;",
+            "@Value('${app.timeout} default 30') private int timeout;"
+        ],
+        "correct": "@Value('${app.timeout:30}') private int timeout;"
+    },
+    {
+        "question": "What does Spring Data REST return in the response body when you POST to create a new entity?",
+        "options": [
+            "Only the HTTP 201 status with no body",
+            "The created entity as JSON with its generated ID and HATEOAS links",
+            "A plain string confirmation message",
+            "The entire list of entities after creation"
+        ],
+        "correct": "The created entity as JSON with its generated ID and HATEOAS links"
+    },
+    {
+        "question": "What does @GeneratedValue(strategy = GenerationType.IDENTITY) on a JPA entity's @Id field do?",
+        "options": [
+            "It generates a UUID for the ID field",
+            "It delegates ID generation to the database's auto-increment column",
+            "It generates IDs using a sequence table managed by Hibernate",
+            "It requires the application to set the ID before saving"
+        ],
+        "correct": "It delegates ID generation to the database's auto-increment column"
+    },
+    {
+        "question": "In Spring Security, what is the role of a UserDetailsService?",
+        "options": [
+            "To store user data in session memory",
+            "To load user-specific data (such as username, password, and roles) during authentication",
+            "To generate JWT tokens for authenticated users",
+            "To configure URL security rules"
+        ],
+        "correct": "To load user-specific data (such as username, password, and roles) during authentication"
+    },
+    {
+        "question": "What does the following Spring Security configuration snippet accomplish?\n\nhttp.authorizeHttpRequests()\n  .requestMatchers('/api/public/**').permitAll()\n  .anyRequest().authenticated();",
+        "options": [
+            "It blocks all requests to /api/public/** and allows everything else",
+            "It allows unauthenticated access to /api/public/** endpoints and requires authentication for all other requests",
+            "It applies HTTPS to all /api/public/** endpoints",
+            "It logs all requests to /api/public/** for auditing"
+        ],
+        "correct": "It allows unauthenticated access to /api/public/** endpoints and requires authentication for all other requests"
+    }
+]

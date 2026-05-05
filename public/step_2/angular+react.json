@@ -1,0 +1,441 @@
+[
+  {
+    "question": "The string \"api/route\" in Express is an example of a...",
+    "options": [
+      "Middleware",
+      "Route",
+      "Error Handler"
+    ],
+    "correct": "Route"
+  },
+  {
+    "question": "Which library allows the use of the \"require\" keyword in front-end code?",
+    "options": [
+      "guid",
+      "Browserify",
+      "React",
+      "jQuery"
+    ],
+    "correct": "Browserify"
+  },
+  {
+    "question": "The ______ attribute of a React form is called when the main action button inside the form is pressed.",
+    "options": [
+      "onSubmit",
+      "onChange",
+      "onComplete"
+    ],
+    "correct": "onSubmit"
+  },
+  {
+    "question": "Which of the following are automation tools?",
+    "options": [
+      "Gulp",
+      "JSX",
+      "Express"
+    ],
+    "correct": "Gulp"
+  },
+  {
+    "question": "Which of the following is not a method of a dispatcher?",
+    "options": [
+      "register",
+      "vector",
+      "dispatch"
+    ],
+    "correct": "vector"
+  },
+  {
+    "question": "What React function is used to define a new element tag?",
+    "options": [
+      "renderComponent",
+      "createClass",
+      "setInnerHTML"
+    ],
+    "correct": "createClass"
+  },
+  {
+    "question": "Isomorphic means to focus exclusively on an app's back-end.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": "False"
+  },
+  {
+    "question": "React's abstraction of the document object model is often called...",
+    "options": [
+      "Virtual DOM",
+      "Meta DOM",
+      "Virtualized Model"
+    ],
+    "correct": "Virtual DOM"
+  },
+  {
+    "question": "True or false : The only thing that can change the data inside a store is the store itself.",
+    "options": [
+      "false",
+      "true"
+    ],
+    "correct": "true"
+  },
+  {
+    "question": "The Gulp task which takes a stream and outputs a file is...",
+    "options": [
+      "src",
+      "task",
+      "dest"
+    ],
+    "correct": "dest"
+  },
+  {
+    "question": "The best way to detect when a user has completed a form is",
+    "options": [
+      "to handle the onClick event on the form's submit element",
+      "to handle the onBlur event of the last form element",
+      "to handle the form's onSubmit event",
+      "to accumulate the onChange events for each form element"
+    ],
+    "correct": "to handle the form's onSubmit event"
+  },
+  {
+    "question": "React is",
+    "options": [
+      "A library that represents asynchronous data streams with observables",
+      "A comprehensive client-side application framework",
+      "An optimizing compiler for JavaScript",
+      "A client-side library providing rendering and event handling"
+    ],
+    "correct": "A client-side library providing rendering and event handling"
+  },
+  {
+    "question": "Routing can be added to a React application by",
+    "options": [
+      "adding an HTML5 or hash fragment based routing library",
+      "rendering the application on the server using react-page",
+      "handling the window.onLocationChanged event",
+      "using the React.route function"
+    ],
+    "correct": "adding an HTML5 or hash fragment based routing library"
+  },
+  {
+    "question": "Behavior is shared between components using",
+    "options": [
+      "propTypes",
+      "state",
+      "mixins",
+      "props"
+    ],
+    "correct": "mixins"
+  },
+  {
+    "question": "An advantage of React is",
+    "options": [
+      "jQuery syntax",
+      "static type checking",
+      "speed",
+      "easy integration with other JavaScript libraries"
+    ],
+    "correct": "speed"
+  },
+  {
+    "question": "The JSX pre-processor is packaged as a",
+    "options": [
+      "dynamic link library",
+      "Nuget package",
+      "Gem",
+      "npm module"
+    ],
+    "correct": "npm module"
+  },
+  {
+    "question": "The just-in-time JSX transformer is good for",
+    "options": [
+      "integrating with JavaScript tools",
+      "simple development workflow",
+      "reusing behavior",
+      "performance"
+    ],
+    "correct": "simple development workflow"
+  },
+  {
+    "question": "The function that creates React components is",
+    "options": [
+      "React.component.extend",
+      "React.createComponent",
+      "React.renderComponent",
+      "React.createClass"
+    ],
+    "correct": "React.createClass"
+  },
+  {
+    "question": "How does React Router make URL params accessible to components?",
+    "options": [
+      "parseUrlParams",
+      "State",
+      "getUrlParams",
+      "Props"
+    ],
+    "correct": "Props"
+  },
+  {
+    "question": "Why is the Link component useful?",
+    "options": [
+      "It allows you to hyperlink to routes by name",
+      "It enhances page load performance",
+      "It removes invalid characters from the URL",
+      "It provides faster navigation than hyperlinks"
+    ],
+    "correct": "It allows you to hyperlink to routes by name"
+  },
+  {
+    "question": "How do Flux stores find out about Flux actions?",
+    "options": [
+      "They query the server via AJAX",
+      "They poll HTML5 localstorage",
+      "They register a callback with the dispatcher.",
+      "They call action creators directly"
+    ],
+    "correct": "They register a callback with the dispatcher."
+  },
+  {
+    "question": "Where should mutable data for React components be stored?",
+    "options": [
+      "props",
+      "reactData",
+      "state",
+      "React.cookie"
+    ],
+    "correct": "state"
+  },
+  {
+    "question": "What mechanism is recommended for passing data down to child components in React?",
+    "options": [
+      "props",
+      "sendChildData",
+      "getDefaultProps",
+      "state"
+    ],
+    "correct": "props"
+  },
+  {
+    "question": "What is JSX?",
+    "options": [
+      "A language that looks like JavaScript that compiles to HTML.",
+      "A styling language that compiles down to CSS.",
+      "A language for querying RESTful web services.",
+      "A language that looks like HTML that compiles down to JavaScript."
+    ],
+    "correct": "A language that looks like HTML that compiles down to JavaScript."
+  },
+  {
+    "question": "What function should all your JSX be placed in?",
+    "options": [
+      "render",
+      "compile",
+      "jsx",
+      "emit"
+    ],
+    "correct": "render"
+  },
+  {
+    "question": "Which features does TypeScript support natively?\nSupport for standard JavaScript code\nClasses and modules\nStatic typing\nInterfaces\nConstructors",
+    "options": [
+      "Support for standard JavaScript code",
+      "Classes and modules",
+      "Static typing",
+      "Interfaces",
+      "Constructors",
+      "All of the above"
+    ],
+    "correct": "All of the above"
+  },
+  {
+    "question": "Which of the following is not a type keyword in TypeScript?",
+    "options": [
+      "float",
+      "bool",
+      "all are valid types in TypeScript",
+      "number",
+      "string"
+    ],
+    "correct": "float"
+  },
+  {
+    "question": "Interfaces defined in TypeScript are included in the JavaScript that is generated?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": "False"
+  },
+  {
+    "question": "How do you extend an interface in TypeScript?",
+    "options": [
+      "interface ITruckOptions extends IAutoOptions",
+      "interface ITruckOptions => IAutoOptions",
+      "interface ITruckOptions : IAutoOptions",
+      "interface ITruckOptions implements IAutoOptions"
+    ],
+    "correct": "interface ITruckOptions extends IAutoOptions"
+  },
+  {
+    "question": "Benefits offered by TypeScript include:",
+    "options": [
+      "Code encapsulation",
+      "All of these",
+      "More maintainable code",
+      "Strongly-typed code"
+    ],
+    "correct": "All of these"
+  },
+  {
+    "question": "How do you automatically generate fields in a TypeScript class?",
+    "options": [
+      "Add the public keyword to a constructor parameter",
+      "None of these",
+      "Use the auto keyword",
+      "TypeScript doesn't support automatically generated fields"
+    ],
+    "correct": "Add the public keyword to a constructor parameter"
+  },
+  {
+    "question": "Which TypeScript function will accept 2 parameters that must be numbers and return their product?",
+    "options": [
+      "var func = (x: number, y: number) => x * y;",
+      "var func = (x, y) => x * y;",
+      "None of these",
+      "var func = function(x, y) => x * y;",
+      "All of these"
+    ],
+    "correct": "var func = (x: number, y: number) => x * y;"
+  },
+  {
+    "question": "Which statement will allow your code to reference an internal module in a file named shapes.ts using TypeScript?",
+    "options": [
+      "/// <reference=\"shapes.ts\" />",
+      "/// <reference path=\"shapes.ts\" />",
+      "import \"shapes\"",
+      "/// shapes.ts"
+    ],
+    "correct": "import \"shapes\""
+  },
+  {
+    "question": "Which TypeScript statement will import an external module in a file named viewmodels.ts that is in the same folder as your code?",
+    "options": [
+      "import vm = module(viewmodels);",
+      "import vm = module('../viewmodels');",
+      "import module('viewmodels');",
+      "import vm = module('viewmodels');"
+    ],
+    "correct": "import vm = module('viewmodels');"
+  },
+  {
+    "question": "Which TypeScript compiler parameter will emit JavaScript that is AMD compliant?",
+    "options": [
+      "--AMD",
+      "--module AMD",
+      "Neither of these"
+    ],
+    "correct": "--module AMD"
+  },
+  {
+    "question": "What keyword is used to apply all of the properties on one interface to another interface?",
+    "options": [
+      "implements",
+      "extends",
+      "class",
+      "furthers",
+      "references"
+    ],
+    "correct": "extends"
+  },
+  {
+    "question": "What value will be output at the end of the following code block?\nenum Color { Red = 5, Green = 10, Blue = 15 };\nconsole.log(Color.Green);",
+    "options": [
+      "2",
+      "Color.Green",
+      "1",
+      "Green",
+      "10"
+    ],
+    "correct": "10"
+  },
+  {
+    "question": "Which of the following best defines a \"class\"?",
+    "options": [
+      "Objects with no implementation details",
+      "Object with no properties or methods",
+      "JSON objects with methods",
+      "Collection of private, reusable functions",
+      "Template for creating objects"
+    ],
+    "correct": "Template for creating objects"
+  },
+  {
+    "question": "What term describes the concept of treating an object as if it were a particular type, even if it weren't declared as that type?",
+    "options": [
+      "Extension Typing",
+      "Duck Typing",
+      "Interface Typing",
+      "Generic Typing",
+      "Ruby Typing"
+    ],
+    "correct": "Duck Typing"
+  },
+  {
+    "question": "What access modifier limits the accessiblity of a class member to its own class and subclasses?",
+    "options": [
+      "export",
+      "internal",
+      "protected",
+      "private",
+      "sensitive"
+    ],
+    "correct": "protected"
+  },
+  {
+    "question": "What is the primary difference between a generic class and a non-generic class?",
+    "options": [
+      "Generic classes do not accept constructor parameters.",
+      "Generic classes are always declared abstract.",
+      "Generic class may not implement interfaces.",
+      "Generic classes accept a type parameter.",
+      "Generic classes must inherit from a base class."
+    ],
+    "correct": "Generic classes accept a type parameter."
+  },
+  {
+    "question": "Which TypeScript compiler options lets you specify the location of the tsconfig.json file to be used for the compilation?",
+    "options": [
+      "--project",
+      "--json",
+      "--outDir",
+      "--input",
+      "--source"
+    ],
+    "correct": "--project"
+  },
+  {
+    "question": "Which of the following symbols is used to denote that a function parameter is a rest parameter?",
+    "options": [
+      "<>",
+      ">>>",
+      "!!",
+      "...",
+      "||"
+    ],
+    "correct": "..."
+  },
+  {
+    "question": "Which of the following will correctly import the items exported by this export statement?\nexport { GetUser as GetLibraryUser, GetBook as GetLibraryBook };",
+    "options": [
+      "import TypeScript from './library';",
+      "import namespace from './library';",
+      "import { GetLibraryUser, GetLibraryBook } from './library';",
+      "import { GetUser, GetBook } from './library';",
+      "import all from './library';"
+    ],
+    "correct": "import { GetLibraryUser, GetLibraryBook } from './library';"
+  }
+]

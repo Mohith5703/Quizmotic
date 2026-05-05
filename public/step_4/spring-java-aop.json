@@ -1,0 +1,769 @@
+[
+  {
+    "question": "What is advice?",
+    "options": [
+      "A concern that cuts across multiple classes",
+      "The process of linking aspects with other application types",
+      "Action taken by an aspect at a particular join point",
+      "A method to implement transaction management"
+    ],
+    "correct": "Action taken by an aspect at a particular join point"
+  },
+  {
+    "question": "Which annotation represents an advice to be executed after the method execution only if method exits by throwing an exception?",
+    "options": [
+      "@Before",
+      "@After",
+      "@Around",
+      "@AfterThrowing"
+    ],
+    "correct": "@AfterThrowing"
+  },
+  {
+    "question": "Which of the following terminologies are typically used with regards to AOP?\nA) Concerns\nB) Advice\nC) Float\nD) Pointcut",
+    "options": [
+      "A, B, and D",
+      "A, C, and D",
+      "A, B, and C",
+      "B, C, and D"
+    ],
+    "correct": "A, B, and D"
+  },
+  {
+    "question": "What attribute is added in the bean.xml to reduce or eliminate the need of <constructor-arg> and <property>?",
+    "options": [
+      "Autodiscovery",
+      "Autowire",
+      "Scope",
+      "Auto-detect"
+    ],
+    "correct": "Autowire"
+  },
+  {
+    "question": "Which of the following examples summarizes \"Program to an interface rather than an implementation\"?",
+    "options": [
+      "Map m = new HashMap();",
+      "ArrayList list = new ArrayList();",
+      "ArrayList = new ArrayList();",
+      "Strings = \"HelloWorld\";"
+    ],
+    "correct": "ArrayList = new ArrayList();"
+  },
+  {
+    "question": "If any of the beans implements the BeanPostProcessor interface, Spring will call which of these methods?",
+    "options": [
+      "processBeforeInitialization()",
+      "BeanPostProcessor()",
+      "postProcessInterface()",
+      "postProcessBeforeInitialization()"
+    ],
+    "correct": "postProcessBeforeInitialization()"
+  },
+  {
+    "question": "Which Collections elements does Spring support?",
+    "options": [
+      "List, hashmap, arraylist, and set",
+      "List, props, hashmaps, and arraylist",
+      "List, set, map, and props",
+      "Hashmaps, arraylist, list, and treemap"
+    ],
+    "correct": "List, set, map, and props"
+  },
+  {
+    "question": "What will be the result if you use Web-aware Spring Application Context scopes in a regular Spring IoC container?",
+    "options": [
+      "It will return nothing.",
+      "It will return a NullPointer Exception",
+      "It will return a IllegalStateException",
+      "It will work correctly."
+    ],
+    "correct": "It will return nothing."
+  },
+  {
+    "question": "Which Bean scopes are valid only in the context of a web-aware Spring Application Context?",
+    "options": [
+      "Singleton and Prototype",
+      "Session, Global Session, and Request",
+      "Singleton, Prototype, Request, and Session",
+      "Session, Singleton, and Global Session"
+    ],
+    "correct": "Session, Global Session, and Request"
+  },
+  {
+    "question": "To use java.util.List, what is the Spring Collections element that you need?",
+    "options": [
+      "<list>",
+      "<List>",
+      "<collection-list>",
+      "util:list"
+    ],
+    "correct": "<list>"
+  },
+  {
+    "question": "Which of the below are benefits of using DI?",
+    "options": [
+      "Tight coupling",
+      "Loose coupling",
+      "Easy testing",
+      "Removing run time error"
+    ],
+    "correct": "Loose coupling and Easy testing"
+  },
+  {
+    "question": "What is the difference between ClassPathXMLApplicationContext and FilePathXMLApplicationContext?",
+    "options": [
+      "First one reads from application class path and second one reads from absolute file path.",
+      "First one reads from application class path and second one reads from relative file path.",
+      "First one reads from relative application class path and second one reads from absolute file path.",
+      "None of the above."
+    ],
+    "correct": "First one reads from relative application class path and second one reads from absolute file path."
+  },
+  {
+    "question": "The Dependency Look up is a methodology where we get the resource after demand. There can be various ways to get the resource. Types of Dependency Look up include:",
+    "options": [
+      "Factory Method",
+      "JNDI Method",
+      "Key Word Method",
+      "All of the above"
+    ],
+    "correct": "All of the above"
+  },
+  {
+    "question": "When do you use Dependency Injection?\n\nA. DI is very useful for decoupling your system.\nB. DI is most useful when you are aiming for code reuse.\nC. DI helps in designing tightly coupled code.\nD. DI does NOT help in unit testing the code.",
+    "options": [
+      "A and C",
+      "B and C",
+      "A and B",
+      "A and D"
+    ],
+    "correct": "A and B"
+  },
+  {
+    "question": "For Java-based configuration, which is the class that sets the Spring Context?",
+    "options": [
+      "Annotationconfig",
+      "ComponentScan",
+      "AnnotationConfigApplicationContext",
+      "AnnotationConfigApplication"
+    ],
+    "correct": "AnnotationConfigApplicationContext"
+  },
+  {
+    "question": "Which of the following is an example of java-based configuration?",
+    "options": [
+      "<context:annotation-config/>",
+      "@Configuration public class HelloWorldConfig{..}",
+      "@Autowired",
+      "ApplicationContext context=new ClassPathXmlApplicationContext(\"Beans.xml\");"
+    ],
+    "correct": "@Configuration public class HelloWorldConfig{..}"
+  },
+  {
+    "question": "Which is the main component in Spring Web MVC?",
+    "options": [
+      "Faces Servlet",
+      "Action Servlet",
+      "View Renderer Servlet",
+      "Dispatcher Servlet"
+    ],
+    "correct": "Dispatcher Servlet"
+  },
+  {
+    "question": "Which element has to be used in order to configure Spring MVC?",
+    "options": [
+      "<mvc:annotation-driven />",
+      "<mvc:configuration-driven />",
+      "<mvc:config-annotation />",
+      "<mvc:view-resolver />"
+    ],
+    "correct": "<mvc:annotation-driven />"
+  },
+  {
+    "question": "What annotation wiring element is added to scan packages to find and register beans within the Application Context?",
+    "options": [
+      "<context:annotation-config />",
+      "<context:bean-scan />",
+      "<context:auto-scan />",
+      "<context:component-scan />"
+    ],
+    "correct": "<context:component-scan />"
+  },
+  {
+    "question": "In the following example, what type of autowire will be used?\n@Autowired(required=false)\npublic Employee AutowiredByConstructorService(@Qualifier(\"e\")\nthis.employee=emp;\n}",
+    "options": [
+      "ByName",
+      "ById",
+      "@Autowired",
+      "Constructor"
+    ],
+    "correct": "Constructor"
+  },
+  {
+    "question": "What are different valid types of Spring bean autowiring?",
+    "options": [
+      "byName, byId, and constructor",
+      "byName, byType, constructor, @Autowired, and @Qualifier annotations",
+      "by Scope, by Constructor, and @Autowired",
+      "ById, byNameScope, constructor, and @Autowire"
+    ],
+    "correct": "byName, byType, constructor, @Autowire, @Qualifier annotations"
+  },
+  {
+    "question": "Spring handles object creation in order to be non-invasive. Can you identify which definition creates a spring-managed object?",
+    "options": [
+      "String myObj;",
+      "@Autowired private String myObj;",
+      "private String myObj = new String(\"spring\");",
+      "@Spring String myObj=null;"
+    ],
+    "correct": "private String myObj = new String(\"spring\");"
+  },
+  {
+    "question": "How many types of autowiring modes are supported in Spring?",
+    "options": [
+      "Three",
+      "Five",
+      "Six",
+      "Four"
+    ],
+    "correct": "Five"
+  },
+  {
+    "question": "The use of Autodiscovery and Autowire will reduce the amount of ___________.",
+    "options": [
+      "Java code generated",
+      "Methods generated",
+      "XML Spring configurations",
+      "<bean> elements"
+    ],
+    "correct": "<bean> elements"
+  },
+  {
+    "question": "Dependency Injection (DI) or Inversion of Control (IOC) is based on which Hollywood principle?",
+    "options": [
+      "Do not call us. We will call you.",
+      "Understand the problem first.",
+      "The customer is always right.",
+      "What you see is what you get."
+    ],
+    "correct": "Do not call us. We will call you."
+  },
+  {
+    "question": "From where does the Spring container gets its instructions?",
+    "options": [
+      "Properties File",
+      "Spring JARS",
+      "XML File",
+      "Annotations"
+    ],
+    "correct": "c and d"
+  },
+  {
+    "question": "The use of the prototype scope is recommended for ______________ type of beans.",
+    "options": [
+      "Stateless",
+      "Stateful",
+      "Restless",
+      "Restful"
+    ],
+    "correct": "Stateful"
+  },
+  {
+    "question": "Which is the alternative to create, load, and manage beans in a Spring Application?",
+    "options": [
+      "Application Factory",
+      "Context Factory",
+      "Bean Factory",
+      "Spring Bean Factory"
+    ],
+    "correct": "Bean Factory"
+  },
+  {
+    "question": "Java-based configuration allows bean definition and Spring configuration to move out of _________.",
+    "options": [
+      "XML files",
+      "Java code",
+      "Property files",
+      "All of the above"
+    ],
+    "correct": "XML files"
+  },
+  {
+    "question": "Which one of these statements about XML declaration of transaction manager bean is NOT true?",
+    "options": [
+      "The tx namespace provides JTA transaction manager declaration shortcut syntax.",
+      "The Id of the bean has to be transactionManager.",
+      "Depending on the application persistence technology, the HibernateTransactionManager or the DataSourceTranasctionManager could be used as bean class.",
+      "A default transaction timeout could be given."
+    ],
+    "correct": "The Id of the bean has to be transactionManager."
+  },
+  {
+    "question": "Which one of the following is one of the challenge of Traditional Transaction Management?",
+    "options": [
+      "Transaction Management at Database Connection Level",
+      "Programmatic Management of Transactions",
+      "Error-Prone Connection Management",
+      "All of the above"
+    ],
+    "correct": "All of the above"
+  },
+  {
+    "question": "What does the JDBC Template users to connect to the database?",
+    "options": [
+      "A simple java bean with connection properties",
+      "A data source bean configuration",
+      "An XML with DB connection parameters",
+      "A JDBC connection object"
+    ],
+    "correct": "A data source bean configuration"
+  },
+  {
+    "question": "What is the use of Autodiscovery?",
+    "options": [
+      "Eliminate the use of the <property> element",
+      "Reduce the use of the <constructor-arg> element",
+      "Eliminate the use of the <props> element",
+      "Reduce the use of the <bean> element"
+    ],
+    "correct": "Reduce the use of the <bean> element"
+  },
+  {
+    "question": "The -------- packages are the basis of spring Framework’s IOC container",
+    "options": [
+      "org.springframework.beans and org.springframework.Application",
+      "org.springframework.properties and org.springframework.context",
+      "org.springframework.beans and org.springframework.properties",
+      "org.springframework.beans and org.springframework.context"
+    ],
+    "correct": "org.springframework.beans and org.springframework.context"
+  },
+  {
+    "question": "Which of the following attributes are valid in a Spring bean definition?\nA. ID \nB. Map \nC. Set \nD. Class",
+    "options": [
+      "A and B",
+      "B and C",
+      "A and D",
+      "C and D"
+    ],
+    "correct": "A and D"
+  },
+  {
+    "question": "What Spring Collection can be used to inject a collection of name-value pairs, where name and value can be of any type?",
+    "options": [
+      "<list>",
+      "<List>",
+      "<map>",
+      "<props>"
+    ],
+    "correct": "<map>"
+  },
+  {
+    "question": "Which attributes are applicable for an inner bean?",
+    "options": [
+      "Context, Parent",
+      "Id, Class",
+      "Class, Inner",
+      "Interface, Id"
+    ],
+    "correct": "Class, Inner"
+  },
+  {
+    "question": "To use bean definition template, you should add what attribute in the bean?",
+    "options": [
+      "abstract=\"true\"",
+      "interface=\"true\"",
+      "class=\"com.example.helloworld\"",
+      "public=\"true\""
+    ],
+    "correct": "abstract=\"true\""
+  },
+  {
+    "question": "A collection value of the type java.util.Properties is defined by what element?",
+    "options": [
+      "<props>",
+      "<list>",
+      "<map>",
+      "<set>"
+    ],
+    "correct": "<props>"
+  },
+  {
+    "question": "Which of the following is an annotation for Spring Java-based configuration?",
+    "options": [
+      "@Component",
+      "@SpringConfiguration",
+      "@SpringXml",
+      "@Configuration"
+    ],
+    "correct": "@Configuration"
+  },
+  {
+    "question": "What does the JDBC Template uses to connect to the database?",
+    "options": [
+      "A simple java bean with connection properties",
+      "A data source bean configuration",
+      "An XML with DB connection parameters",
+      "A JDBC connection object"
+    ],
+    "correct": "A data source bean configuration"
+  },
+  {
+    "question": "Which of the following tasks are performed by a JDBCTemplate?",
+    "options": [
+      "Execute SQL query.",
+      "Execute Update statements.",
+      "Execute a Java program.",
+      "Execute stored procedure calls."
+    ],
+    "correct": "a, b and d"
+  },
+  {
+    "question": "Does Spring provide programmatic transaction management?",
+    "options": [
+      "Yes, with the TransactionTemplate class",
+      "Yes, with the TransactionService class",
+      "Yes, using the @Transactional bean post processor",
+      "No, Spring does not provide transactional management"
+    ],
+    "correct": "Yes, with the TransactionTemplate class"
+  },
+  {
+    "question": "Which of the following are MVC - Specific annotations?",
+    "options": [
+      "@Controller",
+      "@RequestMapping",
+      "@PathVariable",
+      "@Autowired"
+    ],
+    "correct": "a, b and c only"
+  },
+  {
+    "question": "To annotate all your Data Access Object (DAO) classes, use the -------",
+    "options": [
+      "@Service",
+      "@Classes",
+      "@Repository",
+      "@Component"
+    ],
+    "correct": "@Repository"
+  },
+  {
+    "question": "Which of the following statements is false?",
+    "options": [
+      "The Core package is the most fundamental part of the framework and provides the IoC and Dependency Injection feature.",
+      "The DAO package provides a JDBC-abstraction layer that removes the need to do tedious JDBC coding and parsing of database-vendor specific error codes.",
+      "The ORM package provides integration layers for popular object-relational mapping APIs, including JPA, JDO, Hibernate, iBatis.",
+      "AOP takes out the direct dependency of crosscutting tasks from classes which we can achieve through normal object-oriented programming model.",
+      "Spring's Web package provides basic web-oriented integration features, such as multipart file-upload functionality.",
+      "Spring's MVC package provides a Model-View-Controller implementation for web-applications.",
+      "None of these"
+    ],
+    "correct": "None of these"
+  },
+  {
+    "question": "Which of the following is false?",
+    "options": [
+      "A BeanFactory pretty much just instantiates and configures beans.",
+      "An ApplicationContext also instantiates beans, and it provides supporting infrastructure for enterprise-specific features such as transactions, AOP, and internationalization.",
+      "Application-layer specific contexts such as the WebApplicationContext are used in web applications.",
+      "none of the above"
+    ],
+    "correct": "none of the above"
+  },
+  {
+    "question": "Which of the following is the actual representation of the Spring IoC container?",
+    "options": [
+      "Application Context",
+      "Xml Bean Factory",
+      "Bean Factory",
+      "Web Application Context"
+    ],
+    "correct": "Bean Factory"
+  },
+  {
+    "question": "A bean is simply an object that is instantiated, assembled and otherwise managed by a Spring IoC container.",
+    "options": [
+      "true",
+      "false"
+    ],
+    "correct": "true"
+  },
+  {
+    "question": "How does the container load configuration metadata from a variety of external resources such as the local file system or the Java CLASSPATH?",
+    "options": [
+      "Application Context constructor",
+      "Init()",
+      "Context Constructor",
+      "XmlClassPath Constructor"
+    ],
+    "correct": "Application Context constructor"
+  },
+  {
+    "question": "Which of the following is the correct way to load bean definitions from another file?",
+    "options": [
+      "<import resource=\"services.xml\"/>",
+      "<include resource=\"services.xml\"/>",
+      "<link resource=\"services.xml\"/>",
+      "all the above"
+    ],
+    "correct": "<import resource=\"services.xml\"/>"
+  },
+  {
+    "question": "Which of the following are correct statements regarding Spring MVC and its features?",
+    "options": [
+      "Form Controllers handle form interaction",
+      "Multipart resolver to handle file uploads",
+      "Dynamic binding of data to domain model",
+      "Interaction with velocity, jsp, thymeleaf, pdf, Excel",
+      "Sending email and remote accessing via Soap, Burlap",
+      "All of the above"
+    ],
+    "correct": "All of the above"
+  },
+  {
+    "question": "What do you mean by 'bean' in the context of Spring?",
+    "options": [
+      "component",
+      "object",
+      "class",
+      "container",
+      "xml file"
+    ],
+    "correct": "component and object"
+  },
+  {
+    "question": "What responsibilities are included for the Bean Factory?",
+    "options": [
+      "Instantiating or sourcing application objects",
+      "Configuring such objects",
+      "Assembling the dependencies between these objects",
+      "Manage lifecycle of spring"
+    ],
+    "correct": "a, b and c"
+  },
+  {
+    "question": "What are the responsibilities included for XmlBeanFactory?",
+    "options": [
+      "Allows you to express the objects that compose your application",
+      "Resolves inter-dependencies between such objects in terms of XML",
+      "Takes XML configuration metadata and uses it to create a fully configured system",
+      "None of the above"
+    ],
+    "correct": "a, b, c(if it is multi option or else a)"
+  },
+  {
+    "question": "What are the correct ways to instantiate a bean?",
+    "options": [
+      "Using default (empty) constructor",
+      "Instantiation using a static factory method",
+      "Instantiation using an instance factory method",
+      "Using the container",
+      "All these above are true"
+    ],
+    "correct": "All these above are true"
+  },
+  {
+    "question": "What is a Bean Factory?",
+    "options": [
+      "Maintains a registry of different beans and their dependencies.",
+      "Enables you to read bean definitions and access them using the bean factory.",
+      "Can create and read XML bean definitions (e.g., Resource def = new FileSystemResource(\"beans-def.xml\"); BeanFactory factory = new XmlBeanFactory(def);).",
+      "We can get ApplicationContext and WebApplicationContext objects using BeanFactory."
+    ],
+    "correct": "a, b and c"
+  },
+  {
+    "question": "Which statements are true about DI (Dependency Injection)?",
+    "options": [
+      "DI says that no need to create your objects but describe how they should be created.",
+      "We should not directly connect components together in code but describe services needed in a configuration file.",
+      "Inversion of Control relies on dependency injection.",
+      "Components and services should be tightly coupled in code."
+    ],
+    "correct": "a, c, d"
+  },
+  {
+    "question": "Which statements are true about IoC (Inversion of Control)?",
+    "options": [
+      "Decoupling of the execution of a certain task from implementation.",
+      "Each module can focus on what it is designed for.",
+      "Replacing modules should not affect other modules.",
+      "Modules should observe about what other systems do",
+      "All the above"
+    ],
+    "correct": "a, b, c"
+  },
+  {
+    "question": "What do you mean by inner bean?",
+    "options": [
+      "A <bean> element inside the <property> elements is used to define an inner bean.",
+      "A <bean> element inside the <constructor-arg> elements is used to define an inner bean.",
+      "A <bean> element inside the <map> elements is used to define an inner bean.",
+      "A <bean> element inside the <property> or <constructor-arg> elements is used to define an inner bean."
+    ],
+    "correct": "A <bean> element inside the <property> or <constructor-arg> elements is used to define a so-called inner bean."
+  },
+  {
+    "question": "Which of the following are basic techniques to implement Inversion of Control?",
+    "options": [
+      "using a factory pattern",
+      "using a service locator pattern",
+      "a constructor injection",
+      "a setter injection",
+      "an interface injection",
+      "all the above"
+    ],
+    "correct": "all of the above"
+  },
+  {
+    "question": "Which of the following statements is false regarding Dependency Injection?",
+    "options": [
+      "Constructor-based DI is effected by invoking a constructor with a number of arguments, each representing a dependency.",
+      "We can also use @Autowired annotation on a constructor for constructor-based autowiring.",
+      "Constructor-based DI is accomplished when the container invokes a class constructor with a number of arguments.",
+      "Constructor-based DI is effected by invoking Setter Injection each representing a dependency."
+    ],
+    "correct": "Constructor-based DI is effected by invoking Setter Injection each representing a dependency."
+  },
+  {
+    "question": "Spring Web MVC (and Spring in general) follows the \"Open for extension, closed for modification\" principle. A number of methods in the core classes are marked final for this reason.",
+    "options": [
+      "true",
+      "false"
+    ],
+    "correct": "true"
+  },
+  {
+    "question": "Which of the following is not a special bean in WebApplicationContext?",
+    "options": [
+      "Locale resolver",
+      "Theme resolver",
+      "multipart file",
+      "resolver",
+      "Handler exception resolver",
+      "Handler mappings",
+      "None of the above"
+    ],
+    "correct": "resolver"
+  },
+  {
+    "question": "How does the Spring DispatcherServlet support returning the last-modification-date, as specified by the Servlet API?",
+    "options": [
+      "By implementing the LastModified interface",
+      "By implementing the LastSessionModified interface",
+      "By implementing the LastDateModified interface",
+      "By implementing the LastModifiedDate interface"
+    ],
+    "correct": "By implementing the LastModified interface"
+  },
+  {
+    "question": "WebApplicationContext has more scopes like request, session, and globalSession compared to the standard ApplicationContext (which only provides Singleton and Prototype scopes).",
+    "options": [
+      "true",
+      "false"
+    ],
+    "correct": "true"
+  },
+  {
+    "question": "Do all of Spring's various controllers inherit from AbstractController?",
+    "options": [
+      "true",
+      "false"
+    ],
+    "correct": "true"
+  },
+  {
+    "question": "You can write your own controller by using the handleRequestInternal(HttpServletRequest, HttpServletResponse) method from AbstractController and a ModelAndView object.",
+    "options": [
+      "true",
+      "false"
+    ],
+    "correct": "true"
+  },
+  {
+    "question": "Which of the following controllers inspects the URL, retrieves the filename of the file request, and uses that as a viewname (e.g., http://.../welcome.html becomes 'welcome')?",
+    "options": [
+      "UrlFilenameViewController",
+      "MultiActionController",
+      "CommandController",
+      "AbstractController"
+    ],
+    "correct": "UrlFilenameViewController"
+  },
+  {
+    "question": "Which statements are true about DispatcherServlet?",
+    "options": [
+      "DispatcherServlet is an expression of the 'Front Controller' design pattern.",
+      "The DispatcherServlet is the actual Servlet.",
+      "DispatcherServlet is declared in the web.xml of your web application.",
+      "The Spring DispatcherServlet has a couple of special beans it uses to process requests, which can be configured in WebApplicationContext.",
+      "All of the above"
+    ],
+    "correct": "All of the above"
+  },
+  {
+    "question": "Which statements are true about WebApplicationContext?",
+    "options": [
+      "The WebApplicationContext is an extension of the plain ApplicationContext.",
+      "The WebApplicationContext is bound in the ServletContext, and by using static methods on the RequestContextUtils class.",
+      "WebApplicationContext differs from a normal ApplicationContext in that it is capable of resolving themes.",
+      "We can get WebApplicationContext reference by using ApplicationContext.",
+      "All the above"
+    ],
+    "correct": "a, c, d"
+  },
+  {
+    "question": "Which of the following controllers combines multiple request-handling methods into one controller?",
+    "options": [
+      "UrlFilenameViewController",
+      "MultiActionController",
+      "CommandController",
+      "MultiRequestController"
+    ],
+    "correct": "MultiActionController"
+  },
+  {
+    "question": "The URL 'https://localhost:8080/testing.view' results in the method testing(HttpServletRequest, HttpServletResponse) being invoked. Which is the correct MethodNameResolver for this?",
+    "options": [
+      "ParameterMethodNameResolver",
+      "PropertiesMethodNameResolver",
+      "InternalViewResolver",
+      "InternalPathMethodNameResolver"
+    ],
+    "correct": "InternalPathMethodNameResolver"
+  },
+  {
+    "question": "If '/index/welcome.html=dolt' is configured and a request to /index/welcome.html comes in, the dolt(HttpServletRequest, HttpServletResponse) method is invoked. Which is the correct MethodNameResolver for this?",
+    "options": [
+      "InternalPathMethodNameResolver",
+      "ParameterMethodNameResolver",
+      "PropertiesMethodNameResolver"
+    ],
+    "correct": "PropertiesMethodNameResolver"
+  },
+  {
+    "question": "Which of the following controllers provides a way to interact with data objects and dynamically bind parameters from the HttpServletRequest to the data object specified?",
+    "options": [
+      "MultiActionController",
+      "AbstractController",
+      "FormActionController",
+      "CommandController"
+    ],
+    "correct": "CommandController"
+  },
+  {
+    "question": "Which of the following is not a view resolver?",
+    "options": [
+      "BeanNameViewResolver",
+      "VelocityViewResolver",
+      "JasperReportsViewResolver",
+      "UrlBasedViewResolver",
+      "ResourceBundleViewResolver",
+      "None of the above"
+    ],
+    "correct": "JasperReportsViewResolver"
+  }
+
+]

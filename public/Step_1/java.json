@@ -1,0 +1,464 @@
+[
+    {
+        "question": "Given the variable List strings, which of the following is valid?",
+        "options": [
+            "strings.put(\"a\");",
+            "List.add(strings, \"a\");",
+            "strings[0] = \"a\";",
+            "strings.add(\"a\");"
+        ],
+        "correct": "strings.add(\"a\");"
+    },
+    {
+        "question": "When is a method required to include a return statement?",
+        "options": [
+            "When the method has a non-void return type",
+            "When the method contains more than one statement",
+            "Never",
+            "Always"
+        ],
+        "correct": "When the method has a non-void return type"
+    },
+    {
+        "question": "What is the type of the class literal Foo.class?",
+        "options": [
+            "Class",
+            "Class",
+            "Class",
+            "Class"
+        ],
+        "correct": "Class"
+    },
+    {
+        "question": "How would you declare and instantiate a variable, given the generic class Bag?",
+        "options": [
+            "Bag bag = new Bag();",
+            "Bag bag = new Bag();",
+            "Bag bag = new Bag();",
+            "Bag bag = new Bag();"
+        ],
+        "correct": "Bag bag = new Bag();"
+    },
+    {
+        "question": "What is the keyword used to transfer control to another part of the program?",
+        "options": [
+            "catch",
+            "throw",
+            "try",
+            "finally"
+        ],
+        "correct": "throw"
+    },
+    {
+        "question": "What indicates the end of a Java statement?",
+        "options": [
+            "Both a semicolon and a newline",
+            "A newline",
+            "A double-slash ( // )",
+            "A semicolon ( ; )"
+        ],
+        "correct": "A semicolon ( ; )"
+    },
+    {
+        "question": "Which of the following will initialize the array myVals to contain two values: 1 and 2",
+        "options": [
+            "int[] myVals = new int[2] {1, 2};",
+            "int[] myVals = {1, 2};",
+            "int[2] myVals = {1, 2};",
+            "int[] myVals = [1, 2];"
+        ],
+        "correct": "int[] myVals = {1, 2};"
+    },
+    {
+        "question": "Given the following code:float f = 7.0f/2.0f;long l = 7L/2L;Which statement is true?",
+        "options": [
+            "The values of f and l are equivalent",
+            "The attempt to assign l the result of 7L/2L will create an error",
+            "The value of f is less than the value of l",
+            "The value of f is greater than the value of l"
+        ],
+        "correct": "The value of f is greater than the value of l"
+    },
+    {
+        "question": "Which of the following can be a valid exception constructor?",
+        "options": [
+            "Exception(Object cause)",
+            "Exception(String message)",
+            "Exception(int cause)",
+            "Exception(String message, Object cause)"
+        ],
+        "correct": "Exception(String message)"
+    },
+    {
+        "question": "Which of these classes is a checked exception?",
+        "options": [
+            "ClassNotFoundException",
+            "NumberFormatException",
+            "ThreadDeath",
+            "NoClassDefFoundError"
+        ],
+        "correct": "ClassNotFoundException"
+    },
+    {
+        "question": "Given the following code:String s1 = \"hi\";String s2 = \"h\";s2 += \"i\";boolean b1 = s1 == s2;boolean b2 = s1.equals(s2);Which variable(s) is/are assured to be set to true?",
+        "options": [
+            "Both b1 and b2",
+            "b1",
+            "Neither b1 or b2",
+            "b2"
+        ],
+        "correct": "b2"
+    },
+    {
+        "question": "Given a type parameter T, what would assign to T[] ts;?",
+        "options": [
+            "ts = (T[]) new Object[SIZE];",
+            "Its impossible.",
+            "ts = new T[SIZE];",
+            "ts = new Object[SIZE];"
+        ],
+        "correct": "ts = (T[]) new Object[SIZE];"
+    },
+    {
+        "question": "How would you declare a generic factory method that creates a new generic list with a given size?",
+        "options": [
+            "public static List newList(int size)",
+            "public static List newList(int size)",
+            "public static List newList(int size)",
+            "public static List newList(int size)"
+        ],
+        "correct": "public static List newList(int size)"
+    },
+    {
+        "question": "Which instances of this class are treated as unchecked exceptions?",
+        "options": [
+            "Error",
+            "Throwable",
+            "Exception"
+        ],
+        "correct": "Error"
+    },
+    {
+        "question": "In which of the following situations will the compiler generate an error?",
+        "options": [
+            "Catching an checked exception that is not thrown in a try block",
+            "Mixing subclasses and superclasses in a throws clause",
+            "Don't having at least one catch block after a try block",
+            "Downcasting an instance of Exception to an incorrect type (e.g. RuntimeException re = (RuntimeException)e;)"
+        ],
+        "correct": "Catching an checked exception that is not thrown in a try block"
+    },
+    {
+    "question": "Select the correct statement for the given code based on Polymorphism in Java.\nclass Bike{\nvoid run(){System.out.println(\"running\");}\n}\nclass Splendor extends Bike{\nvoid run(){System.out.println(\"running safely with 60km\");}\npublic static void main(String args[]){\n Bike b = new Splendor();\n b.run();\n }\n }",
+    "options": [
+      "Compile time polymorphism",
+      "Encapsulation Runtime",
+      "Java Runtime Polymorphism",
+      "None of the above"
+    ],
+    "correct": "Compile time polymorphism"
+  },
+  {
+    "question": "In the Running phase of a program, JVM executes the _______ generated by the compiler.",
+    "options": [
+      "classcode",
+      "bytecode",
+      "plugin code",
+      "Bitcode"
+    ],
+    "correct": "bytecode"
+  },
+  {
+    "question": "What is the premise of equality for IdentityHashMap?",
+    "options": [
+      "Name equality",
+      "Hashcode equality",
+      "Length equality",
+      "Reference equality"
+    ],
+    "correct": "Reference equality"
+  },
+  {
+    "question": "Which of the following options is incorrect in terms of the given statement?\nIf a class inherits from some other class, it should ________.",
+    "options": [
+      "Over-ride or add the minimum to accomplish the derived class’ purpose",
+      "Override all the methods of its parent class",
+      "Make sure the result “contains” its base class",
+      "Make use of the parent class’s capabilities."
+    ],
+    "correct": "Override all the methods of its parent class"
+  },
+  {
+    "question": "Find the output of the following program. Choose the correct option.\n public class Solution{\n public static void main(String[] args){\n byte x = 127;\n x++;\n x++;\n System.out.print(x);\n }\n }",
+    "options": [
+      "-128",
+      "128",
+      "129",
+      "2"
+    ],
+    "correct": "-128"
+  },
+  {
+    "question": "How many classes of the java.lang package are known as wrapper classes in Java?",
+    "options": [
+      "6",
+      "5",
+      "8",
+      "3"
+    ],
+    "correct": "8"
+  },
+  {
+    "question": "Rohini uses static keywords in Java.\nFind the option in which she cannot apply a static keyword.",
+    "options": [
+      "variables",
+      "methods",
+      "blocks",
+      "nested classes",
+      "class"
+    ],
+    "correct": "class"
+  },
+  {
+    "question": "What is the main use of the keyword \"this\" in the given options?",
+    "options": [
+      "To invoke current class method (implicitly)",
+      "To return the current class instance from the method",
+      "To refer to the current class instance variable",
+      "All of the above."
+    ],
+    "correct": "All of the above."
+  },
+  {
+    "question": "Predict the output of the code given below and select the correct option.\n int i =20;\n int j =30;\n int k = j += i/5;\nSystem.out.println(i+\":\"+j+\":\"+k);",
+    "options": [
+      "0.19067129629629628",
+      "0.857175925925926",
+      "1.4406712962962962",
+      "0.8573379629629629"
+    ],
+    "correct": "0.8573379629629629"
+  },
+  {
+    "question": "What is the output of the following code snippet?\n long choice=2;\n switch(choice) {\n case 1: System.out.print(\"Hello\");\n break;\n case 2: System.out.print(\"Java\");\n default:\n System.out.print(\"Try Again\");\n }",
+    "options": [
+      "JavaTry Again",
+      "Try Again",
+      "Compilation Error",
+      "Java"
+    ],
+    "correct": "JavaTry Again"
+  },
+  {
+    "question": "What will be the output of the following code?\nimport java.util.*;\n class Student\n { \n    int id;\n    String name;\n    private Student(int i,String n)\n    { \n    id = i;\n    name = n;\n    } \n    void display(){System.out.println(id+\" \"+name);} \n} \npublic class Example{\n  public static void main(String args[]){ \n    Student s1 = new Student(111,\"Karan\");\n    Student s2 = new Student(222,\"Aryan\");\n    s1.display();\n    s2.display();\n }\n}",
+    "options": [
+      "111 Karan\n222 Aryan",
+      "111 \"Karan\"\n222 \"Aryan\"",
+      "111\nKaran\n222\nAryan",
+      "Error: Student4 (int,String) has private access in Student4"
+    ],
+    "correct": "Error: Student4 (int,String) has private access in Student4"
+  },
+  {
+    "question": "Which option is correct about the below code?\nimport java.util.*;\n class ThreadSample extends Thread{ \n public void run(){ \n  for(int time=1;time<5;time++){ \n    try{Thread.sleep(1000);}catch(InterruptedException e)\n    {System.out.println(e);} \n    System.out.println(time);\n  }\n }\n}\npublic class ThreadExample{\n   public static void main(String args[]){ \n  ThreadSample t1=new ThreadSample(); \n  ThreadSample t2=new ThreadSample(); \n  t1.run(); \n  t2.run(); \n System.out.println(\"hello\");\n }\n}",
+    "options": [
+      "123412341234….....infinite",
+      "Hello will be printed after the run method of both the thread objects are executed.",
+      "It will give an error from try catch block",
+      "None of the above"
+    ],
+    "correct": "Hello will be printed after the run method of both the thread objects are executed."
+  },
+  {
+    "question": "Which are the two classes that have high-level streams containing the methods for serializing and deserializing an object?",
+    "options": [
+      "ObjectInputStream and ObjectStream",
+      "ObjectInputStream and ObjectOutputStream",
+      "InputStream and OutputStream",
+      "ObjectStream and OutputStream"
+    ],
+    "correct": "ObjectInputStream and ObjectOutputStream"
+  },
+  {
+    "question": "class output {\npublic static void main(String args[])\n{\nStringBuffer s1 = new StringBuffer(\"\nHello World\");\ns1.insert(6 , \"Good \");\nSystem.out.println(s1);\n}\n}",
+    "options": [
+      "HelloGoodWorld",
+      "HellGoodoWorld",
+      "HellGood oWorld",
+      "Hello Good World"
+    ],
+    "correct": "Hello Good World"
+  },
+  {
+    "question": "Which of these keywords cannot be used for a class which has been declared final?",
+    "options": [
+      "abstract",
+      "extends",
+      "abstract and extends",
+      "None of the mentioned"
+    ],
+    "correct": "abstract"
+  },
+  {
+        "question": "A team of programmers is involved in reviewing a proposed design for a new utility class. After some discussion, they realize that the current design allows other classes to access methods in the utility class that should be accessible only to methods within the utility class itself. What design issue has the team discovered?",
+        "options": [
+            "Tight coupling",
+            "Low cohesion",
+            "High cohesion",
+            "Loose coupling",
+            "Weak encapsulation",
+            "Strong encapsulation"
+        ],
+        "correct": "Weak encapsulation"
+    },
+    {
+        "question": "import java.util.*; \nclass vector { \npublic static void main(String args[]) \n{ \nVector obj = new Vector(4,2); \nobj.addElement(new Integer(3)); \nobj.addElement(new Integer(2)); \nobj.addElement(new Integer(5)); \nobj.removeAll(obj); \nSystem.out.println(obj.isEmpty()); \n} \n}",
+        "options": [
+            "0",
+            "1",
+            "true",
+            "false"
+        ],
+        "correct": "true"
+    },
+    {
+        "question": "import java.util.*; \nclass Array { \npublic static void main(String args[]) \n{ \nint array[] = new int [5]; \nfor (int i = 5; i > 0; i--) \narray[5 - i] = i; \nArrays.sort(array); \nfor (int i = 0; i < 5; ++i) \nSystem.out.print(array[i]) ; \n} \n}",
+        "options": [
+            "54321",
+            "12345",
+            "1234",
+            "5432"
+        ],
+        "correct": "12345"
+    },
+    {
+        "question": "What is the output of this program? \nimport java.util.*; \nclass Maps { \npublic static void main(String args[]) \n{ \nTreeMap obj = new TreeMap(); \nobj.put(\"A\", new Integer(1)); \nobj.put(\"B\", new Integer(2)); \nobj.put(\"C\", new Integer(3)); \nSystem.out.println(obj.entrySet()); \n} \n}",
+        "options": [
+            "[A, B, C]",
+            "[1, 2, 3]",
+            "{A=1, B=2, C=3}",
+            "[A=1, B=2, C=3]"
+        ],
+        "correct": "[A=1, B=2, C=3]"
+    },
+    {
+        "question": "What is the output of this program? \nimport java.util.*; \nclass Bitset { \npublic static void main(String args[]) \n{ \nBitSet obj = new BitSet(5); \nfor (int i = 0; i < 5; ++i) \nobj.set(i); \nobj.clear(2); \nSystem.out.print(obj); \n} \n}",
+        "options": [
+            "{0, 1, 3, 4}",
+            "{0, 1, 2, 4}",
+            "{0, 1, 2, 3, 4}",
+            "{0, 0, 0, 3, 4}"
+        ],
+        "correct": "{0, 1, 3, 4}"
+    },
+    {
+        "question": "What is the output of this program? \nimport java.util.*; \nclass Array { \npublic static void main(String args[]) \n{ \nint array[] = new int [5]; \nfor (int i = 5; i > 0; i--) \narray[5-i] = i; \nArrays.fill(array, 1, 4, 8); \nfor (int i = 0; i < 5 ; i++) \nSystem.out.print(array[i]); \n} \n}",
+        "options": [
+            "12885",
+            "12845",
+            "58881",
+            "54881"
+        ],
+        "correct": "58881"
+    },
+    {
+        "question": "What is the output of this program? \nimport java.util.*; \nclass Collection_Algos { \npublic static void main(String args[]) \n{ \nLinkedList list = new LinkedList(); \nlist.add(new Integer(2)); \nlist.add(new Integer(8)); \nlist.add(new Integer(5)); \nlist.add(new Integer(1)); \nIterator i = list.iterator(); \nCollections.reverse(list); \nCollections.shuffle(list); \nwhile(i.hasNext()) \nSystem.out.print(i.next() + \" \"); \n} \n}",
+        "options": [
+            "2 8 5 1 ",
+            "1 5 8 2 ",
+            "1 2 5 8 ",
+            "Any random order"
+        ],
+        "correct": "Any random order"
+    },
+    {
+    "question": "What is the output of this program? \nimport java.util.*; \nclass Collection_Algos { \npublic static void main(String args[]) \n{ \nLinkedList list = new LinkedList(); \nlist.add(new Integer(2)); \nlist.add(new Integer(8)); \nlist.add(new Integer(5)); \nlist.add(new Integer(1)); \nIterator i = list.iterator(); \nCollections.reverse(list); \nCollections.sort(list); \nwhile(i.hasNext()) \nSystem.out.print(i.next() + \" \"); \n} \n}",
+    "options": [
+      "2 8 5 1",
+      "1 5 8 2",
+      "1 2 5 8",
+      "2 1 8 5"
+    ],
+    "correct": "1 2 5 8"
+  },
+  {
+    "question": "class output { \npublic static void main(String args[]) \n{ \nStringBuffer c = new StringBuffer(\"Hello\"); \nStringBuffer c1 = new StringBuffer(\"World\"); \nc.append(c1); \nSystem.out.println(c); \n} \n}",
+    "options": [
+      "Hello",
+      "World",
+      "Helloworld",
+      "Hello World"
+    ],
+    "correct": "Hello World"
+  },
+  {
+    "question": "class output { \npublic static void main(String args[]) \n{ \nStringBuffer s1 = new StringBuffer(\"Hello\"); \ns1.setCharAt(1,'x'); \nSystem.out.println(s1); \n} \n}",
+    "options": [
+      "xello",
+      "xxxxx",
+      "Hxllo",
+      "Hexlo"
+    ],
+    "correct": "Hxllo"
+  },
+  {
+    "question": "class output { \npublic static void main(String args[]) \n{ \nString s1 = \"one\"; \nString s2 = s1 + \" two\"; \nSystem.out.println(s2); \n} \n}",
+    "options": [
+      "one",
+      "two",
+      "one two",
+      "compilation error"
+    ],
+    "correct": "one two"
+  },
+  {
+    "question": "class exception_handling { \npublic static void main(String args[]) \n{ \ntry { \nSystem.out.print(\"Hello\" + \" \" \n+ 1 / 0); \n} \ncatch(ArithmeticException e) { \nSystem.out.print(\"World\"); \n} \n} \n}",
+    "options": [
+      "Hello",
+      "World",
+      "HelloWorld",
+      "Hello World"
+    ],
+    "correct": "World"
+  },
+  {
+    "question": "Which of the following describes the correct sequence of the steps involved in making a connection with a database.\n1. Loading the driver\n2. Process the results.\n3. Making the connection with the database.\n4. Executing the SQL statements.",
+    "options": [
+      "1,2,3,4",
+      "1,3,4,2",
+      "2,1,3,4",
+      "4,1,2,3"
+    ],
+    "correct": "1,3,4,2"
+  },
+  {
+    "question": "import java.io.*; \nclass filesinputoutput { \npublic static void main(String args[]) { \nInputStream obj = new FileInputStream(\"inputoutput.java\"); \nSystem.out.print(obj.available()); \n} \n}\nNote: inputoutput.java is stored in the disk.",
+    "options": [
+      "true",
+      "false",
+      "prints number of bytes in file",
+      "prints number of characters in the file"
+    ],
+    "correct": "prints number of bytes in file"
+  },
+  {
+    "question": "Which of these methods are used to read in from a file?",
+    "options": [
+      "get()",
+      "read()",
+      "scan()",
+      "readFileInput()"
+    ],
+    "correct": "read()"
+  },
+  {
+    "question": "Which of the following allows non repeatable read in JDBC Connection?",
+    "options": [
+      "TRANSACTION_READ_UNCOMMITTED",
+      "TRANSACTION_READ_COMMITTED",
+      "TRANSACTION_SERIALIZABLE",
+      "TRANSACTION_REPEATABLE_READ"
+    ],
+    "correct": "TRANSACTION_REPEATABLE_READ"
+  }
+]

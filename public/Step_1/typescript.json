@@ -1,0 +1,661 @@
+[
+    {
+        "question": "Which features does TypeScript support natively?",
+        "options": [
+            "Support for standard JavaScript code",
+            "Classes and modules",
+            "Static typing",
+            "Interfaces",
+            "Constructors",
+            "All of the above"
+        ],
+        "correct": "All of the above"
+    },
+    {
+        "question": "Which of the following is not a type keyword in TypeScript?",
+        "options": [
+            "float",
+            "bool",
+            "all are valid types in TypeScript",
+            "number",
+            "string"
+        ],
+        "correct": "float"
+    },
+    {
+        "question": "Interfaces defined in TypeScript are included in the JavaScript that is generated?",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": "False"
+    },
+    {
+        "question": "How do you extend an interface in TypeScript?",
+        "options": [
+            "interface ITruckOptions extends IAutoOptions",
+            "interface ITruckOptions => IAutoOptions",
+            "interface ITruckOptions : IAutoOptions",
+            "interface ITruckOptions implements IAutoOptions"
+        ],
+        "correct": "interface ITruckOptions extends IAutoOptions"
+    },
+    {
+        "question": "Benefits offered by TypeScript include:",
+        "options": [
+            "Code encapsulation",
+            "All of these",
+            "More maintainable code",
+            "Strongly-typed code"
+        ],
+        "correct": "All of these"
+    },
+    {
+        "question": "How do you automatically generate fields in a TypeScript class?",
+        "options": [
+            "Add the public keyword to a constructor parameter",
+            "None of these",
+            "Use the auto keyword",
+            "TypeScript doesn't support automatically generated fields"
+        ],
+        "correct": "Add the public keyword to a constructor parameter"
+    },
+    {
+        "question": "Which TypeScript function will accept 2 parameters that must be numbers and return their product?",
+        "options": [
+            "var func = (x: number, y: number) => x * y;",
+            "var func = (x, y) => x * y;",
+            "None of these",
+            "var func = function(x, y) => x * y;",
+            "All of these"
+        ],
+        "correct": "var func = (x: number, y: number) => x * y;"
+    },
+    {
+        "question": "Which statement will allow your code to reference an internal module in a file named shapes.ts using TypeScript?",
+        "options": [
+            "/// <reference />",
+            "/// <module />",
+            "import \"shapes\"",
+            "/// shapes.ts"
+        ],
+        "correct": "import \"shapes\""
+    },
+    {
+        "question": "Which TypeScript statement will import an external module in a file named viewmodels.ts that is in the same folder as your code?",
+        "options": [
+            "import vm = module(viewmodels);",
+            "import vm = module('../viewmodels');",
+            "import module('viewmodels');",
+            "import vm = module('viewmodels');"
+        ],
+        "correct": "import vm = module('viewmodels');"
+    },
+    {
+        "question": "Which TypeScript compiler parameter will emit JavaScript that is AMD compliant?",
+        "options": [
+            "--AMD",
+            "--module AMD",
+            "Neither of these"
+        ],
+        "correct": "--module AMD"
+    },
+    {
+        "question": "What keyword is used to apply all of the properties on one interface to another interface?",
+        "options": [
+            "implements",
+            "extends",
+            "class",
+            "furthers",
+            "references"
+        ],
+        "correct": "extends"
+    },
+    {
+        "question": "What value will be output at the end of the following code block?\nenum Color { Red = 5, Green = 10, Blue = 15 };\nconsole.log(Color.Green);",
+        "options": [
+            "2",
+            "Color.Green",
+            "1",
+            "Green",
+            "10"
+        ],
+        "correct": "10"
+    },
+    {
+        "question": "Which of the following best defines a \"class\"?",
+        "options": [
+            "Objects with no implementation details",
+            "Object with no properties or methods",
+            "JSON objects with methods",
+            "Collection of private, reusable functions",
+            "Template for creating objects"
+        ],
+        "correct": "Template for creating objects"
+    },
+    {
+        "question": "What term describes the concept of treating an object as if it were a particular type, even if it weren't declared as that type?",
+        "options": [
+            "Extension Typing",
+            "Duck Typing",
+            "Interface Typing",
+            "Generic Typing",
+            "Ruby Typing"
+        ],
+        "correct": "Duck Typing"
+    },
+    {
+        "question": "What access modifier limits the accessibility of a class member to its own class and subclasses?",
+        "options": [
+            "export",
+            "internal",
+            "protected",
+            "private",
+            "sensitive"
+        ],
+        "correct": "protected"
+    },
+    {
+        "question": "What is the primary difference between a generic class and a non-generic class?",
+        "options": [
+            "Generic classes do not accept constructor parameters.",
+            "Generic classes are always declared abstract.",
+            "Generic classes may not implement interfaces.",
+            "Generic classes accept a type parameter.",
+            "Generic classes must inherit from a base class."
+        ],
+        "correct": "Generic classes accept a type parameter."
+    },
+    {
+        "question": "Which TypeScript compiler options lets you specify the location of the tsconfig.json file to be used for the compilation?",
+        "options": [
+            "--project",
+            "--json",
+            "--outDir",
+            "--input",
+            "--source"
+        ],
+        "correct": "--project"
+    },
+    {
+        "question": "Which of the following symbols is used to denote that a function parameter is a rest parameter?",
+        "options": [
+            "<>",
+            ">>>",
+            "!!",
+            "...",
+            "||"
+        ],
+        "correct": "..."
+    },
+    {
+        "question": "Which of the following will correctly import the items exported by this export statement?\nexport { GetUser as GetLibraryUser, GetBook as GetLibraryBook };",
+        "options": [
+            "import TypeScript from './library';",
+            "import namespace from './library';",
+            "import { GetLibraryUser, GetLibraryBook } from './library';",
+            "import { GetUser, GetBook } from './library';",
+            "import all from './library';"
+        ],
+        "correct": "import { GetLibraryUser, GetLibraryBook } from './library';"
+    },{
+        "question": "Which are the different Data Types supported by Typescript?\nBoolean var bValue: boolean = false\nNumber var age: number = 16\nString var name: string = \"join\"\nAll of the above mentioned",
+        "options": [
+            "Boolean var bValue: boolean = false",
+            "Number var age: number = 16",
+            "String var name: string = \"join\"",
+            "All of the above mentioned"
+        ],
+        "correct": "All of the above mentioned"
+    },
+    {
+        "question": "What are the variable scopes available in TypeScript?",
+        "options": [
+            "Global Scope",
+            "Class Scope",
+            "Local Scope",
+            "All of the above"
+        ],
+        "correct": "All of the above"
+    },
+    {
+        "question": "Which object oriented terms are supported by Typescript?",
+        "options": [
+            "Modules",
+            "Classes",
+            "Interfaces",
+            "All of these"
+        ],
+        "correct": "All of these"
+    },
+    {
+        "question": "In typescript, it calls an javascript internally and then performs validations",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": "True"
+    },
+    {
+        "question": "To change the datatype from one type to another,we require",
+        "options": [
+            "TypeOperator",
+            "TypeAssertion",
+            "InferredTyping"
+        ],
+        "correct": "TypeAssertion"
+    },
+    {
+        "question": "For a variable,Without Specifying any data type is",
+        "options": [
+            "InferredTyping",
+            "TypeOperator",
+            "TypeAssertion"
+        ],
+        "correct": "InferredTyping"
+    },
+    {
+        "question": "Which of the following is valid command to compile typescript file?",
+        "options": [
+            "ts abc.ts",
+            "t abc.ts",
+            "tsc abc.ts",
+            "tst abc.ts"
+        ],
+        "correct": "tsc abc.ts"
+    },
+    {
+        "question": "What will be output of : var a:string=47; console.log(“Value of a=\"+a);",
+        "options": [
+            "Value of a=47",
+            "Value of a=0",
+            "Value of a=",
+            "None of the above"
+        ],
+        "correct": "None of the above"
+    },
+    {
+        "question": "Internal Modules are known as namespaces in Typescript.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": "True"
+    },
+    {
+        "question": "Which of the following Arrow Functions are true",
+        "options": [
+            "var reflect = value => value;",
+            "var sum = (num1, num2) => num1 + num2;",
+            "var getName = () => \"Nicholas\";",
+            "var sum = (num1, num2) => { return num1 + num2; };",
+            "All"
+        ],
+        "correct": "All"
+    },
+    {
+        "question": "function fun1(...params) { console.log(params.length); } fun1(); fun1(5); fun1(5, 6, 7); Which concept resemble the above program",
+        "options": [
+            "String Interpolation",
+            "Tagged Templates",
+            "Spread Operator/Rest Parameters",
+            "Object Destructuring"
+        ],
+        "correct": "Spread Operator/Rest Parameters"
+    },
+    {
+        "question": "Typescript is a",
+        "options": [
+            "Strongly typed",
+            "Object oriented",
+            "Compiled Language",
+            "All the above"
+        ],
+        "correct": "All the above"
+    },
+    {
+        "question": "Typescript is",
+        "options": [
+            "Language",
+            "set of tools",
+            "Both",
+            "None"
+        ],
+        "correct": "Both"
+    },
+    {
+        "question": "Select user defined data types in typescript",
+        "options": [
+            "arrays",
+            "String",
+            "Boolean",
+            "Void"
+        ],
+        "correct": "arrays"
+    },
+    {
+        "question": "Which of the following are true",
+        "options": [
+            "we can use printf in ts(typescript)",
+            "we can use console.log in ts(typescript)"
+        ],
+        "correct": "we can use console.log in ts(typescript)"
+    },
+    {
+        "question": "Which of the following are array methods",
+        "options": [
+            "Unshift()",
+            "Sort()",
+            "Pop()",
+            "All the above"
+        ],
+        "correct": "All the above"
+    },
+    {
+        "question": "Supertype of all datatypes in typescript",
+        "options": [
+            "number",
+            "Enum",
+            "Void",
+            "Any"
+        ],
+        "correct": "Any"
+    },
+    {
+        "question": "Which of the following are true",
+        "options": [
+            "var a=new String(hii)",
+            "var b=new array[1]",
+            "var a:String=hii;",
+            "All the above"
+        ],
+        "correct": "var b=new array[1]"
+    },
+    {
+        "question": "List some features of Typescript?\nTypescript can be compiled to all major versions of Javascript(ES3,ES5,ES6,ES7)\nTypescript can be used for cross –browser development and is an open source project\nTypescript is a superset of JavaScript that provides typed nature to your code\nAll of the above",
+        "options": [
+            "Typescript can be compiled to all major versions of Javascript(ES3,ES5,ES6,ES7)",
+            "Typescript can be used for cross –browser development and is an open source project",
+            "Typescript is a superset of JavaScript that provides typed nature to your code",
+            "All of the above"
+        ],
+        "correct": "All of the above"
+    },
+    {
+        "question": "What are the components of TypeScript?",
+        "options": [
+            "TypeScript Language",
+            "TypeScript Compiler",
+            "TypeScript Language Service",
+            "All of these"
+        ],
+        "correct": "All of these"
+    },
+    {
+        "question": "How to declare variables in Typescript?",
+        "options": [
+            "Var",
+            "Let",
+            "Both"
+        ],
+        "correct": "Both"
+    },
+    {
+        "question": "Typescript uses which data type?",
+        "options": [
+            "String",
+            "Number",
+            "Boolean",
+            "All above option"
+        ],
+        "correct": "All above option"
+    },
+    {
+        "question": "Default access modifier typescript?",
+        "options": [
+            "public",
+            "private",
+            "protected"
+        ],
+        "correct": "public"
+    },
+    {
+        "question": "What is async/await?",
+        "options": [
+            "New syntax to write JavaScript promises",
+            "New syntax to consume JavaScript promises",
+            "New syntax to consume asynchronous callbacks"
+        ],
+        "correct": "New syntax to consume JavaScript promises"
+    },
+    {
+        "question": "Which of the following is an attribute css selector?",
+        "options": [
+            "[selector]",
+            ".selector",
+            "#selector"
+        ],
+        "correct": "[selector]"
+    },
+    {
+        "question": "When is it recommended to pass this.setState a function instead of an object",
+        "options": [
+            "When the new state should completely replace the old state .",
+            "When the new state does not depend on the old state.",
+            "When the new state depends on the old state."
+        ],
+        "correct": "When the new state depends on the old state."
+    },
+    {
+        "question": "A promise represents what?",
+        "options": [
+            "A single value in the future",
+            "Multiple values in the present",
+            "Multiple values in the future",
+            "A single value in the present"
+        ],
+        "correct": "A single value in the future"
+    },
+    {
+        "question": "Can a component be styled with a global styled sheet?",
+        "options": [
+            "Only function components can be styled with a global styled sheet",
+            "Only if the component returns HTML elements",
+            "Yes",
+            "No"
+        ],
+        "correct": "Yes"
+    },
+    {
+        "question": "When binding to data in templates, how do you avoid issues with binding to properties of null or undefined objects?",
+        "options": [
+            "You don't need to worry about null objects, Angular will handle them gracefully.",
+            "Use the * operator on any object that could be null.",
+            "Use the ? operator on any object that could be null.",
+            "In the component, ensure the objects are never null."
+        ],
+        "correct": "Use the ? operator on any object that could be null."
+    },
+    {
+        "question": "Where should you sort and filter data?",
+        "options": [
+            "In a directive",
+            "In a pipe",
+            "In your component",
+            "In a filter"
+        ],
+        "correct": "In your component"
+    },
+    {
+        "question": "What's the right syntax to assign the function doSomething as the handler of a click event?",
+        "options": [
+            "onClick={doSomething}",
+            "onClick={() => doSomething}",
+            "onClick={doSomething()}"
+        ],
+        "correct": "onClick={doSomething}"
+    },
+    {
+        "question": "Assuming you define the statement: \"var person: string;\" TypeScript will alert you that there is an error if you enter which additional code?",
+        "options": [
+            "person = { name: 'Colleen', age: 25; }",
+            "person = 0",
+            "person = ['Colleen', 'John'];",
+            "all of the above"
+        ],
+        "correct": "all of the above"
+    },
+    {
+        "question": "When bootstrapping an Angular app, how do you specify the main, top-level app component to be used?",
+        "options": [
+            "You add the component as a package in your SystemJs config.",
+            "You load the component directly in your index.html file.",
+            "You add the component to the bootstrap array in your main app module.",
+            "You load the component directly from your main SystemJs package (e.g. main.ts)."
+        ],
+        "correct": "You add the component to the bootstrap array in your main app module."
+    },
+    {
+        "question": "What is the format of the data returned by the JSON Server API?",
+        "options": [
+            "YAML",
+            "XML",
+            "JSON"
+        ],
+        "correct": "JSON"
+    },
+    {
+        "question": "What syntax do you use to render the App component into an HTML element with id \"root\"?",
+        "options": [
+            "ReactDOM.render(App, document.getElementById(\"root\"));",
+            "React.render(App, document.getElementById(\"root\"));",
+            "ReactDOM.mountNode(, document.getElementById(\"root\"));",
+            "ReactDOM.render(<App />, document.getElementById(\"root\"));"
+        ],
+        "correct": "ReactDOM.render(<App />, document.getElementById(\"root\"));"
+    },
+    {
+        "question": "What function can be used to change the state of a React component?",
+        "options": [
+            "this.state = {}",
+            "this.setState",
+            "this.changeState"
+        ],
+        "correct": "this.setState"
+    },
+    {
+        "question": "What can we do if components A and B are siblings and they require access to the same state element?",
+        "options": [
+            "Restructure the application to have A and B be related differently",
+            "Place the state in either A or B",
+            "Place the state in a third component C that is a sibling to A and B",
+            "Place the state in the parent component of A and B"
+        ],
+        "correct": "Place the state in the parent component of A and B"
+    },
+    {
+        "question": "What is the name of the file that manages TypeScript projects?",
+        "options": [
+            "tsproj.config",
+            "tsmeta.json",
+            "tsconfig.json",
+            "package.json"
+        ],
+        "correct": "tsconfig.json"
+    },
+    {
+        "question": "When dealing with asynchronous functions, what type of generic must your return type be?",
+        "options": [
+            "Async",
+            "Promise",
+            "Array",
+            "AsyncAwait"
+        ],
+        "correct": "Promise"
+    },
+    {
+        "question": "What tool installs type declaration files?",
+        "options": [
+            "Duck",
+            "npm",
+            "Ruby",
+            "NuGet",
+            "Async"
+        ],
+        "correct": "npm"
+    },
+    {
+        "question": "What should appear to the left of the arrow in an arrow function?",
+        "options": [
+            "Function name",
+            "Function parameters",
+            "Curly braces",
+            "Function return value",
+            "Number of function parameters."
+        ],
+        "correct": "Function parameters"
+    },
+    {
+        "question": "What character separates a variable from its type annotation in a declaration?",
+        "options": [
+            " #",
+            "$",
+            "%",
+            ":"
+        ],
+        "correct": ":"
+    },
+    {
+        "question": "How would you define a string type variable with the value bar in TypeScript?",
+        "options": [
+            "let string: foo = 'bar';",
+            "let foo:string = 'bar';",
+            "let string foo = 'bar';",
+            "let foo (string) = 'bar';"
+        ],
+        "correct": "let foo:string = 'bar';"
+    },
+    {
+        "question": "What keyword requires a variable to be declared before it's used?",
+        "options": [
+            "let",
+            "dim",
+            "declare",
+            "set"
+        ],
+        "correct": "let"
+    },
+    {
+        "question": "What keyword declares a class member in the class rather than an instance of the class?",
+        "options": [
+            "enum",
+            "static",
+            "intersection",
+            "function",
+            "async"
+        ],
+        "correct": "static"
+    },
+    {
+        "question": "Within which function scope would a variable that you declare using the keyword var cover?",
+        "options": [
+            "Within the entire function scope",
+            "Within an if statement scope",
+            "Within a for loop scope",
+            "Within a while loop scope"
+        ],
+        "correct": "Within the entire function scope"
+    },
+    {
+        "question": "What keyword lets you derive a subclass from a superclass?",
+        "options": [
+            "stretches",
+            "extends",
+            "sub",
+            "follows",
+            "buildsUpon"
+        ],
+        "correct": "extends"
+    }
+    
+]
