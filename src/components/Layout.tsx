@@ -53,7 +53,7 @@ export default function Layout({ children, currentMode, onModeChange }: LayoutPr
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900 font-sans selection:bg-indigo-100 selection:text-indigo-900">
       {/* Sidebar - Desktop */}
-      <aside className="hidden lg:flex fixed left-0 top-0 h-full w-64 bg-white border-r border-gray-200 flex-col z-30">
+      <aside className="fixed left-0 top-0 h-full w-64 bg-white border-r border-gray-200 flex-col z-30 hidden lg:flex">
         <div className="p-8">
           <div className="flex items-center gap-3 mb-10 group cursor-pointer" onClick={() => onModeChange('home')}>
             <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold text-lg group-hover:scale-105 transition-transform">
@@ -136,12 +136,22 @@ export default function Layout({ children, currentMode, onModeChange }: LayoutPr
               className="fixed inset-0 bg-black/10 backdrop-blur-sm z-40 lg:hidden"
             />
             <motion.div
-              initial={{ x: '100%' }}
+              initial={{ x: '-100%' }}
               animate={{ x: 0 }}
-              exit={{ x: '100%' }}
+              exit={{ x: '-100%' }}
               transition={{ type: "spring", damping: 30, stiffness: 300 }}
-              className="fixed right-0 top-20 bottom-0 w-72 bg-white z-50 lg:hidden p-8 shadow-2xl flex flex-col"
+              className="fixed left-0 top-0 bottom-0 w-72 bg-white z-50 lg:hidden p-8 shadow-2xl flex flex-col"
             >
+              <div className="flex items-center justify-between mb-8">
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold">Q</div>
+                  <span className="font-bold text-gray-900">Quizmotic</span>
+                </div>
+                <button onClick={() => setIsMobileMenuOpen(false)} className="p-2 hover:bg-gray-100 rounded-lg">
+                  <X size={20} />
+                </button>
+              </div>
+
               <nav className="flex flex-col gap-1">
                 {navItems.map((item) => (
                   <NavItem
@@ -155,14 +165,21 @@ export default function Layout({ children, currentMode, onModeChange }: LayoutPr
                   />
                 ))}
               </nav>
+
+              <div className="mt-auto">
+                <div className="bg-indigo-50 rounded-2xl p-5 border border-indigo-100">
+                  <p className="text-[10px] font-bold text-indigo-600 uppercase tracking-widest mb-1">Current Rank</p>
+                  <p className="text-sm font-bold text-gray-900">Gold Tier • Top 5%</p>
+                </div>
+              </div>
             </motion.div>
           </>
         )}
       </AnimatePresence>
 
       {/* Main Content */}
-      <main className="lg:pl-64 pt-20 min-h-screen">
-        <div className="w-full max-w-6xl mx-auto p-4 md:p-10">
+      <main className="lg:pl-64 pt-24 min-h-screen">
+        <div className="w-full max-w-6xl mx-auto p-5 md:p-10">
           {children}
         </div>
       </main>
