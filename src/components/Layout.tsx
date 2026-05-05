@@ -53,7 +53,7 @@ export default function Layout({ children, currentMode, onModeChange }: LayoutPr
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900 font-sans selection:bg-indigo-100 selection:text-indigo-900">
       {/* Sidebar - Desktop */}
-      <aside className="fixed left-0 top-0 h-full w-64 bg-white border-r border-gray-200 flex flex-col z-30">
+      <aside className="hidden lg:flex fixed left-0 top-0 h-full w-64 bg-white border-r border-gray-200 flex-col z-30">
         <div className="p-8">
           <div className="flex items-center gap-3 mb-10 group cursor-pointer" onClick={() => onModeChange('home')}>
             <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold text-lg group-hover:scale-105 transition-transform">
@@ -84,7 +84,7 @@ export default function Layout({ children, currentMode, onModeChange }: LayoutPr
       </aside>
 
       {/* Header - Desktop/Mobile Overlay */}
-      <header className="lg:pl-64 fixed top-0 left-0 right-0 h-20 bg-white/80 backdrop-blur-md border-b border-gray-200 px-10 flex items-center justify-between z-40">
+      <header className="lg:pl-64 fixed top-0 left-0 right-0 h-20 bg-white/80 backdrop-blur-md border-b border-gray-200 px-4 md:px-10 flex items-center justify-between z-40">
         <div className="flex items-center gap-2 lg:hidden" onClick={() => onModeChange('home')}>
           <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold">
             Q
@@ -99,20 +99,21 @@ export default function Layout({ children, currentMode, onModeChange }: LayoutPr
           </h1>
         </div>
 
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-3 md:gap-6">
           <button 
             onClick={() => setIsInstructionsOpen(true)}
-            className="flex items-center gap-2 px-4 py-2 bg-indigo-50 text-indigo-700 rounded-full text-xs font-black uppercase tracking-widest hover:bg-indigo-100 transition-colors border border-indigo-100 shadow-sm"
+            className="flex items-center gap-2 px-3 md:px-4 py-2 bg-indigo-50 text-indigo-700 rounded-full text-[10px] md:text-xs font-black uppercase tracking-widest hover:bg-indigo-100 transition-colors border border-indigo-100 shadow-sm whitespace-nowrap"
           >
             <Info size={14} />
-            Instructions
+            <span className="hidden sm:inline">Instructions</span>
+            <span className="sm:hidden">Rules</span>
           </button>
 
           <div className="hidden md:flex flex-col items-end">
             <p className="text-[10px] text-gray-400 font-bold uppercase tracking-widest leading-none mb-1">Current Rank</p>
             <p className="text-xs font-bold text-indigo-600">Gold Tier • Top 5%</p>
           </div>
-          <div className="w-10 h-10 rounded-full bg-gray-100 border-2 border-white shadow-sm ring-1 ring-gray-100"></div>
+          <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-gray-100 border-2 border-white shadow-sm ring-1 ring-gray-100"></div>
           
           <button 
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -161,7 +162,7 @@ export default function Layout({ children, currentMode, onModeChange }: LayoutPr
 
       {/* Main Content */}
       <main className="lg:pl-64 pt-20 min-h-screen">
-        <div className="max-w-6xl mx-auto p-10">
+        <div className="w-full max-w-6xl mx-auto p-4 md:p-10">
           {children}
         </div>
       </main>
