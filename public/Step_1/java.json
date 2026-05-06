@@ -20,25 +20,25 @@
         "correct": "When the method has a non-void return type"
     },
     {
-        "question": "What is the type of the class literal Foo.class?",
-        "options": [
-            "Class",
-            "Class",
-            "Class",
-            "Class"
-        ],
-        "correct": "Class"
-    },
+    "question": "What is the type of the class literal Foo.class?",
+    "options": [
+      "Class<Foo>",
+      "Class",
+      "Class<?>",
+      "Class<Class>"
+    ],
+    "correct": "Class<Foo>"
+  },
     {
-        "question": "How would you declare and instantiate a variable, given the generic class Bag?",
-        "options": [
-            "Bag bag = new Bag();",
-            "Bag bag = new Bag();",
-            "Bag bag = new Bag();",
-            "Bag bag = new Bag();"
-        ],
-        "correct": "Bag bag = new Bag();"
-    },
+    "question": "How would you declare and instantiate a variable, given the generic class Bag<T>?",
+    "options": [
+      "Bag bag = new Bag();",
+      "Bag<T> bag = new Bag<T>();",
+      "Bag bag<T> = new Bag<T>();",
+      "Bag<T> bag = new Bag();"
+    ],
+    "correct": "Bag<T> bag = new Bag<T>();"
+  },
     {
         "question": "What is the keyword used to transfer control to another part of the program?",
         "options": [
@@ -120,15 +120,15 @@
         "correct": "ts = (T[]) new Object[SIZE];"
     },
     {
-        "question": "How would you declare a generic factory method that creates a new generic list with a given size?",
-        "options": [
-            "public static List newList(int size)",
-            "public static List newList(int size)",
-            "public static List newList(int size)",
-            "public static List newList(int size)"
-        ],
-        "correct": "public static List newList(int size)"
-    },
+    "question": "How would you declare a generic factory method that creates a new generic list with a given size?",
+    "options": [
+      "public static List<T><T> newList(int size)",
+      "<T> public static List<T> newList(int size)",
+      "public <T> static List<T> newList(int size)",
+      "public static <T> List<T> newList(int size)"
+    ],
+    "correct": "public static <T> List<T> newList(int size)"
+  },
     {
         "question": "Which instances of this class are treated as unchecked exceptions?",
         "options": [
