@@ -17,6 +17,33 @@ export const CATEGORIES: Category[] = [
     group: 'Current Dumps'
   },
   {
+    id: 'cd_angular',
+    name: 'Angular MCQ',
+    icon: 'Code2',
+    description: 'Latest Angular framework MCQs and best practices.',
+    fileName: 'Angular_MCQs.json',
+    folder: 'Current Dumps',
+    group: 'Current Dumps'
+  },
+  {
+    id: 'cd_react',
+    name: 'React MCQ',
+    icon: 'Layout',
+    description: 'Modern React patterns, hooks, and architecture.',
+    fileName: 'React_MCQs.json',
+    folder: 'Current Dumps',
+    group: 'Current Dumps'
+  },
+  {
+    id: 'cd_nodejs',
+    name: 'Node JS MCQ',
+    icon: 'Server',
+    description: 'Server-side logic, streams, and event-driven Node.js.',
+    fileName: 'NodeJS_MCQs.json',
+    folder: 'Current Dumps',
+    group: 'Current Dumps'
+  },
+  {
     id: 'step1',
     name: 'HTML CSS',
     icon: 'Layout',

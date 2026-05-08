@@ -20,20 +20,31 @@ import { cn } from '../lib/utils';
 interface FileItem {
   id: string;
   name: string;
-  type: 'pdf' | 'doc' | 'txt';
+  type: 'pdf' | 'doc' | 'txt' | 'json';
   step: number;
   size: string;
   date: string;
   url?: string;
 }
 
-const steps = [1, 2, 3, 4, 5, 6];
+const FOLDERS = [
+  { id: 0, name: 'Current Dumps' },
+  { id: 1, name: 'Step 1 Resources' },
+  { id: 2, name: 'Step 2 Resources' },
+  { id: 3, name: 'Step 3 Resources' },
+  { id: 4, name: 'Step 4 Resources' },
+  { id: 5, name: 'Step 5 Resources' },
+  { id: 6, name: 'Step 6 Resources' },
+];
 
 export default function FileManager() {
-  const [selectedStep, setSelectedStep] = React.useState<number>(1);
+  const [selectedStep, setSelectedStep] = React.useState<number>(0);
   const [files, setFiles] = React.useState<FileItem[]>(() => {
     const saved = localStorage.getItem('study_files');
     return saved ? JSON.parse(saved) : [
+      { id: 'cd_1', name: 'Angular_MCQs.json', type: 'json', step: 0, size: '42 KB', date: '2024-05-08', url: '/Current Dumps/Angular_MCQs.json' },
+      { id: 'cd_2', name: 'React_MCQs.json', type: 'json', step: 0, size: '58 KB', date: '2024-05-08', url: '/Current Dumps/React_MCQs.json' },
+      { id: 'cd_3', name: 'NodeJS_MCQs.json', type: 'json', step: 0, size: '48 KB', date: '2024-05-08', url: '/Current Dumps/NodeJS_MCQs.json' },
       { id: 'step1_1', name: 'CLOUD_FSD_DUMPS.pdf', type: 'pdf', step: 1, size: '0.1 MB', date: '2024-04-30', url: '/files/step_1/CLOUD_FSD_DUMPS.pdf' },
       { id: 'step2_1', name: 'FE_Complete_Notes.pdf', type: 'pdf', step: 2, size: '0.1 MB', date: '2024-04-30', url: '/files/step_2/FE_Complete_Notes.pdf' },
       { id: 'step3_1', name: 'Java_Continue_DeepDive.pdf', type: 'pdf', step: 3, size: '0.1 MB', date: '2024-04-30', url: '/files/step_3/Java_Continue_DeepDive.pdf' },
@@ -58,7 +69,7 @@ export default function FileManager() {
     const file = e.target.files?.[0];
     if (file) {
       const ext = file.name.split('.').pop()?.toLowerCase();
-      const type = (ext === 'pdf' ? 'pdf' : ext === 'doc' || ext === 'docx' ? 'doc' : 'txt') as any;
+      const type = (ext === 'pdf' ? 'pdf' : ext === 'json' ? 'json' : ext === 'doc' || ext === 'docx' ? 'doc' : 'txt') as any;
       
       const newFile: FileItem = {
         id: Math.random().toString(36).substr(2, 9),
@@ -94,6 +105,7 @@ export default function FileManager() {
     switch (type) {
       case 'pdf': return <FilePieChart className="text-rose-500" size={24} />;
       case 'doc': return <FileCode className="text-blue-500" size={24} />;
+      case 'json': return <FileText className="text-amber-500" size={24} />;
       default: return <FileText className="text-gray-500" size={24} />;
     }
   };
@@ -105,26 +117,26 @@ export default function FileManager() {
         {/* Sidebar: Steps Navigation */}
         <div className="w-full md:w-64 shrink-0 space-y-2">
           <h2 className="text-xs font-black text-gray-400 uppercase tracking-[0.2em] px-4 mb-4">Study Folders</h2>
-          {steps.map(step => (
+          {FOLDERS.map(folder => (
             <button
-              key={step}
-              onClick={() => setSelectedStep(step)}
+              key={folder.id}
+              onClick={() => setSelectedStep(folder.id)}
               className={cn(
                 "w-full flex items-center justify-between p-4 rounded-2xl transition-all font-bold text-sm text-left group",
-                selectedStep === step 
+                selectedStep === folder.id 
                   ? "bg-indigo-600 text-white shadow-lg shadow-indigo-100" 
                   : "bg-white text-gray-600 hover:bg-gray-50 border border-gray-100"
               )}
             >
               <div className="flex items-center gap-3">
-                <Folder size={18} className={cn(selectedStep === step ? "text-indigo-200" : "text-gray-400")} />
-                Step {step} Resources
+                <Folder size={18} className={cn(selectedStep === folder.id ? "text-indigo-200" : "text-gray-400")} />
+                {folder.name}
               </div>
               <div className={cn(
                 "text-[10px] px-2 py-0.5 rounded-full",
-                selectedStep === step ? "bg-white/20 text-white" : "bg-gray-100 text-gray-400"
+                selectedStep === folder.id ? "bg-white/20 text-white" : "bg-gray-100 text-gray-400"
               )}>
-                {files.filter(f => f.step === step).length}
+                {files.filter(f => f.step === folder.id).length}
               </div>
             </button>
           ))}
@@ -145,7 +157,9 @@ export default function FileManager() {
           <div className="bg-white rounded-[2.5rem] border border-gray-100 p-8 shadow-sm ring-1 ring-gray-100">
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8">
               <div>
-                <h1 className="text-4xl font-black text-gray-900 tracking-tight uppercase">Step {selectedStep} Documents</h1>
+                <h1 className="text-4xl font-black text-gray-900 tracking-tight uppercase">
+                  {FOLDERS.find(f => f.id === selectedStep)?.name}
+                </h1>
                 <p className="text-gray-500 font-medium mt-1">Manage your study materials, PDFs, and notes.</p>
               </div>
               
@@ -229,7 +243,7 @@ export default function FileManager() {
                     <FileIcon size={40} />
                   </div>
                   <h3 className="text-xl font-black text-gray-900 uppercase">No files found</h3>
-                  <p className="text-gray-500 font-medium mt-2">Upload your study materials for Step {selectedStep}</p>
+                  <p className="text-gray-500 font-medium mt-2">Upload your study materials for {FOLDERS.find(f => f.id === selectedStep)?.name}</p>
                   <label className="mt-6 flex items-center gap-2 px-6 py-3 bg-white text-gray-600 border border-gray-200 rounded-2xl font-bold text-sm hover:bg-gray-50 transition-all cursor-pointer">
                     <Plus size={18} />
                     Add First File

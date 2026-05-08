@@ -1,0 +1,952 @@
+[
+  {
+    "question": "Which command is used to create a new Angular project using the CLI?",
+    "options": [
+      "ng init my-app",
+      "ng new my-app",
+      "ng create my-app",
+      "ng start my-app"
+    ],
+    "correct": "ng new my-app"
+  },
+  {
+    "question": "What is the root module of a standard Angular application?",
+    "options": [
+      "AppComponent",
+      "BrowserModule",
+      "AppModule",
+      "CoreModule"
+    ],
+    "correct": "AppModule"
+  },
+  {
+    "question": "Which file bootstraps the Angular application in the browser?",
+    "options": [
+      "app.module.ts",
+      "app.component.ts",
+      "main.ts",
+      "index.html"
+    ],
+    "correct": "main.ts"
+  },
+  {
+    "question": "What decorator is used to define an Angular component?",
+    "options": [
+      "@NgModule",
+      "@Injectable",
+      "@Component",
+      "@Directive"
+    ],
+    "correct": "@Component"
+  },
+  {
+    "question": "Which property in @Component specifies the HTML template inline?",
+    "options": [
+      "templateUrl",
+      "template",
+      "html",
+      "view"
+    ],
+    "correct": "template"
+  },
+  {
+    "question": "What does the selector property in @Component define?",
+    "options": [
+      "The CSS file to apply",
+      "The HTML tag used to insert the component",
+      "The module the component belongs to",
+      "The route path for the component"
+    ],
+    "correct": "The HTML tag used to insert the component"
+  },
+  {
+    "question": "Which type of data binding is used in this syntax: {{ title }}?",
+    "options": [
+      "Property binding",
+      "Event binding",
+      "Two-way binding",
+      "String interpolation"
+    ],
+    "correct": "String interpolation"
+  },
+  {
+    "question": "What does property binding look like in Angular?",
+    "options": [
+      "(src)=\"imageUrl\"",
+      "{{src}}",
+      "[src]=\"imageUrl\"",
+      "[(src)]=\"imageUrl\""
+    ],
+    "correct": "[src]=\"imageUrl\""
+  },
+  {
+    "question": "Which syntax is used for event binding in Angular?",
+    "options": [
+      "[click]=\"onClick()\"",
+      "{{click}}=\"onClick()\"",
+      "(click)=\"onClick()\"",
+      "[(click)]=\"onClick()\""
+    ],
+    "correct": "(click)=\"onClick()\""
+  },
+  {
+    "question": "Which directive enables two-way data binding in Angular?",
+    "options": [
+      "ngModel",
+      "ngBind",
+      "ngForm",
+      "ngSync"
+    ],
+    "correct": "ngModel"
+  },
+  {
+    "question": "What module must be imported to use ngModel in Angular?",
+    "options": [
+      "HttpClientModule",
+      "ReactiveFormsModule",
+      "FormsModule",
+      "CommonModule"
+    ],
+    "correct": "FormsModule"
+  },
+  {
+    "question": "Which decorator is used to pass data from a parent to a child component?",
+    "options": [
+      "@Output",
+      "@Input",
+      "@Inject",
+      "@Param"
+    ],
+    "correct": "@Input"
+  },
+  {
+    "question": "Which decorator is used to emit events from a child to a parent component?",
+    "options": [
+      "@Input",
+      "@Emit",
+      "@Output",
+      "@EventEmit"
+    ],
+    "correct": "@Output"
+  },
+  {
+    "question": "What class is used with @Output to emit custom events?",
+    "options": [
+      "EventEmitter",
+      "Subject",
+      "Observable",
+      "BehaviorSubject"
+    ],
+    "correct": "EventEmitter"
+  },
+  {
+    "question": "What does the following code do? @Input() title: string;",
+    "options": [
+      "Emits a title event to the parent",
+      "Declares a local variable named title",
+      "Allows the parent component to pass a title value into the component",
+      "Binds the title to the template"
+    ],
+    "correct": "Allows the parent component to pass a title value into the component"
+  },
+  {
+    "question": "How do you open Chrome DevTools to debug an Angular app?",
+    "options": [
+      "ng debug",
+      "Press F12 in the browser",
+      "ng serve --debug",
+      "angular.json debug:true"
+    ],
+    "correct": "Press F12 in the browser"
+  },
+  {
+    "question": "What Angular-specific browser extension helps with debugging component trees?",
+    "options": [
+      "Angular Inspector",
+      "Augury / Angular DevTools",
+      "NgDebugger",
+      "Zone.js Debugger"
+    ],
+    "correct": "Augury / Angular DevTools"
+  },
+  {
+    "question": "Which keyword in TypeScript is used to pause execution at a specific line in DevTools?",
+    "options": [
+      "breakpoint",
+      "pause",
+      "debugger",
+      "stop"
+    ],
+    "correct": "debugger"
+  },
+  {
+    "question": "What does the ng serve --source-map flag help with?",
+    "options": [
+      "Minifying the output",
+      "Mapping compiled JS back to TypeScript for debugging",
+      "Serving the app on HTTPS",
+      "Generating a sitemap"
+    ],
+    "correct": "Mapping compiled JS back to TypeScript for debugging"
+  },
+  {
+    "question": "What is View Encapsulation in Angular?",
+    "options": [
+      "A way to hide the component from the router",
+      "A mechanism that scopes CSS styles to a specific component",
+      "A method to encapsulate HTTP calls",
+      "A lifecycle hook for view initialization"
+    ],
+    "correct": "A mechanism that scopes CSS styles to a specific component"
+  },
+  {
+    "question": "Which ViewEncapsulation mode disables style scoping entirely?",
+    "options": [
+      "Emulated",
+      "ShadowDom",
+      "None",
+      "Native"
+    ],
+    "correct": "None"
+  },
+  {
+    "question": "What lifecycle hook is called once when the component is initialized?",
+    "options": [
+      "ngOnChanges",
+      "ngAfterViewInit",
+      "ngOnInit",
+      "ngDoCheck"
+    ],
+    "correct": "ngOnInit"
+  },
+  {
+    "question": "Which lifecycle hook is triggered whenever an @Input property changes?",
+    "options": [
+      "ngOnInit",
+      "ngOnChanges",
+      "ngAfterContentInit",
+      "ngDoCheck"
+    ],
+    "correct": "ngOnChanges"
+  },
+  {
+    "question": "What is the purpose of ngOnDestroy?",
+    "options": [
+      "To destroy the app module",
+      "To clean up resources before the component is removed",
+      "To delete component files",
+      "To reset component state on navigation"
+    ],
+    "correct": "To clean up resources before the component is removed"
+  },
+  {
+    "question": "What does @ViewChild allow you to do?",
+    "options": [
+      "Pass data to a child component",
+      "Access a child component or DOM element from the parent",
+      "Emit events to the parent",
+      "Share services between components"
+    ],
+    "correct": "Access a child component or DOM element from the parent"
+  },
+  {
+    "question": "What is ng-content used for in Angular?",
+    "options": [
+      "To define routing outlets",
+      "To project content from a parent into a child component",
+      "To lazy load modules",
+      "To create dynamic components"
+    ],
+    "correct": "To project content from a parent into a child component"
+  },
+  {
+    "question": "Which structural directive conditionally renders an element?",
+    "options": [
+      "*ngFor",
+      "*ngSwitch",
+      "*ngIf",
+      "*ngShow"
+    ],
+    "correct": "*ngIf"
+  },
+  {
+    "question": "Which structural directive iterates over a list?",
+    "options": [
+      "*ngIf",
+      "*ngFor",
+      "*ngRepeat",
+      "*ngLoop"
+    ],
+    "correct": "*ngFor"
+  },
+  {
+    "question": "What variable is exported by *ngFor to track the current index?",
+    "options": [
+      "let i = iterator",
+      "let i = count",
+      "let i = index",
+      "let i = position"
+    ],
+    "correct": "let i = index"
+  },
+  {
+    "question": "What is the difference between structural and attribute directives?",
+    "options": [
+      "Structural directives change the DOM layout; attribute directives change element appearance or behavior",
+      "Attribute directives add/remove elements; structural directives change styles",
+      "Both do the same thing",
+      "Structural directives only work on forms"
+    ],
+    "correct": "Structural directives change the DOM layout; attribute directives change element appearance or behavior"
+  },
+  {
+    "question": "Which directive is used to apply CSS classes conditionally?",
+    "options": [
+      "[ngStyle]",
+      "[ngClass]",
+      "[ngClassIf]",
+      "[conditionalClass]"
+    ],
+    "correct": "[ngClass]"
+  },
+  {
+    "question": "Which directive dynamically applies inline styles?",
+    "options": [
+      "[ngClass]",
+      "[ngStyle]",
+      "[ngCSS]",
+      "[styleBinding]"
+    ],
+    "correct": "[ngStyle]"
+  },
+  {
+    "question": "How do you create a custom attribute directive in Angular?",
+    "options": [
+      "Using @Component with a class selector",
+      "Using @Directive with a selector",
+      "Using @Pipe with a name",
+      "Using @Injectable with providedIn"
+    ],
+    "correct": "Using @Directive with a selector"
+  },
+  {
+    "question": "Which class can be injected into a directive to access the host element?",
+    "options": [
+      "Renderer2",
+      "ElementRef",
+      "ViewContainerRef",
+      "ComponentRef"
+    ],
+    "correct": "ElementRef"
+  },
+  {
+    "question": "What is the recommended way to manipulate the DOM in Angular directives?",
+    "options": [
+      "Directly via ElementRef.nativeElement",
+      "Using document.querySelector",
+      "Using Renderer2 methods",
+      "Using jQuery"
+    ],
+    "correct": "Using Renderer2 methods"
+  },
+  {
+    "question": "What is the primary role of an Angular service?",
+    "options": [
+      "To define component templates",
+      "To provide reusable business logic and shared data across components",
+      "To define routing rules",
+      "To declare HTML directives"
+    ],
+    "correct": "To provide reusable business logic and shared data across components"
+  },
+  {
+    "question": "Which decorator marks a class as injectable in Angular?",
+    "options": [
+      "@Component",
+      "@Service",
+      "@Injectable",
+      "@Provide"
+    ],
+    "correct": "@Injectable"
+  },
+  {
+    "question": "What does providedIn: 'root' mean in @Injectable?",
+    "options": [
+      "The service is only available in the root component",
+      "The service is provided as a singleton across the entire application",
+      "The service resets on each component instantiation",
+      "The service is lazy loaded"
+    ],
+    "correct": "The service is provided as a singleton across the entire application"
+  },
+  {
+    "question": "What is Dependency Injection in Angular?",
+    "options": [
+      "A way to inject HTML into templates",
+      "A design pattern where dependencies are provided to a class rather than created inside it",
+      "A method to inject CSS styles dynamically",
+      "A technique to merge two modules"
+    ],
+    "correct": "A design pattern where dependencies are provided to a class rather than created inside it"
+  },
+  {
+    "question": "Where should a service be provided to limit its scope to a specific feature module?",
+    "options": [
+      "In AppModule providers array",
+      "In the component's providers array or the feature module's providers array",
+      "In main.ts",
+      "In the environment file"
+    ],
+    "correct": "In the component's providers array or the feature module's providers array"
+  },
+  {
+    "question": "Which Angular module is required to set up routing?",
+    "options": [
+      "FormsModule",
+      "RouterModule",
+      "HttpClientModule",
+      "BrowserModule"
+    ],
+    "correct": "RouterModule"
+  },
+  {
+    "question": "What directive renders the matched route component in the template?",
+    "options": [
+      "<ng-template>",
+      "<router-link>",
+      "<router-outlet>",
+      "<route-view>"
+    ],
+    "correct": "<router-outlet>"
+  },
+  {
+    "question": "Which directive is used for navigation links in Angular?",
+    "options": [
+      "href",
+      "routerLink",
+      "navLink",
+      "ngRoute"
+    ],
+    "correct": "routerLink"
+  },
+  {
+    "question": "How do you navigate programmatically in Angular?",
+    "options": [
+      "window.location.href = '/path'",
+      "this.router.navigateByUrl('/path') or this.router.navigate(['/path'])",
+      "location.go('/path')",
+      "this.route.navigate('/path')"
+    ],
+    "correct": "this.router.navigateByUrl('/path') or this.router.navigate(['/path'])"
+  },
+  {
+    "question": "Which service is used to access route parameters in a component?",
+    "options": [
+      "Router",
+      "ActivatedRoute",
+      "RouteParams",
+      "NavigationExtras"
+    ],
+    "correct": "ActivatedRoute"
+  },
+  {
+    "question": "What property of ActivatedRoute provides an Observable for route parameters?",
+    "options": [
+      "params",
+      "snapshot",
+      "queryParams",
+      "data"
+    ],
+    "correct": "params"
+  },
+  {
+    "question": "What is a Route Guard in Angular?",
+    "options": [
+      "A directive that protects form inputs",
+      "A service that controls access to routes based on logic",
+      "An interceptor for HTTP requests",
+      "A pipe that validates route data"
+    ],
+    "correct": "A service that controls access to routes based on logic"
+  },
+  {
+    "question": "Which interface is implemented by a guard that prevents navigation to a route?",
+    "options": [
+      "CanActivate",
+      "CanLoad",
+      "CanDeactivate",
+      "Resolve"
+    ],
+    "correct": "CanActivate"
+  },
+  {
+    "question": "What is a wildcard route in Angular used for?",
+    "options": [
+      "To match all routes with query parameters",
+      "To redirect any unmatched URL, typically to a 404 page",
+      "To define lazy-loaded routes",
+      "To group child routes"
+    ],
+    "correct": "To redirect any unmatched URL, typically to a 404 page"
+  },
+  {
+    "question": "What is the path for a wildcard route in Angular?",
+    "options": [
+      "path: '*'",
+      "path: 'default'",
+      "path: '**'",
+      "path: 'notfound'"
+    ],
+    "correct": "path: '**'"
+  },
+  {
+    "question": "What is an Observable in Angular?",
+    "options": [
+      "A static data structure",
+      "A stream of data that can be subscribed to over time",
+      "A one-time Promise replacement",
+      "A directive for dynamic rendering"
+    ],
+    "correct": "A stream of data that can be subscribed to over time"
+  },
+  {
+    "question": "Which library provides Observables used in Angular?",
+    "options": [
+      "Zone.js",
+      "RxJS",
+      "NgRx",
+      "Lodash"
+    ],
+    "correct": "RxJS"
+  },
+  {
+    "question": "How do you subscribe to an Observable in Angular?",
+    "options": [
+      "observable.listen(callback)",
+      "observable.then(callback)",
+      "observable.subscribe(callback)",
+      "observable.on(callback)"
+    ],
+    "correct": "observable.subscribe(callback)"
+  },
+  {
+    "question": "What should you do to prevent memory leaks when subscribing to Observables?",
+    "options": [
+      "Call observable.destroy()",
+      "Use ngOnChanges to clean up",
+      "Unsubscribe in ngOnDestroy or use the async pipe",
+      "Use setTimeout to delay subscription"
+    ],
+    "correct": "Unsubscribe in ngOnDestroy or use the async pipe"
+  },
+  {
+    "question": "Which RxJS operator transforms emitted values from an Observable?",
+    "options": [
+      "filter",
+      "tap",
+      "map",
+      "switchMap"
+    ],
+    "correct": "map"
+  },
+  {
+    "question": "What does the RxJS filter operator do?",
+    "options": [
+      "Transforms each emitted value",
+      "Emits only values that pass a given condition",
+      "Merges two observables",
+      "Delays the emission of values"
+    ],
+    "correct": "Emits only values that pass a given condition"
+  },
+  {
+    "question": "What is the async pipe used for in Angular templates?",
+    "options": [
+      "To handle async/await syntax in templates",
+      "To automatically subscribe and unsubscribe from Observables or Promises",
+      "To delay rendering of the component",
+      "To debounce HTTP requests"
+    ],
+    "correct": "To automatically subscribe and unsubscribe from Observables or Promises"
+  },
+  {
+    "question": "What is the difference between Subject and BehaviorSubject in RxJS?",
+    "options": [
+      "They are identical",
+      "BehaviorSubject requires an initial value and emits it to new subscribers immediately",
+      "Subject emits to all past and future subscribers",
+      "BehaviorSubject only works with HTTP calls"
+    ],
+    "correct": "BehaviorSubject requires an initial value and emits it to new subscribers immediately"
+  },
+  {
+    "question": "Which approach to forms in Angular uses a template-driven strategy?",
+    "options": [
+      "FormBuilder",
+      "AbstractControl",
+      "NgForm with ngModel directives in the template",
+      "FormGroup defined in the class"
+    ],
+    "correct": "NgForm with ngModel directives in the template"
+  },
+  {
+    "question": "Which approach to forms in Angular defines the form structure in the component class?",
+    "options": [
+      "Template-driven forms",
+      "Reactive forms",
+      "Hybrid forms",
+      "Schema-driven forms"
+    ],
+    "correct": "Reactive forms"
+  },
+  {
+    "question": "Which module must be imported to use Reactive Forms?",
+    "options": [
+      "FormsModule",
+      "ReactiveFormsModule",
+      "CommonModule",
+      "HttpClientModule"
+    ],
+    "correct": "ReactiveFormsModule"
+  },
+  {
+    "question": "What class is used to create a reactive form group?",
+    "options": [
+      "NgForm",
+      "AbstractControl",
+      "FormGroup",
+      "FormArray"
+    ],
+    "correct": "FormGroup"
+  },
+  {
+    "question": "How do you add built-in validation to a reactive form control?",
+    "options": [
+      "Add required attribute in HTML",
+      "Pass Validators from the Validators class as the second argument to FormControl",
+      "Use ngModel directive",
+      "Add validators in @Component metadata"
+    ],
+    "correct": "Pass Validators from the Validators class as the second argument to FormControl"
+  },
+  {
+    "question": "Which CSS class does Angular add to an invalid, touched form control?",
+    "options": [
+      "ng-error",
+      "ng-touched ng-invalid",
+      "ng-dirty ng-broken",
+      "form-invalid"
+    ],
+    "correct": "ng-touched ng-invalid"
+  },
+  {
+    "question": "What does FormArray represent in reactive forms?",
+    "options": [
+      "An array of form groups within a module",
+      "A dynamic list of form controls or groups",
+      "An array of validators",
+      "A collection of submitted form values"
+    ],
+    "correct": "A dynamic list of form controls or groups"
+  },
+  {
+    "question": "What is an Angular Pipe used for?",
+    "options": [
+      "Transforming data before it is displayed in the template",
+      "Handling HTTP requests",
+      "Routing between pages",
+      "Injecting services into components"
+    ],
+    "correct": "Transforming data before it is displayed in the template"
+  },
+  {
+    "question": "Which pipe converts a string to uppercase in Angular?",
+    "options": [
+      "upper",
+      "toUpperCase",
+      "uppercase",
+      "capitalize"
+    ],
+    "correct": "uppercase"
+  },
+  {
+    "question": "How do you pass parameters to a pipe in Angular templates?",
+    "options": [
+      "pipeName(param)",
+      "pipeName | param",
+      "pipeName:param",
+      "pipeName[param]"
+    ],
+    "correct": "pipeName:param"
+  },
+  {
+    "question": "How do you create a custom pipe in Angular?",
+    "options": [
+      "Using @Directive with a transform method",
+      "Using @Pipe decorator with a transform method",
+      "Using @Component with a pipes array",
+      "Using @Injectable with a name property"
+    ],
+    "correct": "Using @Pipe decorator with a transform method"
+  },
+  {
+    "question": "What is the purpose of the pure property in the @Pipe decorator?",
+    "options": [
+      "It marks the pipe as synchronous",
+      "It controls whether Angular re-evaluates the pipe only on pure change detection",
+      "It prevents the pipe from being used in other modules",
+      "It removes the pipe from the component tree"
+    ],
+    "correct": "It controls whether Angular re-evaluates the pipe only on pure change detection"
+  },
+  {
+    "question": "Which pipe formats a date value in Angular?",
+    "options": [
+      "dateFormat",
+      "formatDate",
+      "date",
+      "datetime"
+    ],
+    "correct": "date"
+  },
+  {
+    "question": "Which Angular module is required to make HTTP requests?",
+    "options": [
+      "FormsModule",
+      "BrowserModule",
+      "HttpClientModule",
+      "RouterModule"
+    ],
+    "correct": "HttpClientModule"
+  },
+  {
+    "question": "Which service is used to send HTTP requests in Angular?",
+    "options": [
+      "HttpService",
+      "HttpClient",
+      "RequestService",
+      "FetchService"
+    ],
+    "correct": "HttpClient"
+  },
+  {
+    "question": "What does HttpClient.get() return?",
+    "options": [
+      "A Promise",
+      "A plain object",
+      "An Observable",
+      "A callback function"
+    ],
+    "correct": "An Observable"
+  },
+  {
+    "question": "What is an HTTP Interceptor in Angular?",
+    "options": [
+      "A service that cancels all outgoing requests",
+      "A class that intercepts outgoing requests or incoming responses to transform or handle them",
+      "A route guard for HTTP routes",
+      "A pipe that formats HTTP responses"
+    ],
+    "correct": "A class that intercepts outgoing requests or incoming responses to transform or handle them"
+  },
+  {
+    "question": "Which interface must be implemented to create an HTTP Interceptor?",
+    "options": [
+      "HttpHandler",
+      "HttpInterceptor",
+      "HttpMiddleware",
+      "HttpFilter"
+    ],
+    "correct": "HttpInterceptor"
+  },
+  {
+    "question": "What method in the HttpInterceptor interface must be implemented?",
+    "options": [
+      "handle()",
+      "transform()",
+      "intercept()",
+      "process()"
+    ],
+    "correct": "intercept()"
+  },
+  {
+    "question": "How do you add headers to an HTTP request using HttpClient?",
+    "options": [
+      "httpClient.get(url, {header: 'Authorization'})",
+      "httpClient.get(url, { headers: new HttpHeaders({'Authorization': 'Bearer token'}) })",
+      "httpClient.addHeader('Authorization', 'token')",
+      "httpClient.get(url).setHeaders()"
+    ],
+    "correct": "httpClient.get(url, { headers: new HttpHeaders({'Authorization': 'Bearer token'}) })"
+  },
+  {
+    "question": "What is JWT used for in Angular authentication?",
+    "options": [
+      "Styling the login page",
+      "Encoding form data before submission",
+      "Representing authentication credentials in a compact, self-contained token format",
+      "Hashing passwords on the client side"
+    ],
+    "correct": "Representing authentication credentials in a compact, self-contained token format"
+  },
+  {
+    "question": "Where is a JWT token typically stored in an Angular app for session persistence?",
+    "options": [
+      "Angular service state only",
+      "LocalStorage or SessionStorage",
+      "A cookie file on the server",
+      "The Angular router state"
+    ],
+    "correct": "LocalStorage or SessionStorage"
+  },
+  {
+    "question": "Which route guard interface is used to protect routes from unauthenticated users?",
+    "options": [
+      "CanLoad",
+      "Resolve",
+      "CanActivate",
+      "CanDeactivate"
+    ],
+    "correct": "CanActivate"
+  },
+  {
+    "question": "What should an HTTP Interceptor typically do when an authentication token exists?",
+    "options": [
+      "Delete the token and re-authenticate",
+      "Clone the request and attach the Authorization header",
+      "Cancel the request and redirect to login",
+      "Log the request only"
+    ],
+    "correct": "Clone the request and attach the Authorization header"
+  },
+  {
+    "question": "What is a Dynamic Component in Angular?",
+    "options": [
+      "A component that changes its template at compile time",
+      "A component that is created and inserted into the view programmatically at runtime",
+      "A component that uses dynamic CSS",
+      "A component loaded by the router"
+    ],
+    "correct": "A component that is created and inserted into the view programmatically at runtime"
+  },
+  {
+    "question": "Which class is used to get a reference to a location in the DOM where a dynamic component can be inserted?",
+    "options": [
+      "ComponentRef",
+      "ElementRef",
+      "ViewContainerRef",
+      "TemplateRef"
+    ],
+    "correct": "ViewContainerRef"
+  },
+  {
+    "question": "Which method of ViewContainerRef is used to create a dynamic component?",
+    "options": [
+      "insertComponent()",
+      "createComponent()",
+      "addComponent()",
+      "renderComponent()"
+    ],
+    "correct": "createComponent()"
+  },
+  {
+    "question": "What is an NgModule in Angular?",
+    "options": [
+      "A TypeScript class decorator for services",
+      "A container that groups related components, directives, pipes, and services",
+      "A built-in directive for conditionally showing modules",
+      "A utility for managing HTTP calls"
+    ],
+    "correct": "A container that groups related components, directives, pipes, and services"
+  },
+  {
+    "question": "Which array in @NgModule makes components, directives, and pipes available to other modules?",
+    "options": [
+      "declarations",
+      "imports",
+      "providers",
+      "exports"
+    ],
+    "correct": "exports"
+  },
+  {
+    "question": "What is Lazy Loading in Angular routing?",
+    "options": [
+      "Loading all modules at app startup",
+      "Loading feature modules only when their route is accessed",
+      "Deferring all service initialization",
+      "Loading components after a delay"
+    ],
+    "correct": "Loading feature modules only when their route is accessed"
+  },
+  {
+    "question": "Which property in a route definition enables lazy loading of a module?",
+    "options": [
+      "component",
+      "children",
+      "loadChildren",
+      "lazyLoad"
+    ],
+    "correct": "loadChildren"
+  },
+  {
+    "question": "What is the Ahead-of-Time (AOT) compilation in Angular?",
+    "options": [
+      "Compiling Angular templates in the browser at runtime",
+      "Compiling Angular templates during the build process before the browser runs the app",
+      "A way to preload lazy modules",
+      "A method to compile TypeScript into JavaScript"
+    ],
+    "correct": "Compiling Angular templates during the build process before the browser runs the app"
+  },
+  {
+    "question": "Which Angular CLI command builds the app for production with optimizations?",
+    "options": [
+      "ng build",
+      "ng build --prod",
+      "ng compile --production",
+      "ng deploy"
+    ],
+    "correct": "ng build --prod"
+  },
+  {
+    "question": "What is tree shaking in the context of Angular builds?",
+    "options": [
+      "Removing unused CSS",
+      "Eliminating dead code not referenced in the application to reduce bundle size",
+      "Shaking the component tree to re-render",
+      "Deleting unused route definitions"
+    ],
+    "correct": "Eliminating dead code not referenced in the application to reduce bundle size"
+  },
+  {
+    "question": "Which file would you modify to configure environment-specific variables in Angular?",
+    "options": [
+      "app.module.ts",
+      "angular.json",
+      "environment.ts / environment.prod.ts",
+      "tsconfig.json"
+    ],
+    "correct": "environment.ts / environment.prod.ts"
+  },
+  {
+    "question": "What command is used to deploy an Angular app to GitHub Pages using the CLI?",
+    "options": [
+      "ng deploy --target=github",
+      "ng publish",
+      "ng add angular-cli-ghpages then ng deploy",
+      "ng build && git push"
+    ],
+    "correct": "ng add angular-cli-ghpages then ng deploy"
+  },
+  {
+    "question": "Which testing framework does Angular use by default for unit tests?",
+    "options": [
+      "Mocha",
+      "Jest",
+      "Jasmine",
+      "Chai"
+    ],
+    "correct": "Jasmine"
+  }
+]

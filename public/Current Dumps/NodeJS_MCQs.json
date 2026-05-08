@@ -1,0 +1,1082 @@
+[
+  {
+    "question": "What is Node.js?",
+    "options": [
+      "A front-end JavaScript framework",
+      "A JavaScript runtime built on Chrome's V8 engine for server-side execution",
+      "A database management system",
+      "A CSS preprocessor"
+    ],
+    "correct": "A JavaScript runtime built on Chrome's V8 engine for server-side execution"
+  },
+  {
+    "question": "Which command checks the installed version of Node.js?",
+    "options": [
+      "node --version",
+      "npm version",
+      "node -check",
+      "nodejs --v"
+    ],
+    "correct": "node --version"
+  },
+  {
+    "question": "What is npm?",
+    "options": [
+      "Node Process Manager",
+      "Node Package Manager used to install and manage dependencies",
+      "A built-in Node.js module",
+      "A JavaScript testing framework"
+    ],
+    "correct": "Node Package Manager used to install and manage dependencies"
+  },
+  {
+    "question": "What does the REPL stand for in Node.js?",
+    "options": [
+      "Run Execute Print Loop",
+      "Read Evaluate Print Loop",
+      "Render Event Process Loop",
+      "Read Error Print Log"
+    ],
+    "correct": "Read Evaluate Print Loop"
+  },
+  {
+    "question": "Which global object provides information about the current Node.js process?",
+    "options": [
+      "global",
+      "window",
+      "process",
+      "runtime"
+    ],
+    "correct": "process"
+  },
+  {
+    "question": "What is the difference between Node.js and browser JavaScript?",
+    "options": [
+      "Node.js uses a different version of JavaScript syntax",
+      "Node.js has no access to the DOM but has access to OS-level APIs like the file system",
+      "Browser JavaScript is faster than Node.js",
+      "Node.js cannot use callbacks"
+    ],
+    "correct": "Node.js has no access to the DOM but has access to OS-level APIs like the file system"
+  },
+  {
+    "question": "What is the CommonJS module system keyword used to import a module in Node.js?",
+    "options": [
+      "import",
+      "fetch",
+      "require",
+      "include"
+    ],
+    "correct": "require"
+  },
+  {
+    "question": "How do you export a function named 'greet' from a Node.js module?",
+    "options": [
+      "export.greet = greet",
+      "module.exports.greet = greet",
+      "exports default greet",
+      "global.greet = greet"
+    ],
+    "correct": "module.exports.greet = greet"
+  },
+  {
+    "question": "What does require('./utils') look for first when resolving the path?",
+    "options": [
+      "A file named utils in node_modules",
+      "A file named utils.js in the current directory",
+      "A global module named utils",
+      "An environment variable named utils"
+    ],
+    "correct": "A file named utils.js in the current directory"
+  },
+  {
+    "question": "Which built-in Node.js module provides utilities for working with file and directory paths?",
+    "options": [
+      "fs",
+      "os",
+      "path",
+      "url"
+    ],
+    "correct": "path"
+  },
+  {
+    "question": "What does path.join() do?",
+    "options": [
+      "Combines URL segments for HTTP requests",
+      "Joins multiple path segments into a single normalized path",
+      "Merges two JSON objects",
+      "Concatenates file contents"
+    ],
+    "correct": "Joins multiple path segments into a single normalized path"
+  },
+  {
+    "question": "What does __dirname refer to in a Node.js module?",
+    "options": [
+      "The root directory of the project",
+      "The absolute path of the directory containing the current file",
+      "The name of the current working directory",
+      "The home directory of the OS user"
+    ],
+    "correct": "The absolute path of the directory containing the current file"
+  },
+  {
+    "question": "Which npm command initializes a new project and creates a package.json file?",
+    "options": [
+      "npm start",
+      "npm create",
+      "npm init",
+      "npm setup"
+    ],
+    "correct": "npm init"
+  },
+  {
+    "question": "What is the purpose of the node_modules directory?",
+    "options": [
+      "It stores compiled Node.js binaries",
+      "It contains all installed npm dependencies for the project",
+      "It caches HTTP responses",
+      "It holds environment variable definitions"
+    ],
+    "correct": "It contains all installed npm dependencies for the project"
+  },
+  {
+    "question": "Which built-in Node.js module is used to read and write files?",
+    "options": [
+      "http",
+      "path",
+      "fs",
+      "stream"
+    ],
+    "correct": "fs"
+  },
+  {
+    "question": "What is the difference between fs.readFileSync() and fs.readFile()?",
+    "options": [
+      "readFileSync reads binary files; readFile reads text files",
+      "readFileSync blocks execution until complete; readFile is non-blocking and uses a callback",
+      "readFile is deprecated; readFileSync is the modern approach",
+      "There is no difference"
+    ],
+    "correct": "readFileSync blocks execution until complete; readFile is non-blocking and uses a callback"
+  },
+  {
+    "question": "What encoding string should you pass to fs.readFileSync() to get a string result instead of a Buffer?",
+    "options": [
+      "binary",
+      "raw",
+      "utf8",
+      "ascii-only"
+    ],
+    "correct": "utf8"
+  },
+  {
+    "question": "Which method would you use to write data to a JSON file, creating or overwriting it?",
+    "options": [
+      "fs.appendFile()",
+      "fs.createFile()",
+      "fs.writeFileSync()",
+      "fs.saveFile()"
+    ],
+    "correct": "fs.writeFileSync()"
+  },
+  {
+    "question": "How do you access command line arguments passed to a Node.js script?",
+    "options": [
+      "process.argv",
+      "process.args",
+      "global.argv",
+      "command.args"
+    ],
+    "correct": "process.argv"
+  },
+  {
+    "question": "In process.argv, what is stored at index 0 and index 1?",
+    "options": [
+      "The script name and the first argument",
+      "The path to node and the path to the script being executed",
+      "The OS name and Node version",
+      "The first and second user-provided arguments"
+    ],
+    "correct": "The path to node and the path to the script being executed"
+  },
+  {
+    "question": "Which npm package is commonly used to parse named command line arguments like --name=John?",
+    "options": [
+      "commander",
+      "yargs",
+      "minimist",
+      "args-parser"
+    ],
+    "correct": "yargs"
+  },
+  {
+    "question": "What does JSON.stringify() do when saving data to a file?",
+    "options": [
+      "Converts a JavaScript object to a JSON-formatted string",
+      "Parses a JSON string into a JavaScript object",
+      "Encrypts JavaScript objects",
+      "Validates JSON structure"
+    ],
+    "correct": "Converts a JavaScript object to a JSON-formatted string"
+  },
+  {
+    "question": "What happens if you call JSON.parse() on invalid JSON?",
+    "options": [
+      "It returns null",
+      "It returns undefined",
+      "It throws a SyntaxError",
+      "It silently fails and returns an empty object"
+    ],
+    "correct": "It throws a SyntaxError"
+  },
+  {
+    "question": "Which Node.js built-in module allows you to debug using the V8 inspector?",
+    "options": [
+      "debug",
+      "inspector",
+      "v8",
+      "trace"
+    ],
+    "correct": "inspector"
+  },
+  {
+    "question": "What flag do you add to the node command to enable the built-in debugger?",
+    "options": [
+      "--debug",
+      "--inspect",
+      "--breakpoint",
+      "--trace"
+    ],
+    "correct": "--inspect"
+  },
+  {
+    "question": "What does the debugger statement do in Node.js code?",
+    "options": [
+      "Logs the current state to a file",
+      "Sets a breakpoint when running with --inspect flag",
+      "Throws a debug error",
+      "Pauses the event loop permanently"
+    ],
+    "correct": "Sets a breakpoint when running with --inspect flag"
+  },
+  {
+    "question": "Which tool can be used to restart a Node.js app automatically when files change during development?",
+    "options": [
+      "pm2",
+      "nodemon",
+      "forever",
+      "watchman"
+    ],
+    "correct": "nodemon"
+  },
+  {
+    "question": "What is the Node.js Event Loop?",
+    "options": [
+      "A loop that repeatedly re-renders the UI",
+      "A mechanism that allows Node.js to perform non-blocking I/O by offloading operations to the system kernel",
+      "A loop inside the V8 engine for garbage collection",
+      "A polling loop that checks for new HTTP connections"
+    ],
+    "correct": "A mechanism that allows Node.js to perform non-blocking I/O by offloading operations to the system kernel"
+  },
+  {
+    "question": "What is a callback function in the context of asynchronous Node.js?",
+    "options": [
+      "A function that runs before the async operation starts",
+      "A function passed as an argument to be executed after an async operation completes",
+      "A function used only with Promises",
+      "A function that cancels an async operation"
+    ],
+    "correct": "A function passed as an argument to be executed after an async operation completes"
+  },
+  {
+    "question": "What is 'callback hell'?",
+    "options": [
+      "An error thrown when too many callbacks are registered",
+      "Deeply nested callbacks that become difficult to read and maintain",
+      "A situation where callbacks run in the wrong order",
+      "A memory leak caused by unresolved callbacks"
+    ],
+    "correct": "Deeply nested callbacks that become difficult to read and maintain"
+  },
+  {
+    "question": "What are the three states of a JavaScript Promise?",
+    "options": [
+      "Created, Running, Stopped",
+      "Pending, Fulfilled, Rejected",
+      "Waiting, Complete, Failed",
+      "Open, Resolved, Closed"
+    ],
+    "correct": "Pending, Fulfilled, Rejected"
+  },
+  {
+    "question": "Which method on a Promise handles the rejected state?",
+    "options": [
+      ".then()",
+      ".finally()",
+      ".catch()",
+      ".error()"
+    ],
+    "correct": ".catch()"
+  },
+  {
+    "question": "What does async/await do in Node.js?",
+    "options": [
+      "Converts synchronous code to asynchronous",
+      "Provides syntactic sugar over Promises making async code look synchronous",
+      "Replaces the event loop with a thread pool",
+      "Makes all I/O operations blocking"
+    ],
+    "correct": "Provides syntactic sugar over Promises making async code look synchronous"
+  },
+  {
+    "question": "How do you handle errors with async/await?",
+    "options": [
+      "Using .catch() after the await statement",
+      "Using a try/catch block wrapping the await expression",
+      "Using process.on('error')",
+      "Errors are automatically handled with async/await"
+    ],
+    "correct": "Using a try/catch block wrapping the await expression"
+  },
+  {
+    "question": "Which npm package is commonly used to make HTTP requests from a Node.js backend?",
+    "options": [
+      "request (deprecated) or node-fetch / axios",
+      "xmlhttprequest",
+      "browser-fetch",
+      "http-client"
+    ],
+    "correct": "request (deprecated) or node-fetch / axios"
+  },
+  {
+    "question": "What does Promise.all() do?",
+    "options": [
+      "Runs promises sequentially one after another",
+      "Resolves when the first promise resolves",
+      "Waits for all promises to resolve and returns an array of results",
+      "Ignores rejected promises"
+    ],
+    "correct": "Waits for all promises to resolve and returns an array of results"
+  },
+  {
+    "question": "Which built-in module is used to create an HTTP server in Node.js?",
+    "options": [
+      "net",
+      "express",
+      "http",
+      "server"
+    ],
+    "correct": "http"
+  },
+  {
+    "question": "What is Express.js?",
+    "options": [
+      "A built-in Node.js HTTP module",
+      "A minimal and flexible Node.js web application framework",
+      "A database ORM for Node.js",
+      "A front-end rendering engine"
+    ],
+    "correct": "A minimal and flexible Node.js web application framework"
+  },
+  {
+    "question": "Which method on an Express app defines a route that handles GET requests?",
+    "options": [
+      "app.route('GET', '/path', handler)",
+      "app.get('/path', handler)",
+      "app.handle('/path', 'GET', handler)",
+      "app.request('GET', '/path', handler)"
+    ],
+    "correct": "app.get('/path', handler)"
+  },
+  {
+    "question": "What is Express middleware?",
+    "options": [
+      "A database connection layer",
+      "Functions that have access to request, response, and the next middleware function",
+      "Built-in security modules",
+      "Route definitions inside a separate file"
+    ],
+    "correct": "Functions that have access to request, response, and the next middleware function"
+  },
+  {
+    "question": "What does res.send() do in Express?",
+    "options": [
+      "Redirects the client to another URL",
+      "Sends the HTTP response with the provided body",
+      "Sets a response header",
+      "Closes the server connection"
+    ],
+    "correct": "Sends the HTTP response with the provided body"
+  },
+  {
+    "question": "Which Express method serves static files such as HTML, CSS, and images?",
+    "options": [
+      "express.static()",
+      "app.serve()",
+      "express.public()",
+      "app.assets()"
+    ],
+    "correct": "express.static()"
+  },
+  {
+    "question": "What is Handlebars in the context of a Node.js web server?",
+    "options": [
+      "A database query builder",
+      "A templating engine for rendering dynamic HTML on the server",
+      "A middleware for parsing request bodies",
+      "A tool for managing environment variables"
+    ],
+    "correct": "A templating engine for rendering dynamic HTML on the server"
+  },
+  {
+    "question": "What does res.render() do in Express with a templating engine?",
+    "options": [
+      "Sends a JSON response",
+      "Renders a view template and sends the resulting HTML to the client",
+      "Redirects to a new route",
+      "Compiles JavaScript files"
+    ],
+    "correct": "Renders a view template and sends the resulting HTML to the client"
+  },
+  {
+    "question": "How do you access query string parameters (e.g., ?city=London) in Express?",
+    "options": [
+      "req.params.city",
+      "req.body.city",
+      "req.query.city",
+      "req.headers.city"
+    ],
+    "correct": "req.query.city"
+  },
+  {
+    "question": "What is the purpose of the dotenv package in Node.js?",
+    "options": [
+      "To minify environment files",
+      "To load environment variables from a .env file into process.env",
+      "To validate production environment settings",
+      "To create Docker environment configs"
+    ],
+    "correct": "To load environment variables from a .env file into process.env"
+  },
+  {
+    "question": "Why should API keys never be hardcoded in source code?",
+    "options": [
+      "They slow down the application",
+      "They can be exposed publicly if the code is shared or committed to version control",
+      "Node.js does not support string literals for API keys",
+      "Hardcoded values cause memory leaks"
+    ],
+    "correct": "They can be exposed publicly if the code is shared or committed to version control"
+  },
+  {
+    "question": "Which platform is commonly used to deploy Node.js applications with minimal configuration?",
+    "options": [
+      "GitHub Pages",
+      "Heroku or Render",
+      "Firebase Hosting",
+      "Netlify"
+    ],
+    "correct": "Heroku or Render"
+  },
+  {
+    "question": "What is the purpose of a Procfile in a Heroku deployment?",
+    "options": [
+      "It lists npm dependencies",
+      "It specifies the command to run the application on startup",
+      "It configures SSL certificates",
+      "It defines database migration steps"
+    ],
+    "correct": "It specifies the command to run the application on startup"
+  },
+  {
+    "question": "What does the PORT environment variable typically control in a deployed Node.js app?",
+    "options": [
+      "The database connection port",
+      "The port the web server listens on, assigned dynamically by the hosting platform",
+      "The SSH port for deployments",
+      "The port for WebSocket connections only"
+    ],
+    "correct": "The port the web server listens on, assigned dynamically by the hosting platform"
+  },
+  {
+    "question": "What type of database is MongoDB?",
+    "options": [
+      "A relational SQL database",
+      "A document-oriented NoSQL database",
+      "A key-value store",
+      "A graph database"
+    ],
+    "correct": "A document-oriented NoSQL database"
+  },
+  {
+    "question": "What is a MongoDB document?",
+    "options": [
+      "A row in a SQL table",
+      "A JSON-like data record stored in a collection",
+      "A schema definition file",
+      "A MongoDB configuration file"
+    ],
+    "correct": "A JSON-like data record stored in a collection"
+  },
+  {
+    "question": "What is Mongoose in Node.js development?",
+    "options": [
+      "A built-in MongoDB driver",
+      "An ODM (Object Data Modeling) library that provides schema-based modeling for MongoDB",
+      "A REST API testing tool",
+      "A query language for MongoDB"
+    ],
+    "correct": "An ODM (Object Data Modeling) library that provides schema-based modeling for MongoDB"
+  },
+  {
+    "question": "What is a Mongoose Schema?",
+    "options": [
+      "A database index",
+      "A definition of the structure, types, and validation rules for a MongoDB document",
+      "A MongoDB connection string",
+      "A migration file for updating documents"
+    ],
+    "correct": "A definition of the structure, types, and validation rules for a MongoDB document"
+  },
+  {
+    "question": "Which Mongoose method saves a new document to the database?",
+    "options": [
+      "Model.create() or instance.save()",
+      "Model.insert()",
+      "Model.push()",
+      "Model.write()"
+    ],
+    "correct": "Model.create() or instance.save()"
+  },
+  {
+    "question": "What does Model.findById(id) return in Mongoose?",
+    "options": [
+      "All documents matching the id field",
+      "A single document with the matching _id, or null if not found",
+      "An array of matching documents",
+      "The count of documents with that id"
+    ],
+    "correct": "A single document with the matching _id, or null if not found"
+  },
+  {
+    "question": "Which Mongoose method is used to delete a single document by its ID?",
+    "options": [
+      "Model.remove(id)",
+      "Model.findByIdAndDelete(id)",
+      "Model.deleteOne({ _id: id })",
+      "Both B and C are correct"
+    ],
+    "correct": "Both B and C are correct"
+  },
+  {
+    "question": "What does the REST in REST API stand for?",
+    "options": [
+      "Rendered Endpoint State Transfer",
+      "Representational State Transfer",
+      "Remote Execution Service Technology",
+      "Reliable Endpoint Secure Transfer"
+    ],
+    "correct": "Representational State Transfer"
+  },
+  {
+    "question": "Which HTTP method is used to partially update an existing resource in a REST API?",
+    "options": [
+      "PUT",
+      "POST",
+      "PATCH",
+      "UPDATE"
+    ],
+    "correct": "PATCH"
+  },
+  {
+    "question": "What HTTP status code indicates a resource was successfully created?",
+    "options": [
+      "200",
+      "204",
+      "201",
+      "301"
+    ],
+    "correct": "201"
+  },
+  {
+    "question": "What HTTP status code is returned when a resource is not found?",
+    "options": [
+      "400",
+      "403",
+      "500",
+      "404"
+    ],
+    "correct": "404"
+  },
+  {
+    "question": "How do you access URL parameters (e.g., /users/:id) in Express?",
+    "options": [
+      "req.query.id",
+      "req.body.id",
+      "req.params.id",
+      "req.headers.id"
+    ],
+    "correct": "req.params.id"
+  },
+  {
+    "question": "Which middleware is needed to parse JSON request bodies in Express?",
+    "options": [
+      "express.urlencoded()",
+      "express.text()",
+      "express.json()",
+      "body-parser only"
+    ],
+    "correct": "express.json()"
+  },
+  {
+    "question": "What is JWT used for in Node.js API authentication?",
+    "options": [
+      "Encrypting the database connection string",
+      "Generating stateless authentication tokens for verifying user identity",
+      "Hashing passwords before storage",
+      "Managing session cookies"
+    ],
+    "correct": "Generating stateless authentication tokens for verifying user identity"
+  },
+  {
+    "question": "Which npm package is widely used for hashing passwords in Node.js?",
+    "options": [
+      "crypto",
+      "md5",
+      "bcryptjs",
+      "sha256"
+    ],
+    "correct": "bcryptjs"
+  },
+  {
+    "question": "What is a salt in password hashing?",
+    "options": [
+      "The output of the hash function",
+      "A random value added to a password before hashing to prevent rainbow table attacks",
+      "The number of hash iterations",
+      "An encryption key stored in the database"
+    ],
+    "correct": "A random value added to a password before hashing to prevent rainbow table attacks"
+  },
+  {
+    "question": "Where is a JWT typically sent in subsequent API requests after login?",
+    "options": [
+      "In the request body",
+      "In the URL as a query parameter",
+      "In the Authorization header as a Bearer token",
+      "In a cookie only"
+    ],
+    "correct": "In the Authorization header as a Bearer token"
+  },
+  {
+    "question": "What is Express middleware used for in API authentication?",
+    "options": [
+      "To render HTML templates",
+      "To verify the token and attach the user to the request before the route handler runs",
+      "To hash passwords automatically",
+      "To connect to the database"
+    ],
+    "correct": "To verify the token and attach the user to the request before the route handler runs"
+  },
+  {
+    "question": "In Mongoose, how do you define a relationship where a Task belongs to a User?",
+    "options": [
+      "By embedding the full User document in each Task",
+      "By storing the User's _id as a reference field with type: mongoose.Schema.Types.ObjectId",
+      "By using a JOIN query in MongoDB",
+      "By duplicating the user's data in every task document"
+    ],
+    "correct": "By storing the User's _id as a reference field with type: mongoose.Schema.Types.ObjectId"
+  },
+  {
+    "question": "What does Mongoose's populate() method do?",
+    "options": [
+      "Fills a collection with seed data",
+      "Replaces a reference ObjectId field with the actual referenced document data",
+      "Validates all documents in a collection",
+      "Creates indexes on a collection"
+    ],
+    "correct": "Replaces a reference ObjectId field with the actual referenced document data"
+  },
+  {
+    "question": "How do you implement pagination in a Mongoose query for a REST API?",
+    "options": [
+      "Using Model.page() and Model.limit()",
+      "Using .skip() and .limit() on the query",
+      "Using Model.paginate() built-in method",
+      "Using an offset query parameter that Mongoose handles automatically"
+    ],
+    "correct": "Using .skip() and .limit() on the query"
+  },
+  {
+    "question": "How do you sort query results in Mongoose?",
+    "options": [
+      "Model.find().orderBy({ field: 1 })",
+      "Model.find().sort({ field: 1 })",
+      "Model.find().arrange('field', 'asc')",
+      "Model.find({ sort: 'field' })"
+    ],
+    "correct": "Model.find().sort({ field: 1 })"
+  },
+  {
+    "question": "What does the value 1 and -1 mean in Mongoose sort options?",
+    "options": [
+      "1 means primary sort, -1 means secondary sort",
+      "1 means ascending, -1 means descending",
+      "1 means include field, -1 means exclude field",
+      "1 means case-sensitive, -1 means case-insensitive"
+    ],
+    "correct": "1 means ascending, -1 means descending"
+  },
+  {
+    "question": "What query operator would you use in Mongoose to filter tasks that are completed?",
+    "options": [
+      "Model.find({ completed: $eq: true })",
+      "Model.find({ completed: true })",
+      "Model.filter({ completed: true })",
+      "Model.where('completed').equals(true)"
+    ],
+    "correct": "Model.find({ completed: true })"
+  },
+  {
+    "question": "Which npm package is commonly used for handling file uploads in Node.js/Express?",
+    "options": [
+      "formidable",
+      "multer",
+      "busboy",
+      "multiparty"
+    ],
+    "correct": "multer"
+  },
+  {
+    "question": "What is the purpose of multer's fileFilter option?",
+    "options": [
+      "To set the file upload size limit",
+      "To validate uploaded files and reject those that don't meet criteria",
+      "To rename files after upload",
+      "To compress uploaded files"
+    ],
+    "correct": "To validate uploaded files and reject those that don't meet criteria"
+  },
+  {
+    "question": "What is the Sharp npm library used for in file upload workflows?",
+    "options": [
+      "File encryption",
+      "Image processing such as resizing and format conversion",
+      "Virus scanning uploaded files",
+      "Streaming large file uploads"
+    ],
+    "correct": "Image processing such as resizing and format conversion"
+  },
+  {
+    "question": "What does req.file contain after multer processes an upload?",
+    "options": [
+      "The file path on a remote server",
+      "Information about the uploaded file including the buffer, mimetype, and original name",
+      "The file content as a string",
+      "The number of files uploaded"
+    ],
+    "correct": "Information about the uploaded file including the buffer, mimetype, and original name"
+  },
+  {
+    "question": "Which npm package is commonly used to send transactional emails from Node.js?",
+    "options": [
+      "nodemailer or SendGrid's @sendgrid/mail",
+      "emailjs",
+      "mail-node",
+      "smtp-client"
+    ],
+    "correct": "nodemailer or SendGrid's @sendgrid/mail"
+  },
+  {
+    "question": "What information is required to send an email using SendGrid from Node.js?",
+    "options": [
+      "A database connection string",
+      "An API key, sender email, recipient email, subject, and body",
+      "An SMTP username and password only",
+      "An OAuth 2.0 token from Google"
+    ],
+    "correct": "An API key, sender email, recipient email, subject, and body"
+  },
+  {
+    "question": "What is the primary testing framework used in the Node.js Task App examples?",
+    "options": [
+      "Mocha",
+      "Jasmine",
+      "Jest",
+      "AVA"
+    ],
+    "correct": "Jest"
+  },
+  {
+    "question": "What is the purpose of the supertest package in Node.js testing?",
+    "options": [
+      "To mock the MongoDB database",
+      "To make HTTP assertions against an Express app without starting a real server",
+      "To spy on function calls",
+      "To generate test data"
+    ],
+    "correct": "To make HTTP assertions against an Express app without starting a real server"
+  },
+  {
+    "question": "What is the purpose of beforeEach() in Jest?",
+    "options": [
+      "To run a function once before all tests in a file",
+      "To run setup code before each individual test case",
+      "To clean up after all tests have run",
+      "To skip the next test conditionally"
+    ],
+    "correct": "To run setup code before each individual test case"
+  },
+  {
+    "question": "What does jest.fn() create?",
+    "options": [
+      "A real implementation of a function for integration testing",
+      "A mock function that tracks calls, arguments, and return values",
+      "A test suite with auto-generated tests",
+      "A spy that wraps an existing function"
+    ],
+    "correct": "A mock function that tracks calls, arguments, and return values"
+  },
+  {
+    "question": "Why is it important to use a separate test database in Node.js testing?",
+    "options": [
+      "The test database is faster than the production database",
+      "To prevent tests from modifying or corrupting production data",
+      "Jest requires a separate database connection",
+      "MongoDB does not allow concurrent connections"
+    ],
+    "correct": "To prevent tests from modifying or corrupting production data"
+  },
+  {
+    "question": "What is Socket.io used for in Node.js applications?",
+    "options": [
+      "Server-side rendering of HTML templates",
+      "Enabling real-time, bidirectional, event-driven communication between client and server",
+      "Connecting Node.js to SQL databases",
+      "Handling file streaming"
+    ],
+    "correct": "Enabling real-time, bidirectional, event-driven communication between client and server"
+  },
+  {
+    "question": "What underlying protocol does Socket.io primarily use for real-time communication?",
+    "options": [
+      "HTTP/2",
+      "WebSockets (falling back to HTTP long-polling)",
+      "UDP sockets",
+      "gRPC"
+    ],
+    "correct": "WebSockets (falling back to HTTP long-polling)"
+  },
+  {
+    "question": "How do you emit an event to all connected clients in Socket.io?",
+    "options": [
+      "io.to('all').emit('event', data)",
+      "socket.sendAll('event', data)",
+      "io.emit('event', data)",
+      "io.broadcast('event', data)"
+    ],
+    "correct": "io.emit('event', data)"
+  },
+  {
+    "question": "How do you emit an event to all clients except the sender in Socket.io?",
+    "options": [
+      "io.except(socket).emit('event', data)",
+      "socket.broadcast.emit('event', data)",
+      "io.others.emit('event', data)",
+      "socket.emit.all('event', data)"
+    ],
+    "correct": "socket.broadcast.emit('event', data)"
+  },
+  {
+    "question": "What event is automatically triggered on the server when a client connects to a Socket.io server?",
+    "options": [
+      "'open'",
+      "'connect'",
+      "'connection'",
+      "'ready'"
+    ],
+    "correct": "'connection'"
+  },
+  {
+    "question": "What are Socket.io rooms used for?",
+    "options": [
+      "Storing persistent data between connections",
+      "Grouping sockets so you can emit events to a subset of clients",
+      "Authenticating WebSocket connections",
+      "Creating separate server instances"
+    ],
+    "correct": "Grouping sockets so you can emit events to a subset of clients"
+  },
+  {
+    "question": "Which method is used to join a Socket.io room?",
+    "options": [
+      "socket.joinRoom(roomName)",
+      "socket.join(roomName)",
+      "io.room(roomName).add(socket)",
+      "socket.connect(roomName)"
+    ],
+    "correct": "socket.join(roomName)"
+  },
+  {
+    "question": "In the Chat App, what is the typical Socket.io event emitted when a user sends a message?",
+    "options": [
+      "'message-send'",
+      "'chat-message' or 'sendMessage'",
+      "'new-data'",
+      "'post-message'"
+    ],
+    "correct": "'chat-message' or 'sendMessage'"
+  },
+  {
+    "question": "What is the purpose of the 'disconnect' event in Socket.io?",
+    "options": [
+      "It fires when the server shuts down",
+      "It fires on the server when a particular client disconnects",
+      "It fires when an emit fails",
+      "It fires when authentication expires"
+    ],
+    "correct": "It fires on the server when a particular client disconnects"
+  },
+  {
+    "question": "Which of the following correctly chains Mongoose validation in a schema field?",
+    "options": [
+      "name: { type: String, required: true, trim: true }",
+      "name: String.required().trim()",
+      "name: { String, required, trim }",
+      "name: Schema.required('String').trim()"
+    ],
+    "correct": "name: { type: String, required: true, trim: true }"
+  },
+  {
+    "question": "What does the trim option do in a Mongoose schema string field?",
+    "options": [
+      "Limits the string to a maximum length",
+      "Removes leading and trailing whitespace before saving",
+      "Converts the string to lowercase",
+      "Validates that the string contains no spaces"
+    ],
+    "correct": "Removes leading and trailing whitespace before saving"
+  },
+  {
+    "question": "What does the following code do? app.use((err, req, res, next) => { res.status(500).send({ error: err.message }) })",
+    "options": [
+      "Defines a standard route handler",
+      "Defines an Express error-handling middleware (4 parameters)",
+      "Sets a default response for all routes",
+      "Creates a custom HTTP method"
+    ],
+    "correct": "Defines an Express error-handling middleware (4 parameters)"
+  },
+  {
+    "question": "What is the purpose of the 'next' function in Express middleware?",
+    "options": [
+      "To send the response to the client",
+      "To pass control to the next middleware or route handler in the stack",
+      "To restart the request cycle",
+      "To log the request"
+    ],
+    "correct": "To pass control to the next middleware or route handler in the stack"
+  },
+  {
+    "question": "What does the following Express route do? app.delete('/tasks/:id', async (req, res) => { ... })",
+    "options": [
+      "Retrieves all tasks and deletes the database",
+      "Handles DELETE requests to remove a task identified by its id URL parameter",
+      "Permanently drops the tasks collection",
+      "Creates a new task with the given id"
+    ],
+    "correct": "Handles DELETE requests to remove a task identified by its id URL parameter"
+  },
+  {
+    "question": "What is the event emitter pattern in Node.js?",
+    "options": [
+      "A pattern for server-sent events only",
+      "A built-in observer pattern where objects emit named events and listeners respond",
+      "A design pattern exclusive to Socket.io",
+      "A way to trigger DOM events on the server"
+    ],
+    "correct": "A built-in observer pattern where objects emit named events and listeners respond"
+  },
+  {
+    "question": "Which class do you extend to create a custom Event Emitter in Node.js?",
+    "options": [
+      "require('events').EventEmitter",
+      "require('stream').Emitter",
+      "process.EventEmitter",
+      "global.EventEmitter"
+    ],
+    "correct": "require('events').EventEmitter"
+  },
+  {
+    "question": "What is the purpose of the package-lock.json file in a Node.js project?",
+    "options": [
+      "To lock the Node.js version used in the project",
+      "To record the exact version of every installed dependency for reproducible installs",
+      "To prevent npm from installing new packages",
+      "To define scripts that cannot be overridden"
+    ],
+    "correct": "To record the exact version of every installed dependency for reproducible installs"
+  },
+  {
+    "question": "What is the difference between dependencies and devDependencies in package.json?",
+    "options": [
+      "There is no practical difference",
+      "dependencies are needed in production; devDependencies are only needed during development",
+      "devDependencies are installed globally; dependencies are local",
+      "dependencies are for the front-end; devDependencies are for the back-end"
+    ],
+    "correct": "dependencies are needed in production; devDependencies are only needed during development"
+  },
+  {
+    "question": "What does npm install --save-dev package-name do?",
+    "options": [
+      "Installs the package and adds it to dependencies",
+      "Installs the package globally",
+      "Installs the package and adds it to devDependencies",
+      "Installs the package without updating package.json"
+    ],
+    "correct": "Installs the package and adds it to devDependencies"
+  },
+  {
+    "question": "In the context of Node.js streams, what is a readable stream?",
+    "options": [
+      "A stream that only writes data",
+      "A stream from which data can be consumed",
+      "A stream that transforms data",
+      "A stream connected to a WebSocket"
+    ],
+    "correct": "A stream from which data can be consumed"
+  },
+  {
+    "question": "What does the MongoDB $match stage do in an aggregation pipeline?",
+    "options": [
+      "Groups documents by a field",
+      "Filters documents to pass only matching documents to the next stage",
+      "Sorts documents in a collection",
+      "Projects specific fields from documents"
+    ],
+    "correct": "Filters documents to pass only matching documents to the next stage"
+  },
+  {
+    "question": "What does CORS stand for and why is it relevant to Node.js APIs?",
+    "options": [
+      "Cross-Origin Resource Sharing — it controls which domains can access your API from a browser",
+      "Client-Oriented Request System — it manages API rate limiting",
+      "Cached Object Response Strategy — it improves API performance",
+      "Cross-Origin Response Security — it encrypts API responses"
+    ],
+    "correct": "Cross-Origin Resource Sharing — it controls which domains can access your API from a browser"
+  },
+  {
+    "question": "Which npm package is typically used to enable CORS in an Express application?",
+    "options": [
+      "express-cors",
+      "cors",
+      "allow-origin",
+      "helmet"
+    ],
+    "correct": "cors"
+  }
+]
