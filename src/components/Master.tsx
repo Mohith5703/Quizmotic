@@ -33,7 +33,7 @@ export default function Master({ onGoHome, initialCategory, groupName }: MasterP
         const allPromises = groupCats.map(cat => fetchQuestions(cat.fileName, cat.id));
         const results = await Promise.all(allPromises);
         const combined = results.flat();
-        setQuestions(shuffleArray(combined).slice(0, 50)); // 50 randomized questions for group master
+        setQuestions(shuffleArray(combined).slice(0, 60)); // 60 randomized questions for group master
       } else if (initialCategory) {
         const cat = CATEGORIES.find(c => c.id === initialCategory);
         if (cat) {
