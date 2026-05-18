@@ -191,8 +191,15 @@ export default function QuizRunner({ questions, mode, onFinish, onGoHome }: Quiz
                animate={{ opacity: 1, y: 0 }}
                className="bg-white rounded-3xl border border-gray-100 p-8 md:p-12 shadow-xl shadow-gray-100/50"
              >
+               <div className="flex items-center justify-between mb-2">
+                 <span className="text-indigo-600 font-bold">Q{actualIdx + 1}.</span>
+                 {q.section && (
+                   <span className="px-3 py-1.5 bg-indigo-50 border border-indigo-100 text-indigo-600 text-xs font-black uppercase tracking-widest rounded-lg">
+                     {q.section}
+                   </span>
+                 )}
+               </div>
                <h3 className="text-xl md:text-2xl font-bold text-gray-900 leading-tight mb-10">
-                 <span className="text-indigo-600 mr-2">Q{actualIdx + 1}.</span>
                  {q.text}
                </h3>
 

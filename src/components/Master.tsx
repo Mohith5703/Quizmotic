@@ -27,7 +27,55 @@ export default function Master({ onGoHome, initialCategory, groupName }: MasterP
   const loadMasterQuestions = async () => {
     setLoading(true);
     try {
-      if (groupName) {
+      if (groupName === 'Current Dumps') {
+        const weightage: { section: string, count: number, categoryId: string, keywords?: string[] }[] = [
+          { section: 'Java', count: 8, categoryId: 'current_dumps' },
+          { section: 'HTML5/CSS', count: 6, categoryId: 'step1' },
+          { section: 'JavaScript', count: 7, categoryId: 'step2' },
+          { section: 'Angular', count: 8, categoryId: 'cd_angular' },
+          { section: 'React', count: 7, categoryId: 'cd_react' },
+          { section: 'MongoDB', count: 7, categoryId: 'step4' },
+          { section: 'Spring Core, Spring Boot', count: 15, categoryId: 'step5' },
+          { section: 'DevOps', count: 2, categoryId: 'step6' },
+        ];
+
+        let masterQuestions: Question[] = [];
+        
+        // Fetch categories once to avoid multiple hits
+        const uniqueCatIds = Array.from(new Set(weightage.map(w => w.categoryId)));
+        const catContentMap: { [key: string]: Question[] } = {};
+        
+        await Promise.all(uniqueCatIds.map(async (id) => {
+          const cat = CATEGORIES.find(c => c.id === id);
+          if (cat) {
+            const qs = await fetchQuestions(cat.fileName, id);
+            catContentMap[id] = qs;
+          }
+        }));
+
+        weightage.forEach(w => {
+          let available = catContentMap[w.categoryId] || [];
+          
+          if (w.keywords) {
+            // Filter by keywords if provided
+            available = available.filter(q => 
+              w.keywords?.some(k => q.text.toLowerCase().includes(k.toLowerCase()))
+            );
+            // If filtering results in too few, fallback to just sampling from the category
+            if (available.length < w.count) {
+              available = catContentMap[w.categoryId] || [];
+            }
+          }
+          
+          const selected = shuffleArray(available).slice(0, w.count).map(q => ({
+            ...q,
+            section: w.section
+          }));
+          masterQuestions = [...masterQuestions, ...selected];
+        });
+
+        setQuestions(masterQuestions);
+      } else if (groupName) {
         // Load all categories in this group
         const groupCats = CATEGORIES.filter(c => c.group === groupName);
         const allPromises = groupCats.map(cat => fetchQuestions(cat.fileName, cat.id));

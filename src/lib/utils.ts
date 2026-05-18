@@ -16,7 +16,8 @@ export async function fetchQuestions(fileName: string, categoryId: string): Prom
   try {
     const cat = CATEGORIES.find(c => c.id === categoryId);
     const folder = cat?.folder || 'data';
-    const response = await fetch(`/${folder}/${fileName}`);
+    const encodedFolder = folder.split('/').map(segment => encodeURIComponent(segment)).join('/');
+    const response = await fetch(`/${encodedFolder}/${fileName}`);
     
     if (!response.ok) {
        // fallback to /data/ if not found in specific folder

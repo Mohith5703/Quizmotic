@@ -18,6 +18,7 @@ export interface Question {
   correctAnswer: number; // index
   explanation?: string;
   category: string;
+  section?: string;
 }
 
 export interface Category {
